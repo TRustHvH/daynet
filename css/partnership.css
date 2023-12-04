@@ -1,0 +1,48 @@
+.main{
+    height: fit-content !important;
+}
+header{
+    background-color: #F9FBFF !important;
+}
+.prevheader a:hover{
+    color:#7A73FF !important;
+}
+.begin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.begin h1{
+    width: 1053px;
+    color: #04101C;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 720;
+    line-height: 64px;
+    letter-spacing: 2.24px;
+    margin-left: -310px;
+}
+.begin p{
+    width: 1011px;
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.56px;
+}
+@media screen and (max-width: 1440px) {
+    .begin h1{
+        width: 820px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .begin h1{
+        width: 629px;
+        margin-left: -260px;
+    }
+    .begin p{
+        width: 756px;
+    }
+}

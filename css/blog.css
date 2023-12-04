@@ -1,0 +1,222 @@
+.main{
+    height: fit-content !important;
+}
+header{
+    background-color: #F9FBFF !important;
+}
+.prevheader a:hover{
+    color:#7A73FF !important;
+}
+#blog{
+    padding-top: 50px!important;
+    flex-direction: column !important;
+}
+footer{
+    height: 450px !important;
+    background: url("../img/footer-bg.svg") no-repeat !important;
+    background-size:  cover !important;
+    align-items: flex-end !important;
+}
+.blog-text a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #04101C;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.56px;
+    width: 573px;
+    transition: 0.4s;
+}
+.blog-text a:hover{
+    color:#7A73FF;
+}
+.n01{
+    display: none;
+}
+
+@keyframes disabler {
+    from{
+       opacity: 1;
+    }
+    to{
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes enabler {
+    from{
+        opacity: 0;
+        display: flex;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes turnleft{
+    from{
+        display: flex;
+        transform: translate(1920px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+@keyframes turnright{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(1920px);
+        display: none;
+    }
+}
+.anim-disabler{
+    animation-name: disabler;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.anim-enabler{
+    animation-name: enabler;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.anim-left{
+    animation-name: turnleft;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.anim-right{
+    animation-name: turnright;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.changing-h1{
+    color: #04101C;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 720;
+    line-height: 64px;
+    letter-spacing: 2.24px;
+    width: 1200px;
+}
+.number{
+    margin-top: 7px;
+    color: #04101C;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1.68px;
+}
+.small-text{
+    width: 811px;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 226;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    margin-left: 50%;
+}
+.big{
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.56px;
+    width: 1162px;
+}
+h2{
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.64px;
+}
+.n02{
+    display: none;
+}
+.h1-blog{
+    margin-left: -143px
+}
+@media screen and (max-width: 1440px) {
+    .h1-blog{
+        margin-left: -80px;
+    }
+    .changing-h1{
+        color: #04101C!important;
+        font-size: 52px!important;
+        font-style: normal!important;
+        font-weight: 720!important;
+        line-height: 60px!important;
+        letter-spacing: 2.08px!important;
+        width: 830px;
+    }
+    .small-text{
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .blog-text a{
+        color: #04101C;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0.48px;
+    }
+    .blog-text .second{
+        width: 517px !important;
+    }
+    .h1-blog{
+        margin-left: -45px;
+    }
+    .changing-h1{
+        color: #04101C !important;
+        font-size: 48px!important;
+        font-style: normal!important;
+        font-weight: 720!important;
+        line-height: 60px!important;
+        letter-spacing: 2.08px!important;
+        width: 720px!important;
+    }
+    .small-text{
+        margin-left: 10%;
+    }
+    .back{
+        z-index: 9999;
+    }
+    .meme{
+        width: 980px;
+    }
+    h2{
+        color: #000;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0.64px;
+    }
+    .big{
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0.48px;
+        width: 800px;
+    }
+}

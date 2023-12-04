@@ -1,0 +1,19 @@
+<svg width="1440" height="850" xmlns="http://www.w3.org/2000/svg" fill="none">
+ <defs>
+  <linearGradient y2="-0.39824" x2="0.84897" y1="1" x1="0.01796" id="paint0_linear_379_561">
+   <stop stop-color="#4AFCF1"/>
+   <stop stop-color="#FF93DA" offset="0.26875"/>
+   <stop stop-color="#7A73FF" offset="0.78438"/>
+   <stop stop-color="#83FFBC" offset="0.95164"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" fill="url(#paint0_linear_379_561)" d="m-3.37604,693.50387l285.5,-113l367.5,-79.5l318.5,-176l279,-92l197,-141.5l0,41.5l-197,141.5l-279,92l-318.5,176l-367.5,79.5l-285.5,113l0,-41.5z"/>
+  <path id="svg_2" stroke="#AFB6B3" d="m282.12396,580.50387l-285.5,113l0,41.5l285.5,-113m0,-41.5l367.5,-79.5m-367.5,79.5l0,41.5m686,-297l279,-92m-279,92l-318.5,176m318.5,-176l0,41.5m279,-133.5l197,-141.5l0,41.5l-197,141.5m0,-41.5l0,41.5m-597.5,226.5l0,41.5m-367.5,79.5l367.5,-79.5m318.5,-176l279,-92m-279,92l-318.5,176"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="260.00387" x2="282.54207" y1="620.00387" x1="282.54207" stroke="#afb6b3" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="843.00387" x2="649.88584" y1="501.00387" x1="649.88584" stroke="#afb6b3" fill="none"/>
+  <line id="svg_12" y2="623.65257" x2="967.59557" y1="325.84793" x1="967.59557" stroke="#afb6b3" fill="none"/>
+  <line id="svg_14" y2="4.65257" x2="1248.07164" y1="273.65257" x1="1248.07164" stroke="#afb6b3" fill="none"/>
+ </g>
+</svg>

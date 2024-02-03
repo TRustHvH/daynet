@@ -130,7 +130,6 @@ header{
     margin-bottom: 100px;
 }
 .changing nonclickable{
-    padding-top: 50px;
     display: inline-flex;
     padding: 20px 60px 20px 44px;
     justify-content: center;
@@ -138,7 +137,7 @@ header{
     gap: 40px;
     border-radius: 16px;
     background: #FFF;
-    box-shadow: 1px 2px 10px 0px rgba(2, 12, 20, 0.04);
+    box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
     width: 550px;
     color: #04101C;
     font-size: 28px;
@@ -148,7 +147,7 @@ header{
     letter-spacing: 1.68px;;
 }
 nonclickable span{
-    width: 493px!important;
+    max-width: 493px!important;
     color: #04101C!important;
     font-size: 28px!important;
     font-style: normal!important;
@@ -173,7 +172,7 @@ nonclickable span{
 }
 .opacity-continue li{
     padding-bottom: 40px;
-    width: 562px;
+    max-width: 562px;
     color: #000;
     font-size: 28px;
     font-style: normal;
@@ -204,6 +203,75 @@ nonclickable span{
     }
     .change{
         margin-left: 1000px;
+    }
+}
+@media screen and (max-width: 720px){
+    .change{
+        display: none;
+    }
+    .cases h1{
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 60px;
+        letter-spacing: 1.04px;
+    }
+    .opacity-start h2{
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 60px;
+        letter-spacing: 1.04px;
+    }
+    .opacity-start span{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0.56px;
+    }
+    .img-for-crop{
+        width: 615px;
+        overflow: hidden;
+    }
+    .opacity-continue{
+        flex-direction: column;
+    }
+    nonclickable span{
+        font-size: 20px!important;
+        font-style: normal!important;
+        font-weight: 500!important;
+        line-height: 28px!important;
+        letter-spacing: 0.8px!important;
+    }
+    .changing nonclickable{
+        padding: 12px 32px 12px 28px;
+        width: fit-content;
+        max-width: 470px;
+    }
+    .opacity-continue h3{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+    }
+    .opacity-continue li{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+    }
+    .opacity-continue p{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+    }
+    .unknown-in-720{
+        display: none;
     }
 }
 

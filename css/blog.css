@@ -108,7 +108,7 @@ footer{
     font-weight: 720;
     line-height: 64px;
     letter-spacing: 2.24px;
-    width: 1200px;
+    max-width: 1200px;
 }
 .number{
     margin-top: 7px;
@@ -120,7 +120,7 @@ footer{
     letter-spacing: 1.68px;
 }
 .small-text{
-    width: 811px;
+    max-width: 811px;
     color: #000;
     font-size: 20px;
     font-style: normal;
@@ -136,7 +136,7 @@ footer{
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0.56px;
-    width: 1162px;
+    max-width: 1162px;
 }
 h2{
     color: #000;
@@ -157,13 +157,13 @@ h2{
         margin-left: -80px;
     }
     .changing-h1{
-        color: #04101C!important;
-        font-size: 52px!important;
-        font-style: normal!important;
-        font-weight: 720!important;
-        line-height: 60px!important;
-        letter-spacing: 2.08px!important;
-        width: 830px;
+        color: #04101C;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 60px;
+        letter-spacing: 2.08px;
+        max-width: 830px;
     }
     .small-text{
         margin-left: 30%;
@@ -179,19 +179,19 @@ h2{
         letter-spacing: 0.48px;
     }
     .blog-text .second{
-        width: 517px !important;
+        max-width: 517px !important;
     }
     .h1-blog{
         margin-left: -45px;
     }
     .changing-h1{
-        color: #04101C !important;
-        font-size: 48px!important;
-        font-style: normal!important;
-        font-weight: 720!important;
-        line-height: 60px!important;
-        letter-spacing: 2.08px!important;
-        width: 720px!important;
+        color: #04101C;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 60px;
+        letter-spacing: 2.08px;
+        width: 720px;
     }
     .small-text{
         margin-left: 10%;
@@ -218,5 +218,49 @@ h2{
         line-height: 32px;
         letter-spacing: 0.48px;
         width: 800px;
+    }
+}
+@media screen and (max-width: 720px){
+    .changing-h1{
+        width: 580px;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+    }
+    .meme{
+        width: 100%;
+    }
+    .small-text{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 226;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        max-width: 569px;
+    }
+    .number{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+    }
+    h2{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0.56px;
+        max-width: 608px;
+    }
+    .big{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+        max-width: 608px;
     }
 }

@@ -26,7 +26,7 @@ header{
 }
 .services-start p{
     margin-top: 50px;
-    width: 298px;
+    max-width: 298px;
     color: #04101C;
     font-size: 32px;
     font-style: normal;
@@ -35,7 +35,10 @@ header{
     letter-spacing: 0.64px;
 }
 .op-1{
-    display: flex; justify-content: space-evenly;gap: 80px;
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 #opacity-first{
     display: flex;gap:150px
@@ -144,7 +147,7 @@ h2 a{
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0.56px;
-    width: 655px;
+    max-width: 655px;
 }
 .under-svg{
     color: #000!important;
@@ -153,7 +156,7 @@ h2 a{
     font-weight: 226!important;
     line-height: 28px!important;
     letter-spacing: 0.4px!important;
-    width: 444px!important;
+    max-width: 444px!important;
 }
 nonclickable{
     display: inline-flex;
@@ -163,7 +166,7 @@ nonclickable{
     gap: 20px;
     border-radius: 16px;
     background: #FFF;
-    box-shadow: 1px 2px 10px 0px rgba(2, 12, 20, 0.04);
+    box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
     width: 577px;
     margin-left: 308px;
     color: #04101C;
@@ -208,7 +211,7 @@ nonclickable{
         margin-block-end: 30px;
     }
     .opacity-block{
-        gap: 0px;
+        gap: 0;
     }
     nonclickable{
         margin-left: 90px;
@@ -223,7 +226,7 @@ nonclickable{
     }
 
     #opacity-first {
-        gap: 0px;
+        gap: 0;
     }
     .opacity-block{
         flex-direction: column;
@@ -245,5 +248,52 @@ nonclickable{
         letter-spacing: 1.68px;
         width: 318px;
         margin-top: 50px;
+    }
+}
+@media screen and (max-width: 720px){
+    .op-1{
+        justify-content: normal;
+        padding-left: 52px;
+    }
+    .changing h1{
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 60px;
+        letter-spacing: 1.04px;
+    }
+    .changing p{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+        max-width: 538px;
+    }
+    .under-svg{
+        font-size: 16px!important;
+        font-style: normal!important;
+        font-weight: 226!important;
+        line-height: 24px!important;
+        letter-spacing: 0.32px!important;
+        max-width: 279px!important;
+    }
+    nonclickable{
+        padding: 12px 24px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+        width: fit-content;
+    }
+    .changing a{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+        padding: 16px 28px;
+        width: fit-content;
     }
 }

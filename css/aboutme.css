@@ -16,7 +16,6 @@ footer{
 .aboutme-text{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 h1{
     color: #04101C;
@@ -25,10 +24,10 @@ h1{
     font-weight: 720;
     line-height: 84px; /* 116.667% */
     letter-spacing: 2.88px;
-    margin-left: -1140px;
+    padding-left: 100px;
 }
 .aboutme-text p{
-    width: 1011px;
+    max-width: 1011px;
     color: #000;
     font-size: 28px;
     font-style: normal;
@@ -36,6 +35,7 @@ h1{
     line-height: 36px;
     letter-spacing: 0.56px;
     padding-top: 50px;
+    margin-left: 25%;
 }
 .group{
     display: flex;
@@ -63,14 +63,51 @@ h1{
     font-weight: 300;
     line-height: 50px;
     letter-spacing: 1px;
-    width: 950px;
+    max-width: 950px;
     padding: 100px 0;
 }
 @media screen and (max-width: 1440px) {
-    h1{
-        margin-left: -800px;
-    }
+
     .group h1{
         margin-left: 0;
+    }
+}
+@media screen and (max-width: 720px){
+    h1{
+        margin-left: unset;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 60px;
+        letter-spacing: 1.04px;
+    }
+    .aboutme-text p{
+        max-width: 560px;
+        margin-left: 20%;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+    }
+    .group img{
+        width: 100%;
+        height: auto;
+    }
+    .group p{
+        max-width: 556px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+    }
+    .group h1{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+        max-width: 483px;
     }
 }

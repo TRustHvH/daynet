@@ -2,12 +2,15 @@ body{
     width: 100%;
     height: 100%;
     font-family: 'Roboto Flex', sans-serif;
-    overflow-x: hidden;
     margin: 0 auto;
     background-color: #F9FBFF;
 }
 html{
     scroll-behavior: smooth;
+}
+.main-bg{
+    background: url('img/main-bg.svg') no-repeat center;
+    background-size: cover;
 }
 header{
     background-color: white;
@@ -43,6 +46,12 @@ svg{
     gap: 44px;
     font-size: 20px;
     z-index: 2;
+}
+.prevheader-mobile{
+    display: none;
+}
+.mobile-menu{
+    display: none;
 }
 .prevheader a{
     transition: 0.4s;
@@ -109,6 +118,13 @@ svg{
     align-items: center;
     gap: 32px
 }
+.under-companies{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1282px;
+    justify-content: center;
+    gap: 116px;
+}
 .tiles{
     display: flex;
     justify-content: center;
@@ -132,9 +148,10 @@ svg{
     gap: 20px;
     border-radius: 16px;
     background: #FFFFFF;
-    box-shadow: 1px 2px 10px 0px rgba(2, 12, 20, 0.04);
+    box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
     color: #04101C;
-    text-align: center;
+    font-size: 28px;
+    font-style: normal;
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 1.68px;
@@ -293,6 +310,10 @@ svg{
 .daynet svg{
     margin-left: 308px;
 }
+.daynet img{
+    width: 100%;
+    height: 1133px;
+}
 .daynet p{
     color: #04101C;
     font-size: 28px;
@@ -318,7 +339,7 @@ svg{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .form img{
     pointer-events: none;
@@ -332,7 +353,7 @@ svg{
     padding: 0;
     gap: 24px;
     margin-top: 200px;
-    margin-left: -100%;
+    margin-left: -20%;
     z-index: 2;
 }
 .form p{
@@ -382,7 +403,6 @@ label:before {
     content: " ";
     color: #FFFFFF;
     display: flex;
-    font: 15px/25px FontAwesome;
     margin-right: 15px;
     width: 18px;
     height: 18px;
@@ -467,12 +487,7 @@ footer p{
     letter-spacing: 0.24px;
     text-align: center;
 }
-.comp-1{
-    display: flex; gap: 116px
-}
-.comp-2{
-    display: flex; gap: 132px
-}
+
 .bunny{
     position:absolute; z-index: 1; margin-top: -350px; margin-left: 100px
 }
@@ -499,7 +514,9 @@ footer p{
 .logo{
     margin-left: 15%;
 }
-
+.daynet-texts{
+    width: 100%;
+}
 @media screen and (max-width: 1280px) {
     .start{
         gap: 90px;
@@ -513,13 +530,6 @@ footer p{
         gap: 32px;
         padding-top: 100px;
     }
-    .comp-1{
-        gap: 80px;
-    }
-    .comp-2{
-        gap: 90px;
-    }
-
     .tiles img{
         width: 788px;
     }
@@ -591,12 +601,6 @@ footer p{
         gap: 32px;
         padding-top: 150px;
     }
-    .comp-1{
-        gap: 20px;
-    }
-    .comp-2{
-        gap: 30px;
-    }
     .tiles{
         align-items: normal;
         flex-direction: column;
@@ -630,7 +634,7 @@ footer p{
     .daynet img{
         margin-top: 150px;
         width: 100%!important;
-        height: 1133px;
+        height: 560px!important;
     }
     .daynet svg{
         margin-left: 90px;
@@ -670,7 +674,274 @@ footer p{
         line-height: 16px;
         letter-spacing: 0.24px;
     }
+    .daynet-1{
+        margin-left: 19%;
+        margin-top: 210px;
+    }
+    .daynet-2{
+        margin-left: 44.25%;
+        margin-top: 700px;
+    }
+    .daynet-3{
+        margin-left: 66.5%;
+        margin-top: 560px;
+    }
+    .daynet-4{
+        margin-left: 73%;
+        margin-top: 50px;
+    }
 }
 @media screen and (max-width: 720px){
-    
+    .main{
+        height: 420px;
+    }
+
+    .prevheader-mobile{
+        display: flex;
+        height: 85px;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 200px;
+    }
+    .main-bg{
+        background: url('img/main-bg-720.svg') no-repeat center;
+        background-size: cover;
+    }
+    .prevheader{
+        display: none;
+    }
+    .logo{
+        margin-top: 250px;
+    }
+    .underlogo-text{
+        margin-top: 0;
+    }
+    .enter{
+        display: none;
+    }
+    #mobile-header-button{
+        all: unset;
+        cursor: pointer;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        background: #FFFFFF;
+        z-index: 3;
+        right: 0;
+        width: 204px;
+        bottom: 0;
+        align-items: flex-end;
+        gap: 68px;
+        padding-right: 20px;
+    }
+    .mobile-links a{
+        color: black;
+    }
+    .mobile-links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 28px;
+        margin-top: 120px;
+        width: 100%;
+
+    }
+    .mobile-links a{
+        color: #04101C !important;
+        font-size: 14px !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        line-height: 14px !important;
+        letter-spacing: 0.28px !important;
+        padding: 0 !important;
+    }
+    .enter-mobile{
+        display: flex !important;
+        padding: 12px 28px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        color: #FFF !important;
+        font-size: 14px !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        line-height: 14px !important; /* 100% */
+        letter-spacing: 0.28px !important;
+        border-radius: 8px !important;
+        background: #7A73FF !important;
+    }
+    .tiles h1{
+        max-width: 556px;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+        width: unset;
+    }
+    .tiles-single{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+    }
+    .tiles p{
+        width: unset;
+        max-width: 570px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+    }
+    .tiles img{
+        width: 618px;
+    }
+    .case h1{
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 60px; /* 115.385% */
+        letter-spacing: 1.04px;
+    }
+    .case h2{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px; /* 110% */
+        letter-spacing: 0.8px;
+    }
+    .case p{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px; /* 140% */
+        letter-spacing: 0.4px;
+        margin-top: 350px;
+    }
+    .case{
+        height: 1210px;
+    }
+    .case nonclickable{
+        display: inline-flex;
+        padding: 12px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+        width: 324px;
+    }
+    .case .car{
+        margin-top: -100px;
+        margin-left: -550px;
+        width: 610px;
+        height: 350px;
+    }
+    #blog h1{
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 60px;
+        letter-spacing: 1.04px;
+    }
+    .blog-text .second{
+        max-width: 271px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px; /* 140% */
+        letter-spacing: 0.4px;
+    }
+    .blog-text-button{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+        width: fit-content;
+    }
+    .daynet-4{
+        margin-left: 73.5%;
+        margin-top: 75px;
+    }
+    .daynet-1{
+        margin-top: 245px;
+    }
+    .daynet-2{
+        margin-top: 690px;
+    }
+    .daynet-3{
+        margin-top: 545px;
+    }
+    .daynet p{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+    }
+    .daynet{
+        height: 900px;
+    }
+    .daynet div{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 140% */
+        letter-spacing: 0.8px;
+    }
+    .form img{
+        width: 250px;
+        margin-top: -200px;
+    }
+    .form p{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px; /* 110% */
+        letter-spacing: 0.8px;
+        width: unset;
+    }
+    .for-text-upper-input p{
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.24px;
+    }
+    .form form input{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 226;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        height: 40px;
+    }
+    footer p{
+        width: 250px;
+    }
+    footer{
+        gap: 100px;
+    }
+    .main a{
+        padding: 16px 28px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+    }
 }

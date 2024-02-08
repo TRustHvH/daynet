@@ -190,7 +190,7 @@ nonclickable{
     font-weight: 600;
     line-height: 40px;
     letter-spacing: 1.44px;
-    width: 266px;
+    max-width: 266px;
     text-decoration: none;
     margin-top: 100px;
     margin-left: 308px;

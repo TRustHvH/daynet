@@ -124,7 +124,7 @@ header{
     max-width: 1360px;
 }
 .changing img{
-    width: 800px;
+    max-width: 800px;
     height: 533px;
     border-radius: 20px;
     margin-bottom: 100px;

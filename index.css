@@ -125,6 +125,9 @@ svg{
     justify-content: center;
     gap: 116px;
 }
+.under-companies-mobile{
+    display: none;
+}
 .tiles{
     display: flex;
     justify-content: center;
@@ -133,7 +136,7 @@ svg{
 }
 .tiles h1{
     color: #04101C;
-    width: 425px;
+    max-width: 425px;
     font-size: 56px;
     font-style: normal;
     font-weight: 720;
@@ -161,9 +164,12 @@ svg{
     font-size: 28px;
     font-style: normal;
     font-weight: 300;
-    line-height: 36px; /* 128.571% */
+    line-height: 36px;
     letter-spacing: 0.56px;
-    width: 491px;
+    max-width: 491px;
+}
+.tiles-2-mobile{
+    display: none;
 }
 .case{
     background: url("img/case.svg") no-repeat center;
@@ -189,7 +195,7 @@ svg{
     font-weight: 720;
     line-height: 64px;
     letter-spacing: 2.24px;
-    width: 343px;
+    max-width: 343px;
 }
 .case p{
     color: #FFF;
@@ -198,12 +204,12 @@ svg{
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0.56px;
-    width: 300px;
+    max-width: 300px;
 }
 .case .car{
     width: 721px;
     height: 504px;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0 0 20px;
 }
 .case nonclickable{
     display: inline-flex;
@@ -278,7 +284,7 @@ svg{
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0.56px;
-    width: 573px;
+    max-width: 573px;
 
 }
 .blog-text-button{
@@ -293,7 +299,7 @@ svg{
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 40px; /* 166.667% */
+    line-height: 40px;
     letter-spacing: 1.44px;
     text-decoration: none;
     max-width: 230px;
@@ -332,6 +338,9 @@ svg{
     line-height: 40px;
     letter-spacing: 1.68px;
 }
+.bunny-mobile{
+    display: none;
+}
 .form{
     height: 1300px;
     background: url("img/form-bg.svg") no-repeat;
@@ -339,7 +348,15 @@ svg{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: flex-start;
+    grid-gap: 300px;
+}
+.forma{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10%;
 }
 .form img{
     pointer-events: none;
@@ -353,8 +370,26 @@ svg{
     padding: 0;
     gap: 24px;
     margin-top: 200px;
-    margin-left: -20%;
     z-index: 2;
+}
+.form-info{
+    display: flex;
+    gap: 32px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.form-info div{
+    display: flex;
+    gap: 30px;
+}
+.form-info p{
+    color: #FFF!important;
+    font-size: 28px!important;
+    font-style: normal!important;
+    font-weight: 300!important;
+    line-height: 36px!important;
+    letter-spacing: 1px!important;
+    max-width: 230px!important;
 }
 .form p{
     color: #FFF;
@@ -363,7 +398,7 @@ svg{
     font-weight: 720;
     line-height: 64px;
     letter-spacing: 2.24px;
-    width: 200px;
+    max-width: 200px;
     margin-block-end: 0;
 }
 .form form input{
@@ -466,6 +501,7 @@ label:before {
 .form span{
     color: #00D4FF;
 }
+
 ::-webkit-input-placeholder{
     color:rgba(246, 249, 252, 0.60);
 }
@@ -492,7 +528,7 @@ footer p{
     position:absolute; z-index: 1; margin-top: -350px; margin-left: 100px
 }
 .under-case{
-    margin-left: 320px;
+    margin-left: 16%;
     display: flex;
     flex-direction: column;
 }
@@ -517,6 +553,11 @@ footer p{
 .daynet-texts{
     width: 100%;
 }
+@media screen and (max-width: 1440px){
+    .form{
+        grid-gap: 200px;
+    }
+}
 @media screen and (max-width: 1280px) {
     .start{
         gap: 90px;
@@ -530,8 +571,8 @@ footer p{
         gap: 32px;
         padding-top: 100px;
     }
-    .tiles img{
-        width: 788px;
+    .tiles-2 img{
+        width: 100%;
     }
 
     .tiles-1{
@@ -547,9 +588,6 @@ footer p{
         width: 650px;
         height: 100%;
         margin-top: -150px;
-    }
-    .daynet img{
-        width: 1280px!important;
     }
     .daynet svg{
         margin-left: 170px;
@@ -571,6 +609,11 @@ footer p{
         gap: 300px;
     }
 }
+@media screen and (max-width: 1080px){
+    .case .car{
+        width: 500px;
+    }
+}
 @media screen and (max-width: 980px) {
     .start{
         gap:100px;
@@ -590,9 +633,7 @@ footer p{
         flex-direction: column;
         z-index: 2;
         margin-left: 10%;
-    }
-    .underlogo-text{
-        margin-top: 100px;
+        margin-top: 225px;
     }
     .g{
         margin-left: 560px;
@@ -605,9 +646,7 @@ footer p{
         align-items: normal;
         flex-direction: column;
     }
-    .tiles img{
-        width: 788px;
-    }
+
     .tiles-1{
         margin-left: 50px;
     }
@@ -622,13 +661,12 @@ footer p{
         margin-left: 100px;
     }
     .case .car{
-        width: 480px;
+        max-width: 100%;
         height: 100%;
         margin-top: -150px;
-        margin-left: -200px;
     }
     .case nonclickable{
-        width: 524px;
+        max-width: 524px;
     }
 
     .daynet img{
@@ -644,7 +682,7 @@ footer p{
     }
     .blog-text .second{
         font-size: 24px;
-        width: 573px;
+        max-width: 573px;
     }
     .blog-text-button{
         display: flex;
@@ -692,10 +730,13 @@ footer p{
     }
 }
 @media screen and (max-width: 720px){
+    #close-mobile-header{
+        pointer-events: unset;
+        cursor: pointer;
+    }
     .main{
         height: 420px;
     }
-
     .prevheader-mobile{
         display: flex;
         height: 85px;
@@ -747,9 +788,7 @@ footer p{
         flex-direction: column;
         align-items: flex-end;
         gap: 28px;
-        margin-top: 120px;
         width: 100%;
-
     }
     .mobile-links a{
         color: #04101C !important;
@@ -770,7 +809,7 @@ footer p{
         font-size: 14px !important;
         font-style: normal !important;
         font-weight: 500 !important;
-        line-height: 14px !important; /* 100% */
+        line-height: 14px !important;
         letter-spacing: 0.28px !important;
         border-radius: 8px !important;
         background: #7A73FF !important;
@@ -800,28 +839,26 @@ footer p{
         line-height: 28px;
         letter-spacing: 0.4px;
     }
-    .tiles img{
-        width: 618px;
-    }
+
     .case h1{
         font-size: 52px;
         font-style: normal;
         font-weight: 720;
-        line-height: 60px; /* 115.385% */
+        line-height: 60px;
         letter-spacing: 1.04px;
     }
     .case h2{
         font-size: 40px;
         font-style: normal;
         font-weight: 720;
-        line-height: 44px; /* 110% */
+        line-height: 44px;
         letter-spacing: 0.8px;
     }
     .case p{
         font-size: 20px;
         font-style: normal;
         font-weight: 300;
-        line-height: 28px; /* 140% */
+        line-height: 28px;
         letter-spacing: 0.4px;
         margin-top: 350px;
     }
@@ -842,13 +879,14 @@ footer p{
         font-weight: 500;
         line-height: 28px;
         letter-spacing: 0.8px;
-        width: 324px;
+        max-width: 324px;
     }
     .case .car{
         margin-top: -100px;
         margin-left: -550px;
         width: 610px;
         height: 350px;
+        max-width: unset;
     }
     #blog h1{
         font-size: 52px;
@@ -862,7 +900,7 @@ footer p{
         font-size: 20px;
         font-style: normal;
         font-weight: 300;
-        line-height: 28px; /* 140% */
+        line-height: 28px;
         letter-spacing: 0.4px;
     }
     .blog-text-button{
@@ -900,7 +938,7 @@ footer p{
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
-        line-height: 28px; /* 140% */
+        line-height: 28px;
         letter-spacing: 0.8px;
     }
     .form img{
@@ -911,7 +949,7 @@ footer p{
         font-size: 40px;
         font-style: normal;
         font-weight: 720;
-        line-height: 44px; /* 110% */
+        line-height: 44px;
         letter-spacing: 0.8px;
         width: unset;
     }
@@ -931,7 +969,7 @@ footer p{
         height: 40px;
     }
     footer p{
-        width: 250px;
+        max-width: 250px;
     }
     footer{
         gap: 100px;
@@ -943,5 +981,277 @@ footer p{
         font-weight: 600;
         line-height: 28px;
         letter-spacing: 0.8px;
+    }
+}
+@media screen and (max-width: 660px){
+    .form form input{
+        width: 250px;
+    }
+    .case .car{
+        width: auto;
+        margin-left: -500px;
+    }
+}
+@media screen and (max-width: 480px){
+    .prevheader-mobile{
+        gap: 100px;
+    }
+    .main-bg{
+        background-position: right;
+    }
+    .start img{
+        width: 319px;
+    }
+    .start p{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0.48px;
+        max-width: 200px;
+    }
+    .logo{
+        margin-left: 5%;
+        gap: 150px;
+        margin-top: 250px;
+    }
+    .companies{
+        padding-top: 200px;
+    }
+    .under-companies{
+        display: none;
+    }
+    .under-companies-mobile{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 337px;
+        justify-content: center;
+        gap: 22.5px;
+    }
+    .tiles h1{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 36px;
+        letter-spacing: 0.56px;
+        max-width: 301px;
+    }
+    .tiles-1{
+        margin-left: 5%;
+    }
+    .tiles-2{
+        display: none;
+    }
+    .tiles-2-mobile{
+        display: flex;
+    }
+    .tiles p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+    }
+    .tiles-single{
+        padding: 12px 20px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+    }
+    .tiles-single svg{
+        width: 28px;
+        height: 28px;
+    }
+    .under-case{
+        margin-left: 5%;
+    }
+    .case h1{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+    }
+    .case{
+        height: 1046px;
+    }
+    .case h2{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 36px;
+        letter-spacing: 0.56px;
+        max-width: 155px;
+    }
+    .case .car{
+        width: 400px;
+        height: unset;
+        margin-left: -340px;
+        margin-top: -110px;
+    }
+    .case p{
+        margin-top: 275px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        max-width: 269px;
+    }
+    .case nonclickable{
+        padding: 12px 20px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+    }
+    .case nonclickable svg{
+        width: 28px;
+        height: 28px;
+    }
+    .case a{
+        padding: 16px 24px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0.64px;
+        max-width: 110px;
+    }
+    #blog{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-left: 5%;
+        gap: 43px;
+    }
+    #blog h1{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+        margin-block-end: 0;
+    }
+    .daynet{
+        height: 495px;
+        padding-top: 86px;
+    }
+    .daynet svg{
+        width: 160px;
+        margin-left: 5%;
+    }
+    .daynet img{
+        height: 300px!important;
+        margin-top: 100px;
+    }
+    .daynet div{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+    }
+    .daynet p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+    }
+    .daynet-1{
+        margin-top: 125px;
+    }
+    .daynet-2{
+        margin-top: 385px;
+    }
+    .daynet-3{
+        margin-top: 308px;
+    }
+    .daynet-4{
+        margin-left: 65.5%;
+        margin-top: 35px;
+    }
+    .form{
+        flex-direction: column;
+        justify-content: center;
+        height: 1050px;
+    }
+    .form img{
+        width: 340px;
+        margin: auto auto 0 0;
+    }
+    .bunny-mobile{
+        display: block;
+    }
+    .default-bunny{
+        display: none;
+    }
+    .form form{
+        margin-top: unset;
+        margin-left: unset;
+    }
+    .form p{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 36px;
+        letter-spacing: 0.56px;
+        max-width: unset;
+    }
+    .for-text-upper-input p{
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.24px;
+    }
+    .form form input{
+        width: 340px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 226;
+        line-height: 20px;
+        letter-spacing: 0.28px;
+        padding: 8px 0 8px 16px;
+    }
+    .form button{
+        padding: 16px 24px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0.64px;
+        margin-top: 35px;
+    }
+    .form-info{
+        flex-direction: row;
+    }
+    .form-info p{
+        font-size: 16px!important;
+        font-style: normal!important;
+        font-weight: 300!important;
+        line-height: 24px!important;
+        letter-spacing: 0.32px!important;
+        max-width: 140px!important;
+    }
+}
+@media screen and (max-width: 380px){
+    .case .car{
+        width: 350px;
+    }
+    .prevheader-mobile{
+        gap: 70px;
+    }
+    .form form input{
+        width: 320px;
+    }
+    .forma{
+        margin-right: 0;
+    }
+    .tiles-2-mobile img{
+        height: 100px;
     }
 }

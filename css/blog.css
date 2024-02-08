@@ -26,7 +26,7 @@ footer{
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0.56px;
-    width: 573px;
+    max-width: 573px;
     transition: 0.4s;
 }
 .blog-text a:hover{
@@ -191,7 +191,7 @@ h2{
         font-weight: 720;
         line-height: 60px;
         letter-spacing: 2.08px;
-        width: 720px;
+        max-width: 720px;
     }
     .small-text{
         margin-left: 10%;
@@ -217,12 +217,12 @@ h2{
         font-weight: 300;
         line-height: 32px;
         letter-spacing: 0.48px;
-        width: 800px;
+        max-width: 800px;
     }
 }
 @media screen and (max-width: 720px){
     .changing-h1{
-        width: 580px;
+        max-width: 580px;
         font-size: 40px;
         font-style: normal;
         font-weight: 720;

@@ -181,7 +181,7 @@ nonclickable span{
     letter-spacing: 0.56px;
 }
 .opacity-continue p{
-    width: 493px;
+    max-width: 493px;
     color: #04101C;
     font-size: 28px;
     font-style: normal;
@@ -274,4 +274,96 @@ nonclickable span{
         display: none;
     }
 }
-
+@media screen and (max-width: 480px) {
+    .form {
+        height: 1200px !important;
+    }
+    .cases h1{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+        margin-left: 10%;
+    }
+    .changing{
+        margin-left: 10%;
+    }
+    .opacity-start h2{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+        display: flex;
+        flex-direction: column;
+    }
+    .opacity-start span{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0.48px;
+    }
+    .img-for-crop{
+        width: fit-content;
+        margin: 0 0 0 auto;
+    }
+    .changing img{
+        width: 360px;
+        height: 252px;
+        border-radius: 20px 0 0 20px;
+        margin-bottom: 28px;
+    }
+    .changing nonclickable{
+        padding: 16px 45px 16px 44px;
+        gap: 36px;
+    }
+    .changing nonclickable span{
+        margin: 0;
+        font-size: 16px!important;
+        font-style: normal!important;
+        font-weight: 500!important;
+        line-height: 24px!important;
+        letter-spacing: 0.64px!important;
+        max-width: 195px!important;
+    }
+    .changing nonclickable svg{
+        width: 40px;
+        height: 40px;
+        overflow: unset;
+    }
+    .opacity-continue h3{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 36px;
+        letter-spacing: 0.56px;
+        margin: 0!important;
+    }
+    .opacity-continue li{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        max-width: 340px;
+    }
+    .opacity-continue svg{
+        width: 340px;
+    }
+}
+@media screen and (max-width: 420px){
+    .changing img{
+        width: 320px;
+        height: auto;
+    }
+    .opacity-continue svg{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 380px){
+    .changing img{
+        width: 300px;
+    }
+}

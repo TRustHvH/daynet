@@ -297,3 +297,95 @@ nonclickable{
         width: fit-content;
     }
 }
+@media screen and (max-width: 480px) {
+    .form {
+        height: 1200px !important;
+    }
+    .services-start h1{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+    }
+    .services-start h2{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 36px;
+        letter-spacing: 0.56px;
+        margin: 0;
+    }
+    .services-start p{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0.48px;
+        margin: 0;
+    }
+    .op-1{
+        gap: 36px;
+    }
+    .op-1 div{
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+    .opacity-block-svg{
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .changing{
+        padding-top: 50px;
+    }
+    .changing h1{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 44px;
+        letter-spacing: 0.8px;
+        margin-left: 10%;
+    }
+    .changing p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        max-width: 300px;
+    }
+    .opacity-block-svg svg{
+        width: 340px;
+    }
+    .under-svg{
+        font-size: 14px!important;
+        font-style: normal!important;
+        font-weight: 226!important;
+        line-height: 20px!important;
+        letter-spacing: 0.28px!important;
+        max-width: 225px!important;
+    }
+    nonclickable{
+        padding: 12px 24px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+        margin-left: 10%;
+    }
+    nonclickable svg{
+        width: 28px;
+        height: 28px;
+    }
+    .changing a{
+        padding: 16px 24px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0.64px;
+        margin-left: 10%;
+    }
+}

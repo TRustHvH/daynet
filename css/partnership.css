@@ -66,3 +66,20 @@ header{
         margin-left: 100px;
     }
 }
+@media screen and (max-width: 480px){
+    .form{
+        height: 1200px!important;
+    }
+    .begin{
+        align-items: flex-start;
+    }
+    .begin h1{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 36px;
+        letter-spacing: 0.56px;
+        max-width: 308px;
+        margin-left: 10%;
+    }
+}

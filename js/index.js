@@ -21,23 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("mobile-header-button").addEventListener("click", mobile_menu_opener);
     document.getElementById("close-mobile-header").addEventListener("click", mobile_menu_opener);
-    
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-        });
-    }
 
-// Прокрутка вниз страницы с плавным эффектом
-    function scrollToBottom() {
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            left: 0,
-            behavior: 'smooth'
-        });
-    }
 });
 // function decreaseSize() {
 //     const images = document.getElementsByTagName('img');

@@ -1237,6 +1237,19 @@ footer p{
         letter-spacing: 0.32px!important;
         max-width: 140px!important;
     }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start!important;
+        gap: 52px;
+        height: 250px;
+    }
+    footer p{
+        text-align: left;
+    }
+    footer p, footer svg{
+        margin-left: 5%;
+    }
 }
 @media screen and (max-width: 380px){
     .case .car{

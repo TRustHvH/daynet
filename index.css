@@ -159,7 +159,7 @@ svg{
     line-height: 40px;
     letter-spacing: 1.68px;
 }
-.tiles p{
+.tiles-1 p{
     color: #04101C;
     font-size: 28px;
     font-style: normal;
@@ -171,9 +171,231 @@ svg{
 .tiles-2-mobile{
     display: none;
 }
+@keyframes tiles-open {
+    0%{
+        transform: scale(1);
+        opacity: .25;
+    }
+    10%{
+        transform: scale(1.2);
+        opacity: 1;
+        background: #FFFFFF;
+        filter: grayscale(0%);
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 1;
+        background: #FFFFFF;
+        filter: grayscale(0%);
+    }
+}
+@keyframes tiles-close {
+    from{
+        transform: scale(1.2);
+        opacity: 1;
+        background: #FFFFFF;
+
+    }
+    to{
+        transform: scale(1);
+        opacity: .25;
+    }
+}
+.focused {
+    transform-origin: center center!important;
+    animation: tiles-open 5s linear;
+}
+.unfocused{
+    transform-origin: center center!important;
+    animation: tiles-close 1s linear;
+}
+.focused span{
+    opacity: 1!important;
+    transition: opacity 1.5s linear!important;
+    display: block!important;
+}
+.blocks {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    transition: .5s linear;
+    width: 638px;
+    height: 826px;
+}
+.blockss{
+    display: flex;
+    gap: 76px;
+    position: relative;
+    height: 68px;
+    align-items: center;
+    width: max-content;
+}
+.blocksss{
+    padding: 18px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block span{
+    opacity: 0;
+    transition: opacity .5s linear;
+    max-width: 95px;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.24px;
+    display: none;
+}
+.block {
+    position: absolute;
+    border: 1px solid #ECECEC;
+    filter: grayscale(100%);
+    opacity: .25;
+    background: #F9FBFF;
+    transform-origin: center;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
+}
+.block-always{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
+    background: #FFFFFF;
+    padding: 18px;
+    transition: 1.5s linear;
+    gap: 12px;
+    height: 55px;
+}
+.block:hover {
+    transform-origin: center center!important;
+    animation: tiles-open 5s linear;
+}
+.block:hover span{
+    opacity: 1;
+    transition: opacity 1s linear;
+    display: block;
+}
+.block-first, .block-second{
+    left: 110px;
+}
+.block-fourth{
+    left: 120px;
+}
+.block-fifth{
+    left: 58px;
+}
+.block-sixth{
+    left: 104px;
+}
+.line{
+    position: absolute;
+}
+.line img svg path{
+    stroke: black;
+}
+.line10{
+    top: 50px;
+}
+.line11{
+
+}
+.line12{
+
+}
+.line15{
+
+}
+.line16{
+
+}
+.line17{
+
+}
+.line18{
+
+}
+.line19{
+
+}
+.line20{
+
+}
+.line21{
+
+}
+.line22{
+
+}
+.line23{
+
+}
+.line24{
+
+}
+.line25{
+
+}
+.line26{
+
+}
+.line27{
+
+}
+.line29{
+
+}
+.line30{
+
+}
+.line31{
+
+}
+.line32{
+
+}
+.line33{
+
+}
+.line34{
+
+}
+.line35{
+
+}
+.line36{
+
+}
+.line37{
+
+}
+.line38{
+
+}
+.line39{
+
+}
+.line40{
+
+}
+.line41{
+
+}
 .case{
     background: url("img/case.svg") no-repeat center;
-    height: 1247.5px;;
+    height: 1247.5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -571,9 +793,6 @@ footer p{
         gap: 32px;
         padding-top: 100px;
     }
-    .tiles-2 img{
-        width: 100%;
-    }
 
     .tiles-1{
         margin-left: 20px;
@@ -649,10 +868,6 @@ footer p{
 
     .tiles-1{
         margin-left: 50px;
-    }
-    .tiles-2{
-        display: flex;
-        justify-content: center;
     }
     .bunny{
         display: none;
@@ -830,7 +1045,7 @@ footer p{
         line-height: 28px;
         letter-spacing: 0.8px;
     }
-    .tiles p{
+    .tiles-1 p{
         width: unset;
         max-width: 570px;
         font-size: 20px;
@@ -1064,6 +1279,7 @@ footer p{
         width: 28px;
         height: 28px;
     }
+
     .under-case{
         margin-left: 5%;
     }

@@ -1,8 +1,8 @@
 window.addEventListener("mousewheel", function(e) {
     if (e.ctrlKey) {
-    e.preventDefault();
-    return false;
-}
+        e.preventDefault();
+        return false;
+    }
 }, {passive:false});
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -18,11 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
             is_opened = false
         }
     }
-
     document.getElementById("mobile-header-button").addEventListener("click", mobile_menu_opener);
     document.getElementById("close-mobile-header").addEventListener("click", mobile_menu_opener);
-
 });
+
 // function decreaseSize() {
 //     const images = document.getElementsByTagName('img');
 //     const svgs = document.getElementsByTagName('svg');

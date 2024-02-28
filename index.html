@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
     <script src="js/index.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/animation.js"></script>
 </head>
 <body>
     <header>
@@ -135,307 +137,505 @@
         <div class="tiles-2">
             <div class="blocks">
                 <div class="blockss block-first">
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/poiskovaya_vidacha.svg" alt=""><span class="material-symbols-outlined">Поисковая выдача</span></div>
+                    <div class="blocksss" style="">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/poiskovaya_vidacha.svg">
+                                <span>Поисковая выдача</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/poiskovaya-vidacha.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/poiskovaya_vidacha.svg" class="" style="margin-top: 18px;">
+                                <span>Поисковая выдача</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/ruchnoy.svg" alt=""><span class="material-symbols-outlined">Ручной</span></div>
+                    <div class="blocksss" style="margin-left: 4px">
+                         <div class="animation">
+                             <div class="animation-size-controller">
+                                 <img src="img/tiles/shown/ruchnoy.svg">
+                                 <span>Ручной</span>
+                             </div>
+                             <div class="animation-hidden" style="height: 62px;">
+                                 <img src="img/tiles/hidden/ruchnoy.svg"   class="">
+                             </div>
+                             <div class="animation-shown">
+                                 <img src="img/tiles/shown/ruchnoy.svg" class="" style="margin-top: 18px;">
+                                 <span>Ручной</span>
+                             </div>
+                         </div >
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/auto.svg" alt=""><span class="material-symbols-outlined">Авто</span></div>
+                    <div class="blocksss" style="margin-left: -20px">
+                         <div class="animation">
+                             <div class="animation-size-controller">
+                                 <img src="img/tiles/shown/auto.svg">
+                                 <span>Авто</span>
+                             </div>
+                             <div class="animation-hidden" style="height: 62px;">
+                                 <img src="img/tiles/hidden/auto.svg"   class="">
+                             </div>
+                             <div class="animation-shown">
+                                 <img src="img/tiles/shown/auto.svg" class="" style="margin-top: 18px;">
+                                 <span>Авто</span>
+                             </div>
+                         </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/targetirovanaya.svg" alt=""><span class="material-symbols-outlined" style="max-width: 150px">Таргетированная</span></div>
+                    <div class="blocksss" style="margin-left: -33px">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/targetirovanaya.svg">
+                                <span>Таргетированная</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/targetirovanaya.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/targetirovanaya.svg" class="" style="margin-top: 18px;">
+                                <span>Таргетированная</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="blockss block-second">
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/podskazki.svg" alt=""><span class="material-symbols-outlined">Подсказки</span></div>
+                    <div class="blocksss" style="margin-left: 1px; margin-top: -1px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/podskazki.svg">
+                                <span>Подсказки</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/podskazki.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/podskazki.svg" class="" style="margin-top: 18px;">
+                                <span>Подсказки</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/monitoring.svg" alt=""><span class="material-symbols-outlined">Мониторинг</span></div>
+                    <div class="blocksss" style="margin-left: 13px; margin-top: -1px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/monitoring.svg">
+                                <span>Мониторинг</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/monitoring.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/monitoring.svg" class="" style="margin-top: 18px;">
+                                <span>Мониторинг</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/reklama.svg" alt=""><span class="material-symbols-outlined">Реклама</span></div>
+                    <div class="blocksss" style="margin-left: 9px; margin-top: 8px">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/reklama.svg">
+                                <span>Реклама</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/reclama.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/reklama.svg" class="" style="margin-top: 18px;">
+                                <span>Реклама</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/kontextnaya.svg" alt=""><span class="material-symbols-outlined">Контекстная</span></div>
+                    <div class="blocksss" style="margin-left: -23px; margin-top: 10px">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/kontextnaya.svg">
+                                <span>Контекстная</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/kontextnaya.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/kontextnaya.svg" class="" style="margin-top: 18px;">
+                                <span>Контекстная</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/forumi.svg" alt=""><span class="material-symbols-outlined">Форумы</span></div>
+                    <div class="blocksss" style="margin-left: 14px; margin-top: -3px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/forumi.svg">
+                                <span>Форумы</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/forumi.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/forumi.svg" class="" style="margin-top: 18px;">
+                                <span>Форумы</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="blockss block-third">
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/konkurenti.svg" alt=""><span class="material-symbols-outlined">Конкуренты</span></div>
+                    <div class="blocksss" style="margin-top: -8px;margin-left: 1px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/konkurenti.svg">
+                                <span>Конкуренты</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/konkurenti.svg" class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/konkurenti.svg" class="" style="margin-top: 18px;">
+                                <span>Конкуренты</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/serm.svg" alt=""><span class="material-symbols-outlined">SERM</span></div>
+                    <div class="blocksss" style="margin-top: -8px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/serm.svg">
+                                <span>SERM</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/serm.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/serm.svg" class="" style="margin-top: 18px;">
+                                <span>SERM</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/orm.svg" alt=""><span class="material-symbols-outlined">ORM</span></div>
+                    <div class="blocksss" style="margin-left: -30px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/orm.svg">
+                                <span>ORM</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/orm.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/orm.svg" class="" style="margin-top: 18px;">
+                                <span>ORM</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/daynet.svg" alt=""><span><svg xmlns="http://www.w3.org/2000/svg" width="52" height="8" viewBox="0 0 52 8" fill="none">
-                        <path d="M0.512788 0H3.55607C6.73313 0 8.07084 1.26857 8.07084 4C8.07084 6.73143 6.73313 8 3.55607 8H0.512788C0.234099 8 0 7.77143 0 7.48571V0.537143C0 0.24 0.222951 0 0.512788 0ZM3.50034 1.57714H2.05115V6.42286H3.50034C5.49575 6.42286 6.01969 5.71429 6.01969 4C6.01969 2.28571 5.49575 1.57714 3.50034 1.57714Z" fill="#04101C"/>
-                        <path d="M8.54148 7.48571L9.91263 2.17143C10.3697 0.4 11.9415 0 13.5244 0H16.4562C16.7238 0 16.9244 0.24 16.9244 0.514286V7.48571C16.9244 7.77143 16.6903 8 16.4117 8H15.3861C15.0962 8 14.8733 7.77143 14.8733 7.47429V6.06857H11.0051L10.6372 7.47429C10.5592 7.77143 10.2805 8 9.99066 8H8.92049C8.63066 8 8.46344 7.77143 8.54148 7.48571ZM11.8857 2.69714L11.4064 4.49143H14.8733V1.57714H13.3238C12.6215 1.57714 12.0641 2.01143 11.8857 2.69714Z" fill="#04101C"/>
-                        <path d="M20.8148 7.48571V5.14286L17.9053 0.525714C17.738 0.262857 17.8161 0 18.0948 0H19.1315C19.5774 0 19.8895 0.228572 20.079 0.525714L21.8403 3.31429L23.6017 0.525714C23.7912 0.228572 24.1033 0 24.5492 0H25.5859C25.8646 0 25.9427 0.262857 25.7754 0.525714L22.8659 5.14286V7.48571C22.8659 7.77143 22.6318 8 22.3531 8H21.3276C21.0489 8 20.8148 7.77143 20.8148 7.48571Z" fill="#04101C"/>
-                        <path d="M28.23 8H27.2713C26.9926 8 26.7585 7.76 26.7585 7.47429V0.525714C26.7585 0.24 26.9815 0 27.2602 0H28.8654C29.1329 0 29.4451 0.262857 29.6123 0.525714L32.9008 5.71429V0.514286C32.9008 0.228572 33.1349 0 33.4136 0H34.35C34.6398 0 34.8628 0.228572 34.8628 0.525714V7.47429C34.8628 7.76 34.6398 8 34.35 8H32.5441C32.2543 8 31.931 7.76 31.7526 7.47429L28.7428 2.68571V7.47429C28.7428 7.76 28.5087 8 28.23 8Z" fill="#04101C"/>
-                        <path d="M43.2144 0C43.4931 0 43.7272 0.228572 43.7272 0.525714V1.05143C43.7272 1.34857 43.4931 1.57714 43.2144 1.57714H38.4767V3.2H42.5567C42.8354 3.2 43.0695 3.44 43.0695 3.72571V4.25143C43.0695 4.53714 42.8354 4.77714 42.5567 4.77714H38.4767V6.42286H43.2033C43.482 6.42286 43.7049 6.65143 43.7049 6.93714V7.47429C43.7049 7.76 43.482 8 43.1921 8H36.9383C36.6485 8 36.4255 7.76 36.4255 7.46286V0.514286C36.4255 0.228572 36.6596 0 36.9383 0H43.2144Z" fill="#04101C"/>
-                        <path d="M44.5757 0H51.4872C51.7771 0 52 0.228572 52 0.525714V1.05143C52 1.34857 51.7771 1.57714 51.4872 1.57714H49.057V7.48571C49.057 7.77143 48.8229 8 48.5443 8H47.5187C47.24 8 47.0059 7.77143 47.0059 7.48571V1.57714H44.5757C44.2859 1.57714 44.0629 1.34857 44.0629 1.05143V0.525714C44.0629 0.228572 44.2859 0 44.5757 0Z" fill="#04101C"/>
-                    </svg></span></div>
+                    <div class="blocksss" style="margin-top: 16px;margin-left: -23px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/daynet.svg">
+                                <span><svg width="52.000000" height="8.000000" viewBox="0 0 52 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs/>
+                                <path id="DAYNET" d="M0.513672 0L3.55664 0C6.73242 0 8.07031 1.26855 8.07031 4C8.07031 6.73145 6.73242 8 3.55664 8L0.513672 8C0.234375 8 0 7.77148 0 7.48572L0 0.537109C0 0.23999 0.222656 0 0.513672 0ZM9.91211 2.17139L8.54102 7.48572C8.46289 7.77148 8.63086 8 8.91992 8L9.99023 8C10.2812 8 10.5586 7.77148 10.6367 7.47424L11.0059 6.0686L14.873 6.0686L14.873 7.47424C14.873 7.77148 15.0957 8 15.3867 8L16.4121 8C16.6895 8 16.9238 7.77148 16.9238 7.48572L16.9238 0.514282C16.9238 0.23999 16.7246 0 16.457 0L13.5254 0C11.9414 0 10.3691 0.400024 9.91211 2.17139ZM20.8145 7.48572L20.8145 5.14282L17.9043 0.525757C17.7383 0.262817 17.8164 0 18.0957 0L19.1309 0C19.5781 0 19.8887 0.228516 20.0781 0.525757L21.8398 3.31433L23.6016 0.525757C23.791 0.228516 24.1035 0 24.5488 0L25.5859 0C25.8652 0 25.9434 0.262817 25.7754 0.525757L22.8652 5.14282L22.8652 7.48572C22.8652 7.77148 22.6309 8 22.3535 8L21.3281 8C21.0488 8 20.8145 7.77148 20.8145 7.48572ZM27.2715 8L28.2305 8C28.5078 8 28.7422 7.76001 28.7422 7.47424L28.7422 2.68567L31.752 7.47424C31.9316 7.76001 32.2539 8 32.5449 8L34.3496 8C34.6406 8 34.8633 7.76001 34.8633 7.47424L34.8633 0.525757C34.8633 0.228516 34.6406 0 34.3496 0L33.4141 0C33.1348 0 32.9004 0.228516 32.9004 0.514282L32.9004 5.71423L29.6113 0.525757C29.4453 0.262817 29.1328 0 28.8652 0L27.2598 0C26.9824 0 26.7578 0.23999 26.7578 0.525757L26.7578 7.47424C26.7578 7.76001 26.9922 8 27.2715 8ZM43.2148 0C43.4922 0 43.7266 0.228516 43.7266 0.525757L43.7266 1.05139C43.7266 1.34851 43.4922 1.57715 43.2148 1.57715L38.4766 1.57715L38.4766 3.19995L42.5566 3.19995C42.8359 3.19995 43.0703 3.43994 43.0703 3.72571L43.0703 4.25146C43.0703 4.53711 42.8359 4.7771 42.5566 4.7771L38.4766 4.7771L38.4766 6.42285L43.2031 6.42285C43.4824 6.42285 43.7051 6.65149 43.7051 6.93713L43.7051 7.47424C43.7051 7.76001 43.4824 8 43.1914 8L36.9375 8C36.6484 8 36.4258 7.76001 36.4258 7.46289L36.4258 0.514282C36.4258 0.228516 36.6602 0 36.9375 0L43.2148 0ZM51.4863 0L44.5762 0C44.2852 0 44.0625 0.228516 44.0625 0.525757L44.0625 1.05139C44.0625 1.34851 44.2852 1.57715 44.5762 1.57715L47.0059 1.57715L47.0059 7.48572C47.0059 7.77148 47.2402 8 47.5195 8L48.5449 8C48.8223 8 49.0566 7.77148 49.0566 7.48572L49.0566 1.57715L51.4863 1.57715C51.7773 1.57715 52 1.34851 52 1.05139L52 0.525757C52 0.228516 51.7773 0 51.4863 0ZM3.5 1.57715L2.05078 1.57715L2.05078 6.42285L3.5 6.42285C5.49609 6.42285 6.01953 5.71423 6.01953 4C6.01953 2.28577 5.49609 1.57715 3.5 1.57715ZM11.4062 4.49146L11.8867 2.69714C12.0645 2.01147 12.6211 1.57715 13.3242 1.57715L14.873 1.57715L14.873 4.49146L11.4062 4.49146Z" fill="#04101C" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            </svg></span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/daynet.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/daynet.svg" class="" style="margin-top: 18px;">
+                                <span><svg width="52.000000" height="8.000000" viewBox="0 0 52 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs/>
+                                <path id="DAYNET" d="M0.513672 0L3.55664 0C6.73242 0 8.07031 1.26855 8.07031 4C8.07031 6.73145 6.73242 8 3.55664 8L0.513672 8C0.234375 8 0 7.77148 0 7.48572L0 0.537109C0 0.23999 0.222656 0 0.513672 0ZM9.91211 2.17139L8.54102 7.48572C8.46289 7.77148 8.63086 8 8.91992 8L9.99023 8C10.2812 8 10.5586 7.77148 10.6367 7.47424L11.0059 6.0686L14.873 6.0686L14.873 7.47424C14.873 7.77148 15.0957 8 15.3867 8L16.4121 8C16.6895 8 16.9238 7.77148 16.9238 7.48572L16.9238 0.514282C16.9238 0.23999 16.7246 0 16.457 0L13.5254 0C11.9414 0 10.3691 0.400024 9.91211 2.17139ZM20.8145 7.48572L20.8145 5.14282L17.9043 0.525757C17.7383 0.262817 17.8164 0 18.0957 0L19.1309 0C19.5781 0 19.8887 0.228516 20.0781 0.525757L21.8398 3.31433L23.6016 0.525757C23.791 0.228516 24.1035 0 24.5488 0L25.5859 0C25.8652 0 25.9434 0.262817 25.7754 0.525757L22.8652 5.14282L22.8652 7.48572C22.8652 7.77148 22.6309 8 22.3535 8L21.3281 8C21.0488 8 20.8145 7.77148 20.8145 7.48572ZM27.2715 8L28.2305 8C28.5078 8 28.7422 7.76001 28.7422 7.47424L28.7422 2.68567L31.752 7.47424C31.9316 7.76001 32.2539 8 32.5449 8L34.3496 8C34.6406 8 34.8633 7.76001 34.8633 7.47424L34.8633 0.525757C34.8633 0.228516 34.6406 0 34.3496 0L33.4141 0C33.1348 0 32.9004 0.228516 32.9004 0.514282L32.9004 5.71423L29.6113 0.525757C29.4453 0.262817 29.1328 0 28.8652 0L27.2598 0C26.9824 0 26.7578 0.23999 26.7578 0.525757L26.7578 7.47424C26.7578 7.76001 26.9922 8 27.2715 8ZM43.2148 0C43.4922 0 43.7266 0.228516 43.7266 0.525757L43.7266 1.05139C43.7266 1.34851 43.4922 1.57715 43.2148 1.57715L38.4766 1.57715L38.4766 3.19995L42.5566 3.19995C42.8359 3.19995 43.0703 3.43994 43.0703 3.72571L43.0703 4.25146C43.0703 4.53711 42.8359 4.7771 42.5566 4.7771L38.4766 4.7771L38.4766 6.42285L43.2031 6.42285C43.4824 6.42285 43.7051 6.65149 43.7051 6.93713L43.7051 7.47424C43.7051 7.76001 43.4824 8 43.1914 8L36.9375 8C36.6484 8 36.4258 7.76001 36.4258 7.46289L36.4258 0.514282C36.4258 0.228516 36.6602 0 36.9375 0L43.2148 0ZM51.4863 0L44.5762 0C44.2852 0 44.0625 0.228516 44.0625 0.525757L44.0625 1.05139C44.0625 1.34851 44.2852 1.57715 44.5762 1.57715L47.0059 1.57715L47.0059 7.48572C47.0059 7.77148 47.2402 8 47.5195 8L48.5449 8C48.8223 8 49.0566 7.77148 49.0566 7.48572L49.0566 1.57715L51.4863 1.57715C51.7773 1.57715 52 1.34851 52 1.05139L52 0.525757C52 0.228516 51.7773 0 51.4863 0ZM3.5 1.57715L2.05078 1.57715L2.05078 6.42285L3.5 6.42285C5.49609 6.42285 6.01953 5.71423 6.01953 4C6.01953 2.28577 5.49609 1.57715 3.5 1.57715ZM11.4062 4.49146L11.8867 2.69714C12.0645 2.01147 12.6211 1.57715 13.3242 1.57715L14.873 1.57715L14.873 4.49146L11.4062 4.49146Z" fill="#04101C" fill-opacity="1.000000" fill-rule="evenodd"/>
+                            </svg></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/smi.svg" alt=""><span class="material-symbols-outlined">СМИ</span></div>
+                    <div class="blocksss" style="margin-top: 16px;margin-left: -23px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/smi.svg">
+                                <span>СМИ</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/smi.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/smi.svg" class="" style="margin-top: 18px;">
+                                <span>СМИ</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/spravochniki.svg" alt=""><span class="material-symbols-outlined">Справочники</span></div>
+                    <div class="blocksss" style="margin-top: -7px;margin-left: -33px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/spravochniki.svg">
+                                <span>Справочники</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/spravochniki.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/spravochniki.svg" class="" style="margin-top: 18px;">
+                                <span>Справочники</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="blockss block-fourth">
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/analitika.svg" alt=""><span class="material-symbols-outlined">Аналитика</span></div>
+                    <div class="blocksss" style="margin-top: -13px;margin-left: -9px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/analitika.svg">
+                                <span>Аналитика</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/analitica.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/analitika.svg" class="" style="margin-top: 18px;">
+                                <span>Аналитика</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/orm-strategia.svg" alt=""><span class="material-symbols-outlined">ORM-стратегия</span></div>
+                    <div class="blocksss" style="margin-top: -13px;margin-left: 2px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/orm-strategia.svg">
+                                <span>ORM-<br>стратегия</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/orm-strategia.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/orm-strategia.svg" class="" style="margin-top: 18px;">
+                                <span>ORM-<br>стратегия</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/smm.svg" alt=""><span class="material-symbols-outlined">SMM</span></div>
+                    <div class="blocksss" style="margin-left: 8px;margin-top: -18px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/smm.svg">
+                                <span>SMM</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/smm.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/smm.svg" class="" style="margin-top: 18px;">
+                                <span>SMM</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/otzivi-i-reytingi.svg" alt=""><span class="material-symbols-outlined">Отзывы</span><span> и рейтинги</span></div>
+                    <div class="blocksss" style="margin-top: -15px;margin-left: -24px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/otzivi-i-reytingi.svg">
+                                <span style="white-space: nowrap;">Отзывы<br>и рейтинги</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/otzivi-i-reytingi.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/otzivi-i-reytingi.svg" class="" style="margin-top: 18px;">
+                                <span style="white-space: nowrap;">Отзывы<br>и рейтинги</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/mob-prilozheniya.svg" alt=""><span class="material-symbols-outlined">Мобильные приложения</span></div>
+                    <div class="blocksss" style="margin-top: -16px;margin-left: 4px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/mob-prilozheniya.svg">
+                                <span>Мобильные приложения</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/mob-prilozhenia.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/mob-prilozheniya.svg" class="" style="margin-top: 18px;">
+                                <span>Мобильные приложения</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="blockss block-fifth">
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/reputacia-klienta.svg" alt=""><span class="material-symbols-outlined">Репутация клиента</span></div>
+                    <div class="blocksss" style="margin-top: 12px;margin-left: -9px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/reputacia-klienta.svg">
+                                <span>Репутация клиента</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/reputacia-clienta.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/reputacia-klienta.svg" class="" style="margin-top: 18px;">
+                                <span>Репутация клиента</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/socials.svg" alt=""><span class="material-symbols-outlined">Соцсети</span></div>
+                    <div class="blocksss" style="margin-top: 18px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/socials.svg">
+                                <span>Соцсети</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/socials.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/socials.svg" class="" style="margin-top: 18px;">
+                                <span>Соцсети</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/officials-pretstavitel.svg" alt=""><span class="material-symbols-outlined">Официальный представитель</span></div>
+                    <div class="blocksss" style="margin-top: 12px;margin-left: -13px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/officials-pretstavitel.svg">
+                                <span>Официальный представитель</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/off-pretst.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/officials-pretstavitel.svg" class="" style="margin-top: 18px;">
+                                <span>Официальный представитель</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/karti.svg" alt=""><span class="material-symbols-outlined">Карты</span></div>
+                    <div class="blocksss" style="margin-left: 29px;margin-top: 12px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/karti.svg">
+                                <span>Карты</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/karti.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/karti.svg" class="" style="margin-top: 18px;">
+                                <span>Карты</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/otzoviki.svg" alt=""><span class="material-symbols-outlined">Отзовики</span></div>
+                    <div class="blocksss" style="margin-left: -26px;margin-top: 13px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/otzoviki.svg">
+                                <span>Отзовики</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/otzovik.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/otzoviki.svg" class="" style="margin-top: 18px;">
+                                <span>Отзовики</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="blockss block-sixth">
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/hm.svg" alt=""><span class="material-symbols-outlined">HM</span></div>
+                    <div class="blocksss" style="margin-top: 40px;margin-left: -9px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/hm.svg">
+                                <span>HM</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/hm.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/hm.svg" class="" style="margin-top: 18px;">
+                                <span>HM</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/smrm.svg" alt=""><span class="material-symbols-outlined">SMRM</span></div>
+                    <div class="blocksss" style="margin-top: 41px;margin-left: -33px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/smrm.svg">
+                                <span>SMRM</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/smrm.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/smrm.svg" class="" style="margin-top: 18px;">
+                                <span>SMRM</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/aktualizacia.svg" alt=""><span class="material-symbols-outlined">Актуализация</span></div>
+                    <div class="blocksss" style="margin-left: -26px;margin-top: 40px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/aktualizacia.svg">
+                                <span>Актуализация</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/actualizacia.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/aktualizacia.svg" class="" style="margin-top: 18px;">
+                                <span>Актуализация</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/officials-otveti.svg" alt=""><span class="material-symbols-outlined">Официальные ответы</span></div>
+                    <div class="blocksss" style="margin-left: 22px;margin-top: 41px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/officials-otveti.svg">
+                                <span>Официальные ответы</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/off-otveti.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/officials-otveti.svg" class="" style="margin-top: 18px;">
+                                <span>Официальные ответы</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blocksss">
-                        <div class="block unfocused"><img src="img/tiles/udalenie-negativa.svg" alt=""><span class="material-symbols-outlined">Удаление негатива</span></div>
+                    <div class="blocksss" style="margin-top: 40px;margin-left: 23px;">
+                        <div class="animation">
+                            <div class="animation-size-controller">
+                                <img src="img/tiles/shown/udalenie-negativa.svg">
+                                <span>Удаление негатива</span>
+                            </div>
+                            <div class="animation-hidden" style="height: 62px;">
+                                <img src="img/tiles/hidden/udalenie-negativa.svg"   class="">
+                            </div>
+                            <div class="animation-shown">
+                                <img src="img/tiles/shown/udalenie-negativa.svg" class="" style="margin-top: 18px;">
+                                <span>Удаление негатива</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="lines">
-                    <div class="line line10"><svg width="50" height="2" viewBox="0 0 50 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path id="Line 10" d="M0 1L50 1" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line11"><svg width="39" height="2" viewBox="0 0 39 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 1H39" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line12"><svg width="50" height="2" viewBox="0 0 50 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path id="Line 12" d="M50 1L0 1" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line15"><svg width="2" height="72" viewBox="0 0 2 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 72L1 1.90735e-06" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line16"><svg width="2" height="52" viewBox="0 0 2 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0L1 52" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line17"><svg width="21" height="101" viewBox="0 0 21 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M-0.000834242 100.499L4.49862 100.499C13.3351 100.499 20.4985 93.3356 20.4987 84.4992L20.4998 -5.15895e-05" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line18"><svg width="9" height="101" viewBox="0 0 9 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 101L8 9C8 4.58172 4.41828 1 -2.45371e-07 1V1" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line19"><svg width="2" height="67" viewBox="0 0 2 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 67L1 1.90735e-06" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line20"><svg width="116" height="67" viewBox="0 0 116 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M115 0V0C115 6.62742 109.627 12 103 12L17 12C8.16344 12 1 19.1634 1 28V67" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line21"><svg width="24" height="100" viewBox="0 0 24 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23 100L23 17C23 8.16344 15.8366 0.999994 7 0.999994L-4.02639e-07 0.999993" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line22"><svg width="59" height="233" viewBox="0 0 59 233" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 1.00001H42C50.8366 1.00001 58 8.16346 58 17L58 233" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line23"><svg width="40" height="2" viewBox="0 0 40 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40 1H0" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line24"><svg width="2" height="39" viewBox="0 0 2 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0L1 39" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line25"><svg width="125" height="67" viewBox="0 0 125 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M125 1H120.837C112.001 1 104.837 8.16344 104.837 17V31.5C104.837 40.3366 97.674 47.5 88.8374 47.5H17C8.16345 47.5 1 54.6634 1 63.5V67" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line26"><svg width="39" height="98" viewBox="0 0 39 98" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M38 98L38 17C38 8.16344 30.8366 0.999998 22 0.999998H0" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line27"><svg width="2" height="81" viewBox="0 0 2 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0L0.999996 81" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line29"><svg width="2" height="79" viewBox="0 0 2 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0L0.999998 79" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line30"><svg width="89" height="78" viewBox="0 0 89 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M88 0L88 34.5143C88 43.3508 80.8366 50.5143 72 50.5143L17 50.5143C8.16344 50.5143 0.999999 57.6777 0.999999 66.5143L0.999998 78" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line31"><svg width="104" height="215" viewBox="0 0 104 215" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M87 1V1C95.8366 1 103 8.16344 103 17V177.551C103 186.388 95.8366 193.551 87 193.551H17C8.16344 193.551 1 200.715 1 209.551V215" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line32"><svg width="33" height="224" viewBox="0 0 33 224" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.000362712 0.999851L15.9999 0.999833C24.8365 0.999823 31.9999 8.16327 31.9999 16.9998L31.9999 224" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line33"><svg width="269" height="169" viewBox="0 0 269 169" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M255.5 168.5V168.5C262.403 168.5 268 162.904 268 156L268 16.5C268 7.66346 260.836 0.500018 252 0.500015L17.0007 0.499937C8.16438 0.499934 1.00103 7.66295 1.00065 16.4992L1.00058 18" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line34"><svg width="77" height="2" viewBox="0 0 77 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 1L77 1.00001" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line35"><<svg width="63" height="112" viewBox="0 0 63 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 111L46 111C54.8366 111 62 103.837 62 95L62 -5.46131e-06" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line36"><svg width="127" height="233" viewBox="0 0 127 233" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.5 232H10C18.8366 232 26 224.837 26 216L26 43.9942C26 35.1576 33.1634 27.9942 42 27.9942H110C118.837 27.9942 126 20.8307 126 11.9942V0" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line37"><svg width="2" height="82" viewBox="0 0 2 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0L1 82" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line38"><svg width="107" height="84" viewBox="0 0 107 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0L1 27.9535C1 36.79 8.16344 43.9535 17 43.9535L90 43.9535C98.8366 43.9535 106 51.1169 106 59.9535V84" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line39"><svg width="2" height="82" viewBox="0 0 2 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0L1 82" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line40"><svg width="160" height="82" viewBox="0 0 160 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0L1.00001 50.0001C1.00001 58.8367 8.16345 66.0001 17 66.0001L143 66.0001C151.837 66.0001 159 73.1635 159 82V82" stroke="#ECECEC"/>
-                    </svg></div>
-                    <div class="line line41"><svg width="307" height="116" viewBox="0 0 307 116" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M-0.000305159 0.999951L5.49996 0.999951C14.3365 0.99995 21.5 8.16339 21.5 16.9999L21.5 64.5C21.5 73.3366 28.6634 80.5 37.5 80.5L290 80.4999C298.836 80.4999 306 87.6634 306 96.5L306 116" stroke="#ECECEC"/>
-                    </svg></div>
+                    <div class="line line10"><img src="img/tiles/lines/Line10.svg" alt=""></div>
+                    <div class="line line11"><img src="img/tiles/lines/Line11.svg" alt=""></div>
+                    <div class="line line12"><img src="img/tiles/lines/Line12.svg" alt=""></div>
+                    <div class="line line15"><img src="img/tiles/lines/Line15.svg" alt=""></div>
+                    <div class="line line16"><img src="img/tiles/lines/Line16.svg" alt=""></div>
+                    <div class="line line17"><img src="img/tiles/lines/Line17.svg" alt=""></div>
+                    <div class="line line18"><img src="img/tiles/lines/Line18.svg" alt=""></div>
+                    <div class="line line19"><img src="img/tiles/lines/Line19.svg" alt=""></div>
+                    <div class="line line20"><img src="img/tiles/lines/Line20.svg" alt=""></div>
+                    <div class="line line21"><img src="img/tiles/lines/Line21.svg" alt=""></div>
+                    <div class="line line22"><img src="img/tiles/lines/Line22.svg" alt=""></div>
+                    <div class="line line23"><img src="img/tiles/lines/Line23.svg" alt=""></div>
+                    <div class="line line24"><img src="img/tiles/lines/Line24.svg" alt=""></div>
+                    <div class="line line25"><img src="img/tiles/lines/Line25.svg" alt=""></div>
+                    <div class="line line26"><img src="img/tiles/lines/Line26.svg" alt=""></div>
+                    <div class="line line27"><img src="img/tiles/lines/Line27.svg" alt=""></div>
+                    <div class="line line29"><img src="img/tiles/lines/Line29.svg" alt=""></div>
+                    <div class="line line30"><img src="img/tiles/lines/Line30.svg" alt=""></div>
+                    <div class="line line31"><img src="img/tiles/lines/Line31.svg" alt=""></div>
+                    <div class="line line32"><img src="img/tiles/lines/Line32.svg" alt=""></div>
+                    <div class="line line33"><img src="img/tiles/lines/Line33.svg" alt=""></div>
+                    <div class="line line34"><img src="img/tiles/lines/Line34.svg" alt=""></div>
+                    <div class="line line35"><img src="img/tiles/lines/Line35.svg" alt=""></div>
+                    <div class="line line36"><img src="img/tiles/lines/Line36.svg" alt=""></div>
+                    <div class="line line37"><img src="img/tiles/lines/Line37.svg" alt=""></div>
+                    <div class="line line38"><img src="img/tiles/lines/Line38.svg" alt=""></div>
+                    <div class="line line39"><img src="img/tiles/lines/Line39.svg" alt=""></div>
+                    <div class="line line40"><img src="img/tiles/lines/Line40.svg" alt=""></div>
+                    <div class="line line41"><img src="img/tiles/lines/Line41.svg"></div>
                 </div>
             </div>
-            <script>
-                const blocks = document.querySelectorAll(".block");
-                const lines = document.querySelectorAll(".line")
-                const focusBlock = (key,index) => {
-                    let item = blocks[index];
-                    item.className = 'block focused';
-                    if (key === "main"){
-                        setTimeout(() => {
-                            item.className = "block unfocused";
-                        }, 5000);
-                    }
-                    if (key === "secondary"){
-                        setTimeout(() => {
-                            item.className = "block unfocused";
-                        }, 4200);
-                    }
-                };
-                const focusLine = (index) => {
-                    let item = blocks[index];
-                    const oldClassName = item.className;
-                    item.className = `${item.className} focused`;
-                    setTimeout(() => {
-                        item.className = oldClassName;
-                    }, 5000);
-                };
-                document.addEventListener("DOMContentLoaded", function repeat() {
-                    focusBlock("main", 12);
-                    setTimeout(() => {
-                        focusBlock("secondary", 6);
-                        focusBlock("secondary", 11);
-                        focusBlock("secondary", 13);
-                        focusBlock("secondary", 17);
-                    }, 1000);
-                    setTimeout(() => {
-                        focusBlock("main", 6);
-                        setTimeout(() => {
-                            focusBlock("secondary", 3);
-                            focusBlock("secondary", 7);
-                        }, 1000);
-                    }, 6000);
-                    setTimeout(() => {
-                        focusBlock("main", 11);
-                        setTimeout(() => {
-                            focusBlock("secondary", 5);
-                            focusBlock("secondary", 10);
-                            focusBlock("secondary", 15);
-                            focusBlock("secondary", 16);
-                            focusBlock("secondary", 18);
-                            focusBlock("secondary", 21);
-                            focusBlock("secondary", 22);
-                        }, 1000);
-                    }, 12000);
-                    setTimeout(() => {
-                        focusBlock("main", 5);
-                        setTimeout(() => {
-                            focusBlock("secondary", 1);
-                            focusBlock("secondary", 2);
-                        }, 1000);
-                    }, 18000);
-                    setTimeout(() => {
-                        focusBlock("main", 10);
-                        setTimeout(() => {
-                            focusBlock("secondary", 0);
-                            focusBlock("secondary", 4);
-                        }, 1000);
-                    }, 24000);
-                    setTimeout(() => {
-                        focusBlock("main", 15);
-                        setTimeout(() => {
-                            focusBlock("secondary", 9);
-                            focusBlock("secondary", 20);
-                        }, 1000);
-                    }, 30000);
-                    setTimeout(() => {
-                        focusBlock("main", 21);
-                        setTimeout(() => {
-                            focusBlock("secondary", 25);
-                            focusBlock("secondary", 26);
-                        }, 1000);
-                    }, 36000);
-                    setTimeout(() => {
-                        focusBlock("main", 22);
-                        setTimeout(() => {
-                            focusBlock("secondary", 27);
-                            focusBlock("secondary", 28);
-                            focusBlock("secondary", 29);
-                        }, 1000);
-                    }, 42000);
-                    setTimeout(() => {
-                        focusBlock("main", 18);
-                        setTimeout(() => {
-                            focusBlock("secondary", 8);
-                            focusBlock("secondary", 14);
-                            focusBlock("secondary", 19);
-                            focusBlock("secondary", 23);
-                            focusBlock("secondary", 24);
-                        }, 1000);
-                    }, 48000);
-                    setTimeout(() => {
-                        repeat()
-                    }, 54000)
-                });
-            </script>
         </div>
         <div class="tiles-2-mobile">
             <img src="img/tiles_mobile/реклама.svg" alt="">

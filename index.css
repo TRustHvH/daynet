@@ -171,47 +171,6 @@ svg{
 .tiles-2-mobile{
     display: none;
 }
-@keyframes tiles-open {
-    0%{
-        padding: 18px;
-        opacity: .25;
-    }
-    10%{
-        padding: 22px 18px 16px 18px;
-        opacity: 1;
-        background: #FFFFFF;
-        filter: grayscale(0%);
-    }
-    100%{
-        opacity: 1;
-        background: #FFFFFF;
-        filter: grayscale(0%);
-    }
-}
-@keyframes tiles-close {
-    from{
-        opacity: 1;
-        background: #FFFFFF;
-    }
-    to{
-        opacity: .25;
-    }
-}
-.focused {
-    padding: 22px 18px 16px 18px!important;
-    opacity: 1!important;
-    background: #FFFFFF!important;
-    filter: grayscale(0%)!important;
-}
-.unfocused{
-    transform-origin: center center!important;
-    animation: tiles-close 1s linear;
-}
-.focused span{
-    opacity: 1!important;
-    transition: opacity 1.5s linear!important;
-    display: block!important;
-}
 .blocks {
     margin: 0 auto;
     display: flex;
@@ -223,11 +182,11 @@ svg{
 }
 .blockss{
     display: flex;
-    gap: 76px;
+    gap: 77px;
     position: relative;
-    height: 68px;
     align-items: center;
     width: max-content;
+    height: 66px;
 }
 .blocksss{
     padding: 18px;
@@ -237,9 +196,7 @@ svg{
     justify-content: center;
     align-items: center;
 }
-.block span{
-    opacity: 0;
-    transition: opacity .5s linear;
+.animation span{
     max-width: 95px;
     text-align: center;
     font-size: 12px;
@@ -247,55 +204,14 @@ svg{
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.24px;
-    display: none;
+    display: inline-block;
 }
-.block {
-    position: absolute;
-    border: 1px solid #ECECEC;
-    filter: grayscale(100%);
-    opacity: .25;
-    background: #F9FBFF;
-    transform-origin: center;
-    padding: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 12px;
-    box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
-    transition: 1s linear;
 
-}
-.block-always{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
-    background: #FFFFFF;
-    padding: 18px;
-    transition: 1.5s linear;
-    gap: 12px;
-    height: 55px;
-}
-.block:hover {
-    padding: 22px 18px 16px 18px;
-    opacity: 1;
-    background: #FFFFFF;
-    filter: grayscale(0%);
-    transition: 1s linear;
-}
-.block:hover span{
-    opacity: 1;
-    transition: opacity 1s linear;
-    display: block;
-}
 .block-first, .block-second{
-    left: 110px;
+    left: 66px;
 }
 .block-fourth{
-    left: 120px;
+    left: 88px;
 }
 .block-fifth{
     left: 58px;
@@ -312,6 +228,110 @@ svg{
 }
 .line svg path{
     stroke: black;
+}
+.animation {
+    position: relative;
+    width: fit-content;
+    border: rgb(236, 236, 236) solid 1px;
+    padding: 18px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
+}
+
+.animation-size-controller {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 32px;
+    max-height: 32px;
+    transition: max-width 1s linear, max-height 1s linear;
+}
+.animation-size-controller img{
+    width: 28px;
+    height: 28px;
+}
+
+.animation .animation-hidden {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation .animation-shown {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation-shown {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .5s ease-out, width .5s ease-out, height .5s ease-out;
+    -moz-transition: opacity .5s ease-out, width .5s ease-out, height .5s ease-out;
+    -webkit-transition: opacity .5s ease-out, width .5s ease-out, height .5s ease-out;
+    -o-transition: opacity .5s ease-out, width .5s ease-out, height .5s ease-out;
+}
+
+.animation-shown img {
+    transition: width .5s ease-out, height .5s ease-out;
+    -moz-transition: width .5s ease-out, height .5s ease-out;
+    -webkit-transition: width .5s ease-out, height .5s ease-out;
+    -o-transition: width .5s ease-out, height .5s ease-out;
+}
+
+.animation-shown img.show {
+    transition: width .5s ease-out, height .5s ease-out;
+    -moz-transition: width .5s ease-out, height .5s ease-out;
+    -webkit-transition: width .5s ease-out, height .5s ease-out;
+    -o-transition: width .5s ease-out, height .5s ease-out;
+}
+
+.animation-shown:hover{
+    opacity: 1;
+}
+.animation:hover .animation-size-controller{
+    transform-origin: center center!important;
+    max-width: 1000px;
+    max-height: 1000px;
+    transition: max-width 1s linear, max-height 1s linear;
+}
+
+.animation-hidden {
+    opacity: 1;
+    transition: opacity .5s ease-out, width .5s ease-out, height .5s ease-out;
+    -moz-transition: opacity .5s ease-out, width .5s ease-out, height .5s ease-out;
+    -webkit-transition: opacity .5s ease-out, width .5s ease-out, height .5s ease-out;
+    -o-transition: opacity .5s ease-out, width .5s ease-out, height .5s ease-out;
+}
+
+.animation-hidden img {
+    transition: width .5s ease-out, height .5s ease-out;
+    -moz-transition: width .5s ease-out, height .5s ease-out;
+    -webkit-transition: width .5s ease-out, height .5s ease-out;
+    -o-transition: width .5s ease-out, height .5s ease-out;
+}
+
+.animation-hidden img.hide {
+    transition: width .5s ease-out, height .5s ease-out;
+    -moz-transition: width .5s ease-out, height .5s ease-out;
+    -webkit-transition: width .5s ease-out, height .5s ease-out;
+    -o-transition: width .5s ease-out, height .5s ease-out;
+}
+
+.animation-hidden.hide {
+    opacity: 0;
 }
 .line10{
 
@@ -448,7 +468,7 @@ svg{
     gap: 20px;
     border-radius: 16px;
     background: #FFF;
-    box-shadow: 1px 2px 10px 0px rgba(2, 12, 20, 0.04);
+    box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
     color: #04101C;
     text-align: center;
     font-size: 28px;

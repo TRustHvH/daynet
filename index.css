@@ -226,9 +226,9 @@ svg{
     position: absolute;
     z-index: -1;
 }
-.line svg path{
+/*.line svg path{
     stroke: black;
-}
+}*/
 .animation {
     position: relative;
     width: fit-content;
@@ -334,91 +334,120 @@ svg{
     opacity: 0;
 }
 .line10{
-
+    margin-left: 438px;
+    margin-top: 300px;
 }
 .line11{
-
+    margin-left: 437px;
+    margin-top: 167px;
 }
 .line12{
-
+    margin-left: 318px;
+    margin-top: 300px;
 }
 .line15{
-
+    margin-left: 402px;
+    margin-top: 208px;
 }
 .line16{
-
+    margin-left: 402px;
+    margin-top: 346px;
 }
 .line17{
-
+    margin-left: 437px;
+    margin-top: 67px;
 }
 .line18{
-
+    margin-left: 265px;
+    margin-top: 202px;
 }
 .line19{
-
+    margin-left: 237px;
+    margin-top: 66px;
 }
 .line20{
-
+    margin-left: 252px;
+    margin-top: 66px;
 }
 .line21{
-
+    margin-left: 133px;
+    margin-top: 167px;
 }
 .line22{
-
+    margin-left: 132px;
+    margin-top: 34px;
 }
 .line23{
-
+    margin-left: 208px;
+    margin-top: 300px;
 }
 .line24{
-
+    margin-left: 271px;
+    margin-top: 339px;
 }
 .line25{
-
+    margin-left: 126px;
+    margin-top: 326px;
 }
 .line26{
-
+    margin-left: 57px;
+    margin-top: 301px;
 }
 .line27{
-
+    margin-left: 94px;
+    margin-top: 469px;
 }
 .line29{
-
+    margin-left: 231px;
+    margin-top: 620px;
 }
 .line30{
-
+    margin-left: 125px;
+    margin-top: 621px;
 }
 .line31{
-
+    margin-left: 232px;
+    margin-top: 325px;
 }
 .line32{
-
+    margin-left: 319px;
+    margin-top: 320px;
 }
 .line33{
-
+    margin-left: 299px;
+    margin-top: 249px;
 }
 .line34{
-
+    margin-left: 554px;
+    margin-top: 440px;
 }
 .line35{
-
+    margin-left: 554px;
+    margin-top: 331px;
 }
 .line36{
-
+    margin-left: 553px;
+    margin-top: 200px;
 }
 .line37{
-
+    margin-left: 513px;
+    margin-top: 467px;
 }
 .line38{
-
+    margin-left: 530px;
+    margin-top: 466px;
 }
 .line39{
-
+    margin-left: 350px;
+    margin-top: 617px;
 }
 .line40{
-
+    margin-left: 363px;
+    margin-top: 617px;
 }
 .line41{
-
+    margin-left: 384px;
+    margin-top: 584px;
 }
 .case{
     background: url("img/case.svg") no-repeat center;

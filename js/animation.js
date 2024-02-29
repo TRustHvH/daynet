@@ -34,19 +34,19 @@ $(document).ready(function () {
     const focusBlock = (key, index) => {
         let item = anims.eq(index);
 
-        item.trigger("mouseenter");
+        item.mouseenter();
 
         let timeout;
 
         switch (key) {
             case "main":
                 timeout = setTimeout(() => {
-                    item.trigger("mouseleave");
+                    item.mouseleave();
                 }, 5000);
                 break;
             case "secondary":
                 timeout = setTimeout(() => {
-                    item.trigger("mouseleave");
+                    item.mouseleave();
                 }, 4200);
                 break;
         }

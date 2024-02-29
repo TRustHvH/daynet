@@ -5,7 +5,7 @@ $(document).ready(function () {
         let hidden = $animation_block.find(".animation-hidden")
         let shown = $animation_block.find(".animation-shown")
         let shown_p_size = $(shown).find("span").height()
-        $(shown).hover(function () {
+        $(shown).hover(function() {
             $(shown).find("img").addClass("show")
             $(shown).find("img").css("margin-top", shown_p_size)
             $(shown).find("img").animate({
@@ -16,7 +16,7 @@ $(document).ready(function () {
                 marginTop: "-=" + shown_p_size + "px"
             }, 500)
             $(hidden).addClass("hide")
-        }, function () {
+        }, function() {
             $(shown).find("img").removeClass("show")
             $(shown).find("img").animate({
                 marginTop: "+=" + shown_p_size + "px"
@@ -33,20 +33,54 @@ $(document).ready(function () {
 
     const focusBlock = (key, index) => {
         let item = anims.eq(index);
-
-        item.mouseenter();
-
+        let $animation_block = item
+        let hidden = $animation_block.find(".animation-hidden")
+        let shown = $animation_block.find(".animation-shown")
+        let anim_size = $animation_block.find(".animation-size-controller")
+        let shown_p_size = $(shown).find("span").height()
+        item.on('mouseenter', function() {
+            $(shown).find("img").addClass("show")
+            $(shown).find("img").css("margin-top", shown_p_size)
+            $(anim_size).css("max-width", "1000px")
+            $(anim_size).css("max-height", "1000px")
+            $(shown).css("opacity", 1)
+            $(shown).find("img").animate({
+                marginTop: "-=" + shown_p_size + "px"
+            }, 500)
+            $(hidden).find("img").addClass("hide")
+            $(hidden).find("img").animate({
+                marginTop: "-=" + shown_p_size + "px"
+            }, 500)
+            $(hidden).addClass("hide")
+            
+        });
+        item.on('mouseleave', function() {
+            $(shown).find("img").removeClass("show")
+            $(anim_size).css("max-width", "32px")
+            $(anim_size).css("max-height", "32px")
+            $(shown).css("opacity", 0)
+            $(shown).find("img").animate({
+                marginTop: "+=" + shown_p_size + "px"
+            }, 500)
+            $(hidden).find("img").removeClass("hide")
+            $(shown).find("img").css("margin-top", 0)
+            $(hidden).find("img").animate({
+                marginTop: "+=" + shown_p_size + "px"
+            }, 500)
+            $(hidden).removeClass("hide")
+        });
+        item.trigger("mouseenter")
         let timeout;
 
         switch (key) {
             case "main":
                 timeout = setTimeout(() => {
-                    item.mouseleave();
+                    item.trigger('mouseleave');
                 }, 5000);
                 break;
             case "secondary":
                 timeout = setTimeout(() => {
-                    item.mouseleave();
+                    item.trigger('mouseleave');
                 }, 4200);
                 break;
         }

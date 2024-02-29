@@ -246,6 +246,7 @@ svg{
     max-width: 32px;
     max-height: 32px;
     transition: max-width 1s linear, max-height 1s linear;
+    transform-origin: center center!important;
 }
 .animation-size-controller img{
     width: 28px;

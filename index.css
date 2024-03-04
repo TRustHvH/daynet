@@ -996,7 +996,9 @@ footer p{
         line-height: 28px;
         letter-spacing: 0.4px;
     }
-
+    .tiles-2{
+        scale: .7;
+    }
     .case h1{
         font-size: 52px;
         font-style: normal;

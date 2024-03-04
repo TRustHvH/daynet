@@ -1186,6 +1186,7 @@ footer p{
         max-width: 337px;
         justify-content: center;
         gap: 22.5px;
+        padding: 24px 0;
     }
     .tiles h1{
         font-size: 28px;

@@ -226,9 +226,6 @@ svg{
     position: absolute;
     z-index: -1;
 }
-/*.line svg path{
-    stroke: black;
-}*/
 .animation {
     position: relative;
     width: fit-content;

@@ -59,10 +59,10 @@ footer{
 @keyframes turnleft{
     from{
         display: flex;
-        transform: translate(1920px);
+        transform: translate(100%);
     }
     to{
-        transform: translate(0px);
+        transform: translate(0%);
     }
 }
 @keyframes turnright{
@@ -70,9 +70,13 @@ footer{
         transform: translate(0px);
     }
     to{
-        transform: translate(1920px);
+        transform: translate(100%);
         display: none;
     }
+}
+.blog{
+    width: 100%;
+    overflow: hidden;
 }
 .anim-disabler{
     animation-name: disabler;

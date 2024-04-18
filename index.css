@@ -1,3 +1,113 @@
+@font-face {
+    font-family: 'GothamPro-Black';
+    src: url('fonts/gothampro-black.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/gothampro-black.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/gothampro-black.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/gothampro-black.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/gothampro-black.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/gothampro-black.svg#gothampro-black') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-BlackItalic';
+    src: url('fonts/gothampro-blackitalic.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/gothampro-blackitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/gothampro-blackitalic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/gothampro-blackitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/gothampro-blackitalic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/gothampro-blackitalic.svg#gothampro-blackitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-Bold';
+    src: url('fonts/gothampro-bold.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/gothampro-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/gothampro-bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/gothampro-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/gothampro-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/gothampro-bold.svg#gothampro-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-BoldItalic';
+    src: url('fonts/gothampro-bolditalic.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/gothampro-bolditalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/gothampro-bolditalic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/gothampro-bolditalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/gothampro-bolditalic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/gothampro-bolditalic.svg#gothampro-bolditalic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-Italic';
+    src: url('fonts/gothampro-italic.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/gothampro-italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/gothampro-italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/gothampro-italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/gothampro-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/gothampro-italic.svg#gothampro-italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-Light';
+    src: url('fonts/gothampro-light.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/gothampro-light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/gothampro-light.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/gothampro-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/gothampro-light.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/gothampro-light.svg#gothampro-light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-LightItalic';
+    src: url('fonts/gothampro-lightitalic.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/gothampro-lightitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/gothampro-lightitalic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/gothampro-lightitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/gothampro-lightitalic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/gothampro-lightitalic.svg#gothampro-lightitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-Medium';
+    src: url('fonts/gothampro-medium.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/gothampro-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/gothampro-medium.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/gothampro-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/gothampro-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/gothampro-medium.svg#gothampro-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-MediumItalic';
+    src: url('fonts/gothampro-mediumitalic.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/gothampro-mediumitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/gothampro-mediumitalic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/gothampro-mediumitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/gothampro-mediumitalic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/gothampro-mediumitalic.svg#gothampro-mediumitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamProNarrow-Bold';
+    src: url('fonts/gothampronarrow-bold.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/gothampronarrow-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/gothampronarrow-bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/gothampronarrow-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/gothampronarrow-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/gothampronarrow-bold.svg#gothampronarrow-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamProNarrow-Medium';
+    src: url('fonts/gothampronarrow-medium.eot'); /* IE 9 Compatibility Mode */
+    src: url('fonts/gothampronarrow-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('fonts/gothampronarrow-medium.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/gothampronarrow-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('fonts/gothampronarrow-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/gothampronarrow-medium.svg#gothampronarrow-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
 body{
     width: 100%;
     height: 100%;
@@ -368,9 +478,7 @@ svg{
     max-width: 300px;
 }
 .case .car{
-    width: 721px;
-    height: 504px;
-    border-radius: 20px 0 0 20px;
+    width: 100%;
 }
 .case nonclickable{
     display: inline-flex;
@@ -379,9 +487,7 @@ svg{
     align-items: center;
     gap: 20px;
     border-radius: 16px;
-    background: #FFF;
-    box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
-    color: #04101C;
+    color: white;
     text-align: center;
     font-size: 28px;
     font-style: normal;
@@ -413,9 +519,9 @@ svg{
 }
 #blog{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    padding-top: 200px;
+    padding: 64px 15% 0 15%;
 }
 #blog h1{
     color: #04101C;
@@ -426,49 +532,123 @@ svg{
     letter-spacing: 2.88px;
     margin-block-start: 0;
 }
-.blog-text div{
+.blog-text{
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 32px;
 }
-.blog-text .first{
-    color: #04101C;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 231;
-    line-height: 16px;
-    letter-spacing: 1.6px;
+.blog-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    height: 476px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08),0 -0.5px 4px 0 rgba(0, 0, 0, 0.02);
+    background: rgba(0,0,0,0) center;
+    overflow: hidden;
+    cursor: pointer;
 }
-.blog-text .second{
-    color: #04101C;
-    font-size: 28px;
-    font-style: normal;
+.blog-block:before{
+    content: " ";
+    z-index: 1;
+    position:absolute;
+    border-radius: 16px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("img/car.svg") black center no-repeat;
+    background-size: cover;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s linear;
+}
+.blog-block:hover:before{
+    opacity: 1;
+}
+.blog-block:hover h2, .blog-block:hover p{
+    color: white;
+}
+.blog-block:hover .blog-text-anim{
+    transform: translateY(0%);
+    height: 100%;
+}
+.blog-block p, .blog-block h2{ margin: 0; transition: .2s linear; }
+.blog-block h2{
+    margin-bottom: 32px;
+}
+.blog-block img{
+    width: 100%;
+    max-width: 388px;
+    position: absolute;
+    z-index: -1;
+    top: 16px;
+}
+.blog-text-anim{
+    max-width: 388px;
+    color: rgb(4, 16, 28);
+    font-family: 'GothamPro-Light', serif;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 36px;
-    letter-spacing: 0.56px;
-    max-width: 573px;
-
+    line-height: 120.2%;
+    letter-spacing: 1.06px;
+    text-align: left;
+    height: 104px;
+    overflow: hidden;
+    transform: translateY(300%);
+    transition: transform .2s linear;
 }
-.blog-text-button{
+.blog-text-anim h2{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.blog-text-anim p{
+    margin-bottom: 32px;
+}
+.blog-block .under-text{
+    position: relative;
+    z-index: 2;
+    transition: .2s linear;
     display: flex;
-    padding: 16px 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.blog-block .time{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
+.blog-block .blog-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(4, 16, 28);
+    margin-top: 46px;
+}
+.carousel-numbers{
+    width: fit-content;
+}
+.carousel-numbers p{
+    font-family: 'Roboto Flex', serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 120.2%;
+    letter-spacing: 1.06px;
+    text-align: left;
+    margin: 0;
+}
+.fixed-pos{
+    display: flex;
+    gap: 32px;
+    height: 530px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border-radius: 16px;
-    background: #04101C;
-    color: #FFF;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 40px;
-    letter-spacing: 1.44px;
-    text-decoration: none;
-    max-width: 230px;
-    margin-top: 50px;
-    transition: 0.4s;
 }
-.blog-text-button:hover{
-    background: #000000;
+.draggable{
+    height: 530px;
 }
 .daynet{
     padding-top: 300px;
@@ -520,8 +700,8 @@ svg{
     margin-right: 10%;
 }
 .form img{
-    width: 80%;
-    margin: 150px 0 0 -300px;
+    width: 52%;
+    margin: 150px 0 0 0;
     z-index: 1;
 }
 .form form{
@@ -726,6 +906,10 @@ footer p{
 @media screen and (max-width: 1440px){
     .form{
         grid-gap: 200px;
+    }
+    .form img{
+        width: 80%;
+        margin: 150px 0 0 -300px;
     }
 }
 @media screen and (max-width: 1280px) {
@@ -1031,8 +1215,6 @@ footer p{
         align-items: center;
         gap: 16px;
         border-radius: 16px;
-        background: #FFF;
-        box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
@@ -1152,6 +1334,9 @@ footer p{
     }
 }
 @media screen and (max-width: 480px){
+    .form form input{
+        max-width: unset;
+    }
     .upper-form{
         width: unset;
     }

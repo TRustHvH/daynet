@@ -61,12 +61,14 @@ $(document).ready(function () {
         show(shown, hidden, shown_p_size, anim_size)
         switch (key) {
             case "main":
+                if ($item.find(".animation-shown").hasClass('.animation-up')) return
                 setTimeout(() => {
                     hide(shown, hidden, shown_p_size, anim_size)
                     $item.removeClass("auto-shown")
                 }, 5000);
                 break;
             case "secondary":
+                if ($item.find(".animation-shown").hasClass('.animation-up')) return 
                 setTimeout(() => {
                     hide(shown, hidden, shown_p_size, anim_size)
                     $item.removeClass("auto-shown")

@@ -13,6 +13,9 @@
     <script src="js/index.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/animation.js"></script>
+    <link rel="stylesheet" href="js/carousel/slick.css">
+    <link rel="stylesheet" href="js/carousel/slick-theme.css">
+    <script src="js/carousel/slick.js"></script>
 </head>
 <body>
     <header>
@@ -1042,7 +1045,7 @@
             <h2>Репутация Автосалон</h2>
             <p>Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7.</p>
             <nonclickable>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" style="overflow: unset" width="40" height="40" viewBox="0 0 40 40" fill="none">
                     <path d="M32.4736 6.6H27.427C25.0978 6.6 22.7686 5.6 21.2158 4C18.8866 1.4 15.7811 0 12.2873 0H7.04658C4.32919 0 2 2.4 2 5.2V6.8V22.8V38C2 39.2 2.7764 40 3.94099 40C5.10559 40 5.88199 39.2 5.88199 38V23V7V5.2C5.88199 4.6 6.46429 4 7.04658 4H12.2873C14.6165 4 16.9457 5 18.4984 6.6C20.8276 9 24.1273 10.4 27.427 10.4H32.4736C33.25 10.4 33.6382 11 33.6382 11.6V26C33.6382 26.8 33.0559 27.2 32.4736 27.2H27.427C25.0978 27.2 22.7686 26.2 21.2158 24.6C18.8866 22.2 15.587 20.8 12.2873 20.8H10.3463C9.18168 20.8 8.40528 21.6 8.40528 22.8C8.40528 24 9.18168 24.8 10.3463 24.8H12.4814C14.8106 24.8 17.1398 25.8 18.6925 27.4C21.0217 29.8 24.3214 31.2 27.6211 31.2H32.6677C35.5792 31.2 37.7143 28.8 37.7143 26V11.8C37.7143 9 35.3851 6.6 32.4736 6.6Z" fill="url(#paint0_radial_785_2570)"/>
                     <defs>
                         <radialGradient id="paint0_radial_785_2570" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(19.8571 20) rotate(98.7022) scale(25.2912 22.7129)">
@@ -1058,27 +1061,169 @@
             <a href="html/case.html">смотреть все</a>
         </div>
         <div style="margin-top: 100px">
-            <img src="img/bunny.svg" class="bunny" alt="">
-            <img src="img/car.png" class="car" style="position: relative; z-index: 2;" alt="">
+            <img src="img/car.svg" class="car" style="position: relative; z-index: 2;" alt="">
         </div>
     </div>
     <div class="blog" id="blog">
         <h1>БЛОГ</h1>
-        <div class="blog-text">
-            <div>
-                <p class="first">01</p>
-                <p class="second">В чём сила, брат? В репутации! DAYNET на Digital Оттепель 2023</p>
-            </div>
-            <div>
-                <p class="first">02</p>
-                <p class="second">Кофе, печеньки и дружный коллектив. Как работать с площадками о работодателях</p>
-            </div>
-            <div>
-                <p class="first">03</p>
-                <p class="second">Существует ли институт репутации в России?</p>
-            </div>
-            <a href="html/blog.html" class="blog-text-button">читать все</a>
+        <div class="blog-text slider">
+            <a href="/html/blog.html" style="text-decoration: none">
+                <div class="blog-block">
+                    <img src="img/car-blog.svg" alt="">
+                    <div class="under-text">
+                        <div class="blog-text-anim">
+                            <h2>Новости</h2>
+                            <p>В чём сила, брат? В репутации! DAYNET на Digital Оттепель 2023</p>
+                            <p>Performance-маркетинг — один из эффективных инструментов привлечения и удержания клиентов. Performance помогает бизнесу выделиться на рынке среди конкурентов, привлечь новую аудиторию, установить с ней доверительные отношения и стимулировать ее к действиям.</p>
+                        </div>
+                        <div class="blog-info">
+                            <p class="date">20.07.2022</p>
+                            <div style="display: flex; gap: 11px; align-items: center">
+                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.04688 0.672852H8.04688V2.00618H4.04688V0.672852ZM5.38021 5.33952H6.71354V9.33952H5.38021V5.33952ZM10.7335 4.92618L11.6802 3.97952C11.3935 3.63952 11.0802 3.31952 10.7402 3.03952L9.79354 3.98618C8.76021 3.15952 7.46021 2.66618 6.04688 2.66618C2.73354 2.66618 0.046875 5.35285 0.046875 8.66618C0.046875 11.9795 2.72688 14.6662 6.04688 14.6662C9.36688 14.6662 12.0469 11.9795 12.0469 8.66618C12.0469 7.25952 11.5535 5.95285 10.7335 4.92618ZM6.04688 13.3395C3.46688 13.3395 1.38021 11.2529 1.38021 8.67285C1.38021 6.09285 3.46688 4.00618 6.04688 4.00618C8.62688 4.00618 10.7135 6.09285 10.7135 8.67285C10.7135 11.2529 8.62688 13.3395 6.04688 13.3395Z" fill="#4AFCF1"/>
+                                </svg>
+                                <p class="time">0 минут</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/html/blog.html" style="text-decoration: none">
+                <div class="blog-block">
+                    <img src="img/car-blog.svg" alt="">
+                    <div class="under-text">
+                        <div class="blog-text-anim">
+                            <h2>Новости</h2>
+                            <p>В чём сила, брат? В репутации! DAYNET на Digital Оттепель 2023</p>
+                            <p>Performance-маркетинг — один из эффективных инструментов привлечения и удержания клиентов. Performance помогает бизнесу выделиться на рынке среди конкурентов, привлечь новую аудиторию, установить с ней доверительные отношения и стимулировать ее к действиям.</p>
+                        </div>
+                        <div class="blog-info">
+                            <p class="date">20.07.2022</p>
+                            <div style="display: flex; gap: 11px; align-items: center">
+                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.04688 0.672852H8.04688V2.00618H4.04688V0.672852ZM5.38021 5.33952H6.71354V9.33952H5.38021V5.33952ZM10.7335 4.92618L11.6802 3.97952C11.3935 3.63952 11.0802 3.31952 10.7402 3.03952L9.79354 3.98618C8.76021 3.15952 7.46021 2.66618 6.04688 2.66618C2.73354 2.66618 0.046875 5.35285 0.046875 8.66618C0.046875 11.9795 2.72688 14.6662 6.04688 14.6662C9.36688 14.6662 12.0469 11.9795 12.0469 8.66618C12.0469 7.25952 11.5535 5.95285 10.7335 4.92618ZM6.04688 13.3395C3.46688 13.3395 1.38021 11.2529 1.38021 8.67285C1.38021 6.09285 3.46688 4.00618 6.04688 4.00618C8.62688 4.00618 10.7135 6.09285 10.7135 8.67285C10.7135 11.2529 8.62688 13.3395 6.04688 13.3395Z" fill="#4AFCF1"/>
+                                </svg>
+                                <p class="time">0 минут</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/html/blog.html" style="text-decoration: none">
+                <div class="blog-block">
+                    <img src="img/car-blog.svg" alt="">
+                    <div class="under-text">
+                        <div class="blog-text-anim">
+                            <h2>Новости</h2>
+                            <p>В чём сила, брат? В репутации! DAYNET на Digital Оттепель 2023</p>
+                            <p>Performance-маркетинг — один из эффективных инструментов привлечения и удержания клиентов. Performance помогает бизнесу выделиться на рынке среди конкурентов, привлечь новую аудиторию, установить с ней доверительные отношения и стимулировать ее к действиям.</p>
+                        </div>
+                        <div class="blog-info">
+                            <p class="date">20.07.2022</p>
+                            <div style="display: flex; gap: 11px; align-items: center">
+                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.04688 0.672852H8.04688V2.00618H4.04688V0.672852ZM5.38021 5.33952H6.71354V9.33952H5.38021V5.33952ZM10.7335 4.92618L11.6802 3.97952C11.3935 3.63952 11.0802 3.31952 10.7402 3.03952L9.79354 3.98618C8.76021 3.15952 7.46021 2.66618 6.04688 2.66618C2.73354 2.66618 0.046875 5.35285 0.046875 8.66618C0.046875 11.9795 2.72688 14.6662 6.04688 14.6662C9.36688 14.6662 12.0469 11.9795 12.0469 8.66618C12.0469 7.25952 11.5535 5.95285 10.7335 4.92618ZM6.04688 13.3395C3.46688 13.3395 1.38021 11.2529 1.38021 8.67285C1.38021 6.09285 3.46688 4.00618 6.04688 4.00618C8.62688 4.00618 10.7135 6.09285 10.7135 8.67285C10.7135 11.2529 8.62688 13.3395 6.04688 13.3395Z" fill="#4AFCF1"/>
+                                </svg>
+                                <p class="time">0 минут</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/html/blog.html" style="text-decoration: none">
+                <div class="blog-block">
+                    <img src="img/car-blog.svg" alt="">
+                    <div class="under-text">
+                        <div class="blog-text-anim">
+                            <h2>Новости</h2>
+                            <p>В чём сила, брат? В репутации! DAYNET на Digital Оттепель 2023</p>
+                            <p>Performance-маркетинг — один из эффективных инструментов привлечения и удержания клиентов. Performance помогает бизнесу выделиться на рынке среди конкурентов, привлечь новую аудиторию, установить с ней доверительные отношения и стимулировать ее к действиям.</p>
+                        </div>
+                        <div class="blog-info">
+                            <p class="date">20.07.2022</p>
+                            <div style="display: flex; gap: 11px; align-items: center">
+                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.04688 0.672852H8.04688V2.00618H4.04688V0.672852ZM5.38021 5.33952H6.71354V9.33952H5.38021V5.33952ZM10.7335 4.92618L11.6802 3.97952C11.3935 3.63952 11.0802 3.31952 10.7402 3.03952L9.79354 3.98618C8.76021 3.15952 7.46021 2.66618 6.04688 2.66618C2.73354 2.66618 0.046875 5.35285 0.046875 8.66618C0.046875 11.9795 2.72688 14.6662 6.04688 14.6662C9.36688 14.6662 12.0469 11.9795 12.0469 8.66618C12.0469 7.25952 11.5535 5.95285 10.7335 4.92618ZM6.04688 13.3395C3.46688 13.3395 1.38021 11.2529 1.38021 8.67285C1.38021 6.09285 3.46688 4.00618 6.04688 4.00618C8.62688 4.00618 10.7135 6.09285 10.7135 8.67285C10.7135 11.2529 8.62688 13.3395 6.04688 13.3395Z" fill="#4AFCF1"/>
+                                </svg>
+                                <p class="time">0 минут</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/html/blog.html" style="text-decoration: none">
+                <div class="blog-block">
+                    <img src="img/car-blog.svg" alt="">
+                    <div class="under-text">
+                        <div class="blog-text-anim">
+                            <h2>Новости</h2>
+                            <p>В чём сила, брат? В репутации! DAYNET на Digital Оттепель 2023</p>
+                            <p>Performance-маркетинг — один из эффективных инструментов привлечения и удержания клиентов. Performance помогает бизнесу выделиться на рынке среди конкурентов, привлечь новую аудиторию, установить с ней доверительные отношения и стимулировать ее к действиям.</p>
+                        </div>
+                        <div class="blog-info">
+                            <p class="date">20.07.2022</p>
+                            <div style="display: flex; gap: 11px; align-items: center">
+                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.04688 0.672852H8.04688V2.00618H4.04688V0.672852ZM5.38021 5.33952H6.71354V9.33952H5.38021V5.33952ZM10.7335 4.92618L11.6802 3.97952C11.3935 3.63952 11.0802 3.31952 10.7402 3.03952L9.79354 3.98618C8.76021 3.15952 7.46021 2.66618 6.04688 2.66618C2.73354 2.66618 0.046875 5.35285 0.046875 8.66618C0.046875 11.9795 2.72688 14.6662 6.04688 14.6662C9.36688 14.6662 12.0469 11.9795 12.0469 8.66618C12.0469 7.25952 11.5535 5.95285 10.7335 4.92618ZM6.04688 13.3395C3.46688 13.3395 1.38021 11.2529 1.38021 8.67285C1.38021 6.09285 3.46688 4.00618 6.04688 4.00618C8.62688 4.00618 10.7135 6.09285 10.7135 8.67285C10.7135 11.2529 8.62688 13.3395 6.04688 13.3395Z" fill="#4AFCF1"/>
+                                </svg>
+                                <p class="time">0 минут</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/html/blog.html" style="text-decoration: none">
+                <div class="blog-block">
+                    <img src="img/car-blog.svg" alt="">
+                    <div class="under-text">
+                        <div class="blog-text-anim">
+                            <h2>Новости</h2>
+                            <p>В чём сила, брат? В репутации! DAYNET на Digital Оттепель 2023</p>
+                            <p>Performance-маркетинг — один из эффективных инструментов привлечения и удержания клиентов. Performance помогает бизнесу выделиться на рынке среди конкурентов, привлечь новую аудиторию, установить с ней доверительные отношения и стимулировать ее к действиям.</p>
+                        </div>
+                        <div class="blog-info">
+                            <p class="date">20.07.2022</p>
+                            <div style="display: flex; gap: 11px; align-items: center">
+                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.04688 0.672852H8.04688V2.00618H4.04688V0.672852ZM5.38021 5.33952H6.71354V9.33952H5.38021V5.33952ZM10.7335 4.92618L11.6802 3.97952C11.3935 3.63952 11.0802 3.31952 10.7402 3.03952L9.79354 3.98618C8.76021 3.15952 7.46021 2.66618 6.04688 2.66618C2.73354 2.66618 0.046875 5.35285 0.046875 8.66618C0.046875 11.9795 2.72688 14.6662 6.04688 14.6662C9.36688 14.6662 12.0469 11.9795 12.0469 8.66618C12.0469 7.25952 11.5535 5.95285 10.7335 4.92618ZM6.04688 13.3395C3.46688 13.3395 1.38021 11.2529 1.38021 8.67285C1.38021 6.09285 3.46688 4.00618 6.04688 4.00618C8.62688 4.00618 10.7135 6.09285 10.7135 8.67285C10.7135 11.2529 8.62688 13.3395 6.04688 13.3395Z" fill="#4AFCF1"/>
+                                </svg>
+                                <p class="time">0 минут</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
+        <div class="carousel-numbers">
+            <svg width="310" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H309" stroke="url(#paint0_linear_220_16807)" stroke-width="2" stroke-linecap="round"/>
+                <defs>
+                    <linearGradient id="paint0_linear_220_16807" x1="0.999973" y1="1.00042" x2="1.11586" y2="-4.97292" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4AFCF1"/>
+                        <stop offset="0.265625" stop-color="#75CDFF"/>
+                        <stop offset="0.661458" stop-color="#7A73FF"/>
+                        <stop offset="1" stop-color="#FD9BE8"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div style="display: flex; justify-content: space-between;">
+                <p class="number" style="color: #4AFCF1">1</p>
+                <p class="number" style="color: #FD9BE8">2</p>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                if(window.innerWidth < 1280) return
+                $('.blog-text').slick({
+                    slidesToShow: 1,
+                    slidesPerRow: 3,
+                    arrows: false,
+                    autoplay:true,
+                    autoplaySpeed: 5000,
+                    pauseOnHover:true,
+                });
+            });
+        </script>
     </div>
     <div class="daynet">
         <svg xmlns="http://www.w3.org/2000/svg"  width="278" height="42" viewBox="0 0 278 42" fill="none">

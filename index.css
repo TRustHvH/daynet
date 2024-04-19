@@ -886,22 +886,54 @@ footer p{
     flex-direction: column;
 }
 .daynet-1{
-    margin-left: 20%; margin-top: 290px
+    margin-left: 17%;
+    margin-top: 370px;
 }
 .daynet-2{
-    margin-left: 45.5%; margin-top: 1065px
+    margin-left: 38.5%;
+    margin-top: 1035px;
 }
 .daynet-3{
-    margin-left: 67.5%; margin-top: 770px
+    margin-left: 48%;
+    margin-top: 200px;
+    text-align: right;
 }
 .daynet-4{
-    margin-left: 78%;margin-top: -20px;text-align: right
+    margin-left: 73%;
+    margin-top: 720px;
+}
+.daynet-5{
+    margin-left: 76%;
+    margin-top: 5px;
+    text-align: right;
 }
 .logo{
     margin-left: 15%;
 }
 .daynet-texts{
     width: 100%;
+}
+@media screen and (max-width: 1680px){
+    .daynet-1{
+        margin-left: 17%;
+        margin-top: 370px;
+    }
+    .daynet-2{
+        margin-left: 38.5%;
+        margin-top: 970px;
+    }
+    .daynet-3{
+        margin-left: 47%;
+        margin-top: 243px;
+    }
+    .daynet-4{
+        margin-left: 73%;
+        margin-top: 690px;
+    }
+    .daynet-5{
+        margin-left: 74.5%;
+        margin-top: 70px;
+    }
 }
 @media screen and (max-width: 1440px){
     .form{
@@ -911,8 +943,31 @@ footer p{
         width: 80%;
         margin: 150px 0 0 -300px;
     }
+    .daynet-1{
+        margin-left: 17%;
+        margin-top: 410px;
+    }
+    .daynet-2{
+        margin-left: 38.5%;
+        margin-top: 900px;
+    }
+    .daynet-3{
+        margin-left: 45.5%;
+        margin-top: 285px;
+    }
+    .daynet-4{
+        margin-left: 73%;
+        margin-top: 665px;
+    }
+    .daynet-5{
+        margin-left: 73%;
+        margin-top: 135px;
+    }
 }
 @media screen and (max-width: 1280px) {
+    .carousel-numbers{
+        display: none;
+    }
     .start{
         gap: 90px;
         padding-top: 0;
@@ -925,9 +980,8 @@ footer p{
         gap: 32px;
         padding-top: 100px;
     }
-
-    .tiles-1{
-        margin-left: 20px;
+    .tiles-2{
+        margin-left: -50px;
     }
     .bunny{
         display: none;
@@ -943,8 +997,25 @@ footer p{
     .daynet svg{
         margin-left: 170px;
     }
+    .daynet-1{
+        margin-left: 17%;
+        margin-top: 410px;
+    }
+    .daynet-2{
+        margin-left: 38.5%;
+        margin-top: 860px;
+    }
+    .daynet-3{
+        margin-left: 44.5%;
+        margin-top: 310px;
+    }
     .daynet-4{
-        margin-left: 76%;
+        margin-left: 73%;
+        margin-top: 650px;
+    }
+    .daynet-5{
+        margin-left: 72%;
+        margin-top: 175px;
     }
     #blog{
         gap: 200px;
@@ -963,6 +1034,9 @@ footer p{
     }
 }
 @media screen and (max-width: 980px) {
+    .blog-text{
+        justify-content: center;
+    }
     .start{
         gap:100px;
         padding-top: 0;
@@ -1054,20 +1128,24 @@ footer p{
         letter-spacing: 0.24px;
     }
     .daynet-1{
-        margin-left: 19%;
-        margin-top: 210px;
+        margin-left: 17.5%;
+        margin-top: 307px;
     }
     .daynet-2{
-        margin-left: 44.25%;
-        margin-top: 700px;
+        margin-left: 38.5%;
+        margin-top: 640px;
     }
     .daynet-3{
-        margin-left: 66.5%;
-        margin-top: 560px;
+        margin-left: 41.5%;
+        margin-top: 225px;
     }
     .daynet-4{
         margin-left: 73%;
-        margin-top: 50px;
+        margin-top: 475px;
+    }
+    .daynet-5{
+        margin-left: 69%;
+        margin-top: 125px;
     }
 }
 @media screen and (max-width: 720px){
@@ -1252,18 +1330,25 @@ footer p{
         letter-spacing: 0.8px;
         width: fit-content;
     }
-    .daynet-4{
-        margin-left: 73.5%;
-        margin-top: 75px;
-    }
     .daynet-1{
-        margin-top: 245px;
+        margin-left: 17.5%;
+        margin-top: 340px;
     }
     .daynet-2{
-        margin-top: 690px;
+        margin-left: 38.5%;
+        margin-top: 585px;
     }
     .daynet-3{
-        margin-top: 545px;
+        margin-left: 41.5%;
+        margin-top: 280px;
+    }
+    .daynet-4{
+        margin-left: 73%;
+        margin-top: 465px;
+    }
+    .daynet-5{
+        margin-left: 69%;
+        margin-top: 205px;
     }
     .daynet p{
         font-size: 20px;
@@ -1476,7 +1561,6 @@ footer p{
     #blog{
         flex-direction: column;
         padding-top: 50px;
-        padding-left: 5%;
         gap: 43px;
     }
     #blog h1{
@@ -1514,17 +1598,23 @@ footer p{
         letter-spacing: 0.64px;
     }
     .daynet-1{
-        margin-top: 125px;
+        margin-top: 185px;
     }
     .daynet-2{
-        margin-top: 385px;
+        margin-top: 345px;
+        margin-left: 39%;
     }
     .daynet-3{
-        margin-top: 308px;
+        margin-top: 150px;
+        margin-left: 38.5%;
     }
     .daynet-4{
-        margin-left: 65.5%;
-        margin-top: 35px;
+        margin-left: 73.5%;
+        margin-top: 265px;
+    }
+    .daynet-5{
+        margin-left: 66.5%;
+        margin-top: 100px;
     }
     .form{
         flex-direction: column;

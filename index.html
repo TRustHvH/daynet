@@ -1213,15 +1213,18 @@
         </div>
         <script>
             $(document).ready(function(){
-                if(window.innerWidth < 1280) return
-                $('.blog-text').slick({
-                    slidesToShow: 1,
-                    slidesPerRow: 3,
-                    arrows: false,
-                    autoplay:true,
-                    autoplaySpeed: 5000,
-                    pauseOnHover:true,
-                });
+                console.log(window.innerWidth)
+                if(window.innerWidth >= 1280){
+                    $('.blog-text').slick({
+                        slidesToShow: 1,
+                        slidesPerRow: 3,
+                        arrows: false,
+                        autoplay:true,
+                        autoplaySpeed: 5000,
+                        pauseOnHover:true,
+                    });
+                }
+
             });
         </script>
     </div>
@@ -1248,6 +1251,10 @@
                 Описание
             </div>
             <div class="daynet-4">
+                <p>Событие</p>
+                Описание
+            </div>
+            <div class="daynet-5">
                 <p>Событие</p>
                 Описание
             </div>

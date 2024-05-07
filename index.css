@@ -131,7 +131,7 @@ header{
     width: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .header a{
     text-decoration: none;
@@ -145,11 +145,11 @@ svg{
     pointer-events: none;
 }
 .main{
-    width: 100%;
     height: 603px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 325px;
 }
 .prevheader{
     display: flex;
@@ -240,9 +240,9 @@ svg{
 }
 .tiles{
     display: flex;
+    padding: 85px 325px;
     justify-content: center;
     align-items: center;
-    padding: 85px 0;
 }
 .tiles h1{
     color: #04101C;
@@ -287,7 +287,7 @@ svg{
     flex-direction: column;
     gap: 70px;
     transition: .5s linear;
-    width: 638px;
+    width: 750px;
     height: 826px;
 }
 .blockss{
@@ -450,6 +450,7 @@ svg{
     justify-content: space-between;
     align-items: center;
     background-size: cover;
+    padding: 0 325px;
 }
 .case h1{
     color: #FFF;
@@ -521,7 +522,7 @@ svg{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 64px 15% 0 15%;
+    padding: 64px 325px 0;
 }
 #blog h1{
     color: #04101C;
@@ -563,6 +564,7 @@ svg{
     opacity: 0;
     pointer-events: none;
     transition: .2s linear;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
 }
 .blog-block:hover:before{
     opacity: 1;
@@ -580,13 +582,13 @@ svg{
 }
 .blog-block img{
     width: 100%;
-    max-width: 388px;
+    max-width: 370px;
     position: absolute;
     z-index: -1;
     top: 16px;
 }
 .blog-text-anim{
-    max-width: 388px;
+    max-width: 370px;
     color: rgb(4, 16, 28);
     font-family: 'GothamPro-Light', serif;
     font-size: 20px;
@@ -655,7 +657,7 @@ svg{
     height: 1250px;
 }
 .daynet svg{
-    margin-left: 308px;
+    padding: 0 325px;
 }
 .daynet img{
     width: 100%;
@@ -861,11 +863,10 @@ label:before {
 footer{
     display: flex;
     background: #04101C;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 150px;
-    gap: 900px;
-    flex: 0 0 auto;
+    padding: 0 325px;
 }
 footer p{
     color: #FFF;
@@ -881,7 +882,6 @@ footer p{
     position:absolute; z-index: 1; margin-top: -350px; margin-left: 100px
 }
 .under-case{
-    margin-left: 16%;
     display: flex;
     flex-direction: column;
 }
@@ -906,9 +906,6 @@ footer p{
     margin-left: 76%;
     margin-top: 5px;
     text-align: right;
-}
-.logo{
-    margin-left: 15%;
 }
 .daynet-texts{
     width: 100%;

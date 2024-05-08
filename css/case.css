@@ -95,7 +95,6 @@ header{
     font-weight: 720;
     line-height: 84px;
     letter-spacing: 2.88px;
-    padding: 0 325px;
 }
 .opacity-start{
     display: flex;
@@ -121,7 +120,6 @@ header{
     margin-left: 20px;
 }
 .changing{
-    padding: 0 325px;
     max-width: 1360px;
 }
 .changing img{
@@ -201,7 +199,7 @@ nonclickable svg{
     align-items: center;
     gap: 50px; color: #04101C;
     position: absolute;
-    margin-left: 1440px;
+    margin: 0 0 0 65%;
     z-index: 9999;
 }
 .left p{
@@ -215,21 +213,31 @@ nonclickable svg{
     opacity: 1;
     padding: 0;
 }
+.form{
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 1680px){
+    .cases{
+        padding: 0 220px;
+    }
+}
 @media screen and (max-width: 1440px) {
-    .changing{
-        margin-left: 90px;
-    }
-    .cases h1{
-        margin-left: 90px;
-    }
     .change{
         margin-left: 1000px;
     }
+    .cases{
+        padding: 0 100px;
+    }
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 980px){
+    .cases{
+        padding: 0 92px;
+    }
     .change{
         display: none;
     }
+}
+@media screen and (max-width: 720px){
     .cases h1{
         font-size: 52px;
         font-style: normal;
@@ -294,6 +302,9 @@ nonclickable svg{
     .unknown-in-720{
         display: none;
     }
+    .cases{
+        padding: 0 65px;
+    }
 }
 @media screen and (max-width: 480px) {
     .form {
@@ -305,10 +316,6 @@ nonclickable svg{
         font-weight: 720;
         line-height: 44px;
         letter-spacing: 0.8px;
-        margin-left: 10%;
-    }
-    .changing{
-        margin-left: 10%;
     }
     .opacity-start h2{
         font-size: 40px;
@@ -372,6 +379,9 @@ nonclickable svg{
     }
     .opacity-continue svg{
         width: 340px;
+    }
+    .cases{
+        padding: 0 20px;
     }
 }
 @media screen and (max-width: 420px){

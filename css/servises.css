@@ -14,7 +14,6 @@ header{
     font-weight: 720;
     line-height: 84px;
     letter-spacing: 2.88px;
-    padding: 0 325px;
 }
 .services-start h2{
     color: #04101C;
@@ -34,12 +33,17 @@ header{
     line-height: 40px;
     letter-spacing: 0.64px;
 }
+.services-start{
+    padding: 0 325px;
+}
+.changing{
+    padding: 0 325px;
+}
 .op-1{
     display: flex;
     gap: 80px;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 325px;
 }
 #opacity-first{
     display: flex;gap:150px
@@ -122,9 +126,6 @@ h2 a{
     text-decoration: none;
     color:#04101C;
 }
-.changing{
-    padding: 0 325px;
-}
 .changing h1{
     color: #04101C;
     font-size: 72px;
@@ -136,9 +137,8 @@ h2 a{
 .opacity-block{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 100px;
 }
 .changing p{
     color: #000;
@@ -175,6 +175,9 @@ nonclickable{
     line-height: 40px;
     letter-spacing: 1.68px;
 }
+nonclickable svg{
+    overflow: initial;
+}
 .changing a{
     display: inline-flex;
     padding: 16px 40px;
@@ -197,32 +200,35 @@ nonclickable{
 .changing a:hover{
     background: #00b2d7;
 }
-@media screen and (max-width: 1440px) {
-    .services-start h1{
-        margin-left: 90px;
+@media screen and (max-width: 1680px){
+    .services-start{
+        padding: 0 220px;
     }
+    .changing{
+        padding: 0 200px;
+    }
+}
+@media screen and (max-width: 1440px) {
     .op-1{
         gap: 0;
-    }
-    .changing h1{
-        margin-left: 90px;
-        margin-block-end: 30px;
     }
     .opacity-block{
         gap: 0;
     }
-    nonclickable{
-        margin-left: 90px;
+    .services-start{
+        padding: 0 100px;
     }
-    .changing a{
-        margin-left: 90px; margin-top: 30px;
+    .changing{
+        padding: 0 100px;
     }
 }
 @media screen and (max-width: 980px) {
-    .services-start h1 {
-        margin-left: 45px;
+    .services-start{
+        padding: 0 92px;
     }
-
+    .changing{
+        padding: 0 92px;
+    }
     #opacity-first {
         gap: 0;
     }
@@ -244,14 +250,14 @@ nonclickable{
         font-weight: 500;
         line-height: 40px;
         letter-spacing: 1.68px;
-        width: 318px;
+        width: 338px;
         margin-top: 50px;
     }
 }
 @media screen and (max-width: 720px){
     .op-1{
         justify-content: normal;
-        padding-left: 52px;
+        flex-direction: column;
     }
     .changing h1{
         font-size: 52px;
@@ -294,10 +300,22 @@ nonclickable{
         padding: 16px 28px;
         width: fit-content;
     }
+    .services-start{
+        padding: 0 65px;
+    }
+    .changing{
+        padding: 0 65px;
+    }
 }
 @media screen and (max-width: 480px) {
     .form {
         height: 1200px !important;
+    }
+    .services-start{
+        padding: 0 20px;
+    }
+    .changing{
+        padding: 0 20px;
     }
     .services-start h1{
         font-size: 40px;
@@ -343,7 +361,6 @@ nonclickable{
         font-weight: 720;
         line-height: 44px;
         letter-spacing: 0.8px;
-        margin-left: 10%;
     }
     .changing p{
         font-size: 16px;
@@ -371,7 +388,7 @@ nonclickable{
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.64px;
-        margin-left: 10%;
+        width: 210px;
     }
     nonclickable svg{
         width: 28px;
@@ -384,6 +401,6 @@ nonclickable{
         font-weight: 600;
         line-height: 16px;
         letter-spacing: 0.64px;
-        margin-left: 10%;
+        margin-top: 28px;
     }
 }

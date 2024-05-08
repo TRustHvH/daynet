@@ -78,6 +78,9 @@ footer{
     width: 100%;
     overflow: hidden;
 }
+.blog-text{
+    gap: 20px!important;
+}
 .anim-disabler{
     animation-name: disabler;
     animation-duration: 0.2s;
@@ -136,9 +139,6 @@ footer{
     letter-spacing: 0.4px;
     margin: 0 30px 0 auto;
 }
-.blog-text{
-    padding: 0 325px;
-}
 .big{
     color: #000;
     font-size: 28px;
@@ -160,7 +160,6 @@ h2{
     display: none;
 }
 .h1-blog{
-    padding: 32px 325px;
     margin: 0;
     font-size: 72px;
     font-style: normal;
@@ -189,10 +188,21 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-top: 0!important;
+    padding: 0 325px 10px;
 }
 footer svg, footer p{
     margin-bottom: 50px;
+}
+@media screen and (max-width: 1680px){
+    #blog-anim{
+        padding: 0 220px;
+    }
+    .blog-text{
+        gap: 17px!important;
+    }
+    .anim-left{
+        padding: 0 220px;
+    }
 }
 @media screen and (max-width: 1440px) {
     .changing-h1{
@@ -206,6 +216,26 @@ footer svg, footer p{
     }
     .small-text{
         margin-left: 30%;
+    }
+    #blog-anim{
+        padding: 0 100px;
+    }
+    .anim-left{
+        padding: 0 220px;
+    }
+}
+@media screen and (max-width: 1280px){
+    .blog-text-anim{
+        max-width: 316px!important;
+    }
+    .blog-block img{
+        width: 316px!important;
+    }
+    #blog-anim{
+        padding: 0 100px;
+    }
+    .anim-left{
+        padding: 0 100px;
     }
 }
 @media screen and (max-width: 980px) {
@@ -254,6 +284,12 @@ footer svg, footer p{
         line-height: 32px;
         letter-spacing: 0.48px;
         max-width: 800px;
+    }
+    #blog-anim{
+        padding: 0 92px;
+    }
+    .anim-left{
+        padding: 0 92px;
     }
 }
 @media screen and (max-width: 720px){
@@ -320,11 +356,21 @@ footer svg, footer p{
     .blog-text .second{
         max-width: 271px!important;
     }
+    #blog-anim{
+        padding: 0 65px;
+    }
+    .anim-left{
+        padding: 0 65px;
+    }
 }
 @media screen and (max-width: 480px){
     #blog-anim{
         flex-direction: column;
         gap: 43px;
+        padding: 0 20px;
+    }
+    .anim-left{
+        padding: 0 20px;
     }
     .changing-title{
         flex-direction: column-reverse;
@@ -335,18 +381,19 @@ footer svg, footer p{
         font-weight: 720;
         line-height: 44px;
         letter-spacing: 0.8px;
-        margin: 0 0 0 10%;
     }
     .blog-text .second{
         max-width: 271px!important;
         margin-block-end: 0;
         margin-block-start: 10px;
     }
+    .blog-block img{
+        max-width: 316px;
+    }
     .blog-text{
         display: flex;
         flex-direction: column;
         gap: 56px;
-        margin: auto;
     }
     .blog-text div a{
         font-size: 16px;
@@ -414,8 +461,5 @@ footer svg, footer p{
     }
     footer svg{
         margin-bottom: 0;
-    }
-    footer svg, footer p{
-        margin-left: 5%;
     }
 }

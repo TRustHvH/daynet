@@ -107,7 +107,9 @@
     url('fonts/gothampronarrow-medium.ttf') format('truetype'), /* Safari, Android, iOS */
     url('fonts/gothampronarrow-medium.svg#gothampronarrow-medium') format('svg'); /* Chrome < 4, Legacy iOS */
 }
-
+.Gsmall{
+    display: none;
+}
 body{
     width: 100%;
     height: 100%;
@@ -931,6 +933,27 @@ footer p{
         margin-left: 74.5%;
         margin-top: 70px;
     }
+    .main{
+        padding: 0 220px;
+    }
+    .tiles{
+        padding: 85px 220px;
+    }
+    .case{
+        padding: 0 220px;
+    }
+    .case nonclickable{
+        white-space: nowrap;
+    }
+    #blog{
+        padding: 64px 220px 0;
+    }
+    .daynet svg{
+        padding: 0 220px;
+    }
+    footer{
+        padding: 0 220px;
+    }
 }
 @media screen and (max-width: 1440px){
     .form{
@@ -960,6 +983,24 @@ footer p{
         margin-left: 73%;
         margin-top: 135px;
     }
+    .main{
+        padding: 0 100px;
+    }
+    .tiles{
+        padding: 85px 100px;
+    }
+    .case{
+        padding: 0 100px;
+    }
+    #blog{
+        padding: 0 100px;
+    }
+    .daynet svg{
+        padding: 0 100px;
+    }
+    footer{
+        padding: 0 100px;
+    }
 }
 @media screen and (max-width: 1280px) {
     .carousel-numbers{
@@ -983,16 +1024,10 @@ footer p{
     .bunny{
         display: none;
     }
-    .under-case{
-        margin-left: 100px;
-    }
     .case .car{
         width: 650px;
         height: 100%;
         margin-top: -150px;
-    }
-    .daynet svg{
-        margin-left: 170px;
     }
     .daynet-1{
         margin-left: 17%;
@@ -1014,15 +1049,12 @@ footer p{
         margin-left: 72%;
         margin-top: 175px;
     }
-    #blog{
-        gap: 200px;
-    }
     .form{
         align-items: center;
         gap: 100px;
     }
     footer{
-        gap: 300px;
+
     }
 }
 @media screen and (max-width: 1080px){
@@ -1051,8 +1083,7 @@ footer p{
         gap: 45px;
         flex-direction: column;
         z-index: 2;
-        margin-left: 10%;
-        margin-top: 225px;
+        margin-top: 205px;
     }
     .g{
         margin-left: 560px;
@@ -1064,16 +1095,10 @@ footer p{
     .tiles{
         align-items: normal;
         flex-direction: column;
-    }
-
-    .tiles-1{
-        margin-left: 50px;
+        padding: 0 92px;
     }
     .bunny{
         display: none;
-    }
-    .under-case{
-        margin-left: 100px;
     }
     .case .car{
         max-width: 100%;
@@ -1083,14 +1108,13 @@ footer p{
     .case nonclickable{
         max-width: 524px;
     }
-
+    .case{
+        padding: 0 92px;
+    }
     .daynet img{
         margin-top: 150px;
         width: 100%!important;
         height: 560px!important;
-    }
-    .daynet svg{
-        margin-left: 90px;
     }
     #blog{
         gap: 50px;
@@ -1106,6 +1130,15 @@ footer p{
         align-items: center;
         gap: 10px;
     }
+    .blog-text-anim{
+        max-width: 330px;
+    }
+    .blog-text-anim p{
+        margin-bottom: 27px;
+    }
+    .blog-block img{
+        width: 330px;
+    }
     .form{
         align-items: center;
         gap: 50px;
@@ -1114,7 +1147,7 @@ footer p{
         max-width:350px
     }
     footer{
-        gap: 300px;
+        padding: 0 92px;
     }
     .form span{
         color: #00D4FF;
@@ -1144,6 +1177,24 @@ footer p{
         margin-left: 69%;
         margin-top: 125px;
     }
+    .daynet{
+        padding-top: 200px;
+        height: 900px;
+    }
+    .daynet svg{
+        padding: 0 92px;
+    }
+    .main{
+        padding: 0 92px;
+        height: 500px;
+    }
+    .prevheader{
+        gap: 28px;
+    }
+    .under-companies{
+        gap: 74px;
+        padding: 0 92px;
+    }
 }
 @media screen and (max-width: 720px){
     #close-mobile-header{
@@ -1152,6 +1203,7 @@ footer p{
     }
     .main{
         height: 420px;
+        padding: 0 65px;
     }
     .prevheader-mobile{
         display: flex;
@@ -1159,7 +1211,7 @@ footer p{
         width: 100%;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 200px;
     }
     .main-bg{
@@ -1181,6 +1233,9 @@ footer p{
     #mobile-header-button{
         all: unset;
         cursor: pointer;
+    }
+    .under-companies{
+        padding: 0 65px;
     }
     .mobile-menu{
         display: flex;
@@ -1255,8 +1310,11 @@ footer p{
         line-height: 28px;
         letter-spacing: 0.4px;
     }
+    .tiles{
+        padding: 0 65px;
+    }
     .tiles-2{
-        scale: .7;
+        scale: .8;
     }
     .case h1{
         font-size: 52px;
@@ -1282,6 +1340,7 @@ footer p{
     }
     .case{
         height: 1210px;
+        padding: 0 65px;
     }
     .case nonclickable{
         display: inline-flex;
@@ -1304,6 +1363,9 @@ footer p{
         height: 350px;
         max-width: unset;
     }
+    #blog{
+        padding: 0 65px;
+    }
     #blog h1{
         font-size: 52px;
         font-style: normal;
@@ -1311,21 +1373,23 @@ footer p{
         line-height: 60px;
         letter-spacing: 1.04px;
     }
-    .blog-text .second{
-        max-width: 271px;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 28px;
-        letter-spacing: 0.4px;
+    .blog-block{
+        height: 430px;
     }
-    .blog-text-button{
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 28px;
-        letter-spacing: 0.8px;
-        width: fit-content;
+    .blog-text-anim{
+        transform: translateY(280%);
+        max-width: 256px;
+        font-size: 18px;
+    }
+    .blog-block img{
+        max-width: 256px;
+    }
+    .blog-text-anim h2{
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+    .blog-text{
+        gap: 12px;
     }
     .daynet-1{
         margin-left: 17.5%;
@@ -1356,6 +1420,9 @@ footer p{
     }
     .daynet{
         height: 900px;
+    }
+    .daynet svg{
+        padding: 0 65px;
     }
     .daynet div{
         font-size: 20px;
@@ -1395,10 +1462,9 @@ footer p{
         max-width: 250px;
     }
     footer{
-        gap: 100px;
+        padding: 0 65px;
     }
     .main a{
-        padding: 16px 28px;
         font-size: 20px;
         font-style: normal;
         font-weight: 600;
@@ -1416,6 +1482,12 @@ footer p{
     }
 }
 @media screen and (max-width: 480px){
+    .Gsmall{
+        display: block;
+    }
+    .Gbig{
+        display: none;
+    }
     .form form input{
         max-width: unset;
     }
@@ -1424,9 +1496,14 @@ footer p{
     }
     .forma{
         margin-right: 0;
+        width: 100%;
+        overflow: hidden;
     }
     .prevheader-mobile{
         gap: 100px;
+    }
+    .main{
+        padding: 0 20px;
     }
     .main-bg{
         background-position: right;
@@ -1443,12 +1520,10 @@ footer p{
         max-width: 200px;
     }
     .logo{
-        margin-left: 5%;
-        gap: 150px;
-        margin-top: 250px;
+        gap: 80px;
     }
     .companies{
-        padding-top: 200px;
+        padding-top: 170px;
     }
     .under-companies{
         display: none;
@@ -1456,10 +1531,9 @@ footer p{
     .under-companies-mobile{
         display: flex;
         flex-wrap: wrap;
-        max-width: 337px;
         justify-content: center;
         gap: 22.5px;
-        padding: 24px 0;
+        padding: 24px 20px;
     }
     .tiles h1{
         font-size: 28px;
@@ -1469,8 +1543,8 @@ footer p{
         letter-spacing: 0.56px;
         max-width: 301px;
     }
-    .tiles-1{
-        margin-left: 5%;
+    .tiles{
+        padding: 0 20px;
     }
     .tiles-2{
         display: none;
@@ -1497,10 +1571,6 @@ footer p{
         width: 28px;
         height: 28px;
     }
-
-    .under-case{
-        margin-left: 5%;
-    }
     .case h1{
         font-size: 40px;
         font-style: normal;
@@ -1510,6 +1580,7 @@ footer p{
     }
     .case{
         height: 1046px;
+        padding: 0 20px;
     }
     .case h2{
         font-size: 28px;
@@ -1557,8 +1628,8 @@ footer p{
     }
     #blog{
         flex-direction: column;
-        padding-top: 50px;
         gap: 43px;
+        padding: 50px 20px 0;
     }
     #blog h1{
         font-size: 40px;
@@ -1574,7 +1645,7 @@ footer p{
     }
     .daynet svg{
         width: 160px;
-        margin-left: 5%;
+        padding: 0 20px;
     }
     .daynet img{
         height: 300px!important;
@@ -1630,6 +1701,9 @@ footer p{
     .form form{
         margin-top: unset;
         margin-left: unset;
+        width: 100%;
+        max-width: unset;
+        padding-left: 40px;
     }
     .form p{
         font-size: 28px;
@@ -1681,12 +1755,10 @@ footer p{
         align-items: flex-start!important;
         gap: 52px;
         height: 250px;
+        padding: 0 20px;
     }
     footer p{
         text-align: left;
-    }
-    footer p, footer svg{
-        margin-left: 5%;
     }
 }
 @media screen and (max-width: 380px){

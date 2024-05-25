@@ -433,36 +433,49 @@
             touchpadSupport: true,
         })
         document.addEventListener("DOMContentLoaded", () => {
-            document.querySelector('.changing-1').addEventListener('click', function () {
-                toggleOpacity('opacity-1');
-                toggleColor('.changing-1');
+            document.querySelectorAll('.changing-1').forEach(element => {
+                element.addEventListener('click', function () {
+                    toggleOpacity('opacity-1');
+                    toggleColor('.changing-1');
+                });
             });
 
-            document.querySelector('.changing-2').addEventListener('click', function () {
-                toggleOpacity('opacity-2');
-                toggleColor('.changing-2');
+            document.querySelectorAll('.changing-2').forEach(element => {
+                element.addEventListener('click', function () {
+                    toggleOpacity('opacity-2');
+                    toggleColor('.changing-2');
+                });
             });
 
-            document.querySelector('.changing-3').addEventListener('click', function () {
-                toggleOpacity('opacity-3');
-                toggleColor('.changing-3');
+            document.querySelectorAll('.changing-3').forEach(element => {
+                element.addEventListener('click', function () {
+                    toggleOpacity('opacity-3');
+                    toggleColor('.changing-3');
+                });
             });
 
-            document.querySelector('.changing-4').addEventListener('click', function () {
-                toggleOpacity('opacity-4');
-                toggleColor('.changing-4');
+            document.querySelectorAll('.changing-4').forEach(element => {
+                element.addEventListener('click', function () {
+                    toggleOpacity('opacity-4');
+                    toggleColor('.changing-4');
+                });
             });
 
-            document.querySelector('.changing-5').addEventListener('click', function () {
-                toggleOpacity('opacity-5');
-                toggleColor('.changing-5');
+            document.querySelectorAll('.changing-5').forEach(element => {
+                element.addEventListener('click', function () {
+                    toggleOpacity('opacity-5');
+                    toggleColor('.changing-5');
+                });
             });
 
-            document.querySelector('.changing-6').addEventListener('click', function () {
-                toggleOpacity('opacity-6');
-                toggleColor('.changing-6');
+            document.querySelectorAll('.changing-6').forEach(element => {
+                element.addEventListener('click', function () {
+                    toggleOpacity('opacity-6');
+                    toggleColor('.changing-6');
+                });
             });
-        })
+        });
+
         function toggleOpacity(opacityClass) {
             const opacityClasses = ['opacity-1', 'opacity-2', 'opacity-3', 'opacity-4', 'opacity-5', 'opacity-6'];
 
@@ -485,17 +498,17 @@
             });
         }
 
-        function toggleColor(changingId) {
-            const changingIds = ['.changing-1', '.changing-2', '.changing-3', '.changing-4', '.changing-5', '.changing-6'];
+        function toggleColor(changingClass) {
+            const changingClasses = ['.changing-1', '.changing-2', '.changing-3', '.changing-4', '.changing-5', '.changing-6'];
 
-            changingIds.forEach(function (id) {
-                const element = document.querySelectorAll(id)[id];
-
-                if (id === changingId) {
-                    element.classList.add('selected');
-                } else {
-                    element.classList.remove('selected');
-                }
+            changingClasses.forEach(function (className) {
+                document.querySelectorAll(className).forEach(element => {
+                    if (className === changingClass) {
+                        element.classList.add('selected');
+                    } else {
+                        element.classList.remove('selected');
+                    }
+                });
             });
         }
     </script>

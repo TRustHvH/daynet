@@ -216,9 +216,6 @@ nonclickable svg{
     opacity: 1;
     padding: 0;
 }
-.right{
-    width: 526px;
-}
 .form{
     padding-bottom: 20px;
 }
@@ -242,11 +239,8 @@ nonclickable svg{
     .opacity-continue{
         flex-direction: row;
     }
-    .left{
-        width: 564px;
-    }
 }
-@media screen and (max-width: 1192px){
+@media screen and (max-width: 980px){
     .changing-1, .changing-2, .changing-3, .changing-4, .changing-5, .changing-6{
         cursor: pointer;
         text-decoration: none;
@@ -262,6 +256,7 @@ nonclickable svg{
     }
     .change{
         flex-direction: row;
+        flex-wrap: wrap;
         margin-bottom: 42px;
     }
     .changing img {
@@ -272,19 +267,11 @@ nonclickable svg{
     .opacity-continue{
         flex-direction: column;
     }
-    .left{
-        width: 584px;
-    }
-}
-@media screen and (max-width: 980px){
     .cases{
         padding: 0 92px;
     }
     .opacity-continue{
         flex-direction: column;
-    }
-    .change{
-        display: none;
     }
 }
 @media screen and (max-width: 720px){
@@ -360,6 +347,9 @@ nonclickable svg{
     .form {
         height: 1200px !important;
     }
+    .opacity-continue{
+        max-width: 340px;
+    }
     .cases h1{
         font-size: 40px;
         font-style: normal;
@@ -384,13 +374,9 @@ nonclickable svg{
         letter-spacing: 0.48px;
     }
     .img-for-crop{
-        width: fit-content;
-        margin: 0 0 0 auto;
+        width: 100%;
     }
     .changing img{
-        width: 360px;
-        height: 252px;
-        border-radius: 20px 0 0 20px;
         margin-bottom: 28px;
     }
     .changing nonclickable{

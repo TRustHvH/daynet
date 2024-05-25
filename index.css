@@ -118,7 +118,7 @@ body{
     background-color: #F9FBFF;
 }
 html{
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 }
 .main-bg{
     background: url('img/main-bg.svg') no-repeat center;
@@ -138,6 +138,7 @@ header{
 .header a{
     text-decoration: none;
     color: black;
+
 }
 img{
     pointer-events: none;
@@ -220,6 +221,7 @@ svg{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 89px;
 }
 .companies{
     padding-top: 200px;
@@ -983,7 +985,7 @@ footer p{
         margin-top: 135px;
     }
     .main{
-        padding: 0 100px;
+        padding: 0 85px;
     }
     .tiles{
         padding: 85px 100px;
@@ -1508,7 +1510,7 @@ footer p{
         background-position: right;
     }
     .start img{
-        width: 319px;
+        width: 180px;
     }
     .start p{
         font-size: 24px;

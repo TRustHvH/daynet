@@ -137,7 +137,7 @@ footer{
     font-weight: 226;
     line-height: 28px;
     letter-spacing: 0.4px;
-    margin: 0 30px 0 auto;
+    margin: 0 30px 0 0;
 }
 .big{
     color: #000;

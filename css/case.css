@@ -142,7 +142,7 @@ body{
     border-radius: 16px;
     background: #FFF;
     box-shadow: 1px 2px 10px 0 rgba(2, 12, 20, 0.04);
-    width: 550px;
+    width: fit-content;
     color: #04101C;
     font-size: 28px;
     font-style: normal;
@@ -160,12 +160,11 @@ nonclickable span{
     letter-spacing: 1.68px!important;
     opacity: 1!important;
 }
-nonclickable svg{
-    overflow: unset;
+.right{
+    margin-top: 219px;
 }
 .opacity-continue{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-top: 50px;
 }
@@ -218,6 +217,15 @@ nonclickable svg{
 }
 .form{
     padding-bottom: 20px;
+}
+nonclickable img{
+    margin: 0!important;
+    width: unset!important;
+}
+.right img{
+    margin: 0!important;
+    max-width: unset;
+    border-radius: unset!important;
 }
 @media screen and (max-width: 1680px){
     .cases{

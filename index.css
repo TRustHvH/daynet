@@ -118,7 +118,7 @@ body{
     background-color: #F9FBFF;
 }
 html{
-    /*scroll-behavior: smooth;*/
+    scroll-behavior: smooth;
 }
 .main-bg{
     background: url('img/main-bg.svg') no-repeat center;

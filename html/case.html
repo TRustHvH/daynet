@@ -48,9 +48,6 @@
                                 <path d="M125.155 0H144.56C145.374 0 146 0.628573 146 1.44571V2.89143C146 3.70857 145.374 4.33714 144.56 4.33714H137.737V20.5857C137.737 21.3714 137.08 22 136.297 22H133.418C132.635 22 131.978 21.3714 131.978 20.5857V4.33714H125.155C124.341 4.33714 123.715 3.70857 123.715 2.89143V1.44571C123.715 0.628573 124.341 0 125.155 0Z" fill="#04101C"/>
                             </svg>
                             <svg class="Gsmall" width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                    Created with Pixso.
-                                </desc>
                                 <defs/>
                                 <path id="Exclude" d="M16 32C24.83 32 32 24.83 32 16C32 10.86 29.58 6.29 25.82 3.36L23.18 1.69C21.02 0.61 18.58 0 16 0C7.16 0 0 7.16 0 16C0 24.83 7.16 32 16 32ZM23.18 1.69L23.18 9.29C21.31 7.2 18.62 5.88 15.62 5.88C9.99 5.88 5.43 10.51 5.43 16.22C5.43 21.93 9.99 26.56 15.62 26.56C18.62 26.56 21.31 25.24 23.18 23.15L23.1 25.31C23.09 25.61 23.33 25.86 23.64 25.86L25.35 25.86C25.65 25.86 25.89 25.62 25.89 25.32L25.82 3.36L23.18 1.69ZM23.6 16.22C23.6 20.52 20.16 24.01 15.92 24.01C11.67 24.01 8.23 20.52 8.23 16.22C8.23 11.92 11.67 8.44 15.92 8.44C20.16 8.44 23.6 11.92 23.6 16.22Z" fill="#04101C" fill-opacity="1.000000" fill-rule="evenodd"/>
                             </svg>
@@ -76,7 +73,6 @@
         <h1>КЕЙСЫ</h1>
         <div class="changing">
             <div id="opacity-1">
-                
                     <div class="opacity-start">
                         <h2>Автосалон <span>Репутация</span></h2>
                         <div class="top">
@@ -84,12 +80,12 @@
                                 <img src="../img/car.png" alt="">
                             </div>
                             <div class="change">
-                                <a id="changing-1">Автосалон</a>
-                                <a id="changing-2">Банк</a>
-                                <a id="changing-3">Компания-<br>застройщик</a>
-                                <a id="changing-4">Сеть клиник</a>
-                                <a id="changing-5">Персональная<br>репутация</a>
-                                <a id="changing-6">Стройматериалы</a>
+                                <a class="changing-1 selected">Автосалон</a>
+                                <a class="changing-2">Банк</a>
+                                <a class="changing-3">Компания-<br>застройщик</a>
+                                <a class="changing-4">Сеть клиник</a>
+                                <a class="changing-5">Персональная<br>репутация</a>
+                                <a class="changing-6">Стройматериалы</a>
                             </div>
                         </div>
                         <nonclickable>
@@ -200,7 +196,19 @@
             <div id="opacity-2">
                 <div class="opacity-start">
                     <h2>HR-бренд <span>Текст</span></h2>
-                    <img src="../img/hr.jpg" alt="">
+                    <div class="top">
+                        <div class="img-for-crop">
+                            <img src="../img/car.png" alt="">
+                        </div>
+                        <div class="change">
+                            <a class="changing-1">Автосалон</a>
+                            <a class="changing-2">Банк</a>
+                            <a class="changing-3">Компания-<br>застройщик</a>
+                            <a class="changing-4">Сеть клиник</a>
+                            <a class="changing-5">Персональная<br>репутация</a>
+                            <a class="changing-6">Стройматериалы</a>
+                        </div>
+                    </div>
                     <nonclickable>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <path d="M36 24.3805C35.5762 13.3667 28.1589 5.15645 23.7086 1.35169C21.5894 -0.450563 18.1987 -0.450563 16.0795 1.35169C11.8411 5.3567 4.42384 13.3667 4 24.3805C4 24.5807 4 24.9812 4 25.1815C4 33.3917 11.2053 40 19.894 40C28.7947 40 35.7881 33.3917 35.7881 25.1815C36 24.781 36 24.5807 36 24.3805ZM22.4371 35.194C21.3775 35.995 20.106 36.1952 18.8344 35.7947C17.7748 35.3942 16.9272 34.9937 16.5033 33.9925C15.8675 32.5907 15.8675 30.7885 16.5033 28.9862C17.351 26.7835 19.2583 23.98 20.106 23.7797C22.649 25.7822 24.3444 29.1865 24.3444 31.99C24.1325 33.3917 23.4967 34.393 22.4371 35.194ZM28.3709 32.791C28.3709 32.5907 28.3709 32.3905 28.3709 32.1902C28.3709 27.985 26.0397 23.5795 22.649 20.776C21.5894 19.975 20.3179 19.5745 18.8344 19.975C14.8079 20.9762 12.4768 27.5845 12.4768 27.7847C11.8411 29.587 11.6291 31.3892 11.8411 32.9912C9.72185 30.9887 8.23841 28.1852 8.23841 25.1815C8.23841 24.9812 8.23841 24.781 8.23841 24.5807C8.45033 14.9687 15.2318 7.7597 19.0464 4.35544C19.2583 4.15519 19.6821 3.95494 19.894 3.95494C20.106 3.95494 20.5298 4.15519 20.9536 4.35544C24.9801 7.7597 31.5497 14.9687 31.7616 24.5807C31.7616 24.781 31.7616 24.9812 31.7616 24.9812C31.7616 28.1852 30.4901 30.7885 28.3709 32.791Z" fill="url(#paint0_radial_452_19310)"/>
@@ -220,7 +228,19 @@
             <div id="opacity-3">
                 <div class="opacity-start">
                     <h2>Другое <span>Текст</span></h2>
-                    <img src="../img/car.png" alt="">
+                    <div class="top">
+                        <div class="img-for-crop">
+                            <img src="../img/car.png" alt="">
+                        </div>
+                        <div class="change">
+                            <a class="changing-1">Автосалон</a>
+                            <a class="changing-2">Банк</a>
+                            <a class="changing-3">Компания-застройщик</a>
+                            <a class="changing-4">Сеть клиник</a>
+                            <a class="changing-5">Персональная репутация</a>
+                            <a class="changing-6">Стройматериалы</a>
+                        </div>
+                    </div>
                     <nonclickable>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <path d="M36 24.3805C35.5762 13.3667 28.1589 5.15645 23.7086 1.35169C21.5894 -0.450563 18.1987 -0.450563 16.0795 1.35169C11.8411 5.3567 4.42384 13.3667 4 24.3805C4 24.5807 4 24.9812 4 25.1815C4 33.3917 11.2053 40 19.894 40C28.7947 40 35.7881 33.3917 35.7881 25.1815C36 24.781 36 24.5807 36 24.3805ZM22.4371 35.194C21.3775 35.995 20.106 36.1952 18.8344 35.7947C17.7748 35.3942 16.9272 34.9937 16.5033 33.9925C15.8675 32.5907 15.8675 30.7885 16.5033 28.9862C17.351 26.7835 19.2583 23.98 20.106 23.7797C22.649 25.7822 24.3444 29.1865 24.3444 31.99C24.1325 33.3917 23.4967 34.393 22.4371 35.194ZM28.3709 32.791C28.3709 32.5907 28.3709 32.3905 28.3709 32.1902C28.3709 27.985 26.0397 23.5795 22.649 20.776C21.5894 19.975 20.3179 19.5745 18.8344 19.975C14.8079 20.9762 12.4768 27.5845 12.4768 27.7847C11.8411 29.587 11.6291 31.3892 11.8411 32.9912C9.72185 30.9887 8.23841 28.1852 8.23841 25.1815C8.23841 24.9812 8.23841 24.781 8.23841 24.5807C8.45033 14.9687 15.2318 7.7597 19.0464 4.35544C19.2583 4.15519 19.6821 3.95494 19.894 3.95494C20.106 3.95494 20.5298 4.15519 20.9536 4.35544C24.9801 7.7597 31.5497 14.9687 31.7616 24.5807C31.7616 24.781 31.7616 24.9812 31.7616 24.9812C31.7616 28.1852 30.4901 30.7885 28.3709 32.791Z" fill="url(#paint0_radial_452_19310)"/>
@@ -240,7 +260,19 @@
             <div id="opacity-4">
                 <div class="opacity-start">
                     <h2>Третье <span>Текст</span></h2>
-                    <img src="../img/car.png" alt="">
+                    <div class="top">
+                        <div class="img-for-crop">
+                            <img src="../img/car.png" alt="">
+                        </div>
+                        <div class="change">
+                            <a class="changing-1">Автосалон</a>
+                            <a class="changing-2">Банк</a>
+                            <a class="changing-3">Компания-<br>застройщик</a>
+                            <a class="changing-4">Сеть клиник</a>
+                            <a class="changing-5">Персональная<br>репутация</a>
+                            <a class="changing-6">Стройматериалы</a>
+                        </div>
+                    </div>
                     <nonclickable>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <path d="M36 24.3805C35.5762 13.3667 28.1589 5.15645 23.7086 1.35169C21.5894 -0.450563 18.1987 -0.450563 16.0795 1.35169C11.8411 5.3567 4.42384 13.3667 4 24.3805C4 24.5807 4 24.9812 4 25.1815C4 33.3917 11.2053 40 19.894 40C28.7947 40 35.7881 33.3917 35.7881 25.1815C36 24.781 36 24.5807 36 24.3805ZM22.4371 35.194C21.3775 35.995 20.106 36.1952 18.8344 35.7947C17.7748 35.3942 16.9272 34.9937 16.5033 33.9925C15.8675 32.5907 15.8675 30.7885 16.5033 28.9862C17.351 26.7835 19.2583 23.98 20.106 23.7797C22.649 25.7822 24.3444 29.1865 24.3444 31.99C24.1325 33.3917 23.4967 34.393 22.4371 35.194ZM28.3709 32.791C28.3709 32.5907 28.3709 32.3905 28.3709 32.1902C28.3709 27.985 26.0397 23.5795 22.649 20.776C21.5894 19.975 20.3179 19.5745 18.8344 19.975C14.8079 20.9762 12.4768 27.5845 12.4768 27.7847C11.8411 29.587 11.6291 31.3892 11.8411 32.9912C9.72185 30.9887 8.23841 28.1852 8.23841 25.1815C8.23841 24.9812 8.23841 24.781 8.23841 24.5807C8.45033 14.9687 15.2318 7.7597 19.0464 4.35544C19.2583 4.15519 19.6821 3.95494 19.894 3.95494C20.106 3.95494 20.5298 4.15519 20.9536 4.35544C24.9801 7.7597 31.5497 14.9687 31.7616 24.5807C31.7616 24.781 31.7616 24.9812 31.7616 24.9812C31.7616 28.1852 30.4901 30.7885 28.3709 32.791Z" fill="url(#paint0_radial_452_19310)"/>
@@ -260,7 +292,19 @@
             <div id="opacity-5">
                 <div class="opacity-start">
                     <h2>Пятое <span>Текст</span></h2>
-                    <img src="../img/car.png" alt="">
+                    <div class="top">
+                        <div class="img-for-crop">
+                            <img src="../img/car.png" alt="">
+                        </div>
+                        <div class="change">
+                            <a class="changing-1">Автосалон</a>
+                            <a class="changing-2">Банк</a>
+                            <a class="changing-3">Компания-<br>застройщик</a>
+                            <a class="changing-4">Сеть клиник</a>
+                            <a class="changing-5">Персональная<br>репутация</a>
+                            <a class="changing-6">Стройматериалы</a>
+                        </div>
+                    </div>
                     <nonclickable>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <path d="M36 24.3805C35.5762 13.3667 28.1589 5.15645 23.7086 1.35169C21.5894 -0.450563 18.1987 -0.450563 16.0795 1.35169C11.8411 5.3567 4.42384 13.3667 4 24.3805C4 24.5807 4 24.9812 4 25.1815C4 33.3917 11.2053 40 19.894 40C28.7947 40 35.7881 33.3917 35.7881 25.1815C36 24.781 36 24.5807 36 24.3805ZM22.4371 35.194C21.3775 35.995 20.106 36.1952 18.8344 35.7947C17.7748 35.3942 16.9272 34.9937 16.5033 33.9925C15.8675 32.5907 15.8675 30.7885 16.5033 28.9862C17.351 26.7835 19.2583 23.98 20.106 23.7797C22.649 25.7822 24.3444 29.1865 24.3444 31.99C24.1325 33.3917 23.4967 34.393 22.4371 35.194ZM28.3709 32.791C28.3709 32.5907 28.3709 32.3905 28.3709 32.1902C28.3709 27.985 26.0397 23.5795 22.649 20.776C21.5894 19.975 20.3179 19.5745 18.8344 19.975C14.8079 20.9762 12.4768 27.5845 12.4768 27.7847C11.8411 29.587 11.6291 31.3892 11.8411 32.9912C9.72185 30.9887 8.23841 28.1852 8.23841 25.1815C8.23841 24.9812 8.23841 24.781 8.23841 24.5807C8.45033 14.9687 15.2318 7.7597 19.0464 4.35544C19.2583 4.15519 19.6821 3.95494 19.894 3.95494C20.106 3.95494 20.5298 4.15519 20.9536 4.35544C24.9801 7.7597 31.5497 14.9687 31.7616 24.5807C31.7616 24.781 31.7616 24.9812 31.7616 24.9812C31.7616 28.1852 30.4901 30.7885 28.3709 32.791Z" fill="url(#paint0_radial_452_19310)"/>
@@ -280,7 +324,19 @@
             <div id="opacity-6">
                 <div class="opacity-start">
                     <h2>Десятое <span>Текст</span></h2>
-                    <img src="../img/car.png" alt="">
+                    <div class="top">
+                        <div class="img-for-crop">
+                            <img src="../img/car.png" alt="">
+                        </div>
+                        <div class="change">
+                            <a class="changing-1">Автосалон</a>
+                            <a class="changing-2">Банк</a>
+                            <a class="changing-3">Компания-<br>застройщик</a>
+                            <a class="changing-4">Сеть клиник</a>
+                            <a class="changing-5">Персональная<br>репутация</a>
+                            <a class="changing-6">Стройматериалы</a>
+                        </div>
+                    </div>
                     <nonclickable>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <path d="M36 24.3805C35.5762 13.3667 28.1589 5.15645 23.7086 1.35169C21.5894 -0.450563 18.1987 -0.450563 16.0795 1.35169C11.8411 5.3567 4.42384 13.3667 4 24.3805C4 24.5807 4 24.9812 4 25.1815C4 33.3917 11.2053 40 19.894 40C28.7947 40 35.7881 33.3917 35.7881 25.1815C36 24.781 36 24.5807 36 24.3805ZM22.4371 35.194C21.3775 35.995 20.106 36.1952 18.8344 35.7947C17.7748 35.3942 16.9272 34.9937 16.5033 33.9925C15.8675 32.5907 15.8675 30.7885 16.5033 28.9862C17.351 26.7835 19.2583 23.98 20.106 23.7797C22.649 25.7822 24.3444 29.1865 24.3444 31.99C24.1325 33.3917 23.4967 34.393 22.4371 35.194ZM28.3709 32.791C28.3709 32.5907 28.3709 32.3905 28.3709 32.1902C28.3709 27.985 26.0397 23.5795 22.649 20.776C21.5894 19.975 20.3179 19.5745 18.8344 19.975C14.8079 20.9762 12.4768 27.5845 12.4768 27.7847C11.8411 29.587 11.6291 31.3892 11.8411 32.9912C9.72185 30.9887 8.23841 28.1852 8.23841 25.1815C8.23841 24.9812 8.23841 24.781 8.23841 24.5807C8.45033 14.9687 15.2318 7.7597 19.0464 4.35544C19.2583 4.15519 19.6821 3.95494 19.894 3.95494C20.106 3.95494 20.5298 4.15519 20.9536 4.35544C24.9801 7.7597 31.5497 14.9687 31.7616 24.5807C31.7616 24.781 31.7616 24.9812 31.7616 24.9812C31.7616 28.1852 30.4901 30.7885 28.3709 32.791Z" fill="url(#paint0_radial_452_19310)"/>
@@ -376,7 +432,72 @@
             // Поддержка тачпада
             touchpadSupport: true,
         })
-        const _0x5c4cf7=_0x8212;(function(_0x40efa1,_0x1a50c1){const _0x28055d=_0x8212,_0x113a79=_0x40efa1();while(!![]){try{const _0x26d65d=parseInt(_0x28055d(0x6e))/0x1+parseInt(_0x28055d(0x82))/0x2*(parseInt(_0x28055d(0x8e))/0x3)+-parseInt(_0x28055d(0x7b))/0x4*(-parseInt(_0x28055d(0x78))/0x5)+-parseInt(_0x28055d(0x74))/0x6+parseInt(_0x28055d(0x71))/0x7+parseInt(_0x28055d(0x87))/0x8+parseInt(_0x28055d(0x72))/0x9*(-parseInt(_0x28055d(0x80))/0xa);if(_0x26d65d===_0x1a50c1)break;else _0x113a79['push'](_0x113a79['shift']());}catch(_0x1f906c){_0x113a79['push'](_0x113a79['shift']());}}}(_0x3ed9,0x8ef72),document['addEventListener'](_0x5c4cf7(0x7f),function(){const _0x4731b9=_0x5c4cf7;document['getElementById'](_0x4731b9(0x6d))[_0x4731b9(0x8a)]('click',function(){const _0x3c716f=_0x4731b9;toggleOpacity('opacity-1'),toggleColor(_0x3c716f(0x6d));}),document[_0x4731b9(0x7e)]('changing-2')[_0x4731b9(0x8a)](_0x4731b9(0x86),function(){const _0x19c663=_0x4731b9;toggleOpacity(_0x19c663(0x7d)),toggleColor(_0x19c663(0x85));}),document[_0x4731b9(0x7e)](_0x4731b9(0x84))[_0x4731b9(0x8a)](_0x4731b9(0x86),function(){const _0x2efaeb=_0x4731b9;toggleOpacity('opacity-3'),toggleColor(_0x2efaeb(0x84));}),document[_0x4731b9(0x7e)](_0x4731b9(0x83))[_0x4731b9(0x8a)](_0x4731b9(0x86),function(){const _0x5277ae=_0x4731b9;toggleOpacity('opacity-4'),toggleColor(_0x5277ae(0x83));}),document[_0x4731b9(0x7e)](_0x4731b9(0x77))[_0x4731b9(0x8a)]('click',function(){const _0x344a48=_0x4731b9;toggleOpacity('opacity-5'),toggleColor(_0x344a48(0x77));}),document['getElementById'](_0x4731b9(0x8c))[_0x4731b9(0x8a)]('click',function(){const _0x204068=_0x4731b9;toggleOpacity(_0x204068(0x70)),toggleColor(_0x204068(0x8c));});}));function _0x3ed9(){const _0x1f5b73=['changing-4','changing-3','changing-2','click','7297600FYdNSY','opacity-5','style','addEventListener','anim-opacity-enable','changing-6','classList','1068hbMEgo','changing-1','614271dkASkb','anim-opacity-disable','opacity-6','1388751cnekJt','3699vtztpm','remove','6020028rdfFxo','display','anim-black','changing-5','2405640BMpway','forEach','flex','4zfuzja','none','opacity-2','getElementById','DOMContentLoaded','37240yyZGGT','add','5132NNGfFg'];_0x3ed9=function(){return _0x1f5b73;};return _0x3ed9();}function _0x8212(_0x2c3401,_0xf341fb){const _0x3ed97c=_0x3ed9();return _0x8212=function(_0x821212,_0x269def){_0x821212=_0x821212-0x6d;let _0x377407=_0x3ed97c[_0x821212];return _0x377407;},_0x8212(_0x2c3401,_0xf341fb);}function toggleOpacity(_0x4dc335){const _0x534cfe=_0x5c4cf7,_0x4b8cbc=['opacity-1',_0x534cfe(0x7d),'opacity-3','opacity-4',_0x534cfe(0x88),'opacity-6'];_0x4b8cbc[_0x534cfe(0x79)](function(_0x5be0b5){const _0x56898c=_0x534cfe,_0x35c332=document[_0x56898c(0x7e)](_0x5be0b5);_0x5be0b5===_0x4dc335?(_0x35c332[_0x56898c(0x8d)][_0x56898c(0x81)]('anim-opacity-enable'),_0x35c332[_0x56898c(0x8d)][_0x56898c(0x73)](_0x56898c(0x6f)),setTimeout(function(){const _0x360a89=_0x56898c;_0x35c332[_0x360a89(0x89)][_0x360a89(0x75)]=_0x360a89(0x7a);},0xb4)):(_0x35c332[_0x56898c(0x8d)][_0x56898c(0x81)]('anim-opacity-disable'),_0x35c332[_0x56898c(0x8d)][_0x56898c(0x73)](_0x56898c(0x8b)),setTimeout(function(){const _0x58a324=_0x56898c;_0x35c332['style'][_0x58a324(0x75)]=_0x58a324(0x7c);},0xc8));});}function toggleColor(_0x4c489d){const _0x81640d=_0x5c4cf7,_0x42b5d2=['changing-1',_0x81640d(0x85),_0x81640d(0x84),_0x81640d(0x83),_0x81640d(0x77),_0x81640d(0x8c)];_0x42b5d2[_0x81640d(0x79)](function(_0x5e1408){const _0x958a3e=_0x81640d,_0x5da6e2=document[_0x958a3e(0x7e)](_0x5e1408);_0x5e1408===_0x4c489d?(_0x5da6e2['classList'][_0x958a3e(0x81)]('anim-blue'),_0x5da6e2[_0x958a3e(0x8d)][_0x958a3e(0x73)](_0x958a3e(0x76))):(_0x5da6e2[_0x958a3e(0x8d)][_0x958a3e(0x81)](_0x958a3e(0x76)),_0x5da6e2[_0x958a3e(0x8d)][_0x958a3e(0x73)]('anim-blue'));});}
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector('.changing-1').addEventListener('click', function () {
+                toggleOpacity('opacity-1');
+                toggleColor('.changing-1');
+            });
+
+            document.querySelector('.changing-2').addEventListener('click', function () {
+                toggleOpacity('opacity-2');
+                toggleColor('.changing-2');
+            });
+
+            document.querySelector('.changing-3').addEventListener('click', function () {
+                toggleOpacity('opacity-3');
+                toggleColor('.changing-3');
+            });
+
+            document.querySelector('.changing-4').addEventListener('click', function () {
+                toggleOpacity('opacity-4');
+                toggleColor('.changing-4');
+            });
+
+            document.querySelector('.changing-5').addEventListener('click', function () {
+                toggleOpacity('opacity-5');
+                toggleColor('.changing-5');
+            });
+
+            document.querySelector('.changing-6').addEventListener('click', function () {
+                toggleOpacity('opacity-6');
+                toggleColor('.changing-6');
+            });
+        })
+        function toggleOpacity(opacityClass) {
+            const opacityClasses = ['opacity-1', 'opacity-2', 'opacity-3', 'opacity-4', 'opacity-5', 'opacity-6'];
+
+            opacityClasses.forEach(function (className) {
+                const element = document.getElementById(className);
+
+                if (className === opacityClass) {
+                    element.classList.add('anim-opacity-enable');
+                    element.classList.remove('anim-opacity-disable');
+                    setTimeout(function () {
+                        element.style.display = 'flex';
+                    }, 180);
+                } else {
+                    element.classList.add('anim-opacity-disable');
+                    element.classList.remove('anim-opacity-enable');
+                    setTimeout(function () {
+                        element.style.display = 'none';
+                    }, 200);
+                }
+            });
+        }
+
+        function toggleColor(changingId) {
+            const changingIds = ['.changing-1', '.changing-2', '.changing-3', '.changing-4', '.changing-5', '.changing-6'];
+
+            changingIds.forEach(function (id) {
+                const element = document.querySelectorAll(id)[id];
+
+                if (id === changingId) {
+                    element.classList.add('selected');
+                } else {
+                    element.classList.remove('selected');
+                }
+            });
+        }
     </script>
 </body>
 </html>

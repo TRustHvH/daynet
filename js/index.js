@@ -21,5 +21,3 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("mobile-header-button").addEventListener("click", mobile_menu_opener);
     document.getElementById("close-mobile-header").addEventListener("click", mobile_menu_opener);
 });
-
-

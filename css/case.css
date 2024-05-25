@@ -56,22 +56,10 @@ header{
 .anim-opacity-disable {
     animation-name: opacity-disable;
 }
-.anim-black, .anim-blue{
-    animation-duration: 0.2s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-}
-.anim-black{
-    animation-name: black;
-}
-.anim-blue{
-    animation-name: blue;
-}
-#changing-1{
+.selected{
     color: #7A73FF;
 }
-#changing-1, #changing-2, #changing-3, #changing-4, #changing-5, #changing-6{
+.changing-1, .changing-2, .changing-3, .changing-4, .changing-5, .changing-6{
     cursor: pointer;
     text-decoration: none;
     font-size: 32px;
@@ -92,8 +80,7 @@ body{
     width: 100%;
 }
 .cases{
-    
-    padding: 0 104px 0 92px;
+    padding: 0 325px;
 }
 .cases h1{
     color: #04101C;
@@ -142,8 +129,7 @@ body{
 
 }
 .changing img{
-    max-width: 100%;
-    
+    max-width: 90%;
     border-radius: 20px;
     margin-bottom: 100px;
 }
@@ -238,7 +224,7 @@ nonclickable svg{
 }
 @media screen and (max-width: 1680px){
     .cases{
-        
+        padding: 0 220px;
     }
 }
 @media screen and (max-width: 1440px) {
@@ -261,7 +247,7 @@ nonclickable svg{
     }
 }
 @media screen and (max-width: 1192px){
-    #changing-1, #changing-2, #changing-3, #changing-4, #changing-5, #changing-6{
+    .changing-1, .changing-2, .changing-3, .changing-4, .changing-5, .changing-6{
         cursor: pointer;
         text-decoration: none;
         font-size: 23px;

@@ -20,4 +20,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     document.getElementById("mobile-header-button").addEventListener("click", mobile_menu_opener);
     document.getElementById("close-mobile-header").addEventListener("click", mobile_menu_opener);
+
+    document.addEventListener("scroll", () => {
+        if (window.scrollY >= 85) {
+            document.querySelector(".header").classList.add("header-scroll");
+        } else {
+            document.querySelector(".header").classList.remove("header-scroll");
+        }
+    })
 });

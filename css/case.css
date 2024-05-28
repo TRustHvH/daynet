@@ -1,6 +1,5 @@
-
 .main{
-    height: fit-content !important;
+    height: 85px !important;
 }
 header{
     background-color: #F9FBFF !important;
@@ -67,6 +66,10 @@ header{
     font-weight: 600;
     line-height: 40px;
     letter-spacing: 0.64px;
+    transition: .2s linear;
+}
+.changing-1:hover, .changing-2:hover, .changing-3:hover, .changing-4:hover, .changing-5:hover, .changing-6:hover{
+    color: #7A73FF;
 }
 #opacity-1{
     display: flex;

@@ -128,17 +128,24 @@ header{
     background-color: white;
 }
 .header{
-    display: flex;
-    height: 85px;
     width: 100%;
-    flex-direction: row;
+    position: fixed;
+    transition: .2s linear;
+    z-index: 9999;
+}
+.header1{
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 325px;
+    height: 85px;
 }
 .header a{
     text-decoration: none;
     color: black;
-
+}
+.header-scroll{
+    background: #F9FBFF;
 }
 img{
     pointer-events: none;
@@ -914,6 +921,9 @@ footer p{
     width: 100%;
 }
 @media screen and (max-width: 1680px){
+    .header1{
+        padding: 0 220px;
+    }
     .daynet-1{
         margin-left: 17%;
         margin-top: 370px;
@@ -985,6 +995,9 @@ footer p{
         margin-top: 135px;
     }
     .main{
+        padding: 0 85px;
+    }
+    .header1{
         padding: 0 85px;
     }
     .tiles{
@@ -1189,6 +1202,9 @@ footer p{
         padding: 0 92px;
         height: 500px;
     }
+    .header1{
+        padding: 0 92px;
+    }
     .prevheader{
         gap: 28px;
     }
@@ -1198,6 +1214,9 @@ footer p{
     }
 }
 @media screen and (max-width: 720px){
+    .blog a:nth-of-type(n+7) {
+        display: none;
+    }
     #close-mobile-header{
         pointer-events: unset;
         cursor: pointer;
@@ -1206,6 +1225,14 @@ footer p{
         height: 420px;
         padding: 0 65px;
     }
+    .header1-mobile{
+        display: flex;
+        height: 85px;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
     .prevheader-mobile{
         display: flex;
         height: 85px;
@@ -1213,13 +1240,13 @@ footer p{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: 200px;
+        padding: 0 65px;
     }
     .main-bg{
         background: url('img/main-bg-720.svg') no-repeat center;
         background-size: cover;
     }
-    .prevheader{
+    .header1{
         display: none;
     }
     .logo{
@@ -1489,6 +1516,15 @@ footer p{
     .Gbig{
         display: none;
     }
+    .logo img{
+        width: calc(100% - 20px);
+    }
+    .tiles-2-mobile{
+        margin-left: -10px;
+    }
+    .prevheader-mobile{
+        padding: 0 20px;
+    }
     .form form input{
         max-width: unset;
     }
@@ -1500,17 +1536,11 @@ footer p{
         width: 100%;
         overflow: hidden;
     }
-    .prevheader-mobile{
-        gap: 100px;
-    }
     .main{
         padding: 0 20px;
     }
     .main-bg{
         background-position: right;
-    }
-    .start img{
-        width: 180px;
     }
     .start p{
         font-size: 24px;
@@ -1552,6 +1582,7 @@ footer p{
     }
     .tiles-2-mobile{
         display: flex;
+        width: fit-content;
     }
     .tiles p{
         font-size: 16px;
@@ -1702,9 +1733,9 @@ footer p{
     .form form{
         margin-top: unset;
         margin-left: unset;
-        width: 100%;
+        width: fit-content;
         max-width: unset;
-        padding-left: 40px;
+        padding-left: 20px;
     }
     .form p{
         font-size: 28px;

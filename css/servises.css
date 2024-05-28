@@ -1,5 +1,5 @@
 .main{
-    height: fit-content !important;
+    height: 85px!important;
 }
 header{
     background-color: #F9FBFF !important;
@@ -32,6 +32,7 @@ header{
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 0.64px;
+    width: fit-content;
 }
 .services-start{
     padding: 0 325px;
@@ -83,21 +84,12 @@ header{
 .anim-opacity-disable {
     animation-name: opacity-disable;
 }
-.anim-black, .anim-blue{
-    animation-duration: 0.2s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-}
-.anim-black{
-    animation-name: black;
-}
-.anim-blue{
-    animation-name: blue;
-}
-#changing-1, #changing-2, #changing-3, #changing-4, #changing-5, #changing-6, #changing-7, #changing-8, #changing-9, #changing-10, #changing-12, #changing-13{
+#changing-1, #changing-2, #changing-3, #changing-4, #changing-5, #changing-6, #changing-7, #changing-8, #changing-9, #changing-10, #changing-11, #changing-12, #changing-13{
     cursor: pointer;
     transition: .2s linear;
+}
+#changing-1:hover, #changing-2:hover, #changing-3:hover, #changing-4:hover, #changing-5:hover, #changing-6:hover, #changing-7:hover, #changing-8:hover, #changing-9:hover, #changing-10:hover, #changing-11:hover, #changing-12:hover, #changing-13:hover{
+    color: #7A73FF;
 }
 #smm{
     display: flex;
@@ -220,79 +212,79 @@ nonclickable svg{
     position: absolute;
 }
 .advertisment{
-    top: 203px;
-    left: -12px;
+    margin-top: 203px!important;
+    margin-left: -12px!important;
 }
 .context{
-    top: 177px;
-    right: 91px;
+    margin-top: 177px!important;
+    margin-left: 166px !important;
 }
 .lines{
     z-index: 0;
 }
 .target{
-    right: 116px;
-    top: -18px;
+    margin-right: 116px!important;
+    margin-top: -18px!important;
 }
 .line-big-adv{
-    top: 124px;
-    left: 124px;
+    margin-top: 124px;
+    margin-left: 124px;
 }
 .line-small-adv{
-    top: 279px;
-    left: 124px;
+    margin-top: 279px;
+    margin-left: 124px;
 }
 .monitoring{
-    top: -30px;
-    left: 42px;
+    margin-top: -30px!important;
+    margin-left: 42px!important;
 }
 .socials{
-    right: 156px;
-    top: -30px;
+    margin-left: 172px !important;
+    margin-top: -30px!important;
 }
 .SERM{
-    top: 244px;
-    left: -8px;
+    margin-top: 244px!important;
+    margin-left: -8px!important;
 }
 .ORM{
-    top: 103px;
-    left: 120px;
+    margin-top: 103px!important;
+    margin-left: 120px!important;
 }
 .ratings{
-    right: 103px;
-    top: 95px;
+    margin-left: 220px !important;
+    margin-top: 95px!important;
 }
 .analitics{
-    top: 95px;
-    left: -8px;
+    margin-top: 95px!important;
+    margin-left: -8px!important;
 }
 .ORM-strategy{
-    top: 236px;
-    left: 90px;
+    margin-top: 236px!important;
+    margin-left: 90px!important;
 }
 .main-human{
-    top: 238px;
-    left: 198px;
+    margin-top: 238px!important;
+    margin-left: 198px!important;
 }
 .line1-orm{
-    left: 135px;
-    top: 72px;
+    margin-left: 135px!important;
+    margin-top: 72px!important;
 }
 .line2-orm{
-    left: 185px;
-    top: 69px;
+    margin-left: 185px!important;
+    margin-top: 69px!important;
 }
 .line4-orm{
-    left: 187px;
-    top: 169px;
+    margin-left: 187px!important;
+    margin-top: 169px!important;
 }
 .line5-orm{
-    left: 162px;
-    top: 205px;
+    margin-left: 162px!important;
+    margin-top: 205px!important;
 }
 .line6-orm{
-    left: 47px;
-    top: 180px;
+    margin-left: 47px!important;
+    margin-top: 180px!important;
 }
 .opacity-block ul{
     list-style-type: none;
@@ -319,92 +311,92 @@ nonclickable svg{
     white-space: nowrap;
 }
 .android{
-    top: -21px;
-    left: 41px;
+    margin-top: -21px!important;
+    margin-left: 41px!important;
 }
 .programs{
-    top: -20px;
-    left: 156px;
+    margin-top: -20px!important;
+    margin-left: 156px!important;
 }
 .it{
-    top: 112px;
-    left: 84px;
+    margin-top: 112px!important;
+    margin-left: 84px!important;
 }
 .site{
-    top: 108px;
-    left: 243px;
+    margin-top: 108px!important;
+    margin-left: 243px!important;
 }
 .crm{
-    top: 245px;
-    left: -4px;
+    margin-top: 245px!important;
+    margin-left: -4px!important;
 }
 .develop{
-    top: 245px;
-    left: 174px;
+    margin-top: 245px!important;
+    margin-left: 174px!important;
 }
 .line1-it{
-    top: 81px;
-    left: 111px;
+    margin-top: 81px!important;
+    margin-left: 111px!important;
 }
 .line2-it{
-    top: 78px;
-    left: 160px;
+    margin-top: 78px!important;
+    margin-left: 160px!important;
 }
 .line3-it{
-    top: 166px;
-    left: 160px;
+    margin-top: 166px!important;
+    margin-left: 160px!important;
 }
 .line4-it{
-    top: 178px;
-    left: 161px;
+    margin-top: 178px!important;
+    margin-left: 161px!important;
 }
 .line5-it{
-    top: 178px;
-    left: 60px;
+    margin-top: 178px!important;
+    margin-left: 60px!important;
 }
 .video{
-    top: -2px;
-    left: 53px;
+    margin-top: -2px!important;
+    margin-left: 53px!important;
 }
 .firm{
-    top: 6px;
-    right: 82px;
+    margin-top: 6px!important;
+    margin-left: 190px !important;
 }
 .d3{
-    top: 127px;
-    left: 3px;
+    margin-top: 127px!important;
+    margin-left: 3px!important;
 }
 .moushen{
-    top: 128px;
-    left: 130px;
+    margin-top: 128px!important;
+    margin-left: 130px!important;
 }
 .creative{
-    top: 253px;
-    left: 21px;
+    margin-top: 253px!important;
+    margin-left: 21px!important;
 }
 .adv{
-    right: 108px;
-    top: 253px;
+    margin-left: 208px !important;
+    margin-top: 253px!important;
 }
 .line1-mousen{
-    top: 85px;
-    left: 163px;
+    margin-top: 85px!important;
+    margin-left: 163px!important;
 }
 .line2-mousen{
-    top: 98px;
-    left: 218px;
+    margin-top: 98px!important;
+    margin-left: 218px!important;
 }
 .line3-mousen{
-    top: 177px;
-    left: 110px;
+    margin-top: 177px!important;
+    margin-left: 110px!important;
 }
 .line4-mousen{
-    top: 222px;
-    left: 131px;
+    margin-top: 222px!important;
+    margin-left: 131px!important;
 }
 .line5-mousen{
-    top: 224px;
-    left: 174px;
+    margin-top: 224px!important;
+    margin-left: 174px!important;
 }
 @media screen and (max-width: 1680px){
     .services-start{
@@ -443,11 +435,13 @@ nonclickable svg{
     }
     .opacity-block-svg{
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     .under-svg{
         width: 332px!important;
+        margin-right: auto;
     }
     nonclickable{
         color: #04101C;

@@ -532,7 +532,7 @@ li.tiles-text{
 
 .about{
     background: url("img/case.svg") no-repeat center;
-    height: 1069px;
+    height: 1300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

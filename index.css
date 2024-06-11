@@ -452,9 +452,9 @@ svg{
     opacity: 0;
 }
 
-.case{
+.about{
     background: url("img/case.svg") no-repeat center;
-    height: 1247.5px;
+    height: 1069px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -462,39 +462,39 @@ svg{
     background-size: cover;
     padding: 0 325px;
 }
-.case h1{
-    color: #FFF;
-    font-size: 72px;
+.about h1{
+    color: #209DB7;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 84px;
+    line-height: 28.8px;
     letter-spacing: 2.88px;
 }
-.case h2{
+.about h2{
     color: #FFF;
-    font-size: 56px;
+    font-size: 32px;
     font-style: normal;
-    font-weight: 720;
-    line-height: 64px;
+    font-weight: 700;
+    line-height: 38.4px;
     letter-spacing: 2.24px;
-    max-width: 343px;
+    max-width: 470px;
 }
-.case p{
+.about p{
     color: #FFF;
-    font-size: 28px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 36px;
     letter-spacing: 0.56px;
-    max-width: 300px;
+    max-width: 500px;
 }
-.case .car{
+.about .car{
     width: 100%;
 }
-.case nonclickable{
+.about nonclickable{
     display: inline-flex;
-    padding: 20px 32px;
-    justify-content: center;
+    padding: 20px 0px;
+    justify-content: left;
     align-items: center;
     gap: 20px;
     border-radius: 16px;
@@ -506,7 +506,7 @@ svg{
     line-height: 40px;
     letter-spacing: 1.68px;
 }
-.case a{
+.about a{
     display: inline-flex;
     padding: 16px 40px;
     justify-content: center;
@@ -525,8 +525,65 @@ svg{
     margin-top: 50px;
     transition: 0.4s;
 }
-.case a:hover{
+.about a:hover{
     background: #00b2d7;
+}
+.cases{
+    padding: 0 100px 0 100px;
+    height: 856px;
+    display: flex;
+    flex-direction: column;
+}
+.cases-info{
+   display: flex;
+    flex-direction: row;
+}
+.information{
+    width: 533px;
+}
+.information >h1{
+    font-family: Roboto Flex;
+    font-size: 32px;
+    font-weight: 620;
+    line-height: 38.4px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #209DB7;
+
+}
+.information-text{
+
+}
+.information-text h1{
+    font-family: Roboto Flex;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 57.6px;
+    letter-spacing: 4%;
+}
+.information-text h1::before{
+    display: flex;
+
+    content: " ";
+    background: url(img/line.svg) no-repeat;
+    height: 53px;
+
+}
+.information-text p{
+    font-family: Roboto Flex;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
+.cases-img{
+    background: url(img/casescar.svg)  no-repeat center;
+    height: 200px;
+}
+.cases-bottom{
+    display: flex;
+    flex-direction: row;
+
 }
 #blog{
     display: flex;
@@ -891,7 +948,7 @@ footer p{
 .bunny{
     position:absolute; z-index: 1; margin-top: -350px; margin-left: 100px
 }
-.under-case{
+.under-about{
     display: flex;
     flex-direction: column;
 }
@@ -950,10 +1007,10 @@ footer p{
     .tiles{
         padding: 85px 220px;
     }
-    .case{
+    .about{
         padding: 0 220px;
     }
-    .case nonclickable{
+    .about nonclickable{
         white-space: nowrap;
     }
     #blog{
@@ -1003,7 +1060,7 @@ footer p{
     .tiles{
         padding: 85px 100px;
     }
-    .case{
+    .about{
         padding: 0 100px;
     }
     #blog{
@@ -1038,7 +1095,7 @@ footer p{
     .bunny{
         display: none;
     }
-    .case .car{
+    .about .car{
         width: 650px;
         height: 100%;
         margin-top: -150px;
@@ -1072,7 +1129,7 @@ footer p{
     }
 }
 @media screen and (max-width: 1080px){
-    .case .car{
+    .about .car{
         width: 500px;
     }
 }
@@ -1114,15 +1171,15 @@ footer p{
     .bunny{
         display: none;
     }
-    .case .car{
+    .about .car{
         max-width: 100%;
         height: 100%;
         margin-top: -150px;
     }
-    .case nonclickable{
+    .about nonclickable{
         max-width: 524px;
     }
-    .case{
+    .about{
         padding: 0 92px;
     }
     .daynet img{
@@ -1344,21 +1401,21 @@ footer p{
     .tiles-2{
         scale: .8;
     }
-    .case h1{
+    .about h1{
         font-size: 52px;
         font-style: normal;
         font-weight: 720;
         line-height: 60px;
         letter-spacing: 1.04px;
     }
-    .case h2{
+    .about h2{
         font-size: 40px;
         font-style: normal;
         font-weight: 720;
         line-height: 44px;
         letter-spacing: 0.8px;
     }
-    .case p{
+    .about p{
         font-size: 20px;
         font-style: normal;
         font-weight: 300;
@@ -1366,11 +1423,11 @@ footer p{
         letter-spacing: 0.4px;
         margin-top: 350px;
     }
-    .case{
+    .about{
         height: 1210px;
         padding: 0 65px;
     }
-    .case nonclickable{
+    .about nonclickable{
         display: inline-flex;
         padding: 12px 24px;
         justify-content: center;
@@ -1384,7 +1441,7 @@ footer p{
         letter-spacing: 0.8px;
         max-width: 324px;
     }
-    .case .car{
+    .about .car{
         margin-top: -100px;
         margin-left: -550px;
         width: 610px;
@@ -1504,7 +1561,7 @@ footer p{
     .form form input{
         max-width: 250px;
     }
-    .case .car{
+    .about .car{
         width: auto;
         margin-left: -500px;
     }
@@ -1603,18 +1660,18 @@ footer p{
         width: 28px;
         height: 28px;
     }
-    .case h1{
+    .about h1{
         font-size: 40px;
         font-style: normal;
         font-weight: 720;
         line-height: 44px;
         letter-spacing: 0.8px;
     }
-    .case{
+    .about{
         height: 1046px;
         padding: 0 20px;
     }
-    .case h2{
+    .about h2{
         font-size: 28px;
         font-style: normal;
         font-weight: 720;
@@ -1622,13 +1679,13 @@ footer p{
         letter-spacing: 0.56px;
         max-width: 155px;
     }
-    .case .car{
+    .about .car{
         width: 400px;
         height: unset;
         margin-left: -340px;
         margin-top: -110px;
     }
-    .case p{
+    .about p{
         margin-top: 275px;
         font-size: 16px;
         font-style: normal;
@@ -1637,7 +1694,7 @@ footer p{
         letter-spacing: 0.32px;
         max-width: 269px;
     }
-    .case nonclickable{
+    .about nonclickable{
         padding: 12px 20px;
         font-size: 16px;
         font-style: normal;
@@ -1645,11 +1702,11 @@ footer p{
         line-height: 24px;
         letter-spacing: 0.64px;
     }
-    .case nonclickable svg{
+    .about nonclickable svg{
         width: 28px;
         height: 28px;
     }
-    .case a{
+    .about a{
         padding: 16px 24px;
         font-size: 16px;
         font-style: normal;
@@ -1794,7 +1851,7 @@ footer p{
     }
 }
 @media screen and (max-width: 380px){
-    .case .car{
+    .about .car{
         width: 350px;
     }
     .prevheader-mobile{

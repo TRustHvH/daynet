@@ -51,63 +51,79 @@ $(document).ready(function () {
         hidden.css("height", shown.height())
     })
 
-    const focusBlock = (key, index) => {
+    const focusBlock = (key, index, move) => {
         let $item = $(anims.eq(index));
         let hidden = $item.find(".animation-hidden")
         let shown = $item.find(".animation-shown")
         let anim_size = $item.find(".animation-size-controller")
         let shown_p_size = $(shown).find("span").height()
         $item.addClass("auto-shown")
-        show(shown, hidden, shown_p_size, anim_size)
-        switch (key) {
-            case "main":
-                setTimeout(() => {
-                    hide(shown, hidden, shown_p_size, anim_size)
-                    $item.removeClass("auto-shown")
-                }, 5000);
-                break;
-            case "secondary":
-                setTimeout(() => {
-                    hide(shown, hidden, shown_p_size, anim_size)
-                    $item.removeClass("auto-shown")
-                }, 4200);
-                break;
+        if (move === "add"){
+            show(shown, hidden, shown_p_size, anim_size)
         }
+        else if(move === "remove"){
+            switch (key) {
+                case "main":
+                    hide(shown, hidden, shown_p_size, anim_size)
+                    $item.removeClass("auto-shown")
+                    break;
+                case "secondary":
+                    setTimeout(() => {
+                        hide(shown, hidden, shown_p_size, anim_size)
+                        $item.removeClass("auto-shown")
+                    }, 800);
+                    break;
+            }
+        }
+        
     };
 
-    const svgs = (index) => {
+    const svgs = (index, move) => {
         let itemsvg = $(".line" + index + "-1").find('path');
-        itemsvg.css("display", "block")
-        itemsvg.attr("class", "svg-line-add" + index);
-        setTimeout(() => {
-            itemsvg.attr("class", "svg-line-remove" + index);
+        if(move === "add")
+        {
+            itemsvg.css("display", "block")
+            itemsvg.attr("class", "svg-line-add" + index);
+        } else if(move === "remove"){
             setTimeout(() => {
-                itemsvg.css("display", "none")
-            }, 2000)
-        }, 4000);
+                itemsvg.attr("class", "svg-line-remove" + index);
+                setTimeout(() => {
+                    itemsvg.css("display", "none")
+                }, 2000)
+            }, 4000); 
+        }
     };
     $(document).ready(function repeat() {
-        focusBlock("main", 12);
-        svgs(0)
-        svgs(2)
-        svgs(3)
-        svgs(4)
-        setTimeout(() => {
-            focusBlock("secondary", 6);
-            focusBlock("secondary", 11);
-            focusBlock("secondary", 13);
-            focusBlock("secondary", 17);
-        }, 1000);
-        setTimeout(() => {
-            focusBlock("main", 6);
-            svgs(1)
-            svgs(5)
+        $(document).scroll(function () {
+            
+        
+        let scrollTop = $(this).scrollTop();
+        if (scrollTop >= 1100 && scrollTop <= 1150) {
+            focusBlock("main", 12, "add");
+            svgs(0, "add")
+            svgs(2, "add")
+            svgs(3, "add")
+            svgs(4, "add")
             setTimeout(() => {
-                focusBlock("secondary", 3);
-                focusBlock("secondary", 7);
+                focusBlock("secondary", 6, "add");
+                focusBlock("secondary", 11, "add");
+                focusBlock("secondary", 13, "add");
+                focusBlock("secondary", 17, "add");
             }, 1000);
-        }, 6000);
-        setTimeout(() => {
+        } else if(scrollTop < 900 || scrollTop > 1650){
+            focusBlock("main", 12, "remove");
+            svgs(0, "remove")
+            svgs(2, "remove")
+            svgs(3, "remove")
+            svgs(4, "remove")
+            setTimeout(() => {
+                focusBlock("secondary", 6, "remove");
+                focusBlock("secondary", 11, "remove");
+                focusBlock("secondary", 13, "remove");
+                focusBlock("secondary", 17, "remove");
+            }, 1000);
+        }
+        if (scrollTop >= 2100 && scrollTop <= 2300) {
             focusBlock("main", 11);
             svgs(6)
             svgs(11)
@@ -125,7 +141,23 @@ $(document).ready(function () {
                 focusBlock("secondary", 21);
                 focusBlock("secondary", 22);
             }, 1000);
-        }, 12000);
+        }
+        if (scrollTop >= 3100 && scrollTop <= 3150) {
+            focusBlock("main", 11);
+            svgs(12)
+            setTimeout(() => {
+                focusBlock("secondary", 16);
+            }, 1000);
+        }
+        /*setTimeout(() => {
+            focusBlock("main", 6);
+            svgs(1)
+            svgs(5)
+            setTimeout(() => {
+                focusBlock("secondary", 3);
+                focusBlock("secondary", 7);
+            }, 1000);
+        }, 6000);
         setTimeout(() => {
             focusBlock("main", 5);
             svgs(8)
@@ -190,6 +222,7 @@ $(document).ready(function () {
         }, 48000);
         setTimeout(() => {
             repeat()
-        }, 54000)
+        }, 54000)*/
+        })
     });
 })

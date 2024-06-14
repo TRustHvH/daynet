@@ -53,42 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
-    function updateCarouselNumbers() {
-
-        carouselNumbers.innerHTML = '';
-
-        const pages = Math.ceil(totalSlides / getItemsToShow());
-        
-        let svgwidth = (slidesContainer.clientWidth / 1.2) / pages
-        for (let i = 0; i < pages; i++) {
-            const numberColor = i === (Math.ceil(currentSlide / getItemsToShow()) - 1) ? '#7B74FF' : '#209DB7';
-            carouselNumbers.innerHTML += `
-                <p class="number" style="color: ${numberColor};">${i + 1}</p>
-            `;
-            
-            if (i < pages - 1) {
-                carouselNumbers.innerHTML += `
-                    <svg style="width: ${svgwidth}" width="310" height="2" viewBox="0 0 310 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1H309" stroke="url(#paint0_linear_220_16807)" stroke-width="2" stroke-linecap="round"/>
-                        <defs>
-                            <linearGradient id="paint0_linear_220_16807" x1="0.999973" y1="1.00042" x2="1.11586" y2="-4.97292" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#4AFCF1"/>
-                                <stop offset="0.265625" stop-color="#75CDFF"/>
-                                <stop offset="0.661458" stop-color="#7A73FF"/>
-                                <stop offset="1" stop-color="#FD9BE8"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                `;
-            }
-        }
-    }
-
-    // Обновление при изменении размера окна
-    window.addEventListener('resize', updateCarouselNumbers);
-
-    // Начальное обновление
-    updateCarouselNumbers();
     function showSlide(index) {
         const translateValue = -(index - 1) * (slidesContainer_slide.clientWidth + parseToInt(getComputedStyle(slidesContainer).gap)) + 5 + 'px';
         slidesContainer.style.transform = 'translateX(' + translateValue + ')';
@@ -110,14 +74,12 @@ document.addEventListener("DOMContentLoaded", function() {
         const itemsToShow = getItemsToShow();
         currentSlide = (currentSlide - itemsToShow + totalSlides) % totalSlides || totalSlides;
         showSlide(currentSlide);
-        updateCarouselNumbers();
     }
 
     function nextSlide() {
         const itemsToShow = getItemsToShow();
         currentSlide = (currentSlide + itemsToShow - 1) % totalSlides + 1;
         showSlide(currentSlide);
-        updateCarouselNumbers();
     }
 
     setInterval(nextSlide, 4000);

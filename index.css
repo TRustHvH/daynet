@@ -571,7 +571,7 @@ li.tiles-text{
 }
 .about nonclickable{
     display: inline-flex;
-    padding: 20px 0px;
+    padding: 20px 0;
     justify-content: left;
     align-items: center;
     gap: 20px;
@@ -585,7 +585,7 @@ li.tiles-text{
     letter-spacing: 1.68px;
 }
 .about a{
-    display: inline-flex;
+    display: flex;
     padding: 16px 40px;
     justify-content: center;
     align-items: center;
@@ -613,7 +613,6 @@ li.tiles-text{
     flex-direction: column;
 }
 .cases >h1{
-    font-family: Roboto Flex;
     font-size: 32px;
     font-weight: 620;
     line-height: 38.4px;
@@ -626,7 +625,6 @@ li.tiles-text{
 }
 .information-text h1{
     display: flex;
-    font-family: Roboto Flex;
     font-size: 48px;
     font-weight: 500;
     line-height: 57.6px;
@@ -652,7 +650,6 @@ li.tiles-text{
     margin: 0 0 83px 0;
 }
 .information-text p{
-    font-family: Roboto Flex;
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
@@ -674,7 +671,7 @@ li.tiles-text{
     position: absolute;
     display: block;
     content: "";
-    background: linear-gradient(180.00deg, rgba(32, 157, 183, 0),rgba(32, 157, 183, 0.4) 15%),url();
+    background: linear-gradient(180.00deg, rgba(32, 157, 183, 0),rgba(32, 157, 183, 0.4) 15%);
     opacity: 0;
     border-radius: 20px;
     width: 100%;
@@ -693,7 +690,6 @@ li.tiles-text{
 .cases-img h1{
     position: relative;
     max-width: 600px;
-    font-family: Roboto Flex;
     font-size: 32px;
     font-weight: 500;
     line-height: 35.2px;

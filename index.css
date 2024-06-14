@@ -571,7 +571,7 @@ li.tiles-text{
 }
 .about nonclickable{
     display: inline-flex;
-    padding: 20px 0px;
+    padding: 20px 0;
     justify-content: left;
     align-items: center;
     gap: 20px;
@@ -620,7 +620,6 @@ li.tiles-text{
     width: 533px;
 }
 .information >h1{
-    font-family: Roboto Flex;
     font-size: 32px;
     font-weight: 620;
     line-height: 38.4px;
@@ -633,11 +632,10 @@ li.tiles-text{
 
 }
 .information-text h1{
-    font-family: Roboto Flex;
     font-size: 48px;
     font-weight: 500;
     line-height: 57.6px;
-    letter-spacing: 4%;
+    letter-spacing: 1.04px;
 }
 .information-text h1::before{
     display: flex;
@@ -648,11 +646,10 @@ li.tiles-text{
 
 }
 .information-text p{
-    font-family: Roboto Flex;
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
-    letter-spacing: 2%;
+    letter-spacing: 1.02px;
 }
 .cases-img{
     background: url(img/casescar.svg)  no-repeat center;
@@ -670,18 +667,30 @@ li.tiles-text{
     padding: 64px 325px 0;
 }
 #blog h1{
-    color: #04101C;
-    font-size: 72px;
-    font-style: normal;
+    color: rgb(32, 157, 183);
+    font-size: 32px;
     font-weight: 720;
-    line-height: 84px;
-    letter-spacing: 2.88px;
-    margin-block-start: 0;
+    line-height: 120%;
+    letter-spacing: 1.04px;
+    text-align: left;
 }
 .blog-text{
     display: flex;
-    flex-wrap: wrap;
     gap: 32px;
+    transition: transform 0.5s ease;
+    transform: translateX(5px);
+}
+.carousel-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 36px;
+    width: 1270px;
+}
+.blog-text1{
+    overflow: hidden;
+    width: 1290px;
+    height: 515px;
 }
 .blog-block{
     display: flex;
@@ -695,6 +704,7 @@ li.tiles-text{
     background: rgba(0,0,0,0) center;
     overflow: hidden;
     cursor: pointer;
+    width: max-content;
 }
 .blog-block:before{
     content: " ";
@@ -777,6 +787,7 @@ li.tiles-text{
 }
 .carousel-numbers{
     width: fit-content;
+    display: flex;
 }
 .carousel-numbers p{
     font-family: 'Roboto Flex', serif;
@@ -786,6 +797,10 @@ li.tiles-text{
     letter-spacing: 1.06px;
     text-align: left;
     margin: 0;
+}
+.arrows{
+    display: flex;
+    gap: 34.5px;
 }
 .fixed-pos{
     display: flex;

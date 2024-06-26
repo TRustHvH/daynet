@@ -701,6 +701,13 @@ li.tiles-text{
     z-index: 10;
 
 }
+.mobile-links a {
+    margin: 0px 20px;
+}
+.active {
+    color: #7a73ff !important;
+}
+
 .cases-img:hover h1 {
     /*transform: translateY(-10px);*/
     transition: 1s;
@@ -736,12 +743,14 @@ li.tiles-text{
     letter-spacing: 1.04px;
     text-align: left;
 }
-.blog-text{
+.blog-text {
     display: flex;
-    gap: 32px;
+    flex-wrap: wrap;
+    gap: 32px 0; /* 32px между рядами, 0px между колонками */
     transition: transform 0.5s ease;
     transform: translateX(5px);
 }
+
 .carousel-info{
     display: flex;
     justify-content: space-between;

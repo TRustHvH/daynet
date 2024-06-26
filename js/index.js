@@ -1,87 +1,122 @@
-window.addEventListener("mousewheel", function(e) {
+window.addEventListener(
+  'mousewheel',
+  function (e) {
     if (e.ctrlKey) {
-        e.preventDefault();
-        return false;
+      e.preventDefault();
+      return false;
     }
-}, {passive:false});
+  },
+  { passive: false },
+);
 
-document.addEventListener("DOMContentLoaded", function() {
-    let mobile_menu = document.getElementById('mobile-menu')
-    let is_opened = false
+document.addEventListener('DOMContentLoaded', function () {
+  let mobile_menu = document.getElementById('mobile-menu');
+  let is_opened = false;
 
-    function mobile_menu_opener() {
-        if (is_opened === false) {
-            mobile_menu.style.display = 'flex'
-            is_opened = true
-        } else {
-            mobile_menu.style.display = 'none'
-            is_opened = false
-        }
+  function mobile_menu_opener() {
+    if (is_opened === false) {
+      mobile_menu.style.display = 'flex';
+      is_opened = true;
+    } else {
+      mobile_menu.style.display = 'none';
+      is_opened = false;
     }
-    document.getElementById("mobile-header-button").addEventListener("click", mobile_menu_opener);
-    document.getElementById("close-mobile-header").addEventListener("click", mobile_menu_opener);
+  }
+  document.getElementById('mobile-header-button').addEventListener('click', mobile_menu_opener);
+  document.getElementById('close-mobile-header').addEventListener('click', mobile_menu_opener);
 
-    document.addEventListener("scroll", () => {
-        if (window.scrollY >= 85) {
-            document.querySelector(".header").classList.add("header-scroll");
-        } else {
-            document.querySelector(".header").classList.remove("header-scroll");
-        }
-    })
-    let currentSlide = 1;
-    let currentSlideElement = document.getElementById('indicator');
-    const totalSlidesElement = document.getElementById('total-slides');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-    const carouselNumbers = document.querySelector('.carousel-numbers');
-    const carouselItems = document.querySelectorAll('.carousel-item');
-    const totalSlides = carouselItems.length;
-    const slidesContainer = document.querySelector('.blog-text');
-    const slidesContainer_slide = document.querySelector(".blog-block")
-    
-    function parseToInt(value) {
-        return parseInt(value, 10);
+  document.addEventListener('scroll', () => {
+    if (window.scrollY >= 85) {
+      document.querySelector('.header').classList.add('header-scroll');
+    } else {
+      document.querySelector('.header').classList.remove('header-scroll');
     }
+  });
+  let currentSlide = 1;
+  let currentSlideElement = document.getElementById('indicator');
+  const totalSlidesElement = document.getElementById('total-slides');
+  const prevButton = document.getElementById('prev');
+  const nextButton = document.getElementById('next');
+  const carouselNumbers = document.querySelector('.carousel-numbers');
+  const carouselItems = document.querySelectorAll('.carousel-item');
+  const totalSlides = carouselItems.length;
+  const slidesContainer = document.querySelector('.blog-text');
+  const slidesContainer_slide = document.querySelector('.blog-block');
 
-    function getItemsToShow() {
-        if (document.documentElement.clientWidth >= 1024) {
-            return 3; // Например, на экранах >= 1024px показывать 3 элемента
-        } else if (document.documentElement.clientWidth >= 769) {
-            return 2; // На экранах >= 769px показывать 2 элемента
-        } else {
-            return 1; // На экранах < 769px показывать 1 элемент
-        }
+  function parseToInt(value) {
+    return parseInt(value, 10);
+  }
+
+  function getItemsToShow() {
+    if (document.documentElement.clientWidth >= 1024) {
+      return 3; // Например, на экранах >= 1024px показывать 3 элемента
+    } else if (document.documentElement.clientWidth >= 769) {
+      return 2; // На экранах >= 769px показывать 2 элемента
+    } else {
+      return 1; // На экранах < 769px показывать 1 элемент
     }
-    
-    function showSlide(index) {
-        const translateValue = -(index - 1) * (slidesContainer_slide.clientWidth + parseToInt(getComputedStyle(slidesContainer).gap)) + 5 + 'px';
-        slidesContainer.style.transform = 'translateX(' + translateValue + ')';
-        
-        nextButton.style.backgroundColor = index === totalSlides ? 'rgba(214, 214, 214, 1)' : '';
-        nextButton.style.pointerEvents = index === totalSlides ? 'none' : 'auto';
+  }
 
-        prevButton.style.backgroundColor = index === 1 ? 'rgba(214, 214, 214, 1)' : '';
-        prevButton.style.pointerEvents = index === 1 ? 'none' : 'auto';
-    }
+  function showSlide(index) {
+    const translateValue =
+      -(index - 1) *
+        (slidesContainer_slide.clientWidth + parseToInt(getComputedStyle(slidesContainer).gap)) +
+      5 +
+      'px';
+    slidesContainer.style.transform = 'translateX(' + translateValue + ')';
 
-    prevButton.addEventListener('click', () =>{
-        prevSlide()
-    })
-    nextButton.addEventListener('click', () =>{
-        nextSlide()
-    })
-    function prevSlide() {
-        const itemsToShow = getItemsToShow();
-        currentSlide = (currentSlide - itemsToShow + totalSlides) % totalSlides || totalSlides;
-        showSlide(currentSlide);
-    }
+    nextButton.style.backgroundColor = index === totalSlides ? 'rgba(214, 214, 214, 1)' : '';
+    nextButton.style.pointerEvents = index === totalSlides ? 'none' : 'auto';
 
-    function nextSlide() {
-        const itemsToShow = getItemsToShow();
-        currentSlide = (currentSlide + itemsToShow - 1) % totalSlides + 1;
-        showSlide(currentSlide);
-    }
+    prevButton.style.backgroundColor = index === 1 ? 'rgba(214, 214, 214, 1)' : '';
+    prevButton.style.pointerEvents = index === 1 ? 'none' : 'auto';
+  }
 
-    setInterval(nextSlide, 4000);
+  prevButton.addEventListener('click', () => {
+    prevSlide();
+  });
+  nextButton.addEventListener('click', () => {
+    nextSlide();
+  });
+  function prevSlide() {
+    const itemsToShow = getItemsToShow();
+    currentSlide = (currentSlide - itemsToShow + totalSlides) % totalSlides || totalSlides;
+    showSlide(currentSlide);
+  }
+
+  function nextSlide() {
+    const itemsToShow = getItemsToShow();
+    currentSlide = ((currentSlide + itemsToShow - 1) % totalSlides) + 1;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 4000);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const links = document.querySelectorAll('.mobile-links a');
+  const currentPath = window.location.pathname;
+
+  links.forEach((link) => {
+    const href = link.getAttribute('href');
+
+    // Нормализуем href, чтобы получить только часть после последнего слеша
+    const normalizedHref = href.replace(/^.*\//, '');
+    console.log('Normalized href:', normalizedHref);
+    console.log('Current path:', currentPath.replace(/^.*\//, ''));
+
+    if (normalizedHref === currentPath.replace(/^.*\//, '')) {
+      console.log(123123);
+      link.classList.add('active');
+    }
+  });
+});
+
+// Function to normalize path
+function normalizePath(path) {
+  // Remove leading '../' from the path
+  while (path.startsWith('../')) {
+    path = path.slice(3);
+  }
+  return path;
+}

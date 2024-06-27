@@ -243,7 +243,7 @@
     }
 }
 .svg-line-add0 {
-    animation: animate-svg-stroke-add0 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add0 1s linear 0.5s both;
 }
 @keyframes animate-svg-stroke-remove0 {
     0% {
@@ -257,7 +257,7 @@
     }
 }
 .svg-line-remove0 {
-    animation: animate-svg-stroke-remove0 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove0 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add1 {
@@ -283,10 +283,10 @@
     }
 }
 .svg-line-add1 {
-    animation: animate-svg-stroke-add1 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add1 1s linear 0.5s both;
 }
 .svg-line-remove1 {
-    animation: animate-svg-stroke-remove1 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove1 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add2 {
@@ -312,10 +312,10 @@
     }
 }
 .svg-line-add2 {
-    animation: animate-svg-stroke-add2 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add2 1s linear 0.5s both;
 }
 .svg-line-remove2 {
-    animation: animate-svg-stroke-remove2 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove2 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add3 {
@@ -341,10 +341,10 @@
     }
 }
 .svg-line-add3 {
-    animation: animate-svg-stroke-add3 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add3 1s linear 0.5s both;
 }
 .svg-line-remove3 {
-    animation: animate-svg-stroke-remove3 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove3 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add4 {
@@ -370,10 +370,10 @@
     }
 }
 .svg-line-add4 {
-    animation: animate-svg-stroke-add4 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add4 1s linear 0.5s both;
 }
 .svg-line-remove4 {
-    animation: animate-svg-stroke-remove4 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove4 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add5 {
@@ -399,10 +399,10 @@
     }
 }
 .svg-line-add5 {
-    animation: animate-svg-stroke-add5 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add5 1s linear 0.5s both;
 }
 .svg-line-remove5{
-    animation: animate-svg-stroke-remove5 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove5 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add6 {
@@ -428,10 +428,10 @@
     }
 }
 .svg-line-add6 {
-    animation: animate-svg-stroke-add6 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add6 1s linear 0.5s both;
 }
 .svg-line-remove6 {
-    animation: animate-svg-stroke-remove6 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove6 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add7 {
@@ -457,10 +457,10 @@
     }
 }
 .svg-line-add7 {
-    animation: animate-svg-stroke-add7 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add7 1s linear 0.5s both;
 }
 .svg-line-remove7 {
-    animation: animate-svg-stroke-remove7 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove7 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add8 {
@@ -486,10 +486,10 @@
     }
 }
 .svg-line-add8 {
-    animation: animate-svg-stroke-add8 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add8 1s linear 0.5s both;
 }
 .svg-line-remove8 {
-    animation: animate-svg-stroke-remove8 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove8 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add9 {
@@ -515,10 +515,10 @@
     }
 }
 .svg-line-add9 {
-    animation: animate-svg-stroke-add9 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add9 1s linear 0.5s both;
 }
 .svg-line-remove9 {
-    animation: animate-svg-stroke-remove9 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove9 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add10 {
@@ -544,10 +544,10 @@
     }
 }
 .svg-line-add10 {
-    animation: animate-svg-stroke-add10 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add10 1s linear 0.5s both;
 }
 .svg-line-remove10 {
-    animation: animate-svg-stroke-remove10 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove10 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add11 {
@@ -573,10 +573,10 @@
     }
 }
 .svg-line-add11 {
-    animation: animate-svg-stroke-add11 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add11 1s linear 0.5s both;
 }
 .svg-line-remove11 {
-    animation: animate-svg-stroke-remove11 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove11 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add12 {
@@ -602,10 +602,10 @@
     }
 }
 .svg-line-add12 {
-    animation: animate-svg-stroke-add12 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add12 1s linear 0.5s both;
 }
 .svg-line-remove12 {
-    animation: animate-svg-stroke-remove12 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove12 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add13 {
@@ -631,10 +631,10 @@
     }
 }
 .svg-line-add13 {
-    animation: animate-svg-stroke-add13 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add13 1s linear 0.5s both;
 }
 .svg-line-remove13 {
-    animation: animate-svg-stroke-remove13 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove13 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add14 {
@@ -660,10 +660,10 @@
     }
 }
 .svg-line-add14 {
-    animation: animate-svg-stroke-add14 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add14 1s linear 0.5s both;
 }
 .svg-line-remove14 {
-    animation: animate-svg-stroke-remove14 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove14 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add15 {
@@ -689,10 +689,10 @@
     }
 }
 .svg-line-add15 {
-    animation: animate-svg-stroke-add15 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add15 1s linear 0.5s both;
 }
 .svg-line-remove15 {
-    animation: animate-svg-stroke-remove15 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove15 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add16 {
@@ -718,10 +718,10 @@
     }
 }
 .svg-line-add16 {
-    animation: animate-svg-stroke-add16 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add16 1s linear 0.5s both;
 }
 .svg-line-remove16 {
-    animation: animate-svg-stroke-remove16 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove16 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add17 {
@@ -747,10 +747,10 @@
     }
 }
 .svg-line-add17 {
-    animation: animate-svg-stroke-add17 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add17 1s linear 0.5s both;
 }
 .svg-line-remove17 {
-    animation: animate-svg-stroke-remove17 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove17 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add18 {
@@ -776,10 +776,10 @@
     }
 }
 .svg-line-add18 {
-    animation: animate-svg-stroke-add18 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add18 1s linear 0.5s both;
 }
 .svg-line-remove18 {
-    animation: animate-svg-stroke-remove18 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove18 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add19 {
@@ -805,10 +805,10 @@
     }
 }
 .svg-line-add19 {
-    animation: animate-svg-stroke-add19 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add19 1s linear 0.5s both;
 }
 .svg-line-remove19 {
-    animation: animate-svg-stroke-remove19 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove19 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add20 {
@@ -834,10 +834,10 @@
     }
 }
 .svg-line-add20 {
-    animation: animate-svg-stroke-add20 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add20 1s linear 0.5s both;
 }
 .svg-line-remove20 {
-    animation: animate-svg-stroke-remove20 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove20 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add21 {
@@ -863,10 +863,10 @@
     }
 }
 .svg-line-add21 {
-    animation: animate-svg-stroke-add21 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add21 1s linear 0.5s both;
 }
 .svg-line-remove21 {
-    animation: animate-svg-stroke-remove21 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove21 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add22 {
@@ -892,10 +892,10 @@
     }
 }
 .svg-line-add22 {
-    animation: animate-svg-stroke-add22 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add22 1s linear 0.5s both;
 }
 .svg-line-remove22 {
-    animation: animate-svg-stroke-remove22 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove22 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add23 {
@@ -921,10 +921,10 @@
     }
 }
 .svg-line-add23 {
-    animation: animate-svg-stroke-add23 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add23 1s linear 0.5s both;
 }
 .svg-line-remove23 {
-    animation: animate-svg-stroke-remove23 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove23 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add24 {
@@ -950,10 +950,10 @@
     }
 }
 .svg-line-add24 {
-    animation: animate-svg-stroke-add24 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add24 1s linear 0.5s both;
 }
 .svg-line-remove24 {
-    animation: animate-svg-stroke-remove24 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove24 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add25 {
@@ -979,10 +979,10 @@
     }
 }
 .svg-line-add25 {
-    animation: animate-svg-stroke-add25 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add25 1s linear 0.5s both;
 }
 .svg-line-remove25 {
-    animation: animate-svg-stroke-remove25 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove25 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add26 {
@@ -1008,10 +1008,10 @@
     }
 }
 .svg-line-add26 {
-    animation: animate-svg-stroke-add26 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add26 1s linear 0.5s both;
 }
 .svg-line-remove26 {
-    animation: animate-svg-stroke-remove26 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove26 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add27 {
@@ -1037,10 +1037,10 @@
     }
 }
 .svg-line-add27 {
-    animation: animate-svg-stroke-add27 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add27 1s linear 0.5s both;
 }
 .svg-line-remove27 {
-    animation: animate-svg-stroke-remove27 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove27 1s linear 0.5s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-add28 {
@@ -1066,8 +1066,8 @@
     }
 }
 .svg-line-add28 {
-    animation: animate-svg-stroke-add28 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-add28 1s linear 0.5s both;
 }
 .svg-line-remove28 {
-    animation: animate-svg-stroke-remove28 1.5s linear 0.5s both;
+    animation: animate-svg-stroke-remove28 1s linear 0.5s both;
 }

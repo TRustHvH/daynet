@@ -29,15 +29,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
     let currentSlide = 1;
-    let currentSlideElement = document.getElementById('indicator');
-    const totalSlidesElement = document.getElementById('total-slides');
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
-    const carouselNumbers = document.querySelector('.carousel-numbers');
     const carouselItems = document.querySelectorAll('.carousel-item');
-    const totalSlides = carouselItems.length;
     const slidesContainer = document.querySelector('.blog-text');
     const slidesContainer_slide = document.querySelector(".blog-block")
+    const totalSlides = document.querySelectorAll('.blog-block').length;
     
     function parseToInt(value) {
         return parseInt(value, 10);
@@ -52,6 +49,9 @@ document.addEventListener("DOMContentLoaded", function() {
             return 1; // На экранах < 769px показывать 1 элемент
         }
     }
+
+    const pages = Math.ceil(totalSlides / getItemsToShow());
+    document.querySelector('.carousel-number').innerHTML = pages
     
     function showSlide(index) {
         const translateValue = -(index - 1) * (slidesContainer_slide.clientWidth + parseToInt(getComputedStyle(slidesContainer).gap)) + 5 + 'px';

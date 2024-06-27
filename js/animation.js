@@ -79,15 +79,16 @@ $(document).ready(function () {
     };
 
     const svgs = (index, move) => {
-        let itemsvg = $(".line" + index + "-1").find('path');
+        let itemstartsvg = $(".line" + index + "-1");
+        let itemsvg = itemstartsvg.find('path');
         if(move === "add")
         {
-            if (itemsvg.classList.contains('animationStart')) return
+            if (itemstartsvg.hasClass('animationStart') === true) return
+            itemstartsvg.addClass('animationStart')
             itemsvg.css("display", "block")
             itemsvg.attr("class", "svg-line-add" + index);
-            itemsvg.classList.add('animationStart')
         } else if(move === "remove"){
-            itemsvg.classList.remove('animationStart')
+            itemstartsvg.removeClass('animationStart')
             setTimeout(() => {
                 itemsvg.attr("class", "svg-line-remove" + index);
                 setTimeout(() => {

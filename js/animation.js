@@ -83,17 +83,16 @@ $(document).ready(function () {
         let itemsvg = itemstartsvg.find('path');
         if(move === "add")
         {
-            if (itemstartsvg.hasClass('animationStart') === true) return
-            itemstartsvg.addClass('animationStart')
+
             itemsvg.css("display", "block")
             itemsvg.attr("class", "svg-line-add" + index);
         } else if(move === "remove"){
-            itemstartsvg.removeClass('animationStart')
+
             setTimeout(() => {
                 itemsvg.attr("class", "svg-line-remove" + index);
                 setTimeout(() => {
                     itemsvg.css("display", "none")
-                }, 2000)
+                }, 100)
                 }, 0);
         }
     };
@@ -111,7 +110,7 @@ $(document).ready(function () {
         console.log('Adjusted Scroll Position:', adjustedScrollPosition);
 
         // ------------------------DAYNET------------------------//
-        /*if (adjustedScrollPosition > -656 && adjustedScrollPosition <= -438) {
+        if (adjustedScrollPosition > -756 && adjustedScrollPosition <= -538) {
             //-===-удаление при скролле к блоку выше-===-//
             focusBlock("main", 12, "remove");
             svgs(0, "remove")
@@ -125,9 +124,9 @@ $(document).ready(function () {
                 focusBlock("secondary", 17, "remove");
             }, 1000);
             //-===-удаление при скролле к блоку выше-===-//
-        }*/
+        }
         //----------------------------------------------------------
-        if (adjustedScrollPosition >= -329 && adjustedScrollPosition <= 216) {
+        if (adjustedScrollPosition >= -329 && adjustedScrollPosition <= 131) {
             //-===-===-//
             focusBlock("main", 12, "add");
             svgs(0, "add")
@@ -141,21 +140,10 @@ $(document).ready(function () {
                 focusBlock("secondary", 17, "add");
             }, 1000);
             //-===-===-//
-        }else{
-            focusBlock("main", 12, "remove");
-            svgs(0, "remove")
-            svgs(2, "remove")
-            svgs(3, "remove")
-            svgs(4, "remove")
-            setTimeout(() => {
-                focusBlock("secondary", 6, "remove");
-                focusBlock("secondary", 11, "remove");
-                focusBlock("secondary", 13, "remove");
-                focusBlock("secondary", 17, "remove");
-            }, 1000);
         }
+
         //----------------------------------------------------------
-        /*if (adjustedScrollPosition > 220 && adjustedScrollPosition <= 543) {
+        if (adjustedScrollPosition > 220 && adjustedScrollPosition <= 543) {
             //-===-удаление при скролле к блоку ниже-===-//
             focusBlock("main", 12, "remove");
             svgs(0, "remove")
@@ -169,7 +157,7 @@ $(document).ready(function () {
                 focusBlock("secondary", 17, "remove");
             }, 1000);
             //-===-удаление при скролле к блоку ниже-===-//
-        }*/
+        }
         // ------------------------DAYNET------------------------//
 
         // -------------------------ORM-1------------------------//

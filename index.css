@@ -1281,6 +1281,45 @@ footer p, footer a{
 .daynet-texts{
     width: 100%;
 }
+
+.w-padding {
+    box-sizing: border-box;
+    padding: 0 325px;
+}
+
+.btn {
+    all: unset;
+    cursor: pointer;
+    min-width: 215px;
+    min-height: 48px;
+    padding: 12px 24px 12px 24px;
+    gap: 8px;
+    border-radius: 16px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+}
+
+.btn-fiiled {
+    background: #209DB7;
+    color: #FFFFFF;
+}
+
+.btn-empty {
+    background: none;
+    border: 1px solid #04101C;
+}
+
 @media screen and (max-width: 1680px){
     .header1{
         padding: 0 220px;

@@ -1,0 +1,183 @@
+.main{
+    height: 85px!important;
+}
+header{
+    background-color: #F9FBFF !important;
+}
+.prevheader a:hover{
+    color:#7A73FF !important;
+}
+
+.services .info-panel {
+    display: flex;
+}
+
+.services .info-panel .text-content {
+    width: 60%;
+}
+
+.services p {
+    padding: 0;
+    margin: 0;
+}
+
+.services .info-panel .heading-container {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 24px;
+    font-weight: 720;
+    line-height: 28.8px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    font-variation-settings: 'wdth' 125, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+    color: #209DB7;
+}
+
+.services .info-panel .heading-text {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    letter-spacing: 0.04em;
+    text-align: left;
+
+    margin-bottom: 48px;
+
+}
+
+.services .info-panel .regular-service-text {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+
+    margin-bottom: 20px;
+}
+
+.services .card .heading-container {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-weight: 720;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    font-variation-settings: 'wdth' 125, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+
+    color: #209DB7;
+}
+
+.services .card .heading-text {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    text-align: left;
+
+
+    margin-bottom: 24px;
+
+}
+
+.services .card .regular-service-text {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+
+    margin-bottom: 10px;
+}
+
+.services .price-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 4px 8px 0px #00000014;
+
+    padding: 20px 32px 20px 32px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 16px;
+
+    gap: 20px;
+}
+
+.services .price-block .price-block__text-container {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.services .info-panel .buttons-row {
+    display: flex;
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.services .total-info-blocks-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .total-info-blocks-items .total-info-block__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 302px;
+}
+
+.services .total-info-blocks-items img {
+    margin-bottom: 16px;
+}
+
+.services .cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+
+    margin-top: 112px;
+}
+
+.services .cards .cards-column {
+    width: 50%;
+    height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.services .cards .card-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .cards .card {
+    box-shadow: 4px 4px 16px 0px #04101C33;
+    background: white;
+    border-radius: 16px;
+    padding: 24px 16px;
+}
+
+.services .cards-column-left {
+    margin-top: 120px;
+}
+

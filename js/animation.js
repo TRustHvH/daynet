@@ -83,7 +83,6 @@ $(document).ready(function () {
         let itemsvg = itemstartsvg.find('path');
         if(move === "add")
         {
-
             itemsvg.css("display", "block")
             itemsvg.attr("class", "svg-line-add" + index);
         } else if(move === "remove"){

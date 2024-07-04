@@ -1075,9 +1075,6 @@ li.tiles-text{
 .daynet{padding-top: 300px;
     height: 1250px;
 }
-.daynet svg{
-    padding: 0 325px;
-}
 .daynet >img{
     width: 100%;
     /*height: 1133px;*/
@@ -1394,6 +1391,38 @@ footer p, footer a{
     border: 1px solid #04101C;
 }
 
+.line-circle {
+    pointer-events: bounding-box;
+    opacity: 1;
+}
+
+.line-circle:hover{
+    transition: .4s linear;
+    opacity: 0;
+}
+
+.age-text {
+    transition: 0.4s;
+    display: none;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    font-variation-settings: 'wdth' 130, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+}
+
+.blue-text {
+    fill: #5D5FEF;
+}
+
+.age-line {
+    display: none;
+    transition: 0.4s;
+}
+
+
 @media screen and (max-width: 1680px){
     .header1{
         padding: 0 220px;
@@ -1435,9 +1464,6 @@ footer p, footer a{
     }
     #blog{
         padding: 64px 220px 0;
-    }
-    .daynet svg{
-        padding: 0 220px;
     }
     footer{
         padding: 0 220px;
@@ -1484,9 +1510,6 @@ footer p, footer a{
         padding: 0 100px;
     }
     #blog{
-        padding: 0 100px;
-    }
-    .daynet svg{
         padding: 0 100px;
     }
     footer{
@@ -1674,9 +1697,6 @@ footer p, footer a{
     .daynet{
         padding-top: 200px;
         height: 900px;
-    }
-    .daynet svg{
-        padding: 0 92px;
     }
     .main{
         padding: 0 92px;
@@ -1929,9 +1949,6 @@ footer p, footer a{
     .daynet{
         height: 900px;
     }
-    .daynet svg{
-        padding: 0 65px;
-    }
     .daynet div{
         font-size: 20px;
         font-style: normal;
@@ -2157,7 +2174,6 @@ footer p, footer a{
     }
     .daynet svg{
         width: 160px;
-        padding: 0 20px;
     }
     .daynet img{
         height: 300px!important;

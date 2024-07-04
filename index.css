@@ -153,6 +153,81 @@ img{
 svg{
     pointer-events: none;
 }
+
+.daynet{
+    position: relative;
+    height: 1024px;
+}
+.circle-block{
+position: absolute;
+}
+.circle{
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    box-shadow: 2px -0.5px 4px 0px rgba(0, 0, 0, 0.05),-2px 4px 8px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+    transition: 0.2s;
+    z-index: 1;
+}
+.circle:hover{
+    /*opacity: 0;*/
+    transition: 0.2s;
+    box-shadow: 2px -0.5px 4px 0px rgba(0, 0, 0, 0),-2px 4px 8px 0px rgba(0, 0, 0, 0);
+    background: none;
+    backdrop-filter: none;
+}
+
+.circle-block:nth-of-type(1) {
+    left: 1%;
+    top: 43.6%;
+}
+.circle-block:nth-of-type(2) {
+    left: 15.7%;
+    top: 40.5%;
+}
+.circle-block:nth-of-type(3) {
+    left: 44.7%;
+    top: 33.5%;
+}
+.circle-block:nth-of-type(4) {
+    left: 65%;
+    top: 27.6%;
+}
+.circle-block:nth-of-type(5) {
+    left: 81.5%;
+    top: 20.4%;
+}
+.hover-line{
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: fit-content;
+    z-index: 0;
+}
+.line-text{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main{
     height: 603px;
     display: flex;
@@ -998,15 +1073,11 @@ li.tiles-text{
     height: 530px;
 }
 .daynet{
-    padding-top: 300px;
     height: 1250px;
 }
-.daynet svg{
-    padding: 0 325px;
-}
-.daynet img{
+.daynet >img{
     width: 100%;
-    height: 1133px;
+    /*height: 1133px;*/
 }
 .daynet p{
     color: #04101C;
@@ -1017,7 +1088,7 @@ li.tiles-text{
     letter-spacing: 1.68px;
     margin-block-end:0;
 }
-.daynet div{
+/*.daynet div{
     position: absolute;
     color: #7A73FF;
     font-size: 28px;
@@ -1025,7 +1096,7 @@ li.tiles-text{
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 1.68px;
-}
+}*/
 .bunny-mobile{
     display: none;
 }
@@ -1324,6 +1395,38 @@ footer p, footer a{
     border: 1px solid #04101C;
 }
 
+.line-circle {
+    pointer-events: bounding-box;
+    opacity: 1;
+}
+
+.line-circle:hover{
+    transition: .4s linear;
+    opacity: 0;
+}
+
+.age-text {
+    transition: 0.4s;
+    display: none;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    font-variation-settings: 'wdth' 130, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+}
+
+.blue-text {
+    fill: #5D5FEF;
+}
+
+.age-line {
+    display: none;
+    transition: 0.4s;
+}
+
+
 @media screen and (max-width: 1680px){
     .header1{
         padding: 0 220px;
@@ -1365,9 +1468,6 @@ footer p, footer a{
     }
     #blog{
         padding: 64px 220px 0;
-    }
-    .daynet svg{
-        padding: 0 220px;
     }
     footer{
         padding: 0 220px;
@@ -1414,9 +1514,6 @@ footer p, footer a{
         padding: 0 100px;
     }
     #blog{
-        padding: 0 100px;
-    }
-    .daynet svg{
         padding: 0 100px;
     }
     footer{
@@ -1604,9 +1701,6 @@ footer p, footer a{
     .daynet{
         padding-top: 200px;
         height: 900px;
-    }
-    .daynet svg{
-        padding: 0 92px;
     }
     .main{
         padding: 0 92px;
@@ -1859,9 +1953,6 @@ footer p, footer a{
     .daynet{
         height: 900px;
     }
-    .daynet svg{
-        padding: 0 65px;
-    }
     .daynet div{
         font-size: 20px;
         font-style: normal;
@@ -2087,7 +2178,6 @@ footer p, footer a{
     }
     .daynet svg{
         width: 160px;
-        padding: 0 20px;
     }
     .daynet img{
         height: 300px!important;

@@ -106,7 +106,6 @@ $(document).ready(function () {
 
         // --Позиция скролла с учетом высоты header--
         let adjustedScrollPosition = scrollPosition - headerHeight;
-        console.log('Adjusted Scroll Position:', adjustedScrollPosition);
 
         // ------------------------DAYNET------------------------//
         if (adjustedScrollPosition > -756 && adjustedScrollPosition <= -538) {

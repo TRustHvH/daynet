@@ -1072,7 +1072,7 @@ li.tiles-text{
 .draggable{
     height: 530px;
 }
-.daynet{padding-top: 300px;
+.daynet{
     height: 1250px;
 }
 .daynet >img{

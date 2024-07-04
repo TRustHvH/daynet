@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Daynet - Партнерам</title>
-    <link rel="stylesheet" href="../index.css">
-    <script src="../js/index.js"></script>
+    <title>Daynet</title>
     <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/partnership.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/lines.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+    <script src="../js/index.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/animation.js"></script>
 </head>
 <body>
     <header>
@@ -168,53 +172,6 @@
             </div>
         </div>
     </header>
-    <div class="partnership">
-        <div class="begin">
-            <h1>
-                Хотите стать нашим партнёром или поставщиком?
-            </h1>
-            <p>
-                Ищем единомышленников и таких же влюблённых в работу, как и мы. Станьте частью команды единомышленников. Условия сотрудничества ниже.
-            </p>
-        </div>
-        <div class="form">
-            <img src="../img/bunny1-mobile.svg" alt="123">
-            <div class="upper-form">
-                <form method="post">
-                    <p>Напишите нам</p>
-                    <div class="for-text-upper-input">
-                        <p>ФИО&nbsp<span style="color: rgba(235, 87, 87, 1)">*</span></p>
-                        <input placeholder="Иванов Владимир Олегович" name="name" required>
-                    </div>
-                    <div class="for-text-upper-input">
-                        <p>Название компании</p>
-                        <input placeholder="Лучший партнер" name="name" required>
-                    </div>
-                    <div class="for-text-upper-input">
-                        <p>Телефон или E-mail&nbsp<span style="color: rgba(235, 87, 87, 1)">*</span></p>
-                        <input placeholder="+7 (999) 856 - 34-34" name="number-or-email" type="text" required>
-                    </div>
-                    <div class="for-text-upper-input">
-                        <p>Cфера деятельности</p>
-                        <input placeholder="Реклама" name="sphere" >
-                    </div>
-                    <div class="for-text-upper-input">
-                        <p>Сайт</p>
-                        <input placeholder="www.theverycompany.com" name="site" >
-                    </div>
-                    <div class="for-text-upper-input">
-                        <p>Комментарий</p>
-                        <input placeholder="Иванов Владимир Олегович" name="message" >
-                    </div>
-                    <div class="input-checkbox">
-                        <input type="checkbox" class="checkbox" id="checkbox" required>
-                        <label for="checkbox"></label><span>Я согласен с <a href=""><strong>условиями передачи информации.</strong></a></span>
-                    </div>
-                    <button>отправить</button>
-                </form>
-            </div>
-        </div>
-    </div>
     <footer>
         <svg xmlns="http://www.w3.org/2000/svg" width="159" height="24" viewBox="0 0 159 24" fill="none">
             <path d="M1.56795 0H10.8734C20.5878 0 24.6781 3.80571 24.6781 12C24.6781 20.1943 20.5878 24 10.8734 24H1.56795C0.715803 24 0 23.3143 0 22.4571V1.61143C0 0.720001 0.681717 0 1.56795 0ZM10.703 4.73143H6.27179V19.2686H10.703C16.8043 19.2686 18.4063 17.1429 18.4063 12C18.4063 6.85714 16.8043 4.73143 10.703 4.73143Z" fill="white"/>
@@ -236,35 +193,5 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-    <script>
-        SmoothScroll({
-            // Время скролла 400 = 0.4 секунды
-            animationTime: 800,
-            // Размер шага в пикселях
-            stepSize: 75,
-
-            // Дополнительные настройки:
-
-            // Ускорение
-            accelerationDelta: 30,
-            // Максимальное ускорение
-            accelerationMax: 2,
-
-            // Поддержка клавиатуры
-            keyboardSupport: true,
-            // Шаг скролла стрелками на клавиатуре в пикселях
-            arrowScroll: 50,
-
-            // Pulse (less tweakable)
-            // ratio of "tail" to "acceleration"
-            pulseAlgorithm: true,
-            pulseScale: 4,
-            pulseNormalize: 1,
-
-            // Поддержка тачпада
-            touchpadSupport: true,
-        })
-    </script>
 </body>
 </html>

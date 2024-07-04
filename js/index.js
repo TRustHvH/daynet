@@ -1,11 +1,7 @@
-window.addEventListener("mousewheel", function(e) {
-    if (e.ctrlKey) {
-        e.preventDefault();
-        return false;
-    }
-}, {passive:false});
-
 document.addEventListener("DOMContentLoaded", function() {
+
+    /// --- Mobile menu --- \\\
+    
     let mobile_menu = document.getElementById('mobile-menu')
     let is_opened = false
 
@@ -18,9 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
             is_opened = false
         }
     }
+    
     document.getElementById("mobile-header-button").addEventListener("click", mobile_menu_opener);
     document.getElementById("close-mobile-header").addEventListener("click", mobile_menu_opener);
 
+    /// --- Header Animation --- \\\
+    
     document.addEventListener("scroll", () => {
         if (window.scrollY >= 85) {
             document.querySelector(".header").classList.add("header-scroll");
@@ -28,14 +27,16 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector(".header").classList.remove("header-scroll");
         }
     })
+    
+    /// --- Carousel --- \\\
+
     let currentSlide = 1;
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
-    const carouselItems = document.querySelectorAll('.carousel-item');
     const slidesContainer = document.querySelector('.blog-text');
-    const slidesContainer_slide = document.querySelector(".blog-block")
+    const slidesContainer_slide = document.querySelector(".blog-block");
     const totalSlides = document.querySelectorAll('.blog-block').length;
-    
+
     function parseToInt(value) {
         return parseInt(value, 10);
     }
@@ -50,26 +51,47 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    const pages = Math.ceil(totalSlides / getItemsToShow());
-    document.querySelector('.carousel-number').innerHTML = pages
-    
+    let pages;
+    pages = Math.ceil(totalSlides / getItemsToShow());
+    document.querySelector('.carousel-number').innerHTML = pages;
+
+    const activePrevSrc = "img/carousel-arrows/active-prev.svg";
+    const inactivePrevSrc = "img/carousel-arrows/unactive-prev.svg";
+    const activeNextSrc = "img/carousel-arrows/active-next.svg";
+    const inactiveNextSrc = "img/carousel-arrows/unactive-next.svg";
+
     function showSlide(index) {
         const translateValue = -(index - 1) * (slidesContainer_slide.clientWidth + parseToInt(getComputedStyle(slidesContainer).gap)) + 5 + 'px';
         slidesContainer.style.transform = 'translateX(' + translateValue + ')';
-        
-        nextButton.style.backgroundColor = index === totalSlides ? 'rgba(214, 214, 214, 1)' : '';
-        nextButton.style.pointerEvents = index === totalSlides ? 'none' : 'auto';
 
-        prevButton.style.backgroundColor = index === 1 ? 'rgba(214, 214, 214, 1)' : '';
-        prevButton.style.pointerEvents = index === 1 ? 'none' : 'auto';
+        if (index === totalSlides) {
+            nextButton.style.backgroundColor = 'rgba(214, 214, 214, 1)';
+            nextButton.style.pointerEvents = 'none';
+            nextButton.src = inactiveNextSrc;
+        } else {
+            nextButton.style.backgroundColor = '';
+            nextButton.style.pointerEvents = 'auto';
+            nextButton.src = activeNextSrc;
+        }
+
+        if (index === 1 || index === 2) {
+            prevButton.style.backgroundColor = 'rgba(214, 214, 214, 1)';
+            prevButton.style.pointerEvents = 'none';
+            prevButton.src = inactivePrevSrc;
+        } else {
+            prevButton.style.backgroundColor = '';
+            prevButton.style.pointerEvents = 'auto';
+            prevButton.src = activePrevSrc;
+        }
     }
 
-    prevButton.addEventListener('click', () =>{
-        prevSlide()
-    })
-    nextButton.addEventListener('click', () =>{
-        nextSlide()
-    })
+    prevButton.addEventListener('click', () => {
+        prevSlide();
+    });
+    nextButton.addEventListener('click', () => {
+        nextSlide();
+    });
+
     function prevSlide() {
         const itemsToShow = getItemsToShow();
         currentSlide = (currentSlide - itemsToShow + totalSlides) % totalSlides || totalSlides;
@@ -83,5 +105,75 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     setInterval(nextSlide, 4000);
+
+    showSlide(currentSlide);
+
+
+    /// --- Popup menu --- \\\
+
+    const popupServices = document.querySelector(".popup-services");
+    const popupCases = document.querySelector(".popup-cases");
+    const serviceLink = document.querySelector(".service-link");
+    const caseLink = document.querySelector(".case-link");
+
+    let currentPopup = null;
+
+    function showPopup(popupToShow) {
+        if (currentPopup && currentPopup !== popupToShow) {
+            hidePopup(currentPopup);
+            setTimeout(() => {
+                popupToShow.style.display = "flex";
+                setTimeout(() => {
+                    popupToShow.style.opacity = "1";
+                }, 200);
+            }, 200);
+        } else {
+            popupToShow.style.display = "flex";
+            setTimeout(() => {
+                popupToShow.style.opacity = "1";
+            }, 1)
+        }
+        currentPopup = popupToShow;
+    }
+
+    function hidePopup(popup) {
+        popup.style.opacity = "0";
+        setTimeout(() => {
+            popup.style.display = "none";
+        }, 200);
+        currentPopup = null;
+    }
+
+    serviceLink.addEventListener("click", (event) => {
+        event.stopPropagation();
+        if (currentPopup !== popupServices) {
+            showPopup(popupServices);
+        } else {
+            hidePopup(popupServices);
+        }
+    });
+
+    caseLink.addEventListener("click", (event) => {
+        event.stopPropagation();
+        if (currentPopup !== popupCases) {
+            showPopup(popupCases);
+        } else {
+            hidePopup(popupCases);
+        }
+    });
+
+    document.addEventListener("click", (event) => {
+        if (currentPopup && !currentPopup.contains(event.target) && !serviceLink.contains(event.target) && !caseLink.contains(event.target)) {
+            hidePopup(currentPopup);
+        }
+    });
+
+    popupServices.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
+
+    popupCases.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
 });
 

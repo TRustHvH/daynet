@@ -158,59 +158,59 @@ svg{
     position: relative;
     height: 1024px;
 }
-.circle-block{
-position: absolute;
-}
-.circle{
-    position: relative;
-    width: 64px;
-    height: 64px;
-    border-radius: 100%;
-    box-shadow: 2px -0.5px 4px 0px rgba(0, 0, 0, 0.05),-2px 4px 8px 0px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.4);
-    opacity: 1;
-    transition: 0.2s;
-    z-index: 1;
-}
-.circle:hover{
-    /*opacity: 0;*/
-    transition: 0.2s;
-    box-shadow: 2px -0.5px 4px 0px rgba(0, 0, 0, 0),-2px 4px 8px 0px rgba(0, 0, 0, 0);
-    background: none;
-    backdrop-filter: none;
-}
+/*.circle-block{*/
+/*position: absolute;*/
+/*}*/
+/*.circle{*/
+/*    position: relative;*/
+/*    width: 64px;*/
+/*    height: 64px;*/
+/*    border-radius: 100%;*/
+/*    box-shadow: 2px -0.5px 4px 0px rgba(0, 0, 0, 0.05),-2px 4px 8px 0px rgba(0, 0, 0, 0.15);*/
+/*    backdrop-filter: blur(20px);*/
+/*    background: rgba(255, 255, 255, 0.4);*/
+/*    opacity: 1;*/
+/*    transition: 0.2s;*/
+/*    z-index: 1;*/
+/*}*/
+/*.circle:hover{*/
+/*    !*opacity: 0;*!*/
+/*    transition: 0.2s;*/
+/*    box-shadow: 2px -0.5px 4px 0px rgba(0, 0, 0, 0),-2px 4px 8px 0px rgba(0, 0, 0, 0);*/
+/*    background: none;*/
+/*    backdrop-filter: none;*/
+/*}*/
 
-.circle-block:nth-of-type(1) {
-    left: 1%;
-    top: 43.6%;
-}
-.circle-block:nth-of-type(2) {
-    left: 15.7%;
-    top: 40.5%;
-}
-.circle-block:nth-of-type(3) {
-    left: 44.7%;
-    top: 33.5%;
-}
-.circle-block:nth-of-type(4) {
-    left: 65%;
-    top: 27.6%;
-}
-.circle-block:nth-of-type(5) {
-    left: 81.5%;
-    top: 20.4%;
-}
-.hover-line{
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    width: fit-content;
-    z-index: 0;
-}
-.line-text{
+/*.circle-block:nth-of-type(1) {*/
+/*    left: 1%;*/
+/*    top: 43.6%;*/
+/*}*/
+/*.circle-block:nth-of-type(2) {*/
+/*    left: 15.7%;*/
+/*    top: 40.5%;*/
+/*}*/
+/*.circle-block:nth-of-type(3) {*/
+/*    left: 44.7%;*/
+/*    top: 33.5%;*/
+/*}*/
+/*.circle-block:nth-of-type(4) {*/
+/*    left: 65%;*/
+/*    top: 27.6%;*/
+/*}*/
+/*.circle-block:nth-of-type(5) {*/
+/*    left: 81.5%;*/
+/*    top: 20.4%;*/
+/*}*/
+/*.hover-line{*/
+/*    position: absolute;*/
+/*    bottom: 100%;*/
+/*    left: 50%;*/
+/*    width: fit-content;*/
+/*    z-index: 0;*/
+/*}*/
+/*.line-text{*/
 
-}
+/*}*/
 
 
 
@@ -404,7 +404,7 @@ position: absolute;
     color: white;
     background: #04101C;
     display: inline-flex;
-    padding: 16px 40px;
+    padding: 16px 31px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -414,6 +414,8 @@ position: absolute;
     line-height: 40px;
     letter-spacing: 1.44px;
     transition: 0.4s;
+    font-size: 24px;
+    letter-spacing: 3.46px;
 }
 .start a:hover{
     background:#000000;
@@ -428,6 +430,14 @@ position: absolute;
     align-items: center;
     margin-top: 89px;
 }
+.logo {
+    position: absolute;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    z-index: 2;
+    margin-top: 15px;
+}
 .companies{
     padding-top: 200px;
     display: flex;
@@ -438,6 +448,13 @@ position: absolute;
 }
 .under-companies{
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1282px;
+    justify-content: center;
+    gap: 116px;
+}
+.under-companies-tab{
+    display: none;
     flex-wrap: wrap;
     max-width: 1282px;
     justify-content: center;
@@ -1431,6 +1448,15 @@ footer p, footer a{
     .header1{
         padding: 0 220px;
     }
+    .logo {
+        position: absolute;
+        display: flex;
+        gap: 42px;
+        flex-direction: column;
+        z-index: 2;
+        margin-top: 60px;
+    }
+
     .daynet-1{
         margin-left: 17%;
         margin-top: 370px;
@@ -1480,6 +1506,21 @@ footer p, footer a{
     .form img{
         width: 80%;
         margin: 150px 0 0 -300px;
+    }
+    .companies {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 32px;
+    }
+    .under-companies {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1282px;
+        justify-content: center;
+        gap: 118px;
     }
     .daynet-1{
         margin-left: 17%;
@@ -1596,15 +1637,15 @@ footer p, footer a{
         width: 410px;
     }
     .start img{
-        width: 400px;
+        width: 500px;
     }
     .logo{
         position: absolute;
         display: flex;
-        gap: 45px;
+        gap: 42px;
         flex-direction: column;
         z-index: 2;
-        margin-top: 205px;
+        margin-top: 150px;
     }
     .g{
         margin-left: 560px;
@@ -1703,7 +1744,7 @@ footer p, footer a{
         height: 900px;
     }
     .main{
-        padding: 0 92px;
+        padding: 0 44px;
         height: 500px;
     }
     .header1{
@@ -1713,8 +1754,16 @@ footer p, footer a{
         gap: 28px;
     }
     .under-companies{
+        display: none;
         gap: 74px;
-        padding: 0 92px;
+        padding: 0 44px;
+    }
+    .under-companies-tab{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1282px;
+        justify-content: center;
+        gap: 92px;
     }
 }
 @media screen and (max-width: 720px){
@@ -2058,6 +2107,9 @@ footer p, footer a{
         padding-top: 170px;
     }
     .under-companies{
+        display: none;
+    }
+    .under-companies-tab{
         display: none;
     }
     .under-companies-mobile{

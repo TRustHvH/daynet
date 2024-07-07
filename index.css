@@ -153,11 +153,6 @@ img{
 svg{
     pointer-events: none;
 }
-
-.daynet{
-    position: relative;
-    height: 1024px;
-}
 .circle-block{
 position: absolute;
 }
@@ -728,7 +723,6 @@ li.tiles-text{
 .animation-hidden.hide {
     opacity: 0;
 }
-
 .about{
     background: url("img/case.svg") no-repeat center;
     height: 1440px;
@@ -738,6 +732,17 @@ li.tiles-text{
     align-items: center;
     background-size: cover;
     padding: 0 325px;
+    gap: 40px;
+}
+.under-about{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 .about h1{
     color: #209DB7;
@@ -746,6 +751,7 @@ li.tiles-text{
     font-weight: 700;
     line-height: 28.8px;
     letter-spacing: 2.88px;
+    margin: 0;
 }
 .about h2{
     color: #FFF;
@@ -755,6 +761,7 @@ li.tiles-text{
     line-height: 38.4px;
     letter-spacing: 2.24px;
     max-width: 470px;
+    margin: 0;
 }
 .about p{
     color: #FFF;
@@ -764,6 +771,7 @@ li.tiles-text{
     line-height: 36px;
     letter-spacing: 0.56px;
     max-width: 500px;
+    margin: 0;
 }
 .about .car{
     width: 100%;
@@ -818,9 +826,48 @@ li.tiles-text{
     letter-spacing: 0.04em;
     text-align: left;
     color: #209DB7;
-}
+    margin: 0 0 32px;
 
-.information-text{
+}
+.cases-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+.cases-more img{
+    width: 40px;
+}
+.cases-bottom-item{
+    width: 261px;
+    height: 184px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.cases-bottom-item:nth-child(1):before{
+    content: "";
+    background: linear-gradient(90.00deg, #4AFCF1,#75CDFF,#7A73FF);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+}
+.cases-more p{
+    color: rgb(4, 42, 80);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 1.02px;
+    text-align: center;
+    margin: 0;
+    transition: 0.2s linear;
+}
+.cases-more:hover p{
+    color: #7A73FF;
 }
 .information-text h1{
     display: flex;
@@ -843,16 +890,17 @@ li.tiles-text{
     margin-bottom: 32px;
 }
 .information{
-    width: 410px;
-}
-.information-text:not(:last-child){
-    margin: 0 0 83px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 .information-text p{
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
-    margin: 0 0 0 16px;
+    padding-left: 16px;
+    max-width: 306px;
+    margin: 0;
 }
 .cases-img{
     position: relative;
@@ -919,7 +967,7 @@ li.tiles-text{
 .cases-bottom{
     display: flex;
     flex-direction: row;
-
+    align-items: center;
 }
 #blog{
     display: flex;
@@ -1071,9 +1119,6 @@ li.tiles-text{
 }
 .draggable{
     height: 530px;
-}
-.daynet{
-    height: 1250px;
 }
 .daynet >img{
     width: 100%;
@@ -1327,10 +1372,6 @@ footer p, footer a{
 .bunny{
     position:absolute; z-index: 1; margin-top: -350px; margin-left: 100px
 }
-.under-about{
-    display: flex;
-    flex-direction: column;
-}
 .daynet-1{
     margin-left: 17%;
     margin-top: 370px;
@@ -1376,7 +1417,6 @@ footer p, footer a{
     justify-content: center;
     align-items: center;
 
-    font-family: 'Roboto Flex', sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -1408,7 +1448,6 @@ footer p, footer a{
 .age-text {
     transition: 0.4s;
     display: none;
-    font-family: 'Roboto Flex', sans-serif;
     font-size: 26px;
     font-weight: 500;
     line-height: 40px;
@@ -1502,22 +1541,25 @@ footer p, footer a{
         margin-top: 135px;
     }
     .main{
-        padding: 0 85px;
+        padding: 0 86px;
     }
     .header1{
-        padding: 0 85px;
+        padding: 0 86px;
     }
     .tiles{
-        padding: 85px 100px;
+        padding: 86px 100px;
     }
     .about{
-        padding: 0 100px;
+        padding: 0 86px;
+    }
+    .cases{
+        padding: 0 86px;
     }
     #blog{
-        padding: 0 100px;
+        padding: 0 86px;
     }
     footer{
-        padding: 0 100px;
+        padding: 0 86px;
     }
 }
 @media screen and (max-width: 1280px) {
@@ -1584,6 +1626,31 @@ footer p, footer a{
     }
 }
 @media screen and (max-width: 980px) {
+    .arrow-sevices:after, .arrow-sevices:before {
+        left: 107px;
+    }
+    .arrow-cases:after, .arrow-cases:before {
+        left: 258px;
+    }
+    .popup{
+        gap: 20px;
+        top: 45px;
+    }
+    .popup-main-text{
+        font-size: 16px;
+    }
+    .popup-subtext{
+        font-size: 10px;
+    }
+    .popup-item-text{
+        font-size: 12px;
+    }
+    .header-links{
+        gap: 28px;
+    }
+    .prevheader .link{
+        font-size: 16px;
+    }
     .blog-text{
         justify-content: center;
     }
@@ -1613,16 +1680,46 @@ footer p, footer a{
         gap: 32px;
         padding-top: 150px;
     }
+    .cases{
+        padding: 0 42px;
+    }
+    .cases-bottom-item{
+        width: 222px;
+        height: 184px;
+    }
+    .cases-info{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .information{
+        gap: 16px;
+    }
+    .information-text:nth-child(1) p{
+        max-width: 380px;
+    }
+    .information-text:nth-child(2) p, .information-text:nth-child(3) p{
+        max-width: unset;
+    }
+    .cases-img{
+        width: 100%;
+        height: 301px;
+    }
+    .cases-bottom-item:nth-child(1):before{
+        max-width: 222px;
+    }
+    .cases-bottom-item:nth-child(4){
+        display: none;
+    }
     .tiles{
         align-items: normal;
         flex-direction: column;
-        padding: 0 92px;
+        padding: 0 42px;
     }
     .bunny{
         display: none;
     }
     .about .car{
-        max-width: 100%;
+        max-width: 48%;
         height: 100%;
         margin-top: -150px;
     }
@@ -1630,7 +1727,7 @@ footer p, footer a{
         max-width: 524px;
     }
     .about{
-        padding: 0 92px;
+        padding: 0 42px;
     }
     .daynet img{
         margin-top: 150px;
@@ -1668,7 +1765,7 @@ footer p, footer a{
         max-width:350px
     }
     footer{
-        padding: 0 92px;
+        padding: 0 42px;
     }
     .form span{
         color: #00D4FF;
@@ -1698,26 +1795,22 @@ footer p, footer a{
         margin-left: 69%;
         margin-top: 125px;
     }
-    .daynet{
-        padding-top: 200px;
-        height: 900px;
-    }
     .main{
-        padding: 0 92px;
+        padding: 0 42px;
         height: 500px;
     }
     .header1{
-        padding: 0 92px;
+        padding: 0 42px;
     }
     .prevheader{
         gap: 28px;
     }
     .under-companies{
         gap: 74px;
-        padding: 0 92px;
+        padding: 0 42px;
     }
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 768px){
     .blog a:nth-of-type(n+7) {
         display: none;
     }
@@ -1740,7 +1833,6 @@ footer p, footer a{
     .prevheader-mobile{
         display: flex;
         height: 85px;
-        width: 100%;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -1848,30 +1940,15 @@ footer p, footer a{
     .tiles-2{
         scale: .8;
     }
-    .about h1{
-        font-size: 52px;
-        font-style: normal;
-        font-weight: 720;
-        line-height: 60px;
-        letter-spacing: 1.04px;
-    }
-    .about h2{
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 720;
-        line-height: 44px;
-        letter-spacing: 0.8px;
-    }
     .about p{
         font-size: 20px;
         font-style: normal;
         font-weight: 300;
         line-height: 28px;
         letter-spacing: 0.4px;
-        margin-top: 350px;
     }
     .about{
-        height: 1210px;
+        height: 1075px;
         padding: 0 65px;
     }
     .about nonclickable{
@@ -1889,11 +1966,9 @@ footer p, footer a{
         max-width: 324px;
     }
     .about .car{
-        margin-top: -100px;
-        margin-left: -550px;
-        width: 610px;
-        height: 350px;
-        max-width: unset;
+        max-width: 40%;
+        height: fit-content;
+        margin: 0;
     }
     #blog{
         padding: 0 65px;
@@ -1950,9 +2025,6 @@ footer p, footer a{
         line-height: 28px;
         letter-spacing: 0.8px;
     }
-    .daynet{
-        height: 900px;
-    }
     .daynet div{
         font-size: 20px;
         font-style: normal;
@@ -2001,13 +2073,16 @@ footer p, footer a{
         letter-spacing: 0.8px;
     }
 }
-@media screen and (max-width: 660px){
+@media screen and (max-width: 640px){
     .form form input{
         max-width: 250px;
     }
+    .about{
+        flex-direction: column;
+        justify-content: center;
+    }
     .about .car{
-        width: auto;
-        margin-left: -500px;
+
     }
 }
 @media screen and (max-width: 480px){
@@ -2104,15 +2179,8 @@ footer p, footer a{
         width: 28px;
         height: 28px;
     }
-    .about h1{
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 720;
-        line-height: 44px;
-        letter-spacing: 0.8px;
-    }
     .about{
-        height: 1046px;
+        height: 950px;
         padding: 0 20px;
     }
     .about h2{
@@ -2121,22 +2189,15 @@ footer p, footer a{
         font-weight: 720;
         line-height: 36px;
         letter-spacing: 0.56px;
-        max-width: 155px;
-    }
-    .about .car{
-        width: 400px;
-        height: unset;
-        margin-left: -340px;
-        margin-top: -110px;
+        max-width: unset;
     }
     .about p{
-        margin-top: 275px;
         font-size: 16px;
         font-style: normal;
         font-weight: 300;
         line-height: 24px;
         letter-spacing: 0.32px;
-        max-width: 269px;
+        max-width: unset;
     }
     .about nonclickable{
         padding: 12px 20px;
@@ -2159,6 +2220,15 @@ footer p, footer a{
         letter-spacing: 0.64px;
         max-width: 110px;
     }
+    .cases-more{
+        gap: 10px;
+    }
+    .cases-bottom-item{
+        height: 110px;
+    }
+    .cases-bottom-item img{
+        height: 50px;
+    }
     #blog{
         flex-direction: column;
         gap: 43px;
@@ -2171,13 +2241,6 @@ footer p, footer a{
         line-height: 44px;
         letter-spacing: 0.8px;
         margin-block-end: 0;
-    }
-    .daynet{
-        height: 495px;
-        padding-top: 86px;
-    }
-    .daynet svg{
-        width: 160px;
     }
     .daynet img{
         height: 300px!important;

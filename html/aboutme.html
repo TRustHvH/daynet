@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon">
     <script src="../js/index.js"></script>
+    <script src="../js/age_line_controller.js"></script>
+    <script src="../js/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -19,7 +21,7 @@
                 <div class="header1">
                     <div class="prevheader">
                         <div class="header-links">
-                            <a class="link" href="../index.html">
+                            <a class="link" href="../index.html" style="height: 22px">
                                 <svg width="146" height="22" viewBox="0 0 146 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.43975 0H9.98436C18.9046 0 22.6604 3.48857 22.6604 11C22.6604 18.5114 18.9046 22 9.98436 22H1.43975C0.657278 22 0 21.3714 0 20.5857V1.47714C0 0.660001 0.625979 0 1.43975 0ZM9.82787 4.33714H5.75901V17.6629H9.82787C15.4304 17.6629 16.9014 15.7143 16.9014 11C16.9014 6.28572 15.4304 4.33714 9.82787 4.33714Z" fill="#04101C"/>
                                     <path d="M23.9818 20.5857L27.8316 5.97143C29.1149 1.1 33.528 0 37.9725 0H46.2041C46.9553 0 47.5186 0.660001 47.5186 1.41429V20.5857C47.5186 21.3714 46.8614 22 46.0789 22H43.1994C42.3856 22 41.7596 21.3714 41.7596 20.5543V16.6886H30.8989L29.866 20.5543C29.6469 21.3714 28.8645 22 28.0507 22H25.046C24.2322 22 23.7627 21.3714 23.9818 20.5857ZM33.3715 7.41714L32.0257 12.3514H41.7596V4.33714H37.4091C35.4372 4.33714 33.8723 5.53143 33.3715 7.41714Z" fill="#04101C"/>
@@ -35,102 +37,100 @@
                             <a class="link" href="../html/aboutme.html">О нас</a>
                             <a class="link" href="../html/contacts.html">Контакты</a>
                         </div>
-                        <div class="popup-header">
-                            <div class="popup popup-services arrow-sevices">
-                                <div class="popup-block">
-                                    <a href="" class="popup-item">
-                                        <img src="../img/popup/ORM.svg" alt="">
-                                        <div class="popup-text">
-                                            <p class="popup-main-text">ORM</p>
-                                            <p class="popup-subtext">Управление репутацией в интернете</p>
-                                        </div>
-                                    </a>
-                                    <div class="popup-item-links">
-                                        <div class="popup-item-links-block">
-                                            <a href="" class="popup-item-text">Стратегия</a>
-                                            <a href="" class="popup-item-text">Мониторинг</a>
-                                            <a href="" class="popup-item-text">Аналитика</a>
-                                            <a href="" class="popup-item-text">Официальный представитель</a>
-                                        </div>
-                                        <div class="popup-item-links-block">
-                                            <a href="" class="popup-item-text">Соцсети</a>
-                                            <a href="" class="popup-item-text">SMRM</a>
-                                            <a href="" class="popup-item-text">Отзывы и рейтинги</a>
-                                            <a href="" class="popup-item-text">Hidden marketing(HM)</a>
-                                        </div>
+                        <div class="popup popup-services arrow-sevices">
+                            <div class="popup-block">
+                                <a href="" class="popup-item">
+                                    <img src="../img/popup/ORM.svg" alt="">
+                                    <div class="popup-text">
+                                        <p class="popup-main-text">ORM</p>
+                                        <p class="popup-subtext">Управление репутацией в интернете</p>
+                                    </div>
+                                </a>
+                                <div class="popup-item-links">
+                                    <div class="popup-item-links-block">
+                                        <a href="" class="popup-item-text">Стратегия</a>
+                                        <a href="" class="popup-item-text">Мониторинг</a>
+                                        <a href="" class="popup-item-text">Аналитика</a>
+                                        <a href="" class="popup-item-text">Официальный представитель</a>
+                                    </div>
+                                    <div class="popup-item-links-block">
+                                        <a href="" class="popup-item-text">Соцсети</a>
+                                        <a href="" class="popup-item-text">SMRM</a>
+                                        <a href="" class="popup-item-text">Отзывы и рейтинги</a>
+                                        <a href="" class="popup-item-text">Hidden marketing(HM)</a>
                                     </div>
                                 </div>
-                                <div class="popup-block">
-                                    <a href="" class="popup-item">
-                                        <img src="../img/popup/ORM.svg" alt="">
-                                        <div class="popup-text">
-                                            <p class="popup-main-text">SERM</p>
-                                            <p class="popup-subtext">Работа с поисковой выдачей</p>
-                                        </div>
-                                    </a>
-                                    <a href="" class="popup-item">
-                                        <img src="../img/popup/SMM.svg" alt="">
-                                        <div class="popup-text">
-                                            <p class="popup-main-text">SMM</p>
-                                            <p class="popup-subtext">Продвижение в социальных сетях</p>
-                                        </div>
-                                    </a>
-                                    <a href="" class="popup-item">
-                                        <img src="../img/popup/реклама.svg" alt="">
-                                        <div class="popup-text">
-                                            <p class="popup-main-text">Реклама</p>
-                                            <p class="popup-subtext">Настройка и ведение рекламных кампаний</p>
-                                        </div>
-                                    </a>
-                                </div>
                             </div>
-                            <div class="popup popup-cases arrow-cases">
-                                <div class="popup-block">
-                                    <a href="" class="popup-item">
-                                        <img src="../img/popup/Bank.svg" alt="">
-                                        <div class="popup-text">
-                                            <p class="popup-main-text">Банк</p>
-                                        </div>
-                                    </a>
-                                    <a href="" class="popup-item">
-                                        <img src="../img/popup/cliniks.svg" alt="">
-                                        <div class="popup-text">
-                                            <p class="popup-main-text">Сеть клиник</p>
-                                        </div>
-                                    </a>
-                                    <a href="" class="popup-item">
-                                        <img src="../img/popup/Stroy.svg" alt="">
-                                        <div class="popup-text">
-                                            <p class="popup-main-text">Стройматериалы</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="popup-block">
-                                    <a href="" class="popup-item">
-                                        <img src="../img/popup/salon.svg" alt="">
-                                        <div class="popup-text">
-                                            <p class="popup-main-text">Автосалон</p>
-                                        </div>
-                                    </a>
-                                    <a href="" class="popup-item">
-                                        <img src="../img/popup/reputacia.svg" alt="">
-                                        <div class="popup-text">
-                                            <p class="popup-main-text">Персональная репутация</p>
-                                        </div>
-                                    </a>
-                                    <a href="" class="popup-item">
-                                        <img src="../img/popup/company.svg" alt="">
-                                        <div class="popup-text">
-                                            <p class="popup-main-text">Компания-застройщик</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="popup-block for-button">
-                                    <a href="../html/case.html" class="popup-button">
-                                        <img src="../img/popup/arrow.svg" alt="">
-                                        <p class="popup-main-text">Больше кейсов</p>
-                                    </a>
-                                </div>
+                            <div class="popup-block">
+                                <a href="" class="popup-item">
+                                    <img src="../img/popup/ORM.svg" alt="">
+                                    <div class="popup-text">
+                                        <p class="popup-main-text">SERM</p>
+                                        <p class="popup-subtext">Работа с поисковой выдачей</p>
+                                    </div>
+                                </a>
+                                <a href="" class="popup-item">
+                                    <img src="../img/popup/SMM.svg" alt="">
+                                    <div class="popup-text">
+                                        <p class="popup-main-text">SMM</p>
+                                        <p class="popup-subtext">Продвижение в социальных сетях</p>
+                                    </div>
+                                </a>
+                                <a href="" class="popup-item">
+                                    <img src="../img/popup/реклама.svg" alt="">
+                                    <div class="popup-text">
+                                        <p class="popup-main-text">Реклама</p>
+                                        <p class="popup-subtext">Настройка и ведение рекламных кампаний</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="popup popup-cases arrow-cases">
+                            <div class="popup-block">
+                                <a href="" class="popup-item">
+                                    <img src="../img/popup/Bank.svg" alt="">
+                                    <div class="popup-text">
+                                        <p class="popup-main-text">Банк</p>
+                                    </div>
+                                </a>
+                                <a href="" class="popup-item">
+                                    <img src="../img/popup/cliniks.svg" alt="">
+                                    <div class="popup-text">
+                                        <p class="popup-main-text">Сеть клиник</p>
+                                    </div>
+                                </a>
+                                <a href="" class="popup-item">
+                                    <img src="../img/popup/Stroy.svg" alt="">
+                                    <div class="popup-text">
+                                        <p class="popup-main-text">Стройматериалы</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="popup-block">
+                                <a href="" class="popup-item">
+                                    <img src="../img/popup/salon.svg" alt="">
+                                    <div class="popup-text">
+                                        <p class="popup-main-text">Автосалон</p>
+                                    </div>
+                                </a>
+                                <a href="" class="popup-item">
+                                    <img src="../img/popup/reputacia.svg" alt="">
+                                    <div class="popup-text">
+                                        <p class="popup-main-text">Персональная репутация</p>
+                                    </div>
+                                </a>
+                                <a href="" class="popup-item">
+                                    <img src="../img/popup/company.svg" alt="">
+                                    <div class="popup-text">
+                                        <p class="popup-main-text">Компания-застройщик</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="popup-block for-button">
+                                <a href="../html/case.html" class="popup-button">
+                                    <img src="../img/popup/arrow.svg" alt="">
+                                    <p class="popup-main-text">Больше кейсов</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -176,53 +176,229 @@
             <p>DAYNET работает на рынке управления репутацией уже 10 лет. За это время реализовали сотни успешных проектов для наших клиентов. В нашей команде эксперты в области маркетинга, ORM, SERM, PR, SMM и создания личного бренда. Мы не просто энтузиасты-новички, а гуру в ORM. Специализируемся на управлении онлайн-репутацией компаний (Online Reputation Management).</p>
         </div>
         <div class="daynet">
-            <img src="../img/daynet-line.svg" alt="">
-            <div class="circle-block">
-
-                <div class="circle">
-                    <div class="hover-line">
-                        <img src="../img/hover-lines/Line1.svg">
-                    </div>
-                </div>
-                <h2>Основание компании</h2>
-                <p>2013</p>
-            </div>
-            <div class="circle-block">
-                <div class="circle">
-                    <div class="hover-line"><img src="../img/hover-lines/Line2.svg"></div>
-                </div>
-                <div class="line-text">
-                    <h2>Взят курс на ORM</h2>
-                    <p>2014</p>
-                </div>
-            </div>
-            <div class="circle-block">
-                <div class="circle">
-                    <div class="hover-line"><img src="../img/hover-lines/Line3.svg"></div>
-                </div>
-                <div class="line-text">
-                    <h2>Первая эволюция</h2>
-                    <p>2016</p>
-                </div>
-            </div>
-            <div class="circle-block">
-                <div class="circle">
-                    <div class="hover-line"><img src="../img/hover-lines/Line4.svg"></div>
-                </div>
-                <div class="line-text">
-                    <h2>Первая эволюция</h2>
-                    <p>2016</p>
-                </div>
-            </div>
-            <div class="circle-block">
-                <div class="circle">
-                    <div class="hover-line"><img src="../img/hover-lines/Line5.svg"></div>
-                </div>
-                <div class="line-text">
-                    <h2>Пандемия</h2>
-                    <p>2019</p>
-                </div>
-            </div>
+            <svg width="100%" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_778_33871)">
+                    <rect width="1440" height="1024" fill="#F9FBFF"/>
+                    <path d="M233.595 665.899C139.277 687.453 -5 732.594 -5 732.594V759C-5 759 138.938 709.601 233.595 686.922C352.098 658.53 424.572 670.717 541.531 636.517C649.907 604.826 700.731 559.483 808.1 524.532C897.496 495.432 954.602 501.605 1041.61 465.995C1109.51 438.206 1138.55 403.638 1206.49 375.962C1293.48 340.529 1437 318.335 1440 318.335C1443 318.335 1442 296.5 1440 297C1438 297.5 1293.58 320.15 1206.49 355.563C1138.69 383.132 1109.41 417.091 1041.61 444.659C954.519 480.073 897.511 474.162 808.1 503.223C700.767 538.109 649.84 583.121 541.531 614.844C424.547 649.107 352.429 638.742 233.595 665.899Z" fill="url(#paint0_linear_778_33871)" stroke="#AFB6B3"/>
+                    <line x1="406.5" y1="662" x2="406.5" y2="393" stroke="#AFB6B3" class="age-line age-3-line"/>
+                    <g>
+                        <text x="422.5" y="419" fill="black" font-size="26" class="age-text age-3-text">Привет</text>
+                        <text x="422.5" y="450" fill="black" font-size="26" class="age-text age-3-text blue-text">2022</text>
+                    </g>
+                    <g filter="url(#filter0_bdd_778_33871)" class="line-circle" age="0">
+                        <rect x="599" y="554" width="64" height="64" rx="32" fill="white" fill-opacity="0.4" shape-rendering="crispEdges"/>
+                        <rect x="599.5" y="554.5" width="63" height="63" rx="31.5" stroke="#D4D4D4" stroke-opacity="0.2" shape-rendering="crispEdges"/>
+                    </g>
+                    <line x1="30.5" y1="747" x2="30.5" y2="387" stroke="#AFB6B3" class="age-line age-1-line"/>
+                    <g>
+                        <text x="46.5" y="413" fill="black" font-size="26" class="age-text age-1-text">Привет</text>
+                        <text x="46.5" y="444" fill="black" font-size="26" class="age-text age-1-text blue-text">2022</text>
+                    </g>
+                    <g filter="url(#filter1_bdd_778_33871)" class="line-circle" age="1">
+                        <rect x="-1" y="702" width="64" height="64" rx="32" fill="white" fill-opacity="0.4" shape-rendering="crispEdges"/>
+                        <rect x="-0.5" y="702.5" width="63" height="63" rx="31.5" stroke="#D4D4D4" stroke-opacity="0.2" shape-rendering="crispEdges"/>
+                    </g>
+                    <g filter="url(#filter2_bdd_778_33871)" class="line-circle" age="2">
+                        <rect x="128" y="656" width="64" height="64" rx="32" fill="white" fill-opacity="0.4" shape-rendering="crispEdges"/>
+                        <rect x="128.5" y="656.5" width="63" height="63" rx="31.5" stroke="#D4D4D4" stroke-opacity="0.2" shape-rendering="crispEdges"/>
+                    </g>
+                    <g filter="url(#filter3_bdd_778_33871)" class="line-circle" age="3">
+                        <rect x="375" y="621" width="64" height="64" rx="32" fill="white" fill-opacity="0.4" shape-rendering="crispEdges"/>
+                        <rect x="375.5" y="621.5" width="63" height="63" rx="31.5" stroke="#D4D4D4" stroke-opacity="0.2" shape-rendering="crispEdges"/>
+                    </g>
+                    <line x1="157" y1="959.001" x2="157" y2="684.999" stroke="#AFB6B3" class="age-line age-2-line"/>
+                    <g>
+                        <text x="173" y="902" fill="black" font-size="26" class="age-text age-2-text">Привет</text>
+                        <text x="173" y="933.001" fill="black" font-size="26" class="age-text age-2-text blue-text">2022</text>
+                    </g>
+                    <line x1="760.5" y1="542" x2="760.5" y2="244" stroke="#AFB6B3" class="age-line age-4-line"/>
+                    <g>
+                        <text x="776.5" y="270" fill="black" font-size="26" class="age-text age-4-text">Привет</text>
+                        <text x="776.5" y="301" fill="black" font-size="26" class="age-text age-4-text blue-text">2022</text>
+                    </g>
+                    <g filter="url(#filter4_bdd_778_33871)" class="line-circle" age="4">
+                        <rect x="729" y="495" width="64" height="64" rx="32" fill="white" fill-opacity="0.4" shape-rendering="crispEdges"/>
+                        <rect x="729.5" y="495.5" width="63" height="63" rx="31.5" stroke="#D4D4D4" stroke-opacity="0.2" shape-rendering="crispEdges"/>
+                    </g>
+                    <line x1="1160.5" y1="647" x2="1160.5" y2="378" stroke="#AFB6B3" class="age-line age-6-line"/>
+                    <g>
+                        <text x="1176.5" y="590" fill="black" font-size="26" class="age-text age-6-text">Привет</text>
+                        <text x="1176.5" y="621" fill="black" font-size="26" class="age-text age-6-text blue-text">2022</text>
+                    </g>
+                    <line x1="999.5" y1="481" x2="999.5" y2="212" stroke="#AFB6B3" class="age-line age-5-line"/>
+                    <g>
+                        <text x="1015" y="238" fill="black" font-size="26" class="age-text age-5-text">Привет</text>
+                        <text x="1015" y="269" fill="black" font-size="26" class="age-text age-5-text blue-text">2022</text>
+                    </g>
+                    <g filter="url(#filter5_bdd_778_33871)" class="line-circle" age="5">
+                        <rect x="968" y="449" width="64" height="64" rx="32" fill="white" fill-opacity="0.4" shape-rendering="crispEdges"/>
+                        <rect x="968.5" y="449.5" width="63" height="63" rx="31.5" stroke="#D4D4D4" stroke-opacity="0.2" shape-rendering="crispEdges"/>
+                    </g>
+                    <g filter="url(#filter6_bdd_778_33871)" class="line-circle" age="6">
+                        <rect x="1133" y="347" width="64" height="64" rx="32" fill="white" fill-opacity="0.4" shape-rendering="crispEdges"/>
+                        <rect x="1133.5" y="347.5" width="63" height="63" rx="31.5" stroke="#D4D4D4" stroke-opacity="0.2" shape-rendering="crispEdges"/>
+                    </g>
+                    <line x1="626.5" y1="852" x2="626.5" y2="583" stroke="#AFB6B3" class="age-line age-0-line"/>
+                    <g>
+                        <text x="642.5" y="790" fill="black" font-size="26" class="age-text age-0-text">Привет</text>
+                        <text x="642.5" y="826" fill="black" font-size="26" class="age-text age-0-text blue-text">2022</text>
+                    </g>
+                </g>
+                <defs>
+                    <filter id="filter0_bdd_778_33871" x="579" y="534" width="104" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="2" dy="-0.5"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                        <feBlend mode="normal" in2="effect1_backgroundBlur_778_33871" result="effect2_dropShadow_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-2" dy="4"/>
+                        <feGaussianBlur stdDeviation="4"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="effect2_dropShadow_778_33871" result="effect3_dropShadow_778_33871"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_778_33871" result="shape"/>
+                    </filter>
+                    <filter id="filter1_bdd_778_33871" x="-21" y="682" width="104" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="2" dy="-0.5"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                        <feBlend mode="normal" in2="effect1_backgroundBlur_778_33871" result="effect2_dropShadow_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-2" dy="4"/>
+                        <feGaussianBlur stdDeviation="4"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="effect2_dropShadow_778_33871" result="effect3_dropShadow_778_33871"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_778_33871" result="shape"/>
+                    </filter>
+                    <filter id="filter2_bdd_778_33871" x="108" y="636" width="104" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="2" dy="-0.5"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                        <feBlend mode="normal" in2="effect1_backgroundBlur_778_33871" result="effect2_dropShadow_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-2" dy="4"/>
+                        <feGaussianBlur stdDeviation="4"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="effect2_dropShadow_778_33871" result="effect3_dropShadow_778_33871"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_778_33871" result="shape"/>
+                    </filter>
+                    <filter id="filter3_bdd_778_33871" x="355" y="601" width="104" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="2" dy="-0.5"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                        <feBlend mode="normal" in2="effect1_backgroundBlur_778_33871" result="effect2_dropShadow_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-2" dy="4"/>
+                        <feGaussianBlur stdDeviation="4"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="effect2_dropShadow_778_33871" result="effect3_dropShadow_778_33871"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_778_33871" result="shape"/>
+                    </filter>
+                    <filter id="filter4_bdd_778_33871" x="709" y="475" width="104" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="2" dy="-0.5"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                        <feBlend mode="normal" in2="effect1_backgroundBlur_778_33871" result="effect2_dropShadow_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-2" dy="4"/>
+                        <feGaussianBlur stdDeviation="4"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="effect2_dropShadow_778_33871" result="effect3_dropShadow_778_33871"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_778_33871" result="shape"/>
+                    </filter>
+                    <filter id="filter5_bdd_778_33871" x="948" y="429" width="104" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="2" dy="-0.5"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                        <feBlend mode="normal" in2="effect1_backgroundBlur_778_33871" result="effect2_dropShadow_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-2" dy="4"/>
+                        <feGaussianBlur stdDeviation="4"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="effect2_dropShadow_778_33871" result="effect3_dropShadow_778_33871"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_778_33871" result="shape"/>
+                    </filter>
+                    <filter id="filter6_bdd_778_33871" x="1113" y="327" width="104" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="2" dy="-0.5"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                        <feBlend mode="normal" in2="effect1_backgroundBlur_778_33871" result="effect2_dropShadow_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-2" dy="4"/>
+                        <feGaussianBlur stdDeviation="4"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="effect2_dropShadow_778_33871" result="effect3_dropShadow_778_33871"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_778_33871" result="shape"/>
+                    </filter>
+                    <filter id="filter7_bdd_778_33871" x="1342" y="253" width="104" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="2" dy="-0.5"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                        <feBlend mode="normal" in2="effect1_backgroundBlur_778_33871" result="effect2_dropShadow_778_33871"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-2" dy="4"/>
+                        <feGaussianBlur stdDeviation="4"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="effect2_dropShadow_778_33871" result="effect3_dropShadow_778_33871"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_778_33871" result="shape"/>
+                    </filter>
+                    <linearGradient id="paint0_linear_778_33871" x1="20.9891" y1="759" x2="920.529" y2="-177.794" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#4AFCF1"/>
+                        <stop offset="0.784375" stop-color="#7A73FF"/>
+                        <stop offset="0.951645" stop-color="#83FFBC"/>
+                    </linearGradient>
+                    <clipPath id="clip0_778_33871">
+                        <rect width="1440" height="1024" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
         </div>
         <div class="group">
             <p>Наши эксперты по управлению репутацией — это сплоченная команда, для которой цель работы — создавать и поддерживать безупречную онлайн-репутацию наших клиентов. Что делает команду особенной? Опыт, знания и страсть к работе в области управления репутацией. Мы понимаем, как важно управлять репутацией в интернете и готовы помочь нашим клиентам в этом деле. Наши сотрудники держат руку на пульсе, внимательно следят за изменениями в онлайн-среде и адаптируют методики под актуальные тенденции и требования. Мы предоставляем услуги по управлению репутацией в интернете, оказываем помощь в управлении репутацией компании и создании положительного имиджа.</p>

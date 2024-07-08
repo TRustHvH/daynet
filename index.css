@@ -412,8 +412,9 @@ position: absolute;
     font-style: normal;
     font-weight: 600;
     line-height: 40px;
-    letter-spacing: 1.44px;
     transition: 0.4s;
+    letter-spacing: 3.96px;
+    font-size: 24px;
 }
 .start a:hover{
     background:#000000;
@@ -438,6 +439,13 @@ position: absolute;
 }
 .under-companies{
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1282px;
+    justify-content: center;
+    gap: 116px;
+}
+.under-companies-tab{
+    display: none;
     flex-wrap: wrap;
     max-width: 1282px;
     justify-content: center;
@@ -819,7 +827,35 @@ li.tiles-text{
     text-align: left;
     color: #209DB7;
 }
-
+.cases-bottom-item{
+    width: 261px;
+    height: 184px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.cases-bottom-item:nth-child(1):before{
+    content: "";
+    background: linear-gradient(90.00deg, #4AFCF1,#75CDFF,#7A73FF);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+}
+.cases-more p{
+    color: rgb(4, 42, 80);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 1.02px;
+    text-align: center;
+    margin: 0;
+    transition: 0.2s linear;
+}
+.cases-more:hover p{
+    color: #7A73FF;
+}
 .information-text{
 }
 .information-text h1{
@@ -1596,15 +1632,15 @@ footer p, footer a{
         width: 410px;
     }
     .start img{
-        width: 400px;
+        width: 490px;
     }
-    .logo{
+    .logo {
         position: absolute;
         display: flex;
-        gap: 45px;
+        gap: 57px;
         flex-direction: column;
         z-index: 2;
-        margin-top: 205px;
+        margin-top: 137px;
     }
     .g{
         margin-left: 560px;
@@ -1612,6 +1648,43 @@ footer p, footer a{
     .companies{
         gap: 32px;
         padding-top: 150px;
+    }
+    .cases{
+        padding: 0 42px;
+    }
+    .cases-bottom-item{
+        width: 222px;
+        height: 184px;
+    }
+    .cases-info{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .information{
+        gap: 16px;
+    }
+    .information-text:nth-child(1) p{
+        max-width: 380px;
+    }
+    .information-text:nth-child(2) p, .information-text:nth-child(3) p{
+        max-width: unset;
+    }
+    .cases-img{
+        width: 100%;
+        height: 301px;
+    }
+    .cases-bottom-item:nth-child(1):before{
+        max-width: 222px;
+    }
+    .cases-bottom-item:nth-child(4){
+        display: none;
+    }
+    .under-companies-tab{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1282px;
+        justify-content: center;
+        gap: 94px;
     }
     .tiles{
         align-items: normal;
@@ -1703,16 +1776,17 @@ footer p, footer a{
         height: 900px;
     }
     .main{
-        padding: 0 92px;
+        padding: 0 42px;
         height: 500px;
     }
     .header1{
-        padding: 0 92px;
+        padding: 0 42px;
     }
     .prevheader{
         gap: 28px;
     }
     .under-companies{
+        display: none;
         gap: 74px;
         padding: 0 92px;
     }
@@ -2052,7 +2126,16 @@ footer p, footer a{
         max-width: 200px;
     }
     .logo{
-        gap: 80px;
+        gap: 0px;
+        margin-top: 150px;
+        width: 306px;
+    }
+    .main a {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0.8px;
     }
     .companies{
         padding-top: 170px;
@@ -2060,11 +2143,18 @@ footer p, footer a{
     .under-companies{
         display: none;
     }
-    .under-companies-mobile{
+    .under-companies-tab {
+        display: none;
+        flex-wrap: wrap;
+        max-width: 1282px;
+        justify-content: center;
+        gap: 94px;
+    }
+    .under-companies-mobile {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 22.5px;
+        gap: 28.5px;
         padding: 24px 20px;
     }
     .tiles h1{

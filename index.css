@@ -1620,6 +1620,34 @@ footer p, footer a{
     }
 }
 @media screen and (max-width: 980px) {
+    .w-padding {
+        padding: 0 52px;
+    }
+    .arrow-sevices:after, .arrow-sevices:before {
+        left: 107px;
+    }
+    .arrow-cases:after, .arrow-cases:before {
+        left: 258px;
+    }
+    .popup{
+        gap: 20px;
+        top: 45px;
+    }
+    .popup-main-text{
+        font-size: 16px;
+    }
+    .popup-subtext{
+        font-size: 10px;
+    }
+    .popup-item-text{
+        font-size: 12px;
+    }
+    .header-links{
+        gap: 28px;
+    }
+    .prevheader .link{
+        font-size: 16px;
+    }
     .blog-text{
         justify-content: center;
     }

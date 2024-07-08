@@ -827,6 +827,19 @@ li.tiles-text{
     text-align: left;
     color: #209DB7;
 }
+
+.cases-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+.cases-more img{
+    width: 40px;
+}
+
 .cases-bottom-item{
     width: 261px;
     height: 184px;
@@ -901,6 +914,9 @@ li.tiles-text{
     /*padding: 20px;*/
     border-radius: 20px;
     align-content: end;
+}
+.cases-img img {
+    border-radius: 20px;
 }
 .cases-img::before{
     position: absolute;
@@ -1623,6 +1639,38 @@ footer p, footer a{
     .w-padding {
         padding: 0 52px;
     }
+
+    .cases{
+        padding: 0 42px;
+    }
+    .cases-bottom-item{
+        width: 222px;
+        height: 184px;
+    }
+    .cases-info{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .information{
+        gap: 16px;
+    }
+    .information-text:nth-child(1) p{
+        max-width: 380px;
+    }
+    .information-text:nth-child(2) p, .information-text:nth-child(3) p{
+        max-width: unset;
+    }
+    .cases-img{
+        width: 100%;
+        height: 301px;
+    }
+    .cases-bottom-item:nth-child(1):before{
+        max-width: 222px;
+    }
+    .cases-bottom-item:nth-child(4){
+        display: none;
+    }
+
     .arrow-sevices:after, .arrow-sevices:before {
         left: 107px;
     }
@@ -1713,6 +1761,37 @@ footer p, footer a{
         max-width: 1282px;
         justify-content: center;
         gap: 94px;
+    }
+    .cases{
+        padding: 0 42px;
+    }
+    .cases-bottom-item{
+        width: 222px;
+        height: 184px;
+    }
+    .cases-info{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .information{
+        gap: 16px;
+        width: 100%;
+    }
+    .information-text:nth-child(1) p{
+        max-width: 380px;
+    }
+    .information-text:nth-child(2) p, .information-text:nth-child(3) p{
+        max-width: unset;
+    }
+    .cases-img{
+        width: 100%;
+        height: 301px;
+    }
+    .cases-bottom-item:nth-child(1):before{
+        max-width: 222px;
+    }
+    .cases-bottom-item:nth-child(4){
+        display: none;
     }
     .tiles{
         align-items: normal;
@@ -2277,6 +2356,18 @@ footer p, footer a{
         letter-spacing: 0.64px;
         max-width: 110px;
     }
+    .cases-img-text {
+        display: none;
+    }
+    .cases-more{
+        gap: 10px;
+    }
+    .cases-bottom-item{
+        height: 110px;
+    }
+    .cases-bottom-item img{
+        height: 50px;
+    }
     #blog{
         flex-direction: column;
         gap: 43px;
@@ -2291,11 +2382,8 @@ footer p, footer a{
         margin-block-end: 0;
     }
     .daynet{
-        height: 495px;
-        padding-top: 86px;
-    }
-    .daynet svg{
-        width: 160px;
+        height: fit-content;
+        padding-top: 0;
     }
     .daynet img{
         height: 300px!important;

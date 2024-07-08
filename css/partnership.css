@@ -59,7 +59,7 @@ header{
         max-width: 756px;
     }
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 768px){
     .begin h1{
         font-size: 40px;
         font-style: normal;

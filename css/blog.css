@@ -299,7 +299,7 @@ footer svg, footer p{
         padding: 0 92px;
     }
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 768px){
     .changing-h1{
         max-width: 580px;
         font-size: 40px;

@@ -156,6 +156,47 @@ header{
     cursor: pointer;
 }
 
+
+@media (max-width: 980px){
+    .w-padding {
+        box-sizing: border-box;
+        padding: 0 52px;
+    }
+    .results-short-container {
+        position: absolute;
+        display: flex;
+        bottom: 24px;
+        left: 24px;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0.06em;
+        text-align: left;
+        font-variation-settings: 'wdth' 130, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+        background: white;
+        box-sizing: border-box;
+        padding: 14px 44px;
+        border-radius: 16px;
+        max-width: 70%;
+        gap: 24px;
+    }
+    .job-process-content {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+    }
+    .job-process-content-side {
+        margin-top: 28px;
+        width: 100%;
+    }
+    .job-process-content .right-side {
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+    }
+}
+
 @media (max-width: 430px) {
 
     .prevheader-mobile {
@@ -172,10 +213,33 @@ header{
         width: 100%;
     }
     .w-padding {
-        padding: 0 14px;
+        padding: 0px 20px;
+    }
+    .chart-tile {
+        box-sizing: border-box;
+        padding: 15px;
+        background: white;
+        box-shadow: 2px -0.5px 4px 0px #0000000D;
+        border-radius: 24px;
     }
     .case-headings-texts{
 
+    }
+    .job-process-content-side .case-jobs-text {
+        &:before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: 16px;
+            bottom: 0px;
+            left: -7px;
+            z-index: 1;
+            margin-top: 4px;
+            height: 42px;
+            width: 2px;
+            border-radius: inherit;
+            background: linear-gradient(250.96deg, #7A73FF -8.45%, #75CDFF 60.57%, #4AFCF1 106.88%);
+        }
     }
     .case-headings-texts .case-category-name {
         font-family: 'Roboto Flex', sans-serif;
@@ -194,6 +258,12 @@ header{
         line-height: 52.8px;
         letter-spacing: 0.04em;
         text-align: left;
+    }
+
+    .job-process-content .right-side {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
     }
 
     .results-short-container {
@@ -216,9 +286,14 @@ header{
         gap: 40px;
         box-shadow: 1px 2px 10px 0px #020C140A;
     }
-    .case-headings-texts {
-
+    .case-headings-texts {}
+    .form {
+        flex-direction: column;
+        justify-content: center;
+        height: 1320px;
     }
+
+
 }
 
 

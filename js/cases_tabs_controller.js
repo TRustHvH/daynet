@@ -93,7 +93,8 @@ $(document).ready(function () {
       $imgToEnable.attr("src", $imgToEnable.attr("active-src"))
 
       cleanTab()
-      fillTab(CASES[$(this).attr("tab")])
+      selectedTab = $(this).attr("tab")
+      fillTab(CASES[selectedTab])
     })
   }
 })

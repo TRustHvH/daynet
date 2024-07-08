@@ -895,7 +895,6 @@ li.tiles-text{
     gap: 60px;
 }
 .information-text p{
-    color: rgb(4, 42, 80);
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
@@ -1562,6 +1561,9 @@ footer p, footer a{
     }
 }
 @media screen and (max-width: 1280px) {
+    .carousel-numbers{
+        display: none;
+    }
     .start{
         gap: 90px;
         padding-top: 0;

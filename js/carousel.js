@@ -109,4 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(nextSlide, 4000);
 
     showSlide(getItemsToShow());
+
+    window.addEventListener("resize", getItemsToShow)
 });

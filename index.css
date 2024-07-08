@@ -1561,9 +1561,6 @@ footer p, footer a{
     }
 }
 @media screen and (max-width: 1280px) {
-    .carousel-numbers{
-        display: none;
-    }
     .start{
         gap: 90px;
         padding-top: 0;
@@ -2210,10 +2207,11 @@ footer p, footer a{
         gap: 10px;
     }
     .cases-bottom-item{
+        width: 168px;
         height: 110px;
     }
     .cases-bottom-item img{
-        height: 50px;
+        height: 52px;
     }
     #blog{
         flex-direction: column;
@@ -2236,6 +2234,28 @@ footer p, footer a{
     }
     .carousel-numbers{
         width: 100%;
+    }
+    .cases-bottom-item:nth-child(3), .cases-bottom-item:nth-child(4){
+        display: none;
+    }
+    .cases-bottom-item:nth-child(5){
+        width: 48px;
+        height: 64px;
+    }
+    .cases-more p{
+        display: none;
+    }
+    .cases-img:before{
+        display: none;
+    }
+    .cases-img:hover{
+        background-size: 110%;
+    }
+    .cases-img:hover a{
+        display: none;
+    }
+    .cases-img-text{
+        display: none;
     }
     .daynet img{
         height: 300px!important;

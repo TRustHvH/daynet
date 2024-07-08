@@ -1283,7 +1283,7 @@ label:before {
     background: #00b2d7;
 }
 .form a{
-    color: rgb(32, 157, 183);
+    color: #209DB7;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -1321,7 +1321,7 @@ label:before {
     width: 95%;
 }
 .form span{
-    color: rgb(32, 157, 183);
+    color: #209DB7;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -1758,12 +1758,14 @@ footer p, footer a{
         padding: 0 42px;
     }
     .form span{
-        color: #00D4FF;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 16px;
         letter-spacing: 0.24px;
+    }
+    .form a{
+        border-bottom: 1px solid #209DB7;
     }
     .daynet-1{
         margin-left: 17.5%;

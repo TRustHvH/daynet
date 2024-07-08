@@ -14,10 +14,6 @@ footer{
      align-items: flex-end !important;
 
 }
-.daynet{
-    position: relative;
-    height: 1024px;
-}
 .circle-block{
     position: absolute;
 }
@@ -134,17 +130,16 @@ footer svg, footer p{
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 .abt p {
-    font-family: Roboto Flex;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.02em;
-    text-align: center;
     font-variation-settings: 'wdth' 112, 'GRAD' 0, 'slnt' 0, 'XTRA' 486, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
     text-align: right;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 @media screen and (max-width: 1680px){
     h1{
@@ -170,7 +165,7 @@ footer svg, footer p{
         width: 100%;
     }
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 768px){
     h1{
         margin-left: unset;
         font-size: 52px;
@@ -257,5 +252,11 @@ footer svg, footer p{
         line-height: 36px;
         letter-spacing: 0.56px;
         max-width: 200px;
+    }
+    .abt{
+        margin: 0;
+    }
+    .abt p{
+        text-align: left;
     }
 }

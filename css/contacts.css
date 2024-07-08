@@ -77,3 +77,98 @@ header{
     letter-spacing: 1.04px!important;
     max-width: none!important;
 }
+@media screen and (max-width: 1680px){
+    .readme{
+        padding: 0 220px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .readme{
+        padding: 0 100px;
+    }
+}
+@media screen and (max-width: 1280px){
+    .readme{
+        padding: 0 92px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .readme{
+        padding: 0 42px;
+    }
+    .gradient-img{
+        width: 115%;
+        margin-left: -15%;
+    }
+    .gradient-line-block{
+        justify-content: center;
+    }
+    .first{
+        top: 9%;
+        left: 30%;
+        height: 117px;
+    }
+    .second{
+        top: 55%;
+        left: 50%;
+        height: 117px;
+    }
+    .third{
+        top: 55%;
+        left: 5%;
+    }
+    .fourth{
+        top: 9%;
+        left: 59%;
+    }
+}
+@media screen and (max-width: 768px){
+    .readme{
+        padding: 0 65px;
+    }
+}
+@media screen and (max-width: 480px){
+    .gradient-line-block{
+        align-items: center;
+    }
+    .gradient-block-text{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 110%;
+        letter-spacing: 1.02px;
+        max-width: 278px;
+    }
+    .gradient-img{
+        width: 400%;
+        margin-left: -150%;
+        transform: rotate(-45.00deg);
+        height: 1025px;
+        margin-top: 30%;
+    }
+    .first{
+        top: 9%;
+        left: 5%;
+        height: unset;
+        width: 238px;
+    }
+    .second{
+        top: 70%;
+        left: 35%;
+        height: unset;
+        width: 238px;
+    }
+    .third{
+        top: 49%;
+        left: 5%;
+    }
+    .fourth{
+        top: 28%;
+        left: 5%;
+    }
+    .readme{
+        padding: 0 20px;
+    }
+    .form{
+        height: 1400px!important;
+    }
+}

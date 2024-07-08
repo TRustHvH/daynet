@@ -1708,15 +1708,19 @@ footer p, footer a{
         width: 410px;
     }
     .start img{
-        width: 490px;
+        width: 400px;
     }
     .logo {
         position: absolute;
         display: flex;
-        gap: 57px;
+        gap: 50px;
         flex-direction: column;
         z-index: 2;
         margin-top: 137px;
+    }
+    .logo-main p {
+        margin: 0;
+        padding: 0;
     }
     .g{
         margin-left: 560px;
@@ -1802,7 +1806,7 @@ footer p, footer a{
         display: none;
     }
     .about .car{
-        max-width: 100%;
+        max-width: 55%;
         height: 100%;
         margin-top: -150px;
     }

@@ -1445,7 +1445,8 @@ footer p, footer a{
 }
 
 .age-text {
-    transition: 0.4s;
+    transition: 0.4s linear;
+    opacity: 0;
     display: none;
     font-size: 26px;
     font-weight: 500;
@@ -1461,7 +1462,8 @@ footer p, footer a{
 
 .age-line {
     display: none;
-    transition: 0.4s;
+    opacity: 0;
+    transition: 0.4s linear;
 }
 
 

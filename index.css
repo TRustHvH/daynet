@@ -883,7 +883,7 @@ li.tiles-text{
     height: 58px;
     width: 15px;
     content: " ";
-    background: url(img/line.svg) no-repeat;
+    background: url('img/small-gradient-line.svg') no-repeat;
 }
 .cases-info{
     display: flex;

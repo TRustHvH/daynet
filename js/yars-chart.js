@@ -18,6 +18,7 @@ $(document).ready(function () {
     let secondLinePercent = currentValueTwo / (valueLength / 100) / 100
 
     let width = $chart.width()
+    console.log(width)
     // Соотношение сторон 9:1.403 для графиков на дизе.
     // В зависимости от ширины будет меняться высота и смотреться гармонично
     let chart_height = Math.round((width / 9) * 1.403)

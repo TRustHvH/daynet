@@ -1626,6 +1626,9 @@ footer p, footer a{
     }
 }
 @media screen and (max-width: 980px) {
+    .w-padding {
+        padding: 0 52px;
+    }
     .arrow-sevices:after, .arrow-sevices:before {
         left: 107px;
     }

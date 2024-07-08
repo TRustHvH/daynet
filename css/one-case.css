@@ -155,3 +155,15 @@ header{
 .back-arrow-container {
     cursor: pointer;
 }
+
+@media (max-width: 375px) {
+    .job-process-content {
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+    }
+
+    .job-process-content-side {
+        width: 100%;
+    }
+}

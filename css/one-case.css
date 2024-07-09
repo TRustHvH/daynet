@@ -155,8 +155,15 @@ header{
 .back-arrow-container {
     cursor: pointer;
 }
-
-
+@media (max-width: 1440px){
+    .results-short-container {
+        max-width: 70%;
+    }
+}
+.w-padding{
+    box-sizing: border-box;
+    padding: 0 86px;
+}
 @media (max-width: 980px){
     .w-padding {
         box-sizing: border-box;

@@ -1509,6 +1509,10 @@ footer p, footer a{
     }
 }
 @media screen and (max-width: 1440px){
+    .w-padding {
+        box-sizing: border-box;
+        padding: 0 86px;
+    }
     .logo {
         margin-top: 100px;
         display: flex;

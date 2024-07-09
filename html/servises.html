@@ -493,6 +493,11 @@
             // Поддержка тачпада
             touchpadSupport: true,
         })
+
+        function showService(serviceId) {
+            // здесь уже прописывать сервисы
+        }
+
         function toggleOpacity(elementId) {
             const elements = ["smm", "media", "advertisement", "orm", "orm-strategy", "monitoring", "analysis", "reviews", "serm", "social", "representative", "it", "moushen"];
             elements.forEach(function (id) {
@@ -528,6 +533,14 @@
             });
         }
         document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const serviceId = urlParams.get('service_id');
+
+            console.log("Your service id is " + serviceId)
+
+            if (serviceId) {
+                showService(serviceId);
+            }
             document.getElementById("changing-1").addEventListener("click", function () {
                 toggleOpacity("smm");
                 toggleColor("changing-1");

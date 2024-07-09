@@ -111,6 +111,10 @@ header{
     .cases-menu {
         overflow: scroll;
     }
+    .w-padding {
+        box-sizing: border-box;
+        padding: 0px 52px;
+    }
 
     .cases-menu .case-menu-item {
         display: flex;
@@ -131,11 +135,14 @@ header{
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .cases-menu {
         overflow: scroll;
     }
-
+    .w-padding {
+        box-sizing: border-box;
+        padding: 0px 16px;
+    }
     .cases-menu .case-menu-item {
         display: flex;
         flex-direction: column;

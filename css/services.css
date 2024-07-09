@@ -157,6 +157,12 @@ header{
     text-align: left;
     width: 302px;
 }
+.default{
+    display: block;
+}
+.mini{
+    display: none;
+}
 
 .services .total-info-blocks-items img {
     margin-bottom: 16px;
@@ -271,6 +277,9 @@ header{
     }
     .line430{
         display: block;
+    }
+    .default {
+        width: 100%;
     }
     .services .info-panel .regular-service-text {
         font-family: 'Roboto Flex', sans-serif;

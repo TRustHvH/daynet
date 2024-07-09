@@ -388,6 +388,8 @@ position: absolute;
     background: #e7e7e7;
 }
 .start p {
+    margin: 0;
+    padding: 0;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -407,8 +409,9 @@ position: absolute;
     font-style: normal;
     font-weight: 600;
     line-height: 40px;
-    letter-spacing: 1.44px;
+    letter-spacing: 2.44px;
     transition: 0.4s;
+    font-size: 24px;
 }
 .start a:hover{
     background:#000000;
@@ -437,6 +440,9 @@ position: absolute;
     max-width: 1282px;
     justify-content: center;
     gap: 116px;
+}
+.under-companies-tab{
+    display: none;
 }
 .under-companies-mobile{
     display: none;
@@ -737,7 +743,7 @@ li.tiles-text{
 .under-about{
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 31px;
 }
 .about-text{
     display: flex;
@@ -1666,14 +1672,24 @@ footer p, footer a{
         gap: 45px;
         flex-direction: column;
         z-index: 2;
-        margin-top: 205px;
+        margin-top: 160px;
     }
     .g{
         margin-left: 560px;
     }
     .companies{
         gap: 32px;
-        padding-top: 150px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .under-companies{
+        display: none;
+    }
+    .under-companies-tab{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 95px;
     }
     .cases{
         padding: 0 42px;
@@ -1988,6 +2004,15 @@ footer p, footer a{
     .blog-text{
         gap: 12px;
     }
+    .about {
+        height: 1970px;
+        padding: 0 20px;
+    }
+    .about .car {
+        max-width: 70%;
+        height: fit-content;
+        margin: 0;
+    }
     .daynet-1{
         margin-left: 17.5%;
         margin-top: 340px;
@@ -2108,6 +2133,9 @@ footer p, footer a{
     .main-bg{
         background-position: right;
     }
+    .start a{
+        padding: 16px 26px;
+    }
     .start p{
         font-size: 24px;
         font-style: normal;
@@ -2116,24 +2144,39 @@ footer p, footer a{
         letter-spacing: 0.48px;
         max-width: 200px;
     }
+    .start img {
+        width: 340px;
+    }
     .logo{
-        gap: 80px;
+        margin-top: 125px;
+        gap: 17px;
+    }
+    .main a {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0.8px;
     }
     .companies{
-        padding-top: 170px;
+        padding-top: 1px;
+        padding-bottom: 40px;
     }
     .under-companies{
+        display: none;
+    }
+    .under-companies-tab{
         display: none;
     }
     .under-companies-mobile{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 22.5px;
-        padding: 24px 20px;
+        gap: 40.5px;
+        padding: 20px 20px;
     }
     .tiles h1{
-        font-size: 28px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 720;
         line-height: 36px;
@@ -2151,9 +2194,9 @@ footer p, footer a{
         width: fit-content;
     }
     .tiles p{
-        font-size: 16px;
+        font-size: 20px;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 720;
         line-height: 24px;
         letter-spacing: 0.32px;
     }
@@ -2164,13 +2207,23 @@ footer p, footer a{
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.64px;
+        box-shadow: 1px 2px 10px 0px rgba(2, 12, 20, 0.04);
     }
     .tiles-single svg{
-        width: 28px;
-        height: 28px;
+        width: 40px;
+        height: 40px;
+    }
+    .tiles-single p {
+        font-family: Roboto Flex;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0.26em;
+        text-align: center;
+
     }
     .about{
-        height: 950px;
+        height: 1170px;
         padding: 0 20px;
     }
     .about h2{
@@ -2386,9 +2439,22 @@ footer p, footer a{
         text-align: left;
     }
 }
-@media screen and (max-width: 380px){
-    .about .car{
-        width: 350px;
+@media screen and (max-width: 390px){
+
+    .start img {
+        width: 300px;
+    }
+    .start a {
+        padding: 16px 16px;
+    }
+    .about {
+        height: 1100px;
+        padding: 0 20px;
+    }
+    .about .car {
+        max-width: 70%;
+        height: fit-content;
+        margin: 0;
     }
     .prevheader-mobile{
         gap: 70px;

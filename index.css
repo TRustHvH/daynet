@@ -206,23 +206,6 @@ position: absolute;
 .line-text{
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main{
     height: 603px;
     display: flex;
@@ -425,6 +408,12 @@ position: absolute;
     justify-content: flex-start;
     align-items: center;
     margin-top: 89px;
+}
+.logo {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .companies{
     padding-top: 200px;
@@ -1520,6 +1509,12 @@ footer p, footer a{
     }
 }
 @media screen and (max-width: 1440px){
+    .logo {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+    }
     .form{
         grid-gap: 200px;
     }

@@ -2439,7 +2439,7 @@ footer p, footer a{
         text-align: left;
     }
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 380px){
 
     .start img {
         width: 300px;

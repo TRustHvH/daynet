@@ -7,6 +7,13 @@ header{
 .prevheader a:hover{
     color:#7A73FF !important;
 }
+.blog-text {
+    display: flex !important;
+    gap: 32px !important;
+    transition: transform 0.5s ease !important;
+    transform: translateX(5px) !important;
+    flex-wrap: wrap !important;
+}
 #blog{
     padding-top: 50px!important;
     flex-direction: column !important;
@@ -460,11 +467,11 @@ footer svg, footer p{
         letter-spacing: 0.32px;
         max-width: 320px;
     }
-    footer{
-        justify-content: flex-end!important;
-        gap: 52px!important;
-        background: url("../img/footer-bg.svg") no-repeat center  !important;
-        height: 350px!important;
+    footer {
+        justify-content: flex-end !important;
+        gap: 52px !important;
+        background: url(../img/footer-bg.svg) no-repeat center !important;
+        height: 470px !important;
     }
     footer svg{
         margin-bottom: 0;

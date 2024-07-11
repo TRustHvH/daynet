@@ -2356,7 +2356,7 @@ footer p, footer a{
     .form{
         flex-direction: column;
         justify-content: center;
-        height: 1170px;
+        height: 1220px;
     }
     .form img{
         margin: auto auto 0 0;
@@ -2372,7 +2372,7 @@ footer p, footer a{
         margin-left: unset;
         width: fit-content;
         max-width: unset;
-        padding-left: 20px;
+        /*padding-left: 20px;*/
     }
     .form p{
         font-size: 28px;

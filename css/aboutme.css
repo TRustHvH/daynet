@@ -67,10 +67,6 @@ footer{
 .line-text{
 
 }
-
-
-
-
 .aboutme-text{
     display: flex;
     flex-direction: column;
@@ -92,7 +88,7 @@ h1{
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0.56px;
-    padding-top: 50px;
+    padding-top: 20px;
     margin: 0 auto;
 }
 .group{
@@ -103,6 +99,7 @@ h1{
 .group img{
     width: 1092px;
     height: 728px;
+    margin-top: 144px;
 }
 .group h1{
     color: #04101C;
@@ -121,8 +118,11 @@ h1{
     line-height: 50px;
     letter-spacing: 1px;
     max-width: 950px;
-    padding: 100px 0;
+    padding: 10px;
+    margin: 0;
+
 }
+
 footer svg, footer p{
     margin-bottom: 50px;
 }
@@ -155,11 +155,26 @@ footer svg, footer p{
     }
 }
 @media screen and (max-width: 980px){
+    .aboutme-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0 120px;
+    }
+    .group p{
+        padding: 10px 120px;
+        line-height: 32px;
+    }
+    .group img{
+        margin-top: 104px;
+    }
     h1{
+        font-size: 64px;
         padding: 0 92px;
+        line-height: 72px;
     }
     .aboutme-text p{
-        max-width: 700px;
+        max-width: 900px;
+        line-height: 32px;
     }
     .group img{
         width: 100%;
@@ -226,15 +241,26 @@ footer svg, footer p{
         letter-spacing: 0.8px;
         padding: 0 20px;
     }
+    .aboutme-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0 60px;
+    }
     .aboutme-text p{
         font-size: 16px;
         font-style: normal;
         font-weight: 300;
         line-height: 24px;
         letter-spacing: 0.32px;
-        margin-left: 25%;
+        margin-left: 0;
         max-width: 300px;
         padding-top: 0;
+    }
+    .group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 60px;
     }
     .group p{
         font-size: 16px;
@@ -242,8 +268,8 @@ footer svg, footer p{
         font-weight: 300;
         line-height: 24px;
         letter-spacing: 0.32px;
-        max-width: 300px;
-        padding: 60px 0;
+        max-width: 100%;
+        padding: 10px 0;
     }
     .group h1{
         font-size: 28px;
@@ -252,6 +278,11 @@ footer svg, footer p{
         line-height: 36px;
         letter-spacing: 0.56px;
         max-width: 200px;
+    }
+    .group img {
+        width: 430px;
+
+        margin-top: 60px;
     }
     .abt{
         margin: 0;

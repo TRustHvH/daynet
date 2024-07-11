@@ -33,6 +33,9 @@ header{
     padding-top: 50px!important;
     flex-direction: column !important;
 }
+.blogline{
+    display: none;
+}
 footer{
     height: 450px !important;
     background: url("../img/footer-bg.svg") no-repeat !important;
@@ -398,8 +401,16 @@ footer svg, footer p{
 }
 @media screen and (max-width: 480px){
     .blog{
-        background: url("../img/blogline.svg") no-repeat;
+        /*background: url("../img/blogline.svg") no-repeat;*/
 
+    }
+    .blogline{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        z-index: -1;
     }
     .blog-block {
         height: 430px;

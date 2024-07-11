@@ -43,9 +43,45 @@ header{
 .case-image-container {
     margin-top: 36px;
 }
-
+.case-gradient-line{
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 1790px;
+    opacity: 0.8;
+}
+.case-gradient-line-mobile{
+    display: none;
+}
 .case-image-container-content {
     position: relative;
+}
+
+.mg-bottom{
+    margin-bottom: 72px;
+}
+
+.text-info{
+    width: 45%;
+}
+.text-info p{
+    font-family: Roboto Flex;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    font-variation-settings: 'wdth' 130, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+
+}
+.right-p{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right-p p{
+    margin-left: 30px;
 }
 
 .case-image-container .case-big-image {
@@ -105,9 +141,9 @@ header{
 .job-process-content-side .case-jobs-text {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 28px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 36px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     text-align: left;
     font-variation-settings: 'wdth' 130, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
     position: relative;
@@ -169,6 +205,9 @@ header{
         box-sizing: border-box;
         padding: 0 52px;
     }
+    .text-info {
+        width: 100%;
+    }
     .results-short-container {
         position: absolute;
         display: flex;
@@ -199,12 +238,33 @@ header{
     }
     .job-process-content .right-side {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 64px;
     }
 }
 
 @media (max-width: 430px) {
+
+    .case-gradient-line-mobile{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: -15%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    .case-gradient-line {
+        display: none;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 10%;
+        opacity: 0.8;
+    }
+    .stroj{
+        font-size: 32px !important;
+    }
 
     .prevheader-mobile {
         padding: 0px 14px;
@@ -231,6 +291,12 @@ header{
     }
     .case-headings-texts{
 
+    }
+    .right-p {
+        gap: 35px;
+    }
+    .right-p p {
+        margin-left: 0;
     }
 
     .job-process-content-side .case-jobs-text {
@@ -299,6 +365,18 @@ header{
         flex-direction: column;
         justify-content: center;
         height: 1320px;
+    }
+
+    .chart-tile .chart-tile-text {
+        margin-top: 16px;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.06em;
+        text-align: left;
+        font-variation-settings: 'wdth' 130, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+        opacity: 0.6;
     }
 
 

@@ -7,9 +7,12 @@ header{
 .prevheader a:hover{
     color:#7A73FF !important;
 }
-
+.services{
+    margin-top: 104px;
+}
 .services .info-panel {
     display: flex;
+    justify-content: space-between;
 }
 
 .services .info-panel .text-content {
@@ -167,8 +170,14 @@ header{
 .services .total-info-blocks-items img {
     margin-bottom: 16px;
 }
-.line980{
+/*.line980{*/
+/*    display: block;*/
+/*}*/
+.line980 {
     display: block;
+    position: absolute;
+    z-index: -1;
+    top: 665px;
 }
 .line430{
     display: none;
@@ -237,6 +246,9 @@ header{
     width: 100% !important;
     height: 301px !important;
 }
+.mgbtm {
+    margin-bottom: 30%;
+}
 
 @media (max-width: 1440px){
     .w-padding {
@@ -257,6 +269,9 @@ header{
         display: flex;
         flex-direction: column;
         gap: 32px;
+    }
+    .mgbtm {
+        margin-bottom: 20%;
     }
 }
 @media (max-width: 980px){
@@ -281,6 +296,25 @@ header{
         text-align: left;
         width: 195px;
     }
+    .smm-card{
+        width: 100%;
+    }
+    .serm-card{
+        width: 100%;
+    }
+    .mouchen-card{
+        width: 100%;
+    }
+    .it-card{
+        width: 100%;
+    }
+    .advertising-card-card{
+        width: 100%;
+    }
+    .orm-card{
+        width: 100%;
+    }
+
     .services .cards {
         display: flex;
         flex-direction: column;
@@ -302,11 +336,51 @@ header{
         box-sizing: border-box;
         padding: 0 16px;
     }
+    .services {
+        margin-top: 58px;
+    }
+    .services .info-panel {
+        display: flex;
+        flex-direction: column;
+    }
+    .line430 {
+        display: block;
+        position: absolute;
+        top: 470px;
+        z-index: -1;
+    }
+    .smm-card {
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
+    .serm-card {
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
+    .mouchen-card{
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
+    .it-card{
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
+    .advertising-card{
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
+    .orm-card{
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
     .line980{
         display: none;
-    }
-    .line430{
-        display: block;
     }
     .default {
         width: 100%;
@@ -389,6 +463,9 @@ header{
     }
     .cases {
         padding: 0px 16px;
+    }
+    .mgbtm {
+        margin-bottom: 0%;
     }
 }
 @media (max-width: 375px){

@@ -208,6 +208,7 @@ header{
     .text-info {
         width: 100%;
     }
+
     .results-short-container {
         position: absolute;
         display: flex;

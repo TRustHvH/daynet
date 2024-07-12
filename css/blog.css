@@ -106,6 +106,10 @@ footer{
     width: 100%;
     overflow: hidden;
 }
+.blog-block img {
+    width: 100% !important;
+    height: 300px !important;
+}
 .blog-text{
 
     gap: 20px!important;

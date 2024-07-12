@@ -12,6 +12,18 @@ const CASES = {
       "image": "../img/casecar-cropped.png",
       "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. ORM 3"
     },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. ORM 3"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. ORM 3"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. ORM 3"
+    },
   ],
   "serm": [
     {
@@ -21,6 +33,18 @@ const CASES = {
     {
       "image": "../img/casecar-cropped.png",
       "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SERM 2"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SERM 3"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SERM 3"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SERM 3"
     },
     {
       "image": "../img/casecar-cropped.png",
@@ -40,6 +64,18 @@ const CASES = {
       "image": "../img/casecar-cropped.png",
       "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SMM 3"
     },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SMM 3"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SMM 3"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SMM 3"
+    },
   ],
   "monitoring": [
     {
@@ -54,6 +90,18 @@ const CASES = {
       "image": "../img/casecar-cropped.png",
       "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Мониторинг 3"
     },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Мониторинг 3"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Мониторинг 3"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Мониторинг 3"
+    },
   ],
   "advertisement": [
     {
@@ -63,6 +111,18 @@ const CASES = {
     {
       "image": "../img/casecar-cropped.png",
       "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Реклама 2"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Реклама 3"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Реклама 3"
+    },
+    {
+      "image": "../img/casecar-cropped.png",
+      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Реклама 3"
     },
     {
       "image": "../img/casecar-cropped.png",

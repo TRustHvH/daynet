@@ -1,0 +1,601 @@
+.main{
+    height: 85px!important;
+}
+header{
+    background-color: #F9FBFF !important;
+}
+.prevheader a:hover{
+    color:#7A73FF !important;
+}
+.services{
+    margin-top: 104px;
+}
+.services .info-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .info-panel .text-content {
+    width: 60%;
+}
+
+.small-buttons{
+
+}
+
+.blocks {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    transition: .5s linear;
+    width: 740px;
+    height: 826px;
+}
+
+
+
+.services p {
+    padding: 0;
+    margin: 0;
+}
+
+.services .info-panel .heading-container {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 24px;
+    font-weight: 720;
+    line-height: 28.8px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    font-variation-settings: 'wdth' 125, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+    color: #209DB7;
+}
+
+.services .info-panel .heading-text {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    letter-spacing: 0.04em;
+    text-align: left;
+
+    margin-bottom: 48px;
+
+}
+
+.services .info-panel .regular-service-text {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+
+    margin-bottom: 20px;
+}
+
+.services .card .heading-container {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-weight: 720;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    font-variation-settings: 'wdth' 125, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+
+    color: #209DB7;
+}
+
+.services .card .heading-text {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    text-align: left;
+
+
+    margin-bottom: 24px;
+
+}
+
+.services .card .regular-service-text {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+
+    margin-bottom: 10px;
+}
+
+.services .price-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 4px 8px 0px #00000014;
+
+    padding: 20px 32px 20px 32px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 16px;
+
+    gap: 20px;
+}
+
+.services .price-block .price-block__text-container {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.services .info-panel .buttons-row {
+    display: flex;
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.services .total-info-blocks-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.info-block1{
+    display: flex;
+    flex-direction: row;
+
+}
+.info-block1 p{
+    font-family: Roboto Flex;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.02px;
+    text-align: left;
+    font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+
+}
+.d-mini{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.d-mini p{
+    margin: 21px 0;
+    font-family: Roboto Flex;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.02px;
+    text-align: left;
+    font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+
+}
+
+.services .total-info-blocks-items .total-info-block__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    width: 630px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.default{
+    display: block;
+}
+.mini{
+    display: none;
+}
+
+.services .total-info-blocks-items img {
+    margin-bottom: 16px;
+}
+.line980 {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 370px;
+    rotate: 5deg;
+}
+.line430{
+    display: none;
+}
+.services .cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 48px;
+    margin-top: 112px;
+}
+
+.services .cards .cards-column {
+    width: 50%;
+    height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.services .cards .card-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .cards .card {
+    box-shadow: 4px 4px 16px 0px #04101C33;
+    background: white;
+    border-radius: 16px;
+    padding: 24px 16px;
+}
+
+.services .cards-column-left {
+    margin-top: 120px;
+}
+.serv-case-text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+.cases p1 {
+    font-size: 32px;
+    font-weight: 720;
+    line-height: 38.4px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #209DB7;
+    margin: 0;
+}
+.cases p2{
+    font-family: Roboto Flex;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+    margin: 0;
+
+}
+.information {
+    display: none;
+}
+.cases-img {
+    width: 100% !important;
+    height: 301px !important;
+}
+.mgbtm {
+    margin-bottom: 30%;
+}
+
+@media (max-width: 1440px){
+    .w-padding {
+        box-sizing: border-box;
+        padding: 0 86px;
+    }
+    .services .cards {
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+        margin-top: 72px;
+    }
+    .info-block1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .info-block1 p{
+        font-family: Roboto Flex;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.02px;
+        text-align: left;
+        font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+
+    }
+    .d-mini{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        margin-bottom: 72px;
+    }
+    .d-mini p{
+        margin: 21px 0;
+        font-family: Roboto Flex;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: 0.02px;
+        text-align: left;
+        font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+
+    }
+    .services .cards .cards-column {
+        width: 50%;
+        height: fit-content;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .mgbtm {
+        margin-bottom: 20%;
+    }
+    .line980 {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 300px;
+        width: 100%;
+        rotate: 0deg;
+    }
+}
+@media (max-width: 980px){
+    .w-padding {
+        box-sizing: border-box;
+        padding: 0 52px;
+    }
+    .services .total-info-blocks-items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 86px;
+    }
+    .services .total-info-blocks-items .total-info-block__content {
+        display: flex;
+        align-items: flex-start;
+        gap: 13px;
+        width: 430px;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28.8px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+    .d-mini {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        margin-bottom: 72px;
+    }
+    .d-mini p {
+        margin: 6px 0;
+        font-family: Roboto Flex;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0.02px;
+        text-align: left;
+        font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+    }
+    .smm-card{
+        width: 100%;
+    }
+    .serm-card{
+        width: 100%;
+    }
+    .mouchen-card{
+        width: 100%;
+    }
+    .it-card{
+        width: 100%;
+    }
+    .advertising-card-card{
+        width: 100%;
+    }
+    .orm-card{
+        width: 100%;
+    }
+
+    .services .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+    .services .cards .cards-column {
+        width: 100%;
+        height: fit-content;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+@media (max-width: 430px){
+    .w-padding {
+        box-sizing: border-box;
+        padding: 0 16px;
+    }
+    .services {
+        margin-top: 58px;
+    }
+    .services .info-panel {
+        display: flex;
+        flex-direction: column;
+    }
+    .line430 {
+        display: block;
+        position: absolute;
+        top: 370px;
+        z-index: -1;
+    }
+    .smm-card {
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
+    .serm-card {
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
+    .mouchen-card{
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
+    .it-card{
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
+    .advertising-card{
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
+    .orm-card{
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 128px;
+    }
+    .line980{
+        display: none;
+    }
+    .default {
+        width: 100%;
+    }
+    .info-block1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .services .info-panel .regular-service-text {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+        margin-bottom: 20px;
+        color: rgba(4, 42, 80, 1);
+    ;
+    }
+    .services .info-panel .heading-text {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26.2px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+    .services .price-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        box-shadow: 0px 4px 8px 0px #00000014;
+        padding: 8px 18px 8px 18px;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 16px;
+        gap: 20px;
+    }
+    .services .price-block .price-block__text-container {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+    .btn{
+        width: fit-content;
+    }
+    .services .total-info-blocks-items .total-info-block__content {
+        display: flex;
+        align-items: flex-start;
+        gap: 13px;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28.8px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        width: 100%;
+    }
+    .d-mini p {
+        margin: 10px 0;
+        font-family: Roboto Flex;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.02px;
+        text-align: left;
+        font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
+    }
+    .services .cards .cards-column {
+
+        margin-top: 48px;
+    }
+    .services .info-panel .text-content {
+        width: 100%;
+    }
+    .services .info-panel .buttons-row {
+        display: flex;
+        gap: 32px;
+        margin-top: 32px;
+        flex-direction: column;
+    }
+    .services .total-info-blocks-items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 86px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .information {
+        margin-top: 36px;
+        display: flex;
+        gap: 12px;
+    }
+    .information-text h1 {
+        display: flex;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 57.6px;
+        margin: 0 0 8px 0;
+    }
+
+    .cases {
+        padding: 0px 16px;
+    }
+    .mgbtm {
+        margin-bottom: 0%;
+    }
+}
+@media (max-width: 375px){
+    .services .info-panel .buttons-row {
+        display: flex;
+        gap: 32px;
+        margin-top: 48px;
+        flex-direction: column;
+    }
+    .services .total-info-blocks-items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 86px;
+        flex-direction: column;
+    }
+}

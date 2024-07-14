@@ -1944,6 +1944,9 @@ footer p, footer a{
         line-height: 28px;
         letter-spacing: 0.4px;
     }
+    .under-frame{
+        display: none;
+    }
     .tiles{
         padding: 0 65px;
     }
@@ -2186,11 +2189,23 @@ footer p, footer a{
     .tiles{
         padding: 0 20px;
     }
+    .under-frame{
+        display: block;
+        width: 100%;
+    }
+    .under-frame img{
+        width: 105%;
+    }
+    .tiles-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
     .tiles-2{
         display: none;
     }
     .tiles-2-mobile{
-        display: flex;
+        display: none;
         width: fit-content;
     }
     .tiles p{

@@ -8,7 +8,7 @@ header{
     color:#7A73FF !important;
 }
 .services{
-    margin-top: 104px;
+    margin-top: 42px;
 }
 .services .info-panel {
     display: flex;
@@ -25,6 +25,9 @@ header{
     transition: .5s linear;
     width: 740px;
     height: 826px;
+}
+.back-arrow-container{
+    margin-top: 20px;
 }
 .services p {
     padding: 0;
@@ -190,7 +193,12 @@ header{
 .mini{
     display: none;
 }
-
+.d-mini {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 72px;
+}
 .services .total-info-blocks-items img {
     margin-bottom: 16px;
 }
@@ -274,6 +282,7 @@ header{
 .mgbtm {
     margin-bottom: 30%;
 }
+
 
 @media (max-width: 1440px){
     .w-padding {
@@ -416,8 +425,14 @@ header{
         box-sizing: border-box;
         padding: 0 16px;
     }
+    .back-arrow-container {
+        margin-top: 24px;
+    }
+    .back-arrow-container img{
+        width: 40px;
+    }
     .services {
-        margin-top: 58px;
+        margin-top: 4px;
     }
     .services .info-panel {
         display: flex;
@@ -481,7 +496,7 @@ header{
         font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
         margin-bottom: 20px;
         color: rgba(4, 42, 80, 1);
-    ;
+        text-align: left;
     }
     .services .info-panel .heading-text {
         font-family: 'Roboto Flex', sans-serif;

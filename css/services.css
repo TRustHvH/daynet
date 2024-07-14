@@ -31,8 +31,7 @@ header{
     flex-direction: column;
     gap: 70px;
     transition: .5s linear;
-    width: 740px;
-    height: 826px;
+    width: 100%;
 }
 .services p {
     padding: 0;

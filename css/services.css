@@ -18,12 +18,14 @@ header{
 .services .info-panel .text-content {
     width: 60%;
 }
-
 .small-buttons{
 
 }
-
+.small-buttons >img{
+    display: none;
+}
 .blocks {
+    display: block;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -32,9 +34,6 @@ header{
     width: 740px;
     height: 826px;
 }
-
-
-
 .services p {
     padding: 0;
     margin: 0;
@@ -335,6 +334,12 @@ header{
     .w-padding {
         box-sizing: border-box;
         padding: 0 16px;
+    }
+    .blocks {
+        display: none !important;
+    }
+    .small-buttons >img{
+        display: block;
     }
     .services {
         margin-top: 58px;

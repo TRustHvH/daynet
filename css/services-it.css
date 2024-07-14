@@ -21,6 +21,7 @@ header{
 }
 
 .blocks {
+    display: block;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -422,5 +423,11 @@ header{
     }
     .cases {
         padding: 0px 16px;
+    }
+    .small-buttons >img{
+        display: block;
+    }
+    .blocks {
+        display: none;
     }
 }

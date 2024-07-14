@@ -14,15 +14,9 @@ header{
     display: flex;
     justify-content: space-between;
 }
-
 .services .info-panel .text-content {
     width: 60%;
 }
-
-.small-buttons{
-
-}
-
 .blocks {
     margin: 0 auto;
     display: flex;
@@ -32,9 +26,6 @@ header{
     width: 740px;
     height: 826px;
 }
-
-
-
 .services p {
     padding: 0;
     margin: 0;
@@ -185,7 +176,7 @@ header{
     display: flex;
     align-items: flex-start;
     gap: 13px;
-    width: 630px;
+    width: 627px;
     font-family: 'Roboto Flex', sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -289,6 +280,7 @@ header{
         box-sizing: border-box;
         padding: 0 86px;
     }
+
     .services .cards {
         display: flex;
         align-items: flex-start;
@@ -361,7 +353,7 @@ header{
         display: flex;
         align-items: flex-start;
         gap: 13px;
-        width: 430px;
+        width: 410px;
         font-family: 'Roboto Flex', sans-serif;
         font-size: 20px;
         font-weight: 400;

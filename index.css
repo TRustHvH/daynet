@@ -1464,6 +1464,9 @@ footer p, footer a{
 .under-frame {
     display: none;
 }
+.u-frame{
+    display: none;
+}
 
 @media screen and (max-width: 1680px){
     .header1{
@@ -1627,8 +1630,15 @@ footer p, footer a{
     }
 }
 @media screen and (max-width: 1080px){
+    .companies {
+        gap: 32px;
+        padding-top: 24px;
+    }
     .about .car{
         width: 500px;
+    }
+    .tiles {
+        padding: 46px 40px;
     }
 }
 @media screen and (max-width: 980px) {
@@ -1679,6 +1689,33 @@ footer p, footer a{
     .g{
         margin-left: 560px;
     }
+    .u-frame{
+        display: block;
+    }
+    .u-frame img{
+        width: 105%;
+    }
+    .tiles-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    .tiles-info {
+        font-size: 26px;
+        font-weight: 500;
+        letter-spacing: 1.04px;
+    }
+    .tiles-1 .tiles-text {
+        color: rgb(4, 42, 80);
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 1.02px;
+        text-align: left;
+        max-width: 980px;
+        margin: 8px 0 0 0;
+    }
+
     .companies{
         gap: 32px;
         padding-top: 80px;
@@ -1949,10 +1986,22 @@ footer p, footer a{
     .under-frame{
         display: none;
     }
+    .u-frame{
+        display: block;
+    }
+    .u-frame img{
+        width: 105%;
+    }
+    .tiles-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
     .tiles{
-        padding: 0 65px;
+        padding: 0 64px;
     }
     .tiles-2{
+        display: none;
         scale: .8;
     }
     .about p{
@@ -2014,7 +2063,7 @@ footer p, footer a{
         padding: 0 20px;
     }
     .about .car {
-        max-width: 70%;
+
         height: fit-content;
         margin: 0;
     }
@@ -2207,6 +2256,9 @@ footer p, footer a{
     }
     .under-frame img{
         width: 105%;
+    }
+    .u-frame{
+        display: none;
     }
     .tiles-1 {
         display: flex;

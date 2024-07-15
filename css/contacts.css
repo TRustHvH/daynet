@@ -220,25 +220,30 @@ header{
         height: 1025px;
         margin-top: 30%;
     }
+    .contacts-holder{
+        padding: 0 16px 0 16px;
+    }
     .first{
         top: 9%;
-        left: 5%;
+        left: 2%;
         height: unset;
-        width: 238px;
+        width: 55%;
     }
-    .second{
-        top: 70%;
-        left: 20%;
+    .second {
+        top: 84%;
+        left: 31.5%;
         height: unset;
-        width: 238px;
+        width: 55%;
     }
-    .third{
-        top: 49%;
-        left: 5%;
+    .third {
+        top: 59%;
+        left: 2%;
+        width: 84.5%;
     }
     .fourth{
-        top: 28%;
-        left: 5%;
+        top: 33%;
+        left: 2%;
+        width: 84.5%;
     }
     .readme{
         padding: 0 20px;
@@ -248,5 +253,29 @@ header{
         height: 1780px;
         background: url(../img/contqcts-footer-background.svg) no-repeat;
         background-size: cover;
+    }
+}
+@media screen and (max-width: 375px){
+    .first{
+        top: 9%;
+        left: 2%;
+        height: unset;
+        width: 55%;
+    }
+    .second {
+        top: 84%;
+        left: 30%;
+        height: unset;
+        width: 55%;
+    }
+    .third {
+        top: 59%;
+        left: 2%;
+        width: 83%;
+    }
+    .fourth{
+        top: 33%;
+        left: 2%;
+        width: 83%;
     }
 }

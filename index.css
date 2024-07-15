@@ -2508,7 +2508,7 @@ footer p, footer a{
         margin-left: unset;
         width: fit-content;
         max-width: unset;
-        /*padding-left: 20px;*/
+        padding-left: 20px;
     }
     .form p{
         font-size: 28px;
@@ -2576,31 +2576,36 @@ footer p, footer a{
         text-align: left;
     }
 }
-@media screen and (max-width: 380px){
+@media screen and (max-width: 380px) {
     .start img {
         width: 300px;
     }
+
     .start a {
         padding: 16px 16px;
     }
-    .about{
+
+    .about {
         height: 1540px;
         padding: 0px;
     }
+
     .under-about {
         display: flex;
         flex-direction: column;
         gap: 31px;
         padding: 0 20px;
     }
-    .prevheader-mobile{
+
+    .prevheader-mobile {
         gap: 70px;
     }
-    .form form input{
+
+    .form form input {
         width: 320px;
     }
 
-    .tiles-2-mobile img{
+    .tiles-2-mobile img {
         height: 100px;
     }
 }

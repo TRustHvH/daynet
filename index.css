@@ -2198,7 +2198,7 @@ footer p, footer a{
         background-position: right;
     }
     .start a{
-        padding: 16px 26px;
+        padding: 16px 8px;
     }
     .start p{
         font-size: 24px;
@@ -2212,7 +2212,7 @@ footer p, footer a{
         width: 340px;
     }
     .logo{
-        margin-top: 125px;
+        margin-top: 6px;
         gap: 17px;
     }
     .main a {

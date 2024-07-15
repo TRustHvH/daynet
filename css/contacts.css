@@ -52,9 +52,7 @@ header{
     margin: 0;
     max-width: 335px;
 }
-.line430{
-    display: none;
-}
+
 .first{
     top: 40%;
     left: 17.5%;
@@ -199,6 +197,9 @@ header{
         right: -337px;
         top: 486px;
         z-index: -1;
+    }
+    #svg1125{
+        width: 1443px;
     }
     .gradient-line{
         overflow: hidden;

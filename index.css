@@ -768,8 +768,11 @@ li.tiles-text{
     max-width: 500px;
     margin: 0;
 }
-.about .planet{
-    width: 100%;
+.planet-holder{
+    margin-top: 5%;
+}
+.planet-holder img{
+    width: 110%;
 }
 .about nonclickable{
     display: inline-flex;
@@ -1153,7 +1156,7 @@ li.tiles-text{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-right: 10%;
+    margin-right: 2%;
 }
 .form img{
     width: 40%;
@@ -1450,7 +1453,17 @@ footer p, footer a{
     text-align: left;
     font-variation-settings: 'wdth' 130, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
 }
+.form-info {
+    display: none;
 
+}
+.forma{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10%;
+}
 .blue-text {
     fill: #5D5FEF;
 }
@@ -1511,6 +1524,12 @@ footer p, footer a{
     }
     footer{
         padding: 0 220px;
+    }
+    .form-info {
+        display: flex;
+        gap: 32px;
+        margin-top: 10px;
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 1440px){
@@ -1647,6 +1666,16 @@ footer p, footer a{
     .tiles {
         padding: 46px 40px;
     }
+    .about {
+        background: url(img/case.svg) no-repeat center;
+        height: 1440px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-size: cover;
+        padding: 0 325px;
+        gap: 40px;
 }
 @media screen and (max-width: 980px) {
     .arrow-sevices:after, .arrow-sevices:before {
@@ -1791,11 +1820,22 @@ footer p, footer a{
         padding: 0 42px;
         display: flex;
         flex-direction: row;
+        background: url(img/about-980.svg) no-repeat center;
+        height: 880px;
+    }
+    .under-about {
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
     }
     .daynet img{
         margin-top: 150px;
         width: 100%!important;
         height: 560px!important;
+    }
+    .planet-holder{
+        margin-top: 210px;
     }
     #blog{
         padding: 0 42px;
@@ -1836,9 +1876,9 @@ footer p, footer a{
         line-height: 16px;
         letter-spacing: 0.24px;
     }
-    .form a{
-        border-bottom: 1px solid #209DB7;
-    }
+    /*.form a{*/
+    /*    border-bottom: 1px solid #209DB7;*/
+    /*}*/
     .daynet-1{
         margin-left: 17.5%;
         margin-top: 307px;
@@ -2452,7 +2492,7 @@ footer p, footer a{
     .form{
         flex-direction: column;
         justify-content: center;
-        height: 1220px;
+        height: 1080px;
     }
     .form img{
         margin: auto auto 0 0;
@@ -2505,6 +2545,8 @@ footer p, footer a{
     }
     .form-info{
         flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }
     .form-info p{
         font-size: 16px!important;
@@ -2535,7 +2577,6 @@ footer p, footer a{
     }
 }
 @media screen and (max-width: 380px){
-
     .start img {
         width: 300px;
     }

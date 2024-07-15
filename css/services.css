@@ -273,6 +273,13 @@ header{
         margin-bottom: 20%;
     }
 }
+@media (max-width: 1308px){
+    .services .total-info-blocks-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
 @media (max-width: 980px){
     .w-padding {
         box-sizing: border-box;

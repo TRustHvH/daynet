@@ -52,6 +52,9 @@ header{
     margin: 0;
     max-width: 335px;
 }
+.line430{
+    display: none;
+}
 .first{
     top: 40%;
     left: 17.5%;
@@ -78,11 +81,44 @@ header{
     max-width: none!important;
 }
 @media screen and (max-width: 1680px){
+    .first {
+        top: 40%;
+        left: 4.5%;
+    }
+    .second {
+        top: 14%;
+        left: 25%;
+    }
+    .third {
+        top: 39%;
+        left: 45%;
+    }
+    .fourth {
+        top: 4%;
+        left: 71%;
+    }
     .readme{
         padding: 0 220px;
     }
 }
 @media screen and (max-width: 1440px) {
+
+    .first {
+    top: 40%;
+    left: 4.5%;
+    }
+    .second {
+    top: 14%;
+    left: 25%;
+    }
+    .third {
+    top: 39%;
+    left: 45%;
+    }
+    .fourth {
+    top: 4%;
+    left: 71%;
+    }
     .readme{
         padding: 0 100px;
     }
@@ -93,6 +129,11 @@ header{
     }
 }
 @media screen and (max-width: 980px) {
+    .gradient-line {
+        overflow: hidden;
+        position: relative;
+        height: 400px;
+    }
     .readme{
         padding: 0 42px;
     }
@@ -130,6 +171,16 @@ header{
 @media screen and (max-width: 480px){
     .gradient-line-block{
         align-items: center;
+    }
+    .line980{
+        display: none;
+    }
+    .line430{
+        display: block;
+    }
+    .gradient-line{
+        overflow: hidden;
+        position: relative;
     }
     .gradient-block-text{
         font-size: 20px;

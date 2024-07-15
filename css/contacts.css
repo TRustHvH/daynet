@@ -80,6 +80,7 @@ header{
     letter-spacing: 1.04px!important;
     max-width: none!important;
 }
+
 @media screen and (max-width: 1680px){
     .first {
         top: 40%;
@@ -155,11 +156,11 @@ header{
         height: 117px;
     }
     .third{
-        top: 55%;
-        left: 5%;
+        top: 57%;
+        left: 2%;
     }
     .fourth{
-        top: 9%;
+        top: 6%;
         left: 59%;
     }
 }
@@ -169,18 +170,40 @@ header{
     }
 }
 @media screen and (max-width: 480px){
+    .readme{
+        padding: 0 65px;
+    }
+    .readme-text {
+        font-family: Roboto Flex;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+
+    }
+    .readme-bold {
+        font-family: Roboto Flex;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
+        color: #209DB7;
+    }
     .gradient-line-block{
         align-items: center;
     }
-    .line980{
-        display: none;
-    }
-    .line430{
+    .line980 {
+        position: absolute;
         display: block;
+        rotate: -39deg;
+        right: -337px;
+        top: 486px;
+        z-index: -1;
     }
     .gradient-line{
         overflow: hidden;
         position: relative;
+        height: 900px;
     }
     .gradient-block-text{
         font-size: 20px;
@@ -218,8 +241,11 @@ header{
     }
     .readme{
         padding: 0 20px;
+        margin-top: 35px;
     }
-    .form{
-        height: 1400px!important;
+    .form {
+        height: 1700px;
+        background: url(../img/contqcts-footer-background.svg) no-repeat;
+        background-size: cover;
     }
 }

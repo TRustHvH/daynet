@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let lastScroll = 0;
     const defaultOffset = 200;
     const header = document.querySelector('.header');
+    const mLinks = document.querySelector('.mobile-links');
+    const popUp = document.querySelector('.popup');
+    const popUpCases = document.querySelector('.popup-cases');
 
     const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
     const containHide = () => header.classList.contains('hide');
@@ -41,10 +44,16 @@ document.addEventListener("DOMContentLoaded", function() {
         if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
             //scroll down
             header.classList.add('hide');
+            mLinks.classList.add('hide');
+            popUp.classList.add('hide');
+            popUpCases.classList.add('hide');
         }
         else if(scrollPosition() < lastScroll && containHide()){
             //scroll up
             header.classList.remove('hide');
+            mLinks.classList.remove('hide');
+            popUp.classList.remove('hide');
+            popUpCases.classList.remove('hide');
         }
 
         lastScroll = scrollPosition();

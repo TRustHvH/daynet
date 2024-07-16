@@ -250,6 +250,11 @@ position: absolute;
 .header-scroll .prevheader .link:hover{
     color: #7A73FF;
 }
+.popup.hide{
+    transform: translateY(-250px);
+    opacity: 0;
+    transition: 0.2s;
+}
 .popup{
     padding: 16px;
     gap: 48px;
@@ -1988,6 +1993,11 @@ footer p, footer a{
         align-items: flex-end;
         gap: 28px;
         width: 100%;
+    }
+    .mobile-links.hide{
+        transform: translateY(-250px);
+        opacity: 0;
+        transition: 0.2s;
     }
     .mobile-links a{
         color: #04101C !important;

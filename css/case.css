@@ -7,6 +7,10 @@ header{
 .prevheader a:hover{
     color:#7A73FF !important;
 }
+.line980 {
+    top: 500px;
+    z-index: -1;
+}
 
 .cases-content p {
     margin: 0;
@@ -106,6 +110,34 @@ header{
     left: 0;
     z-index: -1;
 }
+@media (max-width: 1680px) {
+    .cases-menu {
+        overflow: scroll;
+    }
+    .w-padding {
+        box-sizing: border-box;
+        padding: 0 196px;
+    }
+}
+@media (max-width: 1280px) {
+    .cases-menu {
+        overflow: scroll;
+    }
+    .w-padding {
+        box-sizing: border-box;
+        padding: 0 76px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .cases-menu {
+        overflow: scroll;
+    }
+    .w-padding {
+        box-sizing: border-box;
+        padding: 0 52px;
+    }
+}
 
 @media (max-width: 980px){
     .cases-menu {
@@ -143,6 +175,17 @@ header{
         box-sizing: border-box;
         padding: 0px 16px;
     }
+    /*.line980 {*/
+    /*    position: absolute;*/
+    /*    display: block;*/
+    /*    rotate: -39deg;*/
+    /*    right: -337px;*/
+    /*    top: 486px;*/
+    /*    z-index: -1;*/
+    /*}*/
+    /*#svg1125 {*/
+    /*    width: 1443px;*/
+    /*}*/
     .cases-menu .case-menu-item {
         display: flex;
         flex-direction: column;

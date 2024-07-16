@@ -147,6 +147,9 @@ header{
 .header-scroll{
     background: #F9FBFF;
 }
+.header.hide {
+    transform: translateY(-100px);
+}
 img{
     pointer-events: none;
 }
@@ -2608,4 +2611,4 @@ footer p, footer a{
     .tiles-2-mobile img {
         height: 100px;
     }
-}
+}}

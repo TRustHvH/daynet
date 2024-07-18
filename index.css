@@ -820,6 +820,7 @@ li.tiles-text{
     background: #00b2d7;
 }
 .cases{
+    margin-top: 64px;
     padding: 0 325px 0 325px;
     /*height: 856px;*/
     display: flex;
@@ -2312,6 +2313,7 @@ footer p, footer a{
     }
     .tiles{
         padding: 0 20px;
+        margin-bottom: 64px;
     }
     .under-frame{
         display: block;
@@ -2365,13 +2367,16 @@ footer p, footer a{
 
     }
     .about{
-        height: 1540px;
+        background: url(img/form-bg.svg) no-repeat center;
+        height: 1192px;
         padding: 0px;
+        gap: 0px;
+        width: 100%;
     }
     .under-about {
         display: flex;
         flex-direction: column;
-        gap: 31px;
+        gap: 32px;
         padding: 0 20px;
     }
     .about h2{
@@ -2391,7 +2396,7 @@ footer p, footer a{
         max-width: unset;
     }
     .about nonclickable{
-        padding: 12px 20px;
+        padding: 12px 0;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -2399,8 +2404,8 @@ footer p, footer a{
         letter-spacing: 0.64px;
     }
     .about nonclickable svg{
-        width: 28px;
-        height: 28px;
+        width: 35px;
+        height: 35px;
     }
     .about a{
         padding: 16px 24px;
@@ -2410,6 +2415,9 @@ footer p, footer a{
         line-height: 16px;
         letter-spacing: 0.64px;
         max-width: 110px;
+    }
+    .planet-holder {
+        margin-top: 0px;
     }
     .cases-more{
         gap: 10px;
@@ -2597,16 +2605,25 @@ footer p, footer a{
     .start a {
         padding: 16px 16px;
     }
-
     .about {
-        height: 1540px;
+        background: url(img/about375.svg) no-repeat center;
+        height: 1002px;
         padding: 0px;
+        gap: 0px;
+        width: 100%;
     }
-
+    .about h2 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 720;
+        line-height: 36px;
+        letter-spacing: 0.56px;
+        max-width: unset;
+    }
     .under-about {
         display: flex;
         flex-direction: column;
-        gap: 31px;
+        gap: 8px;
         padding: 0 20px;
     }
 

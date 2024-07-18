@@ -121,7 +121,7 @@ html{
     scroll-behavior: smooth;
 }
 .main-bg{
-    background: url('img/main-bg.svg') no-repeat center;
+    background: url('img/main-bg-remake.svg') no-repeat center;
     background-size: cover;
 }
 header{
@@ -1949,7 +1949,7 @@ footer p, footer a{
         padding: 0 65px;
     }
     .main-bg{
-        background: url('img/main-bg-720.svg') no-repeat center;
+        background: url('img/main-bg-720-remake2.svg') no-repeat center;
         background-size: cover;
     }
     .header1{

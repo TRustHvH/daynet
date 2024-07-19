@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     /// --- Header-hide --- \\\
 
     let lastScroll = 0;
-    const defaultOffset = 200;
+    const defaultOffset = 100;
     const header = document.querySelector('.header');
     const mLinks = document.querySelector('.mobile-links');
     const popUp = document.querySelector('.popup');
@@ -126,4 +126,5 @@ document.addEventListener("DOMContentLoaded", function() {
         event.stopPropagation();
     });
 });
+
 

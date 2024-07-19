@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/lines.css">
+    <link rel="stylesheet" href="css/swiper.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
@@ -15,6 +16,7 @@
     <script src="js/animation.js"></script>
     <script src="js/age_line_controller.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/lib/swiper.js"></script>
 </head>
 <body>
     <header>
@@ -204,41 +206,56 @@
                 </div>
             </div>
         </div>
-        <div class="companies">
-            <div class="under-companies">
-                <img src="img/companies/marriott.svg" alt="">
-                <img src="img/companies/subaru.svg" alt="">
-                <img src="img/companies/suzuki.svg" alt="">
-                <img src="img/companies/velux.svg" alt="">
-                <img src="img/companies/crm-telcom.svg" alt="">
-                <img src="img/companies/acellia.svg" alt="">
-                <img src="img/companies/welna.svg" alt="">
-                <img src="img/companies/malibu.svg" alt="">
-                <img src="img/companies/stolitza.svg" alt="">
-                <img src="img/companies/aware-mommy.svg" alt="">
-            </div>
-            <div class="under-companies-tab">
-                <img src="img/companies/tab/marriott.svg" alt="">
-                <img src="img/companies/tab/subaru.svg" alt="">
-                <img src="img/companies/tab/suzuki.svg" alt="">
-                <img src="img/companies/tab/velux.svg" alt="">
-                <img src="img/companies/tab/crm-telcom.svg" alt="">
-                <img src="img/companies/tab/acellia.svg" alt="">
-                <img src="img/companies/tab/welna.svg" alt="">
-                <img src="img/companies/tab/malibu.svg" alt="">
-                <img src="img/companies/tab/stolitza.svg" alt="">
-                <img src="img/companies/tab/aware-mommy.svg" alt="">
-            </div>
-            <div class="under-companies-mobile">
-                <img src="img/companies/mobile/marriott.svg" alt="">
-                <img src="img/companies/mobile/subaru.svg" alt="">
-                <img src="img/companies/mobile/suzuki.svg" alt="">
-                <img src="img/companies/mobile/aware-mommy.svg" alt="">
-                <img src="img/companies/mobile/crm-telcom.svg" alt="">
-                <img src="img/companies/mobile/velux.svg" alt="">
-                <img src="img/companies/mobile/acellia.svg" alt="">
-                <img src="img/companies/mobile/welna.svg" alt="">
-                <img src="img/companies/mobile/malibu.svg" alt="">
+        <div class="companies w-padding">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-img-container"><img src="img/companies/marriott.svg" alt=""></div>
+                        <div class="swiper-img-container-tab"><img src="img/companies/tab/marriott.svg" alt=""></div>
+                        <div class="swiper-img-container-mob"><img src="img/companies/mobile/marriott.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-img-container"><img src="img/companies/subaru.svg" alt=""></div>
+                        <div class="swiper-img-container-tab"><img src="img/companies/tab/subaru.svg" alt=""></div>
+                        <div class="swiper-img-container-mob"><img src="img/companies/mobile/subaru.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-img-container"><img src="img/companies/suzuki.svg" alt=""></div>
+                        <div class="swiper-img-container-tab"><img src="img/companies/tab/suzuki.svg" alt=""></div>
+                        <div class="swiper-img-container-mob"><img src="img/companies/mobile/suzuki.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-img-container"><img src="img/companies/aware-mommy.svg" alt=""></div>
+                        <div class="swiper-img-container-tab"><img src="img/companies/tab/aware-mommy.svg" alt=""></div>
+                        <div class="swiper-img-container-mob"><img src="img/companies/mobile/aware-mommy.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-img-container"><img src="img/companies/crm-telcom.svg" alt=""></div>
+                        <div class="swiper-img-container-tab"><img src="img/companies/tab/crm-telcom.svg" alt=""></div>
+                        <div class="swiper-img-container-mob"><img src="img/companies/mobile/crm-telcom.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-img-container"><img src="img/companies/velux.svg" alt=""></div>
+                        <div class="swiper-img-container-tab"><img src="img/companies/tab/velux.svg" alt=""></div>
+                        <div class="swiper-img-container-mob"><img src="img/companies/mobile/velux.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-img-container"><img src="img/companies/acellia.svg" alt=""></div>
+                        <div class="swiper-img-container-tab"><img src="img/companies/tab/acellia.svg" alt=""></div>
+                        <div class="swiper-img-container-mob"><img src="img/companies/mobile/acellia.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-img-container"><img src="img/companies/welna.svg" alt=""></div>
+                        <div class="swiper-img-container-tab"><img src="img/companies/tab/welna.svg" alt=""></div>
+                        <div class="swiper-img-container-mob"><img src="img/companies/mobile/welna.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-img-container"><img src="img/companies/malibu.svg" alt=""></div>
+                        <div class="swiper-img-container-tab"><img src="img/companies/tab/malibu.svg" alt=""></div>
+                        <div class="swiper-img-container-mob"><img src="img/companies/mobile/malibu.svg" alt=""></div>
+                    </div>
+                </div>
+                <!--            <div class="swiper-pagination"></div>-->
             </div>
         </div>
     </header>
@@ -2154,6 +2171,19 @@
             // Поддержка тачпада
             touchpadSupport: true,
         })
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+            freeMode: false,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            centeredSlides:true,
+        });
     </script>
 </body>
 </html>

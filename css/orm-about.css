@@ -207,7 +207,7 @@ header{
     position: absolute;
     z-index: -1;
     top: 370px;
-    rotate: 5deg;
+    rotate: 0deg;
 }
 .line430{
     display: none;

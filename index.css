@@ -1525,7 +1525,6 @@ footer p, footer a{
 .u-frame{
     display: none;
 }
-
 @media screen and (max-width: 1680px){
     .header1{
         padding: 0 220px;

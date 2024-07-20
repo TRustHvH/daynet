@@ -53,17 +53,17 @@ header{
     max-width: 335px;
 }
 
-.first{
-    top: 40%;
+.first {
+    top: 50%;
     left: 17.5%;
 }
-.second{
-    top: 22%;
-    left: 32%;
+.second {
+    top: 17%;
+    left: 69%;
 }
-.third{
+.third {
     top: 31%;
-    left: 49%;
+    left: 40%;
 }
 .fourth{
     top: 15%;
@@ -81,16 +81,16 @@ header{
 
 @media screen and (max-width: 1680px){
     .first {
-        top: 40%;
-        left: 4.5%;
+        top: 50%;
+        left: 17.5%;
     }
     .second {
-        top: 14%;
-        left: 25%;
+        top: 17%;
+        left: 69%;
     }
     .third {
-        top: 39%;
-        left: 45%;
+        top: 31%;
+        left: 40%;
     }
     .fourth {
         top: 4%;
@@ -103,16 +103,16 @@ header{
 @media screen and (max-width: 1440px) {
 
     .first {
-    top: 40%;
-    left: 4.5%;
+        top: 50%;
+        left: 17.5%;
     }
     .second {
-    top: 14%;
-    left: 25%;
+        top: 17%;
+        left: 69%;
     }
     .third {
-    top: 39%;
-    left: 45%;
+        top: 31%;
+        left: 40%;
     }
     .fourth {
     top: 4%;
@@ -125,6 +125,58 @@ header{
 @media screen and (max-width: 1280px){
     .readme{
         padding: 0 92px;
+    }
+}
+@media screen and (max-width: 1080px){
+    .readme{
+        padding: 0 42px;
+    }
+    .gradient-img{
+        width: 115%;
+        margin-left: -15%;
+    }
+    .gradient-line-block{
+        justify-content: center;
+    }
+    .gradient-line-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        width: fit-content;
+        border-radius: 24px;
+        padding: 14px;
+        box-shadow: 2px -0.5px 4px 0 rgba(0, 0, 0, 0.05), -2px 4px 8px 0 rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(20px);
+        background: rgb(255, 255, 255);
+        position: absolute;
+    }
+
+    .gradient-block-text {
+        color: rgb(4, 16, 28);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26.4px;
+        letter-spacing: 1.02px;
+        text-align: left;
+        margin: 0;
+        max-width: 263px;
+    }
+    .conacts-img{
+        width: 32px;
+        height: 32px;
+    }
+    .first {
+        top: 53%;
+        left: 8.5%;
+    }
+    .second {
+        top: 14.5%;
+        left: 73%;
+    }
+    .third {
+        top: 27%;
+        left: 36%;
     }
 }
 @media screen and (max-width: 980px) {
@@ -143,19 +195,45 @@ header{
     .gradient-line-block{
         justify-content: center;
     }
-    .first{
-        top: 9%;
-        left: 30%;
-        height: 117px;
+    .gradient-line-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        width: fit-content;
+        border-radius: 24px;
+        padding: 14px;
+        box-shadow: 2px -0.5px 4px 0 rgba(0, 0, 0, 0.05), -2px 4px 8px 0 rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(20px);
+        background: rgb(255, 255, 255);
+        position: absolute;
     }
-    .second{
-        top: 55%;
-        left: 50%;
-        height: 117px;
+
+    .gradient-block-text {
+        color: rgb(4, 16, 28);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26.4px;
+        letter-spacing: 1.02px;
+        text-align: left;
+        margin: 0;
+        max-width: 263px;
     }
-    .third{
-        top: 57%;
-        left: 2%;
+    .conacts-img{
+        width: 32px;
+        height: 32px;
+    }
+    .first {
+        top: 46%;
+        left: 5%;
+    }
+    .second {
+        top: 10%;
+        left: 74%;
+    }
+    .third {
+        top: 22%;
+        left: 34%;
     }
     .fourth{
         top: 6%;
@@ -165,6 +243,29 @@ header{
 @media screen and (max-width: 768px){
     .readme{
         padding: 0 65px;
+    }
+    .gradient-line {
+        overflow: hidden;
+        position: relative;
+        height: 312px;
+    }
+    .gradient-block-text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 23.4px;
+        max-width: 222px;
+    }
+    .first {
+        top: 40%;
+        left: 9%;
+    }
+    .second {
+        top: 10%;
+        left: 66%;
+    }
+    .third {
+        top: 20%;
+        left: 31%;
     }
 }
 @media screen and (max-width: 480px){
@@ -223,6 +324,10 @@ header{
     .contacts-holder{
         padding: 0 16px 0 16px;
     }
+    .conacts-img{
+        width: 72px;
+        height: 72px;
+    }
     .first{
         top: 9%;
         left: 2%;
@@ -231,13 +336,13 @@ header{
     }
     .second {
         top: 84%;
-        left: 31.5%;
+        left: 36%;
         height: unset;
         width: 55%;
     }
     .third {
         top: 46%;
-        left: 2%;
+        left: 4.5%;
         width: 84.5%;
     }
     .fourth{

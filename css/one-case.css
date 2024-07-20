@@ -191,6 +191,10 @@ header{
 .back-arrow-container {
     cursor: pointer;
 }
+.line980{
+    position: absolute;
+    z-index: -1;
+}
 @media (max-width: 1440px){
     .results-short-container {
         max-width: 70%;

@@ -1204,7 +1204,7 @@ li.tiles-text{
     justify-content: center;
     margin-right: 2%;
 }
-.form img{
+.form >img{
     width: 40%;
     margin: 150px 0 0 0;
     z-index: 1;
@@ -1362,7 +1362,7 @@ label:before {
 
 }
 .for-text-upper-input{
-    width: 95%;
+    width: 100%;
 }
 .form span{
     color: rgba(0, 212, 255, 1);
@@ -1513,7 +1513,15 @@ footer p, footer a{
 .blue-text {
     fill: #5D5FEF;
 }
+.u-form{
 
+}
+.reliable{
+    display: block;
+}
+.reliable-mob{
+    display: none;
+}
 .age-line {
     display: none;
     opacity: 0;
@@ -1523,6 +1531,19 @@ footer p, footer a{
     display: none;
 }
 .u-frame{
+    display: none;
+}
+.u-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.reliable{
+    display: block;
+    margin-top: 10%;
+}
+.reliable-mob{
     display: none;
 }
 @media screen and (max-width: 1680px){
@@ -1576,6 +1597,18 @@ footer p, footer a{
         margin-top: 10px;
         flex-direction: column;
     }
+    .u-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .reliable{
+        display: block;
+    }
+    .reliable-mob{
+        display: none;
+    }
 }
 @media screen and (max-width: 1440px){
     .w-padding {
@@ -1591,7 +1624,7 @@ footer p, footer a{
     .form{
         grid-gap: 200px;
     }
-    .form img{
+    .form >img{
         width: 80%;
         margin: 150px 0 0 -300px;
     }
@@ -1635,6 +1668,18 @@ footer p, footer a{
     }
     footer{
         padding: 0 86px;
+    }
+    .u-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .reliable{
+        display: block;
+    }
+    .reliable-mob{
+        display: none;
     }
 }
 @media screen and (max-width: 1280px) {
@@ -1694,6 +1739,18 @@ footer p, footer a{
     .planet-holder img{
         width: 100%;
     }
+    .u-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .reliable{
+        display: block;
+    }
+    .reliable-mob{
+        display: none;
+    }
 }
 @media screen and (max-width: 1080px){
     .swiper-img-container{
@@ -1730,6 +1787,19 @@ footer p, footer a{
         background-size: cover;
         padding: 0 325px;
         gap: 40px;
+    }
+    .u-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .reliable{
+        display: block;
+    }
+    .reliable-mob{
+        display: none;
+    }
 }
 @media screen and (max-width: 980px) {
     .arrow-sevices:after, .arrow-sevices:before {
@@ -1966,6 +2036,19 @@ footer p, footer a{
     .under-companies{
         gap: 74px;
         padding: 0 42px;
+    }
+    .u-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .reliable{
+        display: block;
+        margin-top: 48px;
+    }
+    .reliable-mob{
+        display: none;
     }
 }
 @media screen and (max-width: 768px){
@@ -2213,7 +2296,7 @@ footer p, footer a{
         line-height: 28px;
         letter-spacing: 0.8px;
     }
-    .form img{
+    .form >img{
         margin-top: -200px;
         margin-left: -200px;
     }
@@ -2603,7 +2686,7 @@ footer p, footer a{
         justify-content: center;
         height: 1260px;
     }
-    .form img{
+    .form >img{
         margin: auto auto 0 0;
     }
     .bunny-mobile{
@@ -2683,6 +2766,19 @@ footer p, footer a{
     }
     footer p{
         text-align: left;
+    }
+    .u-form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .reliable{
+        display: none;
+    }
+    .reliable-mob{
+        display: block;
+        margin-top: 35px;
     }
 }
 @media screen and (max-width: 375px) {

@@ -97,7 +97,15 @@ header{
     margin-bottom: 24px;
 
 }
-
+.regular-service-text::before{
+    margin-left: -24px;
+    position: absolute;
+    display: flex;
+    height: 58px;
+    width: 15px;
+    content: " ";
+    background: url(../img/services-line.svg) no-repeat;
+}
 .services .card .regular-service-text {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 20px;
@@ -215,6 +223,16 @@ header{
 .services .cards-column-left {
     margin-top: 120px;
 }
+.under-block{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.under-block p{
+    font-size: 22px;
+    font-weight: 300;
+}
 .serv-case-text{
     display: flex;
     flex-direction: column;
@@ -248,7 +266,6 @@ header{
 .mgbtm {
     margin-bottom: 30%;
 }
-
 @media (max-width: 1440px){
     .w-padding {
         box-sizing: border-box;
@@ -407,7 +424,15 @@ header{
         font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
         margin-bottom: 20px;
         color: rgba(4, 42, 80, 1);
-    ;
+    }
+    .regular-service-text::before {
+        margin-left: -10px;
+        position: absolute;
+        display: flex;
+        height: 58px;
+        width: 15px;
+        content: " ";
+        background: url(../img/services-line.svg) no-repeat;
     }
     .services .info-panel .heading-text {
         font-family: 'Roboto Flex', sans-serif;

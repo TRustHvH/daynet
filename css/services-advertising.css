@@ -191,7 +191,7 @@ header{
 }
 .total-info-blocks-items {
     display: flex;
-    gap: 154px;
+    justify-content: space-between;
     margin-bottom: 76px
 }
 .total-info-blocks-items .total-info-block__content {

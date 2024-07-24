@@ -267,6 +267,9 @@ header{
         top: 10%;
         opacity: 0.8;
     }
+    .line980{
+        display: none;
+    }
     .stroj{
         font-size: 32px !important;
     }

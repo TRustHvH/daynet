@@ -175,17 +175,6 @@ header{
         box-sizing: border-box;
         padding: 0px 16px;
     }
-    /*.line980 {*/
-    /*    position: absolute;*/
-    /*    display: block;*/
-    /*    rotate: -39deg;*/
-    /*    right: -337px;*/
-    /*    top: 486px;*/
-    /*    z-index: -1;*/
-    /*}*/
-    /*#svg1125 {*/
-    /*    width: 1443px;*/
-    /*}*/
     .cases-menu .case-menu-item {
         display: flex;
         flex-direction: column;

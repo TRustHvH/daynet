@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     /// --- Header Animation --- \\\
     
     document.addEventListener("scroll", () => {
-        if (window.scrollY >= 220) {
+        if (window.scrollY >= 300) {
             document.querySelector(".header").classList.add("header-scroll");
         } else {
             document.querySelector(".header").classList.remove("header-scroll");

@@ -1033,6 +1033,9 @@ li.tiles-text{
     transition: transform 0.5s ease;
     transform: translateX(5px);
 }
+.blog-text a{
+    text-decoration: none;
+}
 .carousel-info{
     display: flex;
     justify-content: space-between;
@@ -1072,6 +1075,102 @@ li.tiles-text{
     transition: .2s linear;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
 }
+#n1 .blog-block:before{
+    background: url("img/n1.png") black center no-repeat;
+}
+#n2 .blog-block:before{
+    background: url("img/n2.png") black center no-repeat;
+}
+#n3 .blog-block:before{
+    background: url("img/n3.png") black center no-repeat;
+}
+#n4 .blog-block:before{
+    background: url("img/n4.png") black center no-repeat;
+}
+#n5 .blog-block:before{
+    background: url("img/n5.png") black center no-repeat;
+}
+#n6 .blog-block:before{
+    background: url("img/n6.png") black center no-repeat;
+}
+#n7 .blog-block:before{
+    background: url("img/n7.png") black center no-repeat;
+}
+#n8 .blog-block:before{
+    background: url("img/n8.png") black center no-repeat;
+}
+#n9 .blog-block:before{
+    background: url("img/n9.png") black center no-repeat;
+}
+#n10 .blog-block:before{
+    background: url("img/n10.jpg") black center no-repeat;
+}
+#n11 .blog-block:before{
+    background: url("img/n8.png") black center no-repeat;
+}
+#n12 .blog-block:before{
+    background: url("img/n12.jpg") black center no-repeat;
+}
+#n13 .blog-block:before{
+    background: url("img/мем23.png") black center no-repeat;
+}
+#n14 .blog-block:before{
+    background: url("img/ng.jpg") black center no-repeat;
+}
+#n15 .blog-block:before{
+    background: url("img/Teambilding.jpg") black center no-repeat;
+}
+#n16 .blog-block:before{
+    background: url("img/мем22.jpg") black center no-repeat;
+}
+#n17 .blog-block:before{
+    background: url("img/ии.png") black center no-repeat;
+}
+#n18 .blog-block:before{
+    background: url("img/нетворкинг.png") black center no-repeat;
+}
+#n19 .blog-block:before{
+    background: url("img/мем12.png") black center no-repeat;
+}
+#n20 .blog-block:before{
+    background: url("img/мем11.jpg") black center no-repeat;
+}
+#n21 .blog-block:before{
+    background: url("img/Елизавета Козылова.jpg") black center no-repeat;
+}
+#n22 .blog-block:before{
+    background: url("img/КакОпределитьЕстьЛиПроблемы.png") black center no-repeat;
+}
+#n23 .blog-block:before{
+    background: url("img/НогиСГазетами.jpg") black center no-repeat;
+}
+#n24 .blog-block:before{
+    background: url("img/meme.png") black center no-repeat;
+}
+#n25 .blog-block:before{
+    background: url("img/мем10.jpg") black center no-repeat;
+}
+#n26 .blog-block:before{
+    background: url("img/Ведьмак,рили.png") black center no-repeat;
+}
+#n27 .blog-block:before{
+    background: url("img/мем9.png") black center no-repeat;
+}
+#n28 .blog-block:before{
+    background: url("img/мем7.jpg") black center no-repeat;
+}
+#n29 .blog-block:before{
+    background: url("img/Мем 4.png") black center no-repeat;
+}
+#n30 .blog-block:before{
+    background: url("img/мем 2.jpg") black center no-repeat;
+}
+#n31 .blog-block:before{
+    background: url("img/загруженное.png") black center no-repeat;
+}
+#n32 .blog-block:before{
+    background: url("img/загруженное.jpg") black center no-repeat;
+}
 .blog-block:hover:before{
     opacity: 1;
 }
@@ -1089,9 +1188,11 @@ li.tiles-text{
 .blog-block img{
     width: 100%;
     max-width: 370px;
+    height: 246px;
     position: absolute;
     z-index: -1;
     top: 16px;
+    border-radius: 16px;
 }
 .blog-text-anim{
     max-width: 360px;

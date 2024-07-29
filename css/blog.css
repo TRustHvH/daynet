@@ -229,6 +229,10 @@ h2{
 footer svg, footer p{
     margin-bottom: 50px;
 }
+#tp{
+    position: absolute;
+    top: 0;
+}
 @media screen and (max-width: 1680px){
     #blog-anim{
         padding: 0 220px;

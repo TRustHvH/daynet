@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Daynet - Блог</title>
+  <link rel="stylesheet" href="../../index.css">
+  <script src="../../js/index.js"></script>
+  <link rel="stylesheet" href="../../css/one-case.css">
+  <link rel="shortcut icon" href="../../favicon.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/yars-chart.js"></script>
+</head>
+<body>
+<header>
+  <div class="main">
+    <div class="header">
+      <div class="header1">
+        <div class="prevheader">
+          <div class="header-links">
+            <a class="link" href="../../index.html">
+              <svg width="146" height="22" viewBox="0 0 146 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.43975 0H9.98436C18.9046 0 22.6604 3.48857 22.6604 11C22.6604 18.5114 18.9046 22 9.98436 22H1.43975C0.657278 22 0 21.3714 0 20.5857V1.47714C0 0.660001 0.625979 0 1.43975 0ZM9.82787 4.33714H5.75901V17.6629H9.82787C15.4304 17.6629 16.9014 15.7143 16.9014 11C16.9014 6.28572 15.4304 4.33714 9.82787 4.33714Z" fill="#04101C"/>
+                <path d="M23.9818 20.5857L27.8316 5.97143C29.1149 1.1 33.528 0 37.9725 0H46.2041C46.9553 0 47.5186 0.660001 47.5186 1.41429V20.5857C47.5186 21.3714 46.8614 22 46.0789 22H43.1994C42.3856 22 41.7596 21.3714 41.7596 20.5543V16.6886H30.8989L29.866 20.5543C29.6469 21.3714 28.8645 22 28.0507 22H25.046C24.2322 22 23.7627 21.3714 23.9818 20.5857ZM33.3715 7.41714L32.0257 12.3514H41.7596V4.33714H37.4091C35.4372 4.33714 33.8723 5.53143 33.3715 7.41714Z" fill="#04101C"/>
+                <path d="M58.4415 20.5857V14.1429L50.2724 1.44571C49.803 0.722857 50.0221 0 50.8045 0H53.7153C54.9673 0 55.8437 0.628573 56.3757 1.44571L61.321 9.11429L66.2662 1.44571C66.7983 0.628573 67.6747 0 68.9266 0H71.8374C72.6199 0 72.839 0.722857 72.3695 1.44571L64.2005 14.1429V20.5857C64.2005 21.3714 63.5432 22 62.7607 22H59.8812C59.0987 22 58.4415 21.3714 58.4415 20.5857Z" fill="#04101C"/>
+                <path d="M79.2611 22H76.5694C75.787 22 75.1297 21.34 75.1297 20.5543V1.44571C75.1297 0.660001 75.7557 0 76.5381 0H81.0452C81.7963 0 82.6727 0.722857 83.1422 1.44571L92.3754 15.7143V1.41429C92.3754 0.628573 93.0327 0 93.8151 0H96.4443C97.258 0 97.884 0.628573 97.884 1.44571V20.5543C97.884 21.34 97.258 22 96.4443 22H91.3738C90.5601 22 89.6524 21.34 89.1516 20.5543L80.7009 7.38571V20.5543C80.7009 21.34 80.0436 22 79.2611 22Z" fill="#04101C"/>
+                <path d="M121.333 0C122.115 0 122.773 0.628573 122.773 1.44571V2.89143C122.773 3.70857 122.115 4.33714 121.333 4.33714H108.031V8.8H119.486C120.269 8.8 120.926 9.46 120.926 10.2457V11.6914C120.926 12.4771 120.269 13.1371 119.486 13.1371H108.031V17.6629H121.301C122.084 17.6629 122.71 18.2914 122.71 19.0771V20.5543C122.71 21.34 122.084 22 121.27 22H103.711C102.898 22 102.272 21.34 102.272 20.5229V1.41429C102.272 0.628573 102.929 0 103.711 0H121.333Z" fill="#04101C"/>
+                <path d="M125.155 0H144.56C145.374 0 146 0.628573 146 1.44571V2.89143C146 3.70857 145.374 4.33714 144.56 4.33714H137.737V20.5857C137.737 21.3714 137.08 22 136.297 22H133.418C132.635 22 131.978 21.3714 131.978 20.5857V4.33714H125.155C124.341 4.33714 123.715 3.70857 123.715 2.89143V1.44571C123.715 0.628573 124.341 0 125.155 0Z" fill="#04101C"/>
+              </svg>
+            </a>
+            <a class="service-link link">Услуги</a>
+            <a class="link" href="../blog.html">Блог</a>
+            <a class="case-link link">Кейсы</a>
+            <a class="link" href="../aboutme.html">О нас</a>
+            <a class="link" href="../contacts.html">Контакты</a>
+          </div>
+          <div class="popup popup-services arrow-sevices">
+            <div class="popup-block">
+              <!--                                <a href="html/servises.html?service_id=orm" class="popup-item">-->
+              <!--                                    <img src="img/popup/ORM.svg" alt="">-->
+              <!--                                    <div class="popup-text">-->
+              <!--                                        <p class="popup-main-text">ORM</p>-->
+              <!--                                        <p class="popup-subtext">Управление репутацией в интернете</p>-->
+              <!--                                    </div>-->
+              <!--                                </a>-->
+              <!--                                <div class="popup-item-links">-->
+              <!--                                    <div class="popup-item-links-block">-->
+              <!--                                        <a href="html/servises.html?service_id=strategy" class="popup-item-text">Стратегия</a>-->
+              <!--                                        <a href="html/servises.html?service_id=monitoring" class="popup-item-text">Мониторинг</a>-->
+              <!--                                        <a href="html/servises.html?service_id=analitics" class="popup-item-text">Аналитика</a>-->
+              <!--                                        <a href="html/servises.html?service_id=official" class="popup-item-text">Официальный представитель</a>-->
+              <!--                                    </div>-->
+              <!--                                    <div class="popup-item-links-block">-->
+              <!--                                        <a href="html/servises.html?service_id=socials" class="popup-item-text">Соцсети</a>-->
+              <!--                                        <a href="html/servises.html?service_id=smrm" class="popup-item-text">SMRM</a>-->
+              <!--                                        <a href="html/servises.html?service_id=reviews" class="popup-item-text">Отзывы и рейтинги</a>-->
+              <!--                                        <a href="html/servises.html?service_id=hm" class="popup-item-text">Hidden marketing(HM)</a>-->
+              <!--                                    </div>-->
+              <!--                                </div>-->
+            </div>
+            <div class="popup-block">
+              <a href="../servises.html?service_id=orm" class="popup-item">
+                <img src="../../img/popup/ORM.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">ORM</p>
+                  <p class="popup-subtext">Управление репутацией в интернете</p>
+                </div>
+              </a>
+              <a href="../servises-serm.html?service_id=serm" class="popup-item">
+                <img src="../../img/popup/serm.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">SERM</p>
+                  <p class="popup-subtext">Работа с поисковой выдачей</p>
+                </div>
+              </a>
+              <a href="../servises-smm.html?service_id=smm" class="popup-item">
+                <img src="../../img/popup/SMM.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">SMM</p>
+                  <p class="popup-subtext">Продвижение в социальных сетях</p>
+                </div>
+              </a>
+            </div>
+            <div class="popup-block">
+              <a href="../servises-advertising.html?service_id=advertisment" class="popup-item">
+                <img src="../../img/popup/реклама.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">Реклама</p>
+                  <p class="popup-subtext">Настройка и ведение рекламных кампаний</p>
+                </div>
+              </a>
+              <a href="../servises-it.html?service_id=advertisment" class="popup-item">
+                <img src="../../img/popup/it.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">IT</p>
+                  <p class="popup-subtext">Разработка систем</p>
+                </div>
+              </a>
+              <a href="../servises-mouchen.html?service_id=advertisment" class="popup-item">
+                <img src="../../img/popup/mouchen.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">Моушн</p>
+                  <p class="popup-subtext">Разработка видеороликов</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="popup popup-cases arrow-cases">
+            <div class="popup-block">
+              <a href="../html/case-bank.html" class="popup-item">
+                <img src="../../img/popup/Bank.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">Банк</p>
+                </div>
+              </a>
+              <a href="case-clinic.html" class="popup-item">
+                <img src="../../img/popup/cliniks.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">Сеть клиник</p>
+                </div>
+              </a>
+              <a href="case-building-materials.html" class="popup-item">
+                <img src="../../img/popup/Stroy.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">Стройматериалы</p>
+                </div>
+              </a>
+            </div>
+            <div class="popup-block">
+              <a href="case-autosalon.html" class="popup-item">
+                <img src="../../img/popup/salon.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">Автосалон</p>
+                </div>
+              </a>
+              <a href="case-personality.html" class="popup-item">
+                <img src="../../img/popup/reputacia.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">Персональная репутация</p>
+                </div>
+              </a>
+              <a href="case-build.html" class="popup-item">
+                <img src="../../img/popup/company.svg" alt="">
+                <div class="popup-text">
+                  <p class="popup-main-text">Компания-застройщик</p>
+                </div>
+              </a>
+            </div>
+            <div class="popup-block for-button">
+              <a href="../cases.html" class="popup-button">
+                <img src="../../img/popup/arrow.svg" alt="">
+                <p class="popup-main-text">Больше кейсов</p>
+              </a>
+            </div>
+          </div>
+        </div>
+<!--        <div style="z-index: 2;">-->
+<!--          <a href="" class="enter" >войти</a>-->
+<!--        </div>-->
+      </div>
+      <div class="prevheader-mobile">
+        <a href="../../index.html">
+          <svg class="Gbig" width="146" height="22" viewBox="0 0 146 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.43975 0H9.98436C18.9046 0 22.6604 3.48857 22.6604 11C22.6604 18.5114 18.9046 22 9.98436 22H1.43975C0.657278 22 0 21.3714 0 20.5857V1.47714C0 0.660001 0.625979 0 1.43975 0ZM9.82787 4.33714H5.75901V17.6629H9.82787C15.4304 17.6629 16.9014 15.7143 16.9014 11C16.9014 6.28572 15.4304 4.33714 9.82787 4.33714Z" fill="#04101C"/>
+            <path d="M23.9818 20.5857L27.8316 5.97143C29.1149 1.1 33.528 0 37.9725 0H46.2041C46.9553 0 47.5186 0.660001 47.5186 1.41429V20.5857C47.5186 21.3714 46.8614 22 46.0789 22H43.1994C42.3856 22 41.7596 21.3714 41.7596 20.5543V16.6886H30.8989L29.866 20.5543C29.6469 21.3714 28.8645 22 28.0507 22H25.046C24.2322 22 23.7627 21.3714 23.9818 20.5857ZM33.3715 7.41714L32.0257 12.3514H41.7596V4.33714H37.4091C35.4372 4.33714 33.8723 5.53143 33.3715 7.41714Z" fill="#04101C"/>
+            <path d="M58.4415 20.5857V14.1429L50.2724 1.44571C49.803 0.722857 50.0221 0 50.8045 0H53.7153C54.9673 0 55.8437 0.628573 56.3757 1.44571L61.321 9.11429L66.2662 1.44571C66.7983 0.628573 67.6747 0 68.9266 0H71.8374C72.6199 0 72.839 0.722857 72.3695 1.44571L64.2005 14.1429V20.5857C64.2005 21.3714 63.5432 22 62.7607 22H59.8812C59.0987 22 58.4415 21.3714 58.4415 20.5857Z" fill="#04101C"/>
+            <path d="M79.2611 22H76.5694C75.787 22 75.1297 21.34 75.1297 20.5543V1.44571C75.1297 0.660001 75.7557 0 76.5381 0H81.0452C81.7963 0 82.6727 0.722857 83.1422 1.44571L92.3754 15.7143V1.41429C92.3754 0.628573 93.0327 0 93.8151 0H96.4443C97.258 0 97.884 0.628573 97.884 1.44571V20.5543C97.884 21.34 97.258 22 96.4443 22H91.3738C90.5601 22 89.6524 21.34 89.1516 20.5543L80.7009 7.38571V20.5543C80.7009 21.34 80.0436 22 79.2611 22Z" fill="#04101C"/>
+            <path d="M121.333 0C122.115 0 122.773 0.628573 122.773 1.44571V2.89143C122.773 3.70857 122.115 4.33714 121.333 4.33714H108.031V8.8H119.486C120.269 8.8 120.926 9.46 120.926 10.2457V11.6914C120.926 12.4771 120.269 13.1371 119.486 13.1371H108.031V17.6629H121.301C122.084 17.6629 122.71 18.2914 122.71 19.0771V20.5543C122.71 21.34 122.084 22 121.27 22H103.711C102.898 22 102.272 21.34 102.272 20.5229V1.41429C102.272 0.628573 102.929 0 103.711 0H121.333Z" fill="#04101C"/>
+            <path d="M125.155 0H144.56C145.374 0 146 0.628573 146 1.44571V2.89143C146 3.70857 145.374 4.33714 144.56 4.33714H137.737V20.5857C137.737 21.3714 137.08 22 136.297 22H133.418C132.635 22 131.978 21.3714 131.978 20.5857V4.33714H125.155C124.341 4.33714 123.715 3.70857 123.715 2.89143V1.44571C123.715 0.628573 124.341 0 125.155 0Z" fill="#04101C"/>
+          </svg>
+          <svg class="Gsmall" width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs/>
+            <path id="Exclude" d="M16 32C24.83 32 32 24.83 32 16C32 10.86 29.58 6.29 25.82 3.36L23.18 1.69C21.02 0.61 18.58 0 16 0C7.16 0 0 7.16 0 16C0 24.83 7.16 32 16 32ZM23.18 1.69L23.18 9.29C21.31 7.2 18.62 5.88 15.62 5.88C9.99 5.88 5.43 10.51 5.43 16.22C5.43 21.93 9.99 26.56 15.62 26.56C18.62 26.56 21.31 25.24 23.18 23.15L23.1 25.31C23.09 25.61 23.33 25.86 23.64 25.86L25.35 25.86C25.65 25.86 25.89 25.62 25.89 25.32L25.82 3.36L23.18 1.69ZM23.6 16.22C23.6 20.52 20.16 24.01 15.92 24.01C11.67 24.01 8.23 20.52 8.23 16.22C8.23 11.92 11.67 8.44 15.92 8.44C20.16 8.44 23.6 11.92 23.6 16.22Z" fill="#04101C" fill-opacity="1.000000" fill-rule="evenodd"/>
+          </svg>
+        </a>
+        <button id="mobile-header-button"><img src="../../img/menu-burger.svg" alt=""></button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" style="display: none">
+        <img id="close-mobile-header" src="../../img/menu-burger-close.svg" alt="">
+        <div class="mobile-links">
+          <a href="../servises.html">Услуги</a>
+          <a href="../blog.html">Блог</a>
+          <a href="../cases.html">Кейсы</a>
+          <a href="../aboutme.html">О нас</a>
+          <a href="../contacts.html">Контакты</a>
+        </div>
+<!--        <a href="" class="enter-mobile">войти</a>-->
+      </div>
+    </div>
+  </div>
+</header>
+<div class="case-content">
+  <div class="case-content">
+    <div class="case-headings-container w-padding">
+      <div class="back-arrow-container" onclick="window.location.href='../cases.html'">
+        <img src="../../img/back.svg" alt="back arrow" class="back-arrow">
+      </div>
+      <div class="case-headings-texts">
+        <p class="case-category-name">Управление репутацией HR</p>
+        <p class="case-name">Банк Совесть</p>
+      </div>
+    </div>
+    <div class="case-image-container w-padding">
+      <div class="case-image-container-content">
+        <img class="case-big-image" src="../../img/case-bank.svg" alt="case big image">
+        <div class="results-short-container">
+          <img class="post-case-image-results-icon" src="../../img/case-nonclickable.svg" alt="case results icon">
+          <p class="results-short-container-text">В 4.5 раза сократили упоминание негативных отзывов о банке</p>
+        </div>
+      </div>
+    </div>
+    <div class="case-jobs-block before-job-done w-padding" style="margin-top: 132px;">
+      <p class="case-small-heading">До старта работ</p>
+      <div class="job-process-content">
+        <div class="job-process-content-side left-side">
+          <p class="case-jobs-text">В банке работают тысячи сотрудников.</p>
+          <p class="case-jobs-text">Как работодатель, банк проводит мотивационные и развлекательные мероприятия, повышает зарплату и премиальные, дарит персоналу подарки.</p>
+          <p class="case-jobs-text">На вакансию откликаются ленивые соискатели, которым нужен дополнительный доход при минимуме усилий. При трудоустройстве возникает недовольство: чтобы получить хорошую зарплату приходится… работать. В итоге, в интернете за год появилось более 1000 негативных уникальных историй, из-за которых новые сотрудники не спешат устраиваться на работу в банк.</p>
+          <p class="case-jobs-text">Новые соискатели на собеседованиях часто упоминают негативные отзывы в Сети.</p>
+          <p class="case-jobs-text">Официальные ответы на отзывы от банка, как работодателя, отсутствуют.</p>
+        </div>
+        <div class="job-process-content-side right-side">
+          <div class="chart-tile">
+            <div class="yars-chart-container" min-chart-value="0" max-chart-value="20" chart-value-one="9" chart-value-two="16"></div>
+            <p class="chart-tile-text">С 16 до 9 сократилось среднее количество площадок присутствия на филиал. Все общение сведено на подконтрольные площадки.</p>
+          </div>
+          <div class="chart-tile">
+            <div class="yars-chart-container" min-chart-value="0" max-chart-value="5" chart-value-one="2" chart-value-two="1" chart-value-three="4"></div>
+            <p class="chart-tile-text">С 2,9 до 4,5 звезд вырос рейтинг банка.</p>
+          </div>
+          <div class="chart-tile">
+            <div class="yars-chart-container" min-chart-value="0" max-chart-value="5" chart-value-one="2" chart-value-two="1" chart-value-three="4"></div>
+            <p class="chart-tile-text">С 0.3 до 2.0 увеличено соотношение позитивных и негативных упоминаний (по показателям KPI).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg  class="line980" viewBox="0 0 1443 507" fill="none" xmlns="http://www.w3.org/2000/svg" id="svg1125" preserveAspectRatio="xMidYMid" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+      <g id="g5084">
+        <path d="M0 507.76V333C437.77 112.163 970.086 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint0_radial_33_30452)"/>
+        <path d="M0 507.76V333C437.77 112.163 970.086 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint1_radial_33_30452)"/>
+        <path d="M0 507.76V333C437.77 112.163 970.986 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint2_radial_33_30452)"/>
+        <path d="M0 507.76V333C437.77 112.163 970.086 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint3_radial_33_30452)"/>
+        <defs>
+          <radialGradient id="paint0_radial_33_30452" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.59529 -63.3069) rotate(28.9906) scale(1265.93 1553.79)">
+            <stop offset="0.310885" stop-color="#209DB7"/>
+            <stop offset="0.505769" stop-color="#209DB7" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint1_radial_33_30452" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(432.023 400.486) rotate(-33.0514) scale(413.059 524.934)">
+            <stop stop-color="#FFDC62"/>
+            <stop offset="1" stop-color="#FFDC62" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint2_radial_33_30452" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1098.91 74.8817) rotate(154.374) scale(1080.63 1014.84)">
+            <stop offset="0.298581" stop-color="#762DEE"/>
+            <stop offset="1" stop-color="#762DEE" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint3_radial_33_30452" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(35.5906 508.18) rotate(66.543) scale(342.431 527.53)">
+            <stop offset="0.227079" stop-color="#209DB7"/>
+            <stop offset="0.547505" stop-color="#209DB7" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+      </g>
+      <g id="g9528">
+        <path d="M0 507.76V333C437.77 112.163 970.086 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint0_radial_33_31296)"/>
+        <path d="M0 507.76V333C437.77 112.163 970.086 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint1_radial_33_31296)"/>
+        <path d="M0 507.76V333C437.77 112.163 970.086 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint2_radial_33_31296)"/>
+        <path d="M0 507.76V333C437.77 112.163 970.086 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint3_radial_33_31296)"/>
+        <defs>
+          <radialGradient id="paint0_radial_33_31296" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(136.784 88.3426) rotate(27.6464) scale(1135.34 2020.82)">
+            <stop offset="0.657391" stop-color="#209DB7"/>
+            <stop offset="1" stop-color="#209DB7" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint1_radial_33_31296" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1213.52 379.452) rotate(-93.6747) scale(733.679 1403.61)">
+            <stop stop-color="#FFDC62"/>
+            <stop offset="1" stop-color="#FFDC62" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint2_radial_33_31296" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(605.5 292.088) rotate(135.723) scale(687.173 845.732)">
+            <stop stop-color="#762DEE"/>
+            <stop offset="0.58" stop-color="#762DEE" stop-opacity="0"/>
+          </radialGradient>
+
+          TRust, [14.07.2024 19:29]
+          <radialGradient id="paint3_radial_33_31296" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1123.34 468.216) rotate(162.505) scale(638.329 813.907)">
+            <stop offset="0.227079" stop-color="#81F9F2"/>
+            <stop offset="0.547505" stop-color="#81F9F2" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <animate attributeName="opacity" values="1;0" calcMode="spline" keyTimes="0;1" keySplines="0 0 1 1" dur="5s"  begin="5s; animate8920.end" repeatCount="1" additive="replace" accumulate="none" fill="freeze" id="animate6529"/><animate attributeName="opacity" values="0;1" calcMode="spline" keyTimes="0;1" keySplines="0 0 1 1" dur="5s" begin="animate6529.end;" repeatCount="1" additive="replace" accumulate="none" fill="freeze" id="animate8920"/></g>
+      <g id="g2956" style="fill: rgb(0, 0, 0); fill-opacity: 1; opacity: 1;">
+        <path d="M0 507.76V333C437.77 112.163 970.086 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint0_radial_33_30454)"/>
+        <path d="M0 507.76V333C437.77 112.163 970.086 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint1_radial_33_30454)"/>
+        <path d="M0 507.76V333C437.77 112.163 970.086 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint2_radial_33_30454)"/>
+        <path d="M0 507.76V333C437.77 112.163 970.086 88.3703 1443 0V173.598C960.369 306.583 468.756 317.624 0 507.76Z" fill="url(#paint3_radial_33_30454)"/>
+        <defs>
+          <radialGradient id="paint0_radial_33_30454" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(549.165 487.828) rotate(84.7096) scale(634.944 1155.51)">
+            <stop offset="0.662802" stop-color="#762DEE"/>
+            <stop offset="1" stop-color="#762DEE" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint1_radial_33_30454" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(721.5 394.049) rotate(89.9356) scale(733.504 1343.04)">
+            <stop stop-color="#209DB7"/>
+            <stop offset="0.460519" stop-color="#209DB7" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint2_radial_33_30454" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1271.49 766.084) rotate(-145.556) scale(347.955 327.344)">
+            <stop stop-color="#FFDC62"/>
+            <stop offset="1" stop-color="#FFDC62" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="paint3_radial_33_30454" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1181.61 155.858) rotate(133.89) scale(962.21 1156.44)">
+            <stop offset="0.227079" stop-color="#209DB7"/>
+            <stop offset="0.810258" stop-color="#209DB7" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <animate attributeType="auto" attributeName="opacity" values="1;0" calcMode="spline" keyTimes="0;1" keySplines="0 0 1 1" dur="5s" begin="0s;animate4897.end" repeatCount="1" additive="replace" accumulate="none" fill="freeze" id="animate3982"/><animate attributeName="opacity" values="0;1" calcMode="spline" keyTimes="0;1" keySplines="0 0 1 1" dur="3s" begin="animate3982.end+5s" repeatCount="1" additive="replace" accumulate="none" fill="freeze" id="animate4897"></animate>
+      </g>
+    </svg>
+    <img class="case-gradient-line-mobile" src="../../img/blogline.svg">
+    <div class="case-jobs-block after-job-done w-padding mg-bottom">
+      <p class="case-small-heading">Что сделано</p>
+      <div class="job-process-content">
+        <div class="job-process-content-side left-side">
+          <p class="case-jobs-text">Раскрыли выгоды трудоустройства через публикацию негативных отзывов с жалобами на завышенные требования от имени недовольных (в т.ч. уволившихся) работников. Из отзывов стало понятно, что сотрудники недобросовестно относились к работе, были ленивы или грубы. У потенциального сотрудника создается ощущение, что он, в отличие от оставившего отзыв, в подобной ситуации сможет проявить себя с лучшей стороны и хорошо зарабатывать.</p>
+          <p class="case-jobs-text">Подключили на площадках обратную связь "Сотрудник-Работодатель" и настроили систему общения.</p>
+          <p class="case-jobs-text">Внедрили правило прямого чата в определенный день недели, когда 10 действующих сотрудников в текстовом эфире отвечают на вопросы</p>
+          <p class="case-jobs-text">Дали официальные ответы на все новые отзывы за актуальный период</p>
+        </div>
+        <div class="job-process-content-side right-side">
+          <div class="chart-tile">
+            <div class="yars-chart-container" min-chart-value="0" max-chart-value="100" chart-value-one="20" chart-value-two="85" after-number-symbol="%"></div>
+            <p class="chart-tile-text">В 4,5 раза сократилось количество упоминаний соискателями негативных отзывов на собеседованиях.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="case-jobs-block after-job-done w-padding">
+      <p class="case-small-heading">Достигнуты цели</p>
+      <div class="job-process-content">
+        <div class="job-process-content-side left-side">
+          <p class="case-jobs-text">Сотрудники (бывшие, нынешние и будущие) не заходят дальше данных 9 площадок.</p>
+          <p class="case-jobs-text">Люди активно идут устраиваться на должность.</p>
+          <p class="case-jobs-text">Внимание потенциальных сотрудников сконцентрировано на ключевых ценностях компании.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="form">
+  <img src="../../img/bunny1.svg" class="default-bunny" alt="123">
+  <img src="../../img/bunny1-mobile.svg" class="bunny-mobile" alt="123">
+  <div class="forma">
+    <form method="post">
+      <p id="form">Напишите нам</p>
+      <div class="for-text-upper-input">
+        <p>ФИО *</p>
+        <input id="nameInput" placeholder="Иванов Иван Иваныч" name="name" required>
+      </div>
+      <div class="for-text-upper-input">
+        <p>Телефон или E-mail *</p>
+        <input id="phoneInput" placeholder="+7 (999) 856 - 34-34" name="number" type="tel" required>
+      </div>
+      <div class="for-text-upper-input">
+        <p>Комментарий</p>
+        <input id="messageInput" placeholder="Ваш комментарий..." name="message" >
+      </div>
+      <div class="for-text-upper-input">
+        <p>Cфера деятельности</p>
+        <input id="sphereInput" placeholder="Реклама" name="sphere" >
+      </div>
+      <div class="for-text-upper-input">
+        <p>Сайт</p>
+        <input id="siteInput" placeholder="www.theverycompany.com" name="site" >
+      </div>
+      <div class="for-text-upper-input">
+        <p>Комментарий</p>
+        <input id="commentInput" placeholder="Иванов Владимир Олегович" name="message" >
+      </div>
+      <div class="input-checkbox">
+        <input type="checkbox" class="checkbox" id="checkbox" required>
+        <label for="checkbox"></label><span>Я согласен с <a href="">условиями передачи информации.</a></span>
+      </div>
+      <div class="u-form">
+        <button>Отправить</button>
+        <a href="https://vbankcenter.ru/contragent/1135249004956">
+          <img class="reliable" src="../../img/reliable.svg">
+          <img class="reliable-mob" src="../../img/reliable-mob.svg">
+        </a>
+      </div>
+      <div class="form-info">
+        <p>info@daynet.pro +7 831 228-22-00</p>
+        <div>
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="52" viewBox="0 0 48 48" fill="none">
+              <g clip-path="url(#clip0_379_586)">
+                <mask id="mask0_379_586" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
+                  <path d="M47.763 0H0.238281V48H47.763V0Z" fill="white"/>
+                </mask>
+                <g mask="url(#mask0_379_586)">
+                  <path d="M0.238281 23.04C0.238281 12.1788 0.238281 6.74827 3.57901 3.37413C6.91974 0 12.2965 0 23.0502 0H24.9512C35.7048 0 41.0816 0 44.4223 3.37413C47.763 6.74827 47.763 12.1788 47.763 23.04V24.96C47.763 35.8212 47.763 41.2517 44.4223 44.6259C41.0816 48 35.7048 48 24.9512 48H23.0502C12.2965 48 6.91974 48 3.57901 44.6259C0.238281 41.2517 0.238281 35.8212 0.238281 24.96V23.04Z" fill="white"/>
+                  <path d="M25.5251 34.5801C14.6934 34.5801 8.51525 27.0801 8.25781 14.6001H13.6836C13.8618 23.7601 17.8617 27.6401 21.03 28.4401V14.6001H26.1391V22.5C29.2678 22.16 32.5545 18.5601 33.6635 14.6001H38.7725C37.921 19.4801 34.3566 23.0801 31.822 24.5601C34.3566 25.76 38.4163 28.9001 39.9608 34.5801H34.3369C33.1289 30.7801 30.1193 27.8401 26.1391 27.4401V34.5801H25.5251Z" fill="#04101C"/>
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_379_586">
+                  <rect width="48" height="48" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="52" viewBox="0 0 54 52" fill="none">
+              <g clip-path="url(#clip0_379_583)">
+                <path d="M11.8672 7.99512H40.8729V37.3361H11.8672V7.99512Z" fill="#04101C"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.1787 2.3919C33.2858 -0.798602 20.7758 -0.798602 8.88294 2.3919C6.92629 2.91792 5.155 3.98883 3.77072 5.48273C2.38644 6.97662 1.44478 8.83347 1.05294 10.8419C-0.350981 18.0877 -0.350981 25.5401 1.05294 32.7859C1.44579 34.7959 2.38936 36.6539 3.77606 38.148C5.16276 39.642 6.93677 40.712 8.8958 41.2359C16.0854 43.1667 23.5311 43.9389 30.9587 43.5239C31.9205 43.4677 32.8675 43.7838 33.6072 44.4079L42.3629 51.8699C42.4412 51.9407 42.5382 51.9869 42.642 52.0028C42.7458 52.0187 42.852 52.0037 42.9475 51.9596C43.043 51.9154 43.1237 51.8441 43.1798 51.7543C43.2358 51.6644 43.2647 51.5601 43.2629 51.4539V42.7959C43.2629 42.1719 43.6744 41.6259 44.2787 41.4699L45.1787 41.2359C47.1377 40.712 48.9117 39.642 50.2984 38.148C51.6851 36.6539 52.6287 34.7959 53.0215 32.7859C54.4254 25.5401 54.4254 18.0877 53.0215 10.8419C52.6287 8.83185 51.6851 6.97388 50.2984 5.47983C48.9117 3.98579 47.1377 2.91581 45.1787 2.3919ZM38.3001 9.6589C39.1101 9.6589 39.7658 10.3219 39.7658 11.1409V16.3409C39.7658 17.1599 39.1101 17.8229 38.3001 17.8229H33.1444C32.3215 17.8229 31.6658 18.4989 31.6658 19.3179V33.4359C31.6658 34.2549 31.0101 34.9179 30.2001 34.9179H24.2987C23.9099 34.9179 23.5371 34.7618 23.2622 34.4838C22.9874 34.2059 22.8329 33.8289 22.8329 33.4359V19.3179C22.8329 18.4989 22.1644 17.8229 21.3544 17.8229H16.2115C16.018 17.8246 15.826 17.7875 15.6467 17.7138C15.4673 17.6401 15.3042 17.5312 15.1668 17.3935C15.0293 17.2557 14.9202 17.0917 14.8457 16.9111C14.7713 16.7304 14.7329 16.5366 14.7329 16.3409V11.1409C14.7329 10.3219 15.3758 9.6589 16.1987 9.6589H38.3129H38.3001Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_379_583">
+                  <rect width="54" height="52" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<footer>
+  <a class="link" href="../../index.html" style="height: 22px">
+    <svg xmlns="http://www.w3.org/2000/svg" width="159" height="24" viewBox="0 0 159 24" fill="none">
+      <path d="M1.56795 0H10.8734C20.5878 0 24.6781 3.80571 24.6781 12C24.6781 20.1943 20.5878 24 10.8734 24H1.56795C0.715803 24 0 23.3143 0 22.4571V1.61143C0 0.720001 0.681717 0 1.56795 0ZM10.703 4.73143H6.27179V19.2686H10.703C16.8043 19.2686 18.4063 17.1429 18.4063 12C18.4063 6.85714 16.8043 4.73143 10.703 4.73143Z" fill="white"/>
+      <path d="M26.1172 22.4571L30.3098 6.51429C31.7073 1.2 36.5134 0 41.3536 0H50.3181C51.1362 0 51.7497 0.720001 51.7497 1.54286V22.4571C51.7497 23.3143 51.0339 24 50.1818 24H47.0459C46.1597 24 45.478 23.3143 45.478 22.4229V18.2057H33.6502L32.5253 22.4229C32.2867 23.3143 31.4346 24 30.5484 24H27.2761C26.3899 24 25.8786 23.3143 26.1172 22.4571ZM36.3429 8.09143L34.8773 13.4743H45.478V4.73143H40.74C38.5926 4.73143 36.8883 6.03429 36.3429 8.09143Z" fill="white"/>
+      <path d="M63.6452 22.4571V15.4286L54.7488 1.57714C54.2375 0.788571 54.4761 0 55.3282 0H58.4982C59.8616 0 60.816 0.685716 61.3955 1.57714L66.7811 9.94286L72.1666 1.57714C72.7461 0.685716 73.7005 0 75.0639 0H78.2339C79.0861 0 79.3246 0.788571 78.8134 1.57714L69.917 15.4286V22.4571C69.917 23.3143 69.2012 24 68.349 24H65.2131C64.361 24 63.6452 23.3143 63.6452 22.4571Z" fill="white"/>
+      <path d="M86.3186 24H83.3873C82.5351 24 81.8193 23.28 81.8193 22.4229V1.57714C81.8193 0.720001 82.501 0 83.3532 0H88.2615C89.0796 0 90.034 0.788571 90.5453 1.57714L100.601 17.1429V1.54286C100.601 0.685716 101.316 0 102.169 0H105.032C105.918 0 106.6 0.685716 106.6 1.57714V22.4229C106.6 23.28 105.918 24 105.032 24H99.5098C98.6236 24 97.6351 23.28 97.0898 22.4229L87.8866 8.05714V22.4229C87.8866 23.28 87.1708 24 86.3186 24Z" fill="white"/>
+      <path d="M132.136 0C132.989 0 133.704 0.685716 133.704 1.57714V3.15429C133.704 4.04572 132.989 4.73143 132.136 4.73143H117.65V9.6H130.125C130.977 9.6 131.693 10.32 131.693 11.1771V12.7543C131.693 13.6114 130.977 14.3314 130.125 14.3314H117.65V19.2686H132.102C132.954 19.2686 133.636 19.9543 133.636 20.8114V22.4229C133.636 23.28 132.954 24 132.068 24H112.946C112.06 24 111.378 23.28 111.378 22.3886V1.54286C111.378 0.685716 112.094 0 112.946 0H132.136Z" fill="white"/>
+      <path d="M136.299 0H157.432C158.318 0 159 0.685716 159 1.57714V3.15429C159 4.04572 158.318 4.73143 157.432 4.73143H150.001V22.4571C150.001 23.3143 149.286 24 148.433 24H145.298C144.445 24 143.73 23.3143 143.73 22.4571V4.73143H136.299C135.413 4.73143 134.731 4.04572 134.731 3.15429V1.57714C134.731 0.685716 135.413 0 136.299 0Z" fill="white"/>
+    </svg>
+  </a>
+  <div class="footer-blocks">
+    <div class="footer-block">
+      <a href="../partnership.html">Вакансии</a>
+      <a href="../partnership.html">Партнёрам</a>
+    </div>
+    <div class="footer-block">
+      <a href="">Политика куки</a>
+      <a href="">Условия обработки персональных данных</a>
+      <p>© 2024 Daynet Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+<script>
+  SmoothScroll({
+    // Время скролла 400 = 0.4 секунды
+    animationTime: 800,
+    // Размер шага в пикселях
+    stepSize: 75,
+
+    // Дополнительные настройки:
+
+    // Ускорение
+    accelerationDelta: 30,
+    // Максимальное ускорение
+    accelerationMax: 2,
+
+    // Поддержка клавиатуры
+    keyboardSupport: true,
+    // Шаг скролла стрелками на клавиатуре в пикселях
+    arrowScroll: 50,
+
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm: true,
+    pulseScale: 4,
+    pulseNormalize: 1,
+
+    // Поддержка тачпада
+    touchpadSupport: true,
+  })
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.changing-1').forEach(element => {
+      element.addEventListener('click', function () {
+        toggleOpacity('opacity-1');
+        toggleColor('.changing-1');
+      });
+    });
+
+    document.querySelectorAll('.changing-2').forEach(element => {
+      element.addEventListener('click', function () {
+        toggleOpacity('opacity-2');
+        toggleColor('.changing-2');
+      });
+    });
+
+    document.querySelectorAll('.changing-3').forEach(element => {
+      element.addEventListener('click', function () {
+        toggleOpacity('opacity-3');
+        toggleColor('.changing-3');
+      });
+    });
+
+    document.querySelectorAll('.changing-4').forEach(element => {
+      element.addEventListener('click', function () {
+        toggleOpacity('opacity-4');
+        toggleColor('.changing-4');
+      });
+    });
+
+    document.querySelectorAll('.changing-5').forEach(element => {
+      element.addEventListener('click', function () {
+        toggleOpacity('opacity-5');
+        toggleColor('.changing-5');
+      });
+    });
+
+    document.querySelectorAll('.changing-6').forEach(element => {
+      element.addEventListener('click', function () {
+        toggleOpacity('opacity-6');
+        toggleColor('.changing-6');
+      });
+    });
+  });
+
+  function toggleOpacity(opacityClass) {
+    const opacityClasses = ['opacity-1', 'opacity-2', 'opacity-3', 'opacity-4', 'opacity-5', 'opacity-6'];
+
+    opacityClasses.forEach(function (className) {
+      const element = document.getElementById(className);
+
+      if (className === opacityClass) {
+        element.classList.add('anim-opacity-enable');
+        element.classList.remove('anim-opacity-disable');
+        setTimeout(function () {
+          element.style.display = 'flex';
+        }, 180);
+      } else {
+        element.classList.add('anim-opacity-disable');
+        element.classList.remove('anim-opacity-enable');
+        setTimeout(function () {
+          element.style.display = 'none';
+        }, 200);
+      }
+    });
+  }
+
+  function toggleColor(changingClass) {
+    const changingClasses = ['.changing-1', '.changing-2', '.changing-3', '.changing-4', '.changing-5', '.changing-6'];
+
+    changingClasses.forEach(function (className) {
+      document.querySelectorAll(className).forEach(element => {
+        if (className === changingClass) {
+          element.classList.add('selected');
+        } else {
+          element.classList.remove('selected');
+        }
+      });
+    });
+  }
+</script>
+</body>
+</html>

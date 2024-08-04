@@ -1,163 +1,68 @@
 const CASES = {
   "orm": [
     {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. ORM 1",
-      "link": "/"
+      "image": "../img/clinic.svg",
+      "text": "Сеть клиник Алтея. ORM медицина",
+      "link": "cases/case-clinic.html"
     },
     {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. ORM 2",
-      "link": ""
+      "image": "../img/car-big-image.jpeg",
+      "text": "Автосалон. ORM",
+      "link": "cases/case-autosalon.html"
     },
     {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. ORM 3",
-      "link": ""
+      "image": "../img/build.svg",
+      "text": "Застройщик. ORM",
+      "link": "cases/case-build.html"
     },
     {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. ORM 3",
-      "link": ""
+      "image": "../img/case-eat.jpg",
+      "text": "Сеть питания. ORM",
+      "link": "cases/case-eat.html"
     },
     {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. ORM 3",
-      "link": ""
+      "image": "../img/case-opr.jpg",
+      "text": "Опровержение. ORM",
+      "link": "cases/case-opr.html"
     },
     {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. ORM 3",
-      "link": ""
-    },
-  ],
-  "serm": [
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SERM 1",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SERM 2",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SERM 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SERM 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SERM 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SERM 3",
-      "link": ""
+      "image": "../img/personal.svg",
+      "text": "Персональная репутация. ORM персоны",
+      "link": "cases/case-personality.html"
     },
   ],
-  "smm": [
+  "smrm-hm": [
     {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SMM 1",
-      "link": ""
+      "image": "../img/case-taxi.jpg",
+      "text": "Укрепление репутации сервиса такси. SMRM и HM",
+      "link": "cases/case-taxi.html"
+    },
+  ],
+  "hr": [
+    {
+      "image": "../img/case-bank.svg",
+      "text": "Банк Совесть. Управление репутацией HR",
+      "link": "cases/case-bank.html"
     },
     {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SMM 2",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SMM 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SMM 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SMM 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. SMM 3",
-      "link": ""
+      "image": "../img/case-3000.png",
+      "text": "3000 сотрудников. Управление репутацией HR",
+      "link": "cases/case-3000.html"
     },
   ],
   "monitoring": [
     {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Мониторинг 1",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Мониторинг 2",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Мониторинг 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Мониторинг 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Мониторинг 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Мониторинг 3",
-      "link": ""
+      "image": "../img/case-distribute.png",
+      "text": "Дистрибьютор. Программный мониторинг",
+      "link": "cases/case-distribute.html"
     },
   ],
-  "advertisement": [
+  "reputation": [
     {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Реклама 1",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Реклама 2",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Реклама 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Реклама 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Реклама 3",
-      "link": ""
-    },
-    {
-      "image": "../img/casecar-cropped.png",
-      "text": "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7. Реклама 3",
-      "link": ""
-    },
+      "image": "../img/building-materials.svg",
+      "text": "Стройматериалы. Репутация",
+      "link": "cases/case-building-materials.html"
+    }
   ]
 }
 
@@ -212,9 +117,12 @@ function cleanTab() {
 function fillTab(data) {
   let html = ''
   for (let k = 0; k < data.length; k++) {
-    html += `<a href="${data[k]["link"]}" class="tab-item" style="background-image: url('${data[k]['image']}');">
-                 <p class="tab-item__text">${data[k]['text']}</p>
-             </a>`
+    html += `<div class="tab-item" style="background-image: url('${data[k]['image']}');">
+                 <div class="info-case-item">
+                     <p class="tab-item__text">${data[k]['text']}</p>
+                     <a href="${data[k]["link"]}" class="hidden-button-case">Узнать больше <img src="../img/case-hidden-button.svg" alt=""></a>
+                </div>
+             </div>`
   }
   $(".info-tab").html(html)
 }

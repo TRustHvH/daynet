@@ -856,6 +856,163 @@ li.tiles-text{
 .about a:hover{
     background: #00b2d7;
 }
+
+/*-scale-*/
+.about-us{
+    display: flex;
+    flex-direction: column;
+    padding: 0 325px;
+}
+.about-us-info{
+    margin: 72px 0 125px 0;
+}
+.about-us-info h2{
+    font-size: 20px;
+    font-weight: 720;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #209DB7;
+    margin: 0 0 8px 0;
+
+}
+.about-us-info p{
+    max-width: 633px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.2px;
+    letter-spacing: 0.04em;
+    margin: 0;
+    text-align: left;
+}
+.scale-arrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 79px;
+}
+.scale-arrow p{
+    margin: 0 0 0 10px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.07em;
+    text-align: left;
+
+}
+/*-scale-*/
+
+.scale-text{
+    display: flex;
+    flex-direction: row;
+    height: 111px;
+    margin-bottom: 44px;
+}
+.text{
+    position: absolute;
+    top: 53px;
+    left: 0;
+    padding-left: 6px;
+    transition: 0.2s;
+    opacity: 0;
+}
+#text1{
+    opacity: 1;
+}
+.scale-text-h2{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 8px;
+    color: #1489A1;
+}
+.scale-text-h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    margin: 0;
+    color: #209DB7;
+}
+.scale-text-p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin: 0;
+    color: #042A50;
+}
+.scale{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.scale::-webkit-scrollbar {
+    width: 0;
+}
+.scale-mark{
+    background: url("img/scale/short-mark.svg") no-repeat;
+    padding: 2px;
+    width: 40px;
+    height: 117px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.scale-mark:hover{
+    background: url("img/scale/long-mark.svg") no-repeat;
+    height: 268px;
+}
+#mark1{
+    background: url("img/scale/long-mark.svg") no-repeat;
+    height: 268px;
+}
+#mark1:hover ~ .scale-holder #text1{
+    opacity: 1;
+}
+#mark2:hover ~ .scale-holder #text2{
+    opacity: 1;
+}
+#mark3:hover ~ .scale-holder #text3{
+    opacity: 1;
+}
+#mark4:hover ~ .scale-holder #text4{
+    opacity: 1;
+}
+#mark5:hover ~ .scale-holder #text5{
+    opacity: 1;
+}
+#mark6:hover ~ .scale-holder #text6{
+    opacity: 1;
+}
+#mark7:hover ~ .scale-holder #text7{
+    opacity: 1;
+}
+#mark8:hover ~ .scale-holder #text8{
+    opacity: 1;
+}
+.scale-holder{
+    position: relative;
+    height: 268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 28px 16px;
+}
+.scale-holder:last-child{
+    padding: 28px 1px 28px 16px;
+}
+.scale-section{
+    /*padding: 28px 16px;*/
+}
+.scale-section:last-child{
+    /*padding: 28px 1px 28px 16px;*/
+}
+/*-scale-*/
 .cases{
     margin-top: 64px;
     padding: 0 325px 0 325px;
@@ -1680,6 +1837,9 @@ footer p, footer a{
     .about{
         padding: 0 220px;
     }
+    .about-us{
+        padding: 0 220px;
+    }
     .cases{
         padding: 0 220px;
     }
@@ -1761,6 +1921,9 @@ footer p, footer a{
     .about{
         padding: 0 86px;
     }
+    .about-us{
+        padding: 0 86px;
+    }
     .cases{
         padding: 0 86px;
     }
@@ -1807,8 +1970,14 @@ footer p, footer a{
         height: 100%;
         margin-top: -150px;
     }
+    .about-us{
+        padding: 0 100px;
+    }
+    .scale{
+        overflow-x: scroll;
+    }
     .cases{
-        padding: 0 100px 0 100px;
+        padding: 0 100px;
     }
     .daynet-1{
         margin-left: 17%;
@@ -1993,6 +2162,15 @@ footer p, footer a{
         flex-wrap: wrap;
         justify-content: center;
         gap: 95px;
+    }
+    .about-us{
+        padding: 0 42px;
+    }
+    .scale{
+        margin-bottom: 190px;
+    }
+    .scale-arrow{
+        display: none;
     }
     .cases{
         padding: 0 42px;

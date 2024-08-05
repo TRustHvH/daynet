@@ -126,7 +126,6 @@ document.addEventListener("DOMContentLoaded", function() {
         event.stopPropagation();
     });
 });
-
 document.addEventListener('DOMContentLoaded', function() {
     const ids = [
         'phoneInput',

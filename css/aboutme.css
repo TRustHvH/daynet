@@ -101,7 +101,7 @@ h1{
     height: 728px;
     margin-top: 144px;
 }
-.group h1{
+.about-us h1{
     color: #04101C;
     font-size: 56px;
     font-style: normal;
@@ -120,7 +120,7 @@ h1{
     max-width: 950px;
     padding: 10px;
     margin: 0;
-
+    margin-top: 14px;
 }
 
 footer svg, footer p{
@@ -164,8 +164,8 @@ footer svg, footer p{
         padding: 10px 120px;
         line-height: 32px;
     }
-    .group img{
-        margin-top: 104px;
+    .about-us{
+        padding: 10px 120px !important;
     }
     h1{
         font-size: 64px;
@@ -199,9 +199,8 @@ footer svg, footer p{
         line-height: 28px;
         letter-spacing: 0.4px;
     }
-    .group img{
-        width: 100%;
-        height: auto;
+    #group {
+        margin: -6%;
     }
     .group p{
         max-width: 556px;
@@ -211,7 +210,7 @@ footer svg, footer p{
         line-height: 28px;
         letter-spacing: 0.4px;
     }
-    .group h1{
+    .about-us h1{
         font-size: 40px;
         font-style: normal;
         font-weight: 720;
@@ -271,18 +270,23 @@ footer svg, footer p{
         max-width: 100%;
         padding: 10px 0;
     }
-    .group h1{
+    .about-us{
+        padding: 0 60px !important;
+    }
+    .about-us h1{
         font-size: 28px;
         font-style: normal;
         font-weight: 720;
         line-height: 36px;
         letter-spacing: 0.56px;
         max-width: 200px;
+        margin: 100px auto 0 0;
     }
-    .group img {
-        width: 430px;
-
-        margin-top: 60px;
+    .scale {
+        margin-bottom: 125px !important;
+    }
+    #group {
+        margin: -19.2%;
     }
     .abt{
         margin: 0;

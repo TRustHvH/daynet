@@ -125,8 +125,46 @@ document.addEventListener("DOMContentLoaded", function() {
     popupCases.addEventListener("click", (event) => {
         event.stopPropagation();
     });
-});
-document.addEventListener('DOMContentLoaded', function() {
+
+    const scaleMarks = document.querySelectorAll('.scale-mark');
+    const scaleHolders = document.querySelectorAll('.scale-holder .text');
+
+    scaleMarks.forEach((mark, index) => {
+        // Добавляем обработчик наведения на каждый scale-mark
+        mark.addEventListener('mouseover', () => {
+            // Закрываем первый элемент при наведении на любой другой
+            document.querySelector('.scale-mark.open').classList.remove('open');
+            // Открываем текущий элемент
+            mark.classList.add('open');
+
+            // Обновляем opacity для всех scale-holder
+            updateScaleHolders();
+        });
+
+        // Добавляем обработчик ухода курсора с каждого scale-mark
+        mark.addEventListener('mouseout', () => {
+            // Закрываем текущий элемент, если не первый
+            if (index !== 0) {
+                mark.classList.remove('open');
+                // Открываем первый элемент
+                scaleMarks[0].classList.add('open');
+            }
+
+            // Обновляем opacity для всех scale-holder
+            updateScaleHolders();
+        });
+        function updateScaleHolders() {
+            scaleHolders.forEach((holder, index) => {
+                // Проверяем, если предыдущий элемент scale-mark открыт
+                if (index < scaleMarks.length && scaleMarks[index].classList.contains('open')) {
+                    holder.style.opacity = 1;
+                } else {
+                    holder.style.opacity = 0; // или любое другое значение для закрытого состояния
+                }
+            });
+        }
+    })
+
     const ids = [
         'phoneInput',
         'nameInput',

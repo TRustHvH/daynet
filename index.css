@@ -916,9 +916,6 @@ li.tiles-text{
     transition: 0.2s;
     opacity: 0;
 }
-#text1{
-    opacity: 1;
-}
 .scale-text-h2{
     font-size: 16px;
     font-weight: 600;
@@ -963,36 +960,11 @@ li.tiles-text{
     cursor: pointer;
     transition: 0.3s;
 }
-.scale-mark:hover{
+.open{
     background: url("img/scale/long-mark.svg") no-repeat;
     height: 268px;
 }
-#mark1{
-    background: url("img/scale/long-mark.svg") no-repeat;
-    height: 268px;
-}
-#mark1:hover ~ .scale-holder #text1{
-    opacity: 1;
-}
-#mark2:hover ~ .scale-holder #text2{
-    opacity: 1;
-}
-#mark3:hover ~ .scale-holder #text3{
-    opacity: 1;
-}
-#mark4:hover ~ .scale-holder #text4{
-    opacity: 1;
-}
-#mark5:hover ~ .scale-holder #text5{
-    opacity: 1;
-}
-#mark6:hover ~ .scale-holder #text6{
-    opacity: 1;
-}
-#mark7:hover ~ .scale-holder #text7{
-    opacity: 1;
-}
-#mark8:hover ~ .scale-holder #text8{
+.open-holder{
     opacity: 1;
 }
 .scale-holder{

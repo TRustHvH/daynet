@@ -584,9 +584,11 @@ header{
         line-height: 57.6px;
         margin: 0 0 8px 0;
     }
-
     .cases {
         padding: 0px 16px;
+    }
+    .cases-img {
+        height: 268px !important;
     }
     .mgbtm {
         margin-bottom: 0%;

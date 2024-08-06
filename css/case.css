@@ -8,10 +8,12 @@ header{
     color:#7A73FF !important;
 }
 .line980 {
-    top: 300px;
+    top: 320px;
     z-index: -1;
 }
-
+.cases-content{
+    min-height: 680px;
+}
 .cases-content p {
     margin: 0;
     padding: 0;
@@ -181,6 +183,9 @@ header{
     }
 }
 @media (max-width: 1280px) {
+    .cases-content{
+        min-height: 580px;
+    }
     .cases-menu {
         overflow: scroll;
     }
@@ -191,6 +196,9 @@ header{
 }
 
 @media (max-width: 1080px) {
+    .cases-content{
+        min-height: 520px;
+    }
     .cases-menu {
         overflow: scroll;
     }
@@ -201,6 +209,9 @@ header{
 }
 
 @media (max-width: 980px){
+    .cases-content{
+        min-height: 480px;
+    }
     .cases-menu {
         overflow: scroll;
     }

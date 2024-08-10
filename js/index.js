@@ -157,6 +157,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
+    /// --- Cases ---\\\
+
+
+
     /// --- Form??? --- \\\
 
     const ids = [
@@ -172,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (input) {
             input.addEventListener('mouseover', function() {
                 this.setAttribute('data-placeholder', this.placeholder);
-                this.placeholder = ''; // Очищаем placeholder
+                this.placeholder = '';
             });
             input.addEventListener('mouseout', function() {
                 this.placeholder = this.getAttribute('data-placeholder');
@@ -180,6 +184,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-
-
 

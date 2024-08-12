@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function handleTouchEnd() {
         if (startX && endX) {
             const deltaX = startX - endX;
-            const swipeThreshold = 50; // Adjust swipe threshold if necessary
+            const swipeThreshold = 50;
 
             if (deltaX > swipeThreshold) {
                 nextSlide();

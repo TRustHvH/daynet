@@ -1140,8 +1140,21 @@ li.tiles-text{
     border-radius: 8px;
     cursor: pointer;
 }
+.cases-bottom-item img{
+    filter: grayscale(100%);
+    transition: .2s linear;
+}
+.cases-bottom-item:hover img, .cases-bottom-item.active-case img{
+    filter: unset;
+}
+.cases-bottom-item.active-case .cases-bottom-text{
+    opacity: 1;
+}
+.cases-bottom-item:hover .cases-bottom-text{
+    opacity: .75;
+}
 .active-case{
-    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0 1px 2px 0 #00000014;
     background: white;
 
     &:before{
@@ -1170,12 +1183,14 @@ li.tiles-text{
 .cases-bottom-a p{
     margin-top: 8px;
 }
+
 .cases-bottom-text{
     margin: 4px 0 0 0;
     text-align: center;
     line-height: 24px;
     color: #7A73FF;
     opacity: 0;
+    transition: .2s linear;
 }
 #blog{
     display: flex;

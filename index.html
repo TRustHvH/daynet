@@ -1573,21 +1573,21 @@
         <div class="cases-info">
             <div class="information">
                 <div class="information-text">
-                    <h1 id="inf1">Автосалон</h1>
-                    <p id="inf1-1">Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7.</p>
+                    <h1 id="inf1" class="case-title">Автосалон</h1>
+                    <p id="inf1-1" class="case-desc1">Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7.</p>
                 </div>
                 <div class="information-text">
-                    <h1 id="inf2">17+</h1>
-                    <p id="inf2-2">Среднее количество площадок присутствия на филиал выросло с 5 до 17.</p>
+                    <h1 id="inf2" class="case-subtitle2">17+</h1>
+                    <p id="inf2-2" class="case-desc2">Среднее количество площадок присутствия на филиал выросло с 5 до 17.</p>
                 </div>
                 <div class="information-text">
-                    <h1 id="inf3">С 20% до 85%</h1>
-                    <p id="inf3-3">Средний уровень позитивных упоминаний в выдаче и на площадках обсуждений увеличился с 20% до 80-85%.</p>
+                    <h1 id="inf3" class="case-subtitle3">С 20% до 85%</h1>
+                    <p id="inf3-3" class="case-desc3">Средний уровень позитивных упоминаний в выдаче и на площадках обсуждений увеличился с 20% до 80-85%.</p>
                 </div>
             </div>
             <div class="cases-img">
-                <h1 id="img-text" class="cases-img-text">Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7.</h1>
-                <a id="imgLink" href="html/cases/case-autosalon.html"><img src="img/cases-button.svg" alt=""></a>
+                <h1 id="img-text" class="case-img-text">Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7.</h1>
+                <a id="imgLink" class="case-img-link" href="html/cases/case-autosalon.html"><img src="img/cases-button.svg" alt=""></a>
             </div>
         </div>
         <div class="cases-bottom">
@@ -2473,105 +2473,94 @@
         });
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const items = document.querySelectorAll('.cases-bottom-item');
+
+            const caseData = {
+                case1: {
+                    inf1: "Автосалон",
+                    inf1_1: "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7.",
+                    inf2: "17+",
+                    inf2_2: "Среднее количество площадок присутствия на филиал выросло с 5 до 17.",
+                    inf3: "С 20% до 85%",
+                    inf3_3: "Средний уровень позитивных упоминаний в выдаче и на площадках обсуждений увеличился с 20% до 80-85%.",
+                    img_text: "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7.",
+                    imgLink: "html/cases/case-autosalon.html",
+                    imgBackground: "url('img/casescar.svg') no-repeat center",
+                },
+                case2: {
+                    inf1: "Банк",
+                    inf1_1: "С 2,9 до 4,5 звезд вырос рейтинг банка.",
+                    inf2: "С 0.3 до 2.0",
+                    inf2_2: "С 0.3 до 2.0 увеличено соотношение позитивных и негативных упоминаний (по показателям KPI).",
+                    inf3: "В 4,5 раза",
+                    inf3_3: "В 4,5 раза сократилось количество упоминаний соискателями негативных отзывов на собеседованиях.",
+                    img_text: "С 2,9 до 4,5 звезд вырос рейтинг банка.",
+                    imgLink: "html/cases/case-bank.html",
+                    imgBackground: "url('img/case-bank.svg') no-repeat center",
+                },
+                case3: {
+                    inf1: "Сеть клиник",
+                    inf1_1: "Наша команда вернула доброе имя сети клиник.",
+                    inf2: "С 3.2 звёзд до 4.7",
+                    inf2_2: "Средний рейтинг сети клиник с 3.2 звёзд до 4.7.",
+                    inf3: "100%",
+                    inf3_3: "Было обработано 100% отзывов на подконтрольных нам площадках.",
+                    img_text: "Наша команда вернула доброе имя сети клиник.",
+                    imgLink: "html/cases/case-clinic.html",
+                    imgBackground: "url('img/clinic.svg') no-repeat center",
+                },
+                case4: {
+                    inf1: "Персональная репутация",
+                    inf1_1: "Увеличилось количество повторных обращений.",
+                    inf2: "Аудитория",
+                    inf2_2: "У целевой аудитории укрепилась привычка обращаться к специалисту.",
+                    inf3: "Рейтинги",
+                    inf3_3: "Поднялись рейтинги личного бренда.",
+                    img_text: "Увеличилось количество повторных обращений.",
+                    imgLink: "html/cases/case-personality.html",
+                    imgBackground: "url('img/personal.svg') no-repeat center",
+                },
+                case5: {
+                    inf1: "Стройматериалы",
+                    inf1_1: "Развеяли сомнения потребителей и подтвердили качество продукции.",
+                    inf2: "Площадки",
+                    inf2_2: "Площадки с накрученной негативной ситуацией смещены минимум на 3 страницу поисковой выдачи.",
+                    inf3: "Запросы",
+                    inf3_3: "Все негативные запросы обработаны.",
+                    img_text: "Развеяли сомнения потребителей и подтвердили качество продукции.",
+                    imgLink: "html/cases/case-building-materials.html",
+                    imgBackground: "url('img/building-materials.svg') no-repeat center",
+                }
+            };
 
             if (items.length > 0) {
                 items[0].classList.add('active-case');
+                updateCaseInfo('case1');
+            }
+
+            function updateCaseInfo(caseId) {
+                const data = caseData[caseId];
+                document.getElementById("inf1").textContent = data.inf1;
+                document.getElementById("inf1-1").textContent = data.inf1_1;
+                document.getElementById("inf2").textContent = data.inf2;
+                document.getElementById("inf2-2").textContent = data.inf2_2;
+                document.getElementById("inf3").textContent = data.inf3;
+                document.getElementById("inf3-3").textContent = data.inf3_3;
+                document.getElementById("img-text").textContent = data.img_text;
+                document.getElementById("imgLink").href = data.imgLink;
+                document.querySelector('.cases-img').style.background = data.imgBackground;
+                document.querySelector('.cases-img').style.backgroundSize = "110%";
             }
 
             items.forEach(item => {
-                item.addEventListener('click', function() {
+                item.addEventListener('click', function () {
                     items.forEach(i => i.classList.remove('active-case'));
                     this.classList.add('active-case');
+                    updateCaseInfo(this.id);
                 });
             });
-        });
-
-        document.getElementById("case1").addEventListener("click", function ()
-        {
-            document.getElementById("inf1").textContent = "Автосалон"
-            document.getElementById("inf1-1").textContent = "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7."
-
-            document.getElementById("inf2").textContent = "17+"
-            document.getElementById("inf2-2").textContent = "Среднее количество площадок присутствия на филиал выросло с 5 до 17."
-
-            document.getElementById("inf3").textContent = "С 20% до 85%"
-            document.getElementById("inf3-3").textContent = "Средний уровень позитивных упоминаний в выдаче и на площадках обсуждений увеличился с 20% до 80-85%."
-
-            document.getElementById("img-text").textContent = "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7."
-            document.getElementById("imgLink").href = "html/cases/case-autosalon.html"
-            document.querySelector('.cases-img').style.background = "url('img/casescar.svg') no-repeat center";
-            document.querySelector('.cases-img').style.backgroundSize = "110%";
-        });
-
-        document.getElementById("case2").addEventListener("click", function ()
-        {
-            document.getElementById("inf1").textContent = "Банк"
-            document.getElementById("inf1-1").textContent = "С 2,9 до 4,5 звезд вырос рейтинг банка."
-
-            document.getElementById("inf2").textContent = "С 0.3 до 2.0"
-            document.getElementById("inf2-2").textContent = "С 0.3 до 2.0 увеличено соотношение позитивных и негативных упоминаний (по показателям KPI)."
-
-            document.getElementById("inf3").textContent = "В 4,5 раза"
-            document.getElementById("inf3-3").textContent = "В 4,5 раза сократилось количество упоминаний соискателями негативных отзывов на собеседованиях."
-
-            document.getElementById("img-text").textContent = "С 2,9 до 4,5 звезд вырос рейтинг банка."
-            document.getElementById("imgLink").href = "html/cases/case-bank.html"
-            document.querySelector('.cases-img').style.background = "url('img/case-bank.svg') no-repeat center";
-            document.querySelector('.cases-img').style.backgroundSize = "110%";
-        });
-
-        document.getElementById("case3").addEventListener("click", function ()
-        {
-            document.getElementById("inf1").textContent = "Сеть клиник"
-            document.getElementById("inf1-1").textContent = "Наша команда вернула доброе имя сети клиник."
-
-            document.getElementById("inf2").textContent = "С 3.2 звёзд до 4.7"
-            document.getElementById("inf2-2").textContent = "Средний рейтинг сети клиник с 3.2 звёзд до 4.7."
-
-            document.getElementById("inf3").textContent = "100%"
-            document.getElementById("inf3-3").textContent = "Было обработано 100% отзывов на подконтрольных нам площадках."
-
-            document.getElementById("img-text").textContent = "Наша команда вернула доброе имя сети клиник."
-            document.getElementById("imgLink").href = "html/cases/case-clinic.html"
-            document.querySelector('.cases-img').style.background = "url('img/clinic.svg') no-repeat center";
-            document.querySelector('.cases-img').style.backgroundSize = "110%";
-        });
-
-        document.getElementById("case4").addEventListener("click", function ()
-        {
-            document.getElementById("inf1").textContent = "Персональная репутация"
-            document.getElementById("inf1-1").textContent = "Увеличилось количество повторных обращений."
-
-            document.getElementById("inf2").textContent = "Аудитория"
-            document.getElementById("inf2-2").textContent = "У целевой аудитории укрепилась привычка обращаться к специалисту."
-
-            document.getElementById("inf3").textContent = "Рейтинги"
-            document.getElementById("inf3-3").textContent = "Поднялись рейтинги личного бренда."
-
-            document.getElementById("img-text").textContent = "Увеличилось количество повторных обращений."
-            document.getElementById("imgLink").href = "html/cases/case-personality.html"
-            document.querySelector('.cases-img').style.background = "url('img/personal.svg') no-repeat center";
-            document.querySelector('.cases-img').style.backgroundSize = "110%";
-        });
-
-        document.getElementById("case5").addEventListener("click", function ()
-        {
-            document.getElementById("inf1").textContent = "Стройматериалы"
-            document.getElementById("inf1-1").textContent = "Развеяли сомнения потребителей и подтвердили качество продукции."
-
-            document.getElementById("inf2").textContent = "Площадки"
-            document.getElementById("inf2-2").textContent = "Площадки с накрученной негативной ситуацией смещены минимум на 3 страницу поисковой выдачи."
-
-            document.getElementById("inf3").textContent = "Запросы"
-            document.getElementById("inf3-3").textContent = "Все негативные запросы обработаны."
-
-            document.getElementById("img-text").textContent = "Развеяли сомнения потребителей и подтвердили качество продукции."
-            document.getElementById("imgLink").href = "html/cases/case-building-materials.html"
-            document.querySelector('.cases-img').style.background = "url('img/building-materials.svg') no-repeat center";
-            document.querySelector('.cases-img').style.backgroundSize = "110%";
-        });
+        })
     </script>
 </body>
 </html>

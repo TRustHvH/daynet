@@ -1087,7 +1087,7 @@ li.tiles-text{
 }
 .cases-img:hover{
 
-    background-size: 120%;
+    background-size: 120%!important;
     transition: 1s;
 }
 .cases-img h1{

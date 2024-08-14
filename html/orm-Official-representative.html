@@ -208,7 +208,7 @@
                             <img src="../img/money-stack.svg" alt="money stack">
                         </div>
                         <div class="price-block__text-container">
-                            <p>Стоимость работ — 99 999 ₽</p>
+                            <p>Стоимость работ — от 65 000 ₽</p>
                         </div>
                     </div>
                     <div class="buttons-row">
@@ -298,7 +298,7 @@
                     <animate attributeType="auto" attributeName="opacity" values="1;0" calcMode="spline" keyTimes="0;1" keySplines="0 0 1 1" dur="5s" begin="0s;animate4897.end" repeatCount="1" additive="replace" accumulate="none" fill="freeze" id="animate3982"/><animate attributeName="opacity" values="0;1" calcMode="spline" keyTimes="0;1" keySplines="0 0 1 1" dur="3s" begin="animate3982.end+5s" repeatCount="1" additive="replace" accumulate="none" fill="freeze" id="animate4897"></animate>
                 </g>
             </svg>
-            <img class="line430" src="../img/blue-line.svg" alt="curved bold line" width="100%">
+            <img class="line430" src="../img/blue-line.svg" alt="curved bold line" width="100%" style="display: none">
             <div class="total-info-blocks-items w-padding">
                 <div class="info-block1">
                     <div class="total-info-block">
@@ -345,30 +345,61 @@
             <p>Официальный представитель отслеживает упоминания бренда и оперативно на них реагирует, управляя репутацией в интернете.</p>
         </div>
         <div class="cases">
-            <div class="serv-case-text">
-                <p1>Кейсы</p1>
-                <p2>Посмотрите как Daynet помог своим клиентам улучшить их репутацию</p2>
-            </div>
+            <h1>Кейсы</h1>
             <div class="cases-info">
+                <div class="information">
+                    <div class="information-text">
+                        <h1 id="inf1" class="case-title">Автосалон</h1>
+                        <p id="inf1-1" class="case-desc1">Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7.</p>
+                    </div>
+                    <div class="information-text">
+                        <h1 id="inf2" class="case-subtitle2">17+</h1>
+                        <p id="inf2-2" class="case-desc2">Среднее количество площадок присутствия на филиал выросло с 5 до 17.</p>
+                    </div>
+                    <div class="information-text">
+                        <h1 id="inf3" class="case-subtitle3">С 20% до 85%</h1>
+                        <p id="inf3-3" class="case-desc3">Средний уровень позитивных упоминаний в выдаче и на площадках обсуждений увеличился с 20% до 80-85%.</p>
+                    </div>
+                </div>
                 <div class="cases-img">
-                    <h1 class="cases-img-text">Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7.</h1>
-                    <a href="../html/cases/case-autosalon.html"><img src="../img/cases-button.svg" alt=""></a>
+                    <h1 id="img-text" class="case-img-text">Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7.</h1>
+                    <a id="imgLink" class="case-img-link" href="../html/cases/case-autosalon.html"><img src="../img/cases-button.svg" alt=""></a>
                 </div>
             </div>
             <div class="cases-bottom">
-                <div class="cases-bottom-item">
-                    <img src="../img/companies-cases/subaru.svg" alt="">
+                <div class="cases-bottom-wrap">
+                    <div id="case1" class="cases-bottom-item">
+                        <div class="img-holder">
+                            <img src="../img/companies-cases/hidden/auto-dealership.svg" alt="">
+                        </div>
+                        <p id="cbt1" class="cases-bottom-text">Автосалон</p>
+                    </div>
+                    <div id="case2" class="cases-bottom-item">
+                        <div class="img-holder">
+                            <img src="../img/companies-cases/hidden/bank.svg" alt="">
+                        </div>
+                        <p class="cases-bottom-text">Банк</p>
+                    </div>
+                    <div id="case3" class="cases-bottom-item">
+                        <div class="img-holder">
+                            <img src="../img/companies-cases/hidden/clinic.svg" alt="">
+                        </div>
+                        <p class="cases-bottom-text">Сеть клиник</p>
+                    </div>
+                    <div id="case4" class="cases-bottom-item">
+                        <div class="img-holder">
+                            <img src="../img/companies-cases/hidden/personal-reputation.svg" alt="">
+                        </div>
+                        <p class="cases-bottom-text">Персональная <br> репутация</p>
+                    </div>
+                    <div id="case5" class="cases-bottom-item">
+                        <div class="img-holder">
+                            <img src="../img/companies-cases/hidden/materials.svg" alt="">
+                        </div>
+                        <p class="cases-bottom-text">Стройматериалы</p>
+                    </div>
                 </div>
-                <div class="cases-bottom-item">
-                    <img src="../img/companies-cases/marriott.svg" alt="">
-                </div>
-                <div class="cases-bottom-item">
-                    <img src="../img/companies-cases/suzuki.svg" alt="">
-                </div>
-                <div class="cases-bottom-item">
-                    <img src="../img/companies-cases/velux.svg" alt="">
-                </div>
-                <a href="cases/case-autosalon.html" class="cases-more cases-bottom-item">
+                <a href="../html/cases/case-autosalon.html" class="cases-bottom-a">
                     <img src="../img/cases/cases-more.svg" alt="">
                     <p>Больше кейсов</p>
                 </a>

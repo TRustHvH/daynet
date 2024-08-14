@@ -8,7 +8,7 @@ header{
     color:#7A73FF !important;
 }
 .services{
-    margin-top: 104px;
+    margin-top: 48px;
 }
 .services .info-panel {
     display: flex;
@@ -16,7 +16,7 @@ header{
 }
 
 .services .info-panel .text-content {
-    width: 60%;
+    width: 62%;
 }
 .small-buttons{
 
@@ -39,54 +39,42 @@ header{
 }
 
 .services .info-panel .heading-container {
-    font-family: 'Roboto Flex', sans-serif;
     font-size: 24px;
     font-weight: 720;
     line-height: 28.8px;
     letter-spacing: 0.04em;
     text-align: left;
-    font-variation-settings: 'wdth' 125, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
     color: #209DB7;
 }
 
 .services .info-panel .heading-text {
-    font-family: 'Roboto Flex', sans-serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 52.8px;
     letter-spacing: 0.04em;
     text-align: left;
-
     margin-bottom: 48px;
-
 }
 
 .services .info-panel .regular-service-text {
-    font-family: 'Roboto Flex', sans-serif;
     font-size: 28px;
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0.02em;
     text-align: left;
-    font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
-
     margin-bottom: 20px;
 }
 
 .services .card .heading-container {
-    font-family: 'Roboto Flex', sans-serif;
     font-size: 20px;
     font-weight: 720;
     line-height: 24px;
     letter-spacing: 0.04em;
     text-align: left;
-    font-variation-settings: 'wdth' 125, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
-
     color: #209DB7;
 }
 
 .services .card .heading-text {
-    font-family: 'Roboto Flex', sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;
@@ -97,8 +85,8 @@ header{
     margin-bottom: 24px;
 
 }
-.regular-service-text::before{
-    margin-left: -24px;
+.rgtxt::before{
+    margin-left: -16px;
     position: absolute;
     display: flex;
     height: 58px;
@@ -107,14 +95,11 @@ header{
     background: url(../img/services-line.svg) no-repeat;
 }
 .services .card .regular-service-text {
-    font-family: 'Roboto Flex', sans-serif;
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0.02em;
     text-align: left;
-    font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
-
     margin-bottom: 10px;
 }
 
@@ -138,7 +123,7 @@ header{
     font-size: 28px;
     font-weight: 500;
     line-height: 40px;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     text-align: center;
 }
 
@@ -181,10 +166,9 @@ header{
 /*}*/
 .line980 {
     display: block;
-    position: absolute;
     z-index: -1;
-    top: 200px;
     width: 100%;
+    margin-top: -5%;
 }
 .line430{
     display: none;
@@ -239,32 +223,12 @@ header{
     gap: 12px;
     margin-bottom: 32px;
 }
-.cases p1 {
-    font-size: 32px;
-    font-weight: 720;
-    line-height: 38.4px;
-    letter-spacing: 0.04em;
-    text-align: left;
-    color: #209DB7;
-    margin: 0;
-}
-.cases p2{
-    font-family: Roboto Flex;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
-    margin: 0;
-
+.information {
+    display: none;
 }
 .cases-img {
-    width: 100% !important;
-    height: 301px !important;
-}
-.mgbtm {
-    margin-bottom: 30%;
+    width: 100%;
+    height: 300px;
 }
 @media (max-width: 1440px){
     .w-padding {
@@ -286,9 +250,6 @@ header{
         flex-direction: column;
         gap: 32px;
     }
-    .mgbtm {
-        margin-bottom: 20%;
-    }
 }
 @media (max-width: 1308px){
     .services .total-info-blocks-items {
@@ -305,7 +266,6 @@ header{
     .services .total-info-blocks-items {
         display: flex;
         justify-content: space-between;
-        margin-top: 86px;
     }
     .services .total-info-blocks-items .total-info-block__content {
         display: flex;
@@ -359,6 +319,12 @@ header{
         box-sizing: border-box;
         padding: 0 16px;
     }
+    .rgtxt::before{
+        margin-left: -8px;
+    }
+    .services .info-panel {
+        flex-direction: column;
+    }
     .blocks {
         display: none !important;
     }
@@ -375,38 +341,32 @@ header{
     .line430 {
         display: block;
         position: absolute;
-        top: 470px;
+        top: 500px;
         z-index: -1;
     }
     .smm-card {
         width: 100%;
         padding-top: 48px;
-        padding-bottom: 128px;
     }
     .serm-card {
         width: 100%;
         padding-top: 48px;
-        padding-bottom: 128px;
     }
     .mouchen-card{
         width: 100%;
         padding-top: 48px;
-        padding-bottom: 128px;
     }
     .it-card{
         width: 100%;
         padding-top: 48px;
-        padding-bottom: 128px;
     }
     .advertising-card{
         width: 100%;
         padding-top: 48px;
-        padding-bottom: 128px;
     }
     .orm-card{
         width: 100%;
         padding-top: 48px;
-        padding-bottom: 128px;
     }
     .line980{
         display: none;
@@ -415,27 +375,14 @@ header{
         width: 100%;
     }
     .services .info-panel .regular-service-text {
-        font-family: 'Roboto Flex', sans-serif;
         font-size: 25px;
         font-weight: 300;
         line-height: 24px;
         letter-spacing: 0.02em;
-        text-align: center;
-        font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
         margin-bottom: 20px;
         color: rgba(4, 42, 80, 1);
     }
-    .regular-service-text::before {
-        margin-left: -10px;
-        position: absolute;
-        display: flex;
-        height: 58px;
-        width: 15px;
-        content: " ";
-        background: url(../img/services-line.svg) no-repeat;
-    }
     .services .info-panel .heading-text {
-        font-family: 'Roboto Flex', sans-serif;
         font-size: 24px;
         font-weight: 700;
         line-height: 26.2px;
@@ -498,8 +445,8 @@ header{
         flex-direction: column;
         gap: 24px;
     }
-    .cases {
-        padding: 0px 16px;
+    .cases-img {
+        height: 248px;
     }
     .mgbtm {
         margin-bottom: 0%;

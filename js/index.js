@@ -193,8 +193,8 @@ document.addEventListener("DOMContentLoaded", function() {
             inf3: "С 20% до 85%",
             inf3_3: "Средний уровень позитивных упоминаний в выдаче и на площадках обсуждений увеличился с 20% до 80-85%.",
             img_text: "Средний рейтинг автосалонов вырос с 3.7 звёзд до 4.6-4.7.",
-            imgLink: "html/cases/case-autosalon.html",
-            imgBackground: "url('img/casescar.svg') no-repeat center",
+            imgLink: "../html/cases/case-autosalon.html",
+            imgBackground: "url('../img/casescar.svg') no-repeat center",
         },
         case2: {
             inf1: "Банк",
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function() {
             inf3_3: "В 4,5 раза сократилось количество упоминаний соискателями негативных отзывов на собеседованиях.",
             img_text: "С 2,9 до 4,5 звезд вырос рейтинг банка.",
             imgLink: "html/cases/case-bank.html",
-            imgBackground: "url('img/case-bank.svg') no-repeat center",
+            imgBackground: "url('../img/case-bank.svg') no-repeat center",
         },
         case3: {
             inf1: "Сеть клиник",
@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function() {
             inf3_3: "Было обработано 100% отзывов на подконтрольных нам площадках.",
             img_text: "Наша команда вернула доброе имя сети клиник.",
             imgLink: "html/cases/case-clinic.html",
-            imgBackground: "url('img/clinic.svg') no-repeat center",
+            imgBackground: "url('../img/clinic.svg') no-repeat center",
         },
         case4: {
             inf1: "Персональная репутация",
@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function() {
             inf3_3: "Поднялись рейтинги личного бренда.",
             img_text: "Увеличилось количество повторных обращений.",
             imgLink: "html/cases/case-personality.html",
-            imgBackground: "url('img/personal.svg') no-repeat center",
+            imgBackground: "url('../img/personal.svg') no-repeat center",
         },
         case5: {
             inf1: "Стройматериалы",
@@ -238,7 +238,7 @@ document.addEventListener("DOMContentLoaded", function() {
             inf3_3: "Все негативные запросы обработаны.",
             img_text: "Развеяли сомнения потребителей и подтвердили качество продукции.",
             imgLink: "html/cases/case-building-materials.html",
-            imgBackground: "url('img/building-materials.svg') no-repeat center",
+            imgBackground: "url('../img/building-materials.svg') no-repeat center",
         }
     };
 

@@ -227,37 +227,9 @@ header{
     gap: 12px;
     margin-bottom: 32px;
 }
-.cases p1 {
-    font-size: 32px;
-    font-weight: 720;
-    line-height: 38.4px;
-    letter-spacing: 0.04em;
-    text-align: left;
-    color: #209DB7;
-    margin: 0;
-}
-.cases p2{
-    font-family: Roboto Flex;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    font-variation-settings: 'GRAD' 0, 'XOPQ' 96, 'XTRA' 487, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'slnt' 0, 'wdth' 130;
-    margin: 0;
-
-}
-.cases-img {
-    width: 100% !important;
-    height: 301px !important;
-}
-
 @media (max-width: 1440px){
     .w-padding {
         box-sizing: border-box;
-        padding: 0 86px;
-    }
-    .cases{
         padding: 0 86px;
     }
     .services .cards {
@@ -404,9 +376,6 @@ header{
         flex-direction: column;
         gap: 24px;
     }
-    .cases {
-        padding: 0px 16px;
-    }
 }
 @media (max-width: 430px){
     .services .info-panel .buttons-row {
@@ -420,9 +389,6 @@ header{
         justify-content: space-between;
         margin-top: 86px;
         flex-direction: column;
-    }
-    .cases {
-        padding: 0px 16px;
     }
     .small-buttons >img{
         display: block;

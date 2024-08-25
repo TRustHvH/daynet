@@ -18,13 +18,13 @@ const CASES = {
     {
       "image": "../img/case-eat.jpg",
       "text": "Сеть питания. ORM",
-      "link": "cases/case-eat.html"
+      "link": "cases/case-cafe.html"
     },
-    {
+    /*{
       "image": "../img/case-opr.jpg",
       "text": "Опровержение. ORM",
       "link": "cases/case-opr.html"
-    },
+    },*/
     {
       "image": "../img/personal.svg",
       "text": "Персональная репутация. ORM персоны",
@@ -51,11 +51,11 @@ const CASES = {
     },
   ],
   "monitoring": [
-    {
+    /*{
       "image": "../img/case-distribute.png",
       "text": "Дистрибьютор. Программный мониторинг",
       "link": "cases/case-distribute.html"
-    },
+    },*/
   ],
   "reputation": [
     {

@@ -11,6 +11,7 @@ header{
 .case-content p {
     margin: 0;
     padding: 0;
+
 }
 
 .case-headings-texts .case-category-name {
@@ -42,6 +43,9 @@ header{
 
 .case-image-container {
     margin-top: 36px;
+}
+.case-jobs-block {
+    margin-top: 132px;
 }
 .case-gradient-line{
     display: block;
@@ -92,10 +96,8 @@ header{
 .results-short-container {
     position: absolute;
     display: flex;
-
     bottom: 24px;
     left: 24px;
-
     font-family: 'Roboto Flex', sans-serif;
     font-size: 28px;
     font-weight: 500;
@@ -103,13 +105,11 @@ header{
     letter-spacing: 0.06em;
     text-align: left;
     font-variation-settings: 'wdth' 130, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
-
     background: white;
     box-sizing: border-box;
     padding: 20px 44px;
     border-radius: 16px;
-    max-width: 50%;
-
+    max-width: 45%;
     gap: 24px
 }
 
@@ -250,7 +250,18 @@ header{
 }
 
 @media (max-width: 430px) {
-
+    .case-headings-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .case-jobs-block {
+        margin-top: 52px;
+    }
+    .back-arrow-container {
+        width: 100%;
+    }
     .case-gradient-line-mobile{
         display: block;
         width: 100%;
@@ -325,20 +336,19 @@ header{
         }
     }
     .case-headings-texts .case-category-name {
-        font-family: 'Roboto Flex', sans-serif;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 720;
         line-height: 28.8px;
         letter-spacing: 0.04em;
         text-align: left;
-        font-variation-settings: 'wdth' 125, 'GRAD' 0, 'slnt' 0, 'XTRA' 487, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
         color: #209DB7;
+        margin-bottom: 12px;
     }
     .case-headings-texts .case-name {
         font-family: 'Roboto Flex', sans-serif;
-        font-size: 40px;
+        font-size: 22px !important;
         font-weight: 720;
-        line-height: 52.8px;
+        line-height: 36.8px;
         letter-spacing: 0.04em;
         text-align: left;
     }

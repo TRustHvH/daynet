@@ -1793,6 +1793,57 @@ footer p, footer a{
 .reliable-mob{
     display: none;
 }
+.scroll-up {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    color: grey;
+    cursor: pointer;
+    visibility: hidden;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 4px #dcdedc;
+    opacity: 1;
+    transition: .2s;
+    transform: translateY(25px);
+}
+.scroll-up:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 900;
+    content: '↑';
+}
+.scroll-up:hover {
+    transform: scale(1.03);
+}
+.scroll-up:hover {
+
+    color: #00b2d7;
+}
+.scroll-up-active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+
+    transition: .3s linear;
+}
+.scroll-up__svg-path {
+    box-sizing: border-box;
+    fill: none;
+    stroke: #00b2d7;
+    stroke-width: 4px;
+    transition: .2s;
+}
 @media screen and (max-width: 1680px){
     .w-padding {
         padding: 0 220px;
@@ -3128,6 +3179,11 @@ footer p, footer a{
     .reliable-mob{
         display: block;
         margin-top: 35px;
+    }
+    .scroll-up {
+        position: fixed;
+        right: 18px;
+        bottom: 22px;
     }
 }
 @media screen and (max-width: 375px) {

@@ -2433,8 +2433,12 @@
                     <p>Сайт</p>
                     <input id="siteInput" placeholder="www.theverycompany.com" name="site" >
                 </div>
-                <div>
-                    <input type="file">
+                <div style="width: 100%">
+                    <label class="label-file" for="file">
+                        <img src="img/pin-file.svg" alt="">
+                        Прикрепить файл
+                    </label>
+                    <input type="file" class="file" id="file" accept="*/*" multiple>
                 </div>
                 <div class="input-checkbox">
                     <input type="checkbox" class="checkbox" id="checkbox" required>
@@ -2521,35 +2525,6 @@
         </svg>
     </div>
     <script src="js/lib/smoothScroll.js"></script>
-    <script>
-        SmoothScroll({
-            // Время скролла 400 = 0.4 секунды
-            animationTime: 800,
-            // Размер шага в пикселях
-            stepSize: 75,
-
-            // Дополнительные настройки:
-
-            // Ускорение
-            accelerationDelta: 30,
-            // Максимальное ускорение
-            accelerationMax: 2,
-
-            // Поддержка клавиатуры
-            keyboardSupport: true,
-            // Шаг скролла стрелками на клавиатуре в пикселях
-            arrowScroll: 50,
-
-            // Pulse (less tweakable)
-            // ratio of "tail" to "acceleration"
-            pulseAlgorithm: true,
-            pulseScale: 4,
-            pulseNormalize: 1,
-
-            // Поддержка тачпада
-            touchpadSupport: true,
-        })
-    </script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 5,

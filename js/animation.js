@@ -633,9 +633,35 @@ $(document).ready(function () {
         if (adjustedScrollPosition > 12150 && adjustedScrollPosition <= 12300) {
             //-===-удаление при скролле к блоку ниже-===-//
             focusBlock("main", 12, "remove");
+            svgs(0, "remove")
             svgs(1, "remove")
+            svgs(2, "remove")
             svgs(3, "remove")
+            svgs(4, "remove")
             svgs(5, "remove")
+            svgs(6, "remove")
+            svgs(7, "remove")
+            svgs(8, "remove")
+            svgs(9, "remove")
+            svgs(10, "remove")
+            svgs(11, "remove")
+            svgs(12, "remove")
+            svgs(13, "remove")
+            svgs(14, "remove")
+            svgs(15, "remove")
+            svgs(16, "remove")
+            svgs(17, "remove")
+            svgs(18, "remove")
+            svgs(19, "remove")
+            svgs(20, "remove")
+            svgs(21, "remove")
+            svgs(22, "remove")
+            svgs(23, "remove")
+            svgs(24, "remove")
+            svgs(25, "remove")
+            svgs(26, "remove")
+            svgs(27, "remove")
+            svgs(28, "remove")
             setTimeout(() => {
                 focusBlock("secondary", 3, "remove");
                 focusBlock("secondary", 6, "remove");

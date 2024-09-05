@@ -907,6 +907,7 @@ li.tiles-text{
     display: flex;
     flex-direction: row;
     align-items: end;
+    overflow-x: auto;
 }
 .scale::-webkit-scrollbar {
     width: 0;
@@ -1008,6 +1009,8 @@ li.tiles-text{
     display: flex;
     flex-direction: column;
     gap: 60px;
+    min-height: 558px;
+    max-width: 372px;
 }
 .information-text p{
     font-size: 20px;
@@ -1141,6 +1144,7 @@ li.tiles-text{
 }
 .cases-bottom-a p{
     margin-top: 8px;
+    text-align: center;
 }
 
 .cases-bottom-text{
@@ -1863,6 +1867,23 @@ footer p, footer a{
     stroke-width: 4px;
     transition: .2s;
 }
+.file-item {
+    display: flex;
+    flex-direction: row;
+}
+.delete-file {
+    padding: 0 0 0 1.15px !important;
+    font-size: 16px !important;
+    background: #FFFFFF !important;
+    margin-top: 0px !important;
+    margin-left: 5px !important;
+    border-radius: 50% !important;
+    width: 18px !important;
+    line-height: 120% !important;
+}
+.file-count {
+    color: white;
+ }
 @media screen and (max-width: 1680px){
     .w-padding {
         padding: 0 220px;
@@ -2062,6 +2083,8 @@ footer p, footer a{
     .information {
         margin-bottom: 32px;
         gap: 26px;
+        min-height: 490px;
+        max-width: 416px;
     }
     .information-text p {
         max-width: 75%;
@@ -2166,7 +2189,7 @@ footer p, footer a{
     }
     .cases-bottom-item{
         width: 222px;
-        height: 184px;
+        height: 102px;
         font-size: 17px;
     }
     .u-form {

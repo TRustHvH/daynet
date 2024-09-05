@@ -306,3 +306,63 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const fileInput = document.getElementById('file');
+    const fileListContainer = document.getElementById('fileListContainer');
+    const fileCount = document.getElementById('fileCount');
+    let filesList = []; // Список файлов
+    const maxFiles = 1;
+    const maxFileNameLength = 14;
+
+    function truncateFileName(fileName, maxLength) {
+        if (fileName.length <= maxLength) {
+            return fileName;
+        }
+        const extension = fileName.slice(fileName.lastIndexOf('.'));
+        return fileName.slice(0, maxLength - extension.length - 3) + '...' + extension;
+    }
+
+    fileInput.addEventListener('change', (event) => {
+        const files = Array.from(event.target.files);
+
+        files.forEach(file => {
+            // добавление файла в массив
+            filesList.push(file);
+
+            // отображение файла
+            const fileItem = document.createElement('div');
+            fileItem.className = 'file-item';
+
+            // название файла (с сокращением)
+            const fileName = document.createElement('span');
+            fileName.textContent = truncateFileName(file.name, maxFileNameLength);
+            fileItem.appendChild(fileName);
+
+            // кнопка удаления
+            const removeButton = document.createElement('button');
+            removeButton.textContent = '×';
+            removeButton.className = 'delete-file';
+            removeButton.onclick = () => {
+                // Удаление файла из списка и из DOM
+                filesList = filesList.filter(f => f !== file);
+                fileListContainer.removeChild(fileItem);
+                updateFileCount();
+            };
+            fileItem.appendChild(removeButton);
+
+            fileListContainer.appendChild(fileItem);
+        });
+
+        // обновление количества файлов
+        updateFileCount();
+        // Очищаем input для возможности выбора тех же файлов
+        fileInput.value = '';
+    });
+
+    // функция обновления количества файлов
+    function updateFileCount() {
+        fileCount.textContent = `Всего файлов: ${filesList.length}`;
+    }
+
+});
